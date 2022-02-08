@@ -1,0 +1,53 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: topic
+        field:
+          inline: false
+          options:
+            'Air Toxics': null
+            'Area Sources': null
+            'Attainment Planning': null
+            'Climate and Energy': null
+            'Environmental Justice': null
+            'Mobile Sources': null
+            'Stationary Sources': null
+            'Training/Clean Air Academy': null
+          display: Topic
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above
+      -
+        handle: doctype
+        field:
+          inline: false
+          options:
+            Announcement: null
+            Article: null
+            Comments: null
+            Excel: null
+            'Fact Sheet': null
+            'FR Notice': null
+            'Legal Document': null
+            Letter: null
+            Map: null
+            'Meeting Materials': null
+            Memorandum: null
+            Notes: null
+            Presentation: null
+            'Press Release': null
+            Protocol: null
+            Recommendations: null
+            Report: null
+            Statement: null
+            MOU: null
+            Testimony: null
+            Video: null
+          display: Doctype
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above

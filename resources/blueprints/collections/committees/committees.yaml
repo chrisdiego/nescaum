@@ -1,0 +1,29 @@
+title: committees
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: highlights
+        field:
+          display: Highlights
+          type: table
+          icon: table
+          listable: hidden
+          instructions_position: above
+          instructions: 'Add text as a single row, or add a column and additional rows to list highlights'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true

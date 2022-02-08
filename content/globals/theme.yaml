@@ -1,0 +1,8 @@
+title: theme
+data:
+  primary: '#669935'
+  secondary: '#003354'
+  tertiary: '#006CB3'
+  bg-light: '#ececec'
+  bg-primary: '#DAEBF5'
+  text: '#1f1f1f'

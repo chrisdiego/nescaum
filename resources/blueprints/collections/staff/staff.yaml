@@ -1,0 +1,56 @@
+title: staff
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          input_type: text
+          antlers: false
+          display: Name
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: position
+        field:
+          type: text
+          input_type: text
+          antlers: false
+          display: Position
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: image
+        field:
+          mode: list
+          container: images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: image
+          type: assets
+          icon: assets
+          instructions: 'Staff photo'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+          instructions_position: above
+          listable: hidden
+          generate: true
+          instructions: 'format as firstname-lastname'

@@ -1,0 +1,70 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: primary
+        field:
+          input_type: color
+          antlers: false
+          display: primary
+          type: text
+          icon: text
+          instructions: 'For buttons, underlines, icons, highlights'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: secondary
+        field:
+          input_type: color
+          antlers: false
+          display: secondary
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'For heading text and backgrounds'
+          instructions_position: above
+      -
+        handle: tertiary
+        field:
+          input_type: color
+          antlers: false
+          display: tertiary
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Secondary hover text color, tertiary background color'
+          instructions_position: above
+      -
+        handle: bg-light
+        field:
+          input_type: color
+          antlers: false
+          display: bg-light
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Light background color'
+          instructions_position: above
+      -
+        handle: bg-primary
+        field:
+          input_type: color
+          antlers: false
+          display: bg-primary
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Primary background color'
+          instructions_position: above
+      -
+        handle: text
+        field:
+          input_type: color
+          antlers: false
+          display: text
+          type: text
+          icon: text
+          listable: hidden
+          instructions: 'Body text color'
+          instructions_position: above
