@@ -1,4 +1,4 @@
 name: joe
 super: true
 id: 5b9a4008-4f4d-46be-b1db-c81c9ef2000b
-password_hash: $2y$10$555fHCYCnlj0Z1qui0sRT.ANXFstPvvvWEcDERxA0Yb7KOUl6vUvq
+password: joe
