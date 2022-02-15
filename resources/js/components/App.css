@@ -1,0 +1,64 @@
+a {
+  text-decoration: none;
+  color: #003354;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Containers */
+.container-primary {
+  color: black;
+}
+.container-secondary {
+  background: #013355;
+  color: white;
+}
+
+.container-secondary a {
+  color: white;
+  font-weight: bold;
+}
+
+/* Additional utility classes */
+.px-4 {
+  padding-right: 3rem !important; 
+  padding-left: 3rem !important
+}
+
+.p-6 {
+  padding: 4rem !important;
+}
+
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.px-6 {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+.p-8 {
+  padding: 5rem !important;
+}
+
+.py-8 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.px-8 {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+
+.mr-1 {
+  margin-right: .25rem !important;
+}
+
+.text-small {
+  font-size: 11px;
+}

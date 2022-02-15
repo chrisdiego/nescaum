@@ -1,0 +1,196 @@
+{
+  "our-work": {
+    "clean-transportation": {
+      "heroImage": "https://images.unsplash.com/photo-1567409378873-888d6fa7debc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80",
+      "sideImage": "https://images.unsplash.com/photo-1473042904451-00171c69419d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80",
+      "headline": "Clean Transportation",
+      "mainText": "Transportation is the largest source of greenhouse gas emissions nationally and accounts for more than 40 percent of greenhouse emissions in the Northeast. On-road and off-road vehicles also emit smog-forming pollutants, particulate matter, and airborne toxic chemicals that are harmful to human health, especially for people who live near busy roads.",
+      "subText": "NESCAUM is working to help its member states accelerate the transition to clean transportation by providing advice and information about effective policies and programs and by facilitating regional collaboration that enables states to achieve more by working together.",
+      "subHeader": "NESCAUM'S MULTI-STATE INITIATIVES TO DRIVE CLEAN VEHICLE ADOPTION",
+      "subArticles": [
+        {
+          "title": "Supporting Regulatory Programs",
+          "content": "NESCAUM facilitates regional coordination on regulating mobile sources of air pollution, supports collaboration among states that have adoped California's motor vehicle emissions standards, and helps states assess emissions and health benefits of regulations.",
+          "imageSrc": "https://images.unsplash.com/photo-1605257638792-9d0e2197fb0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+          "href": "supporting-regulatory-programs"
+        },
+        {
+          "title": "Driving the Adoption of Electric Cars",
+          "content": "NESCAUM leads the Multi-State Zero Emission Vehicle (ZEV) Task Force, which provides a forum for Northeast states that have adopted California's ZEV regulation to work together on policies and programs to accelerate widespread consumer adoption of electric cars.",
+          "imageSrc": "https://images.unsplash.com/photo-1623596240012-63ab3432fa1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGVsZWN0cmljJTIwY2FyfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60",
+          "href": "driving-the-adoption-of-electric-cars"
+        },
+        {
+          "title": "Growing the Market for Electric Trucks and Vehicles",
+          "content": "NESCAUM is leading a multi-state effort to reduce emissions from trucks and buses and improve air quality in disadvantaged communities by spurring early demand for new zero-emission trucks and buses.",
+          "imageSrc": "https://images.unsplash.com/photo-1485575301924-6891ef935dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
+          "href": "growing-market-for-electric-vehicles"
+        }
+      ]
+    }
+  },
+
+  "criteria-pollutants-and-air-toxics": {
+    "heroImage": "https://images.unsplash.com/photo-1597165826924-f0e9fb81762e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80",
+    "sideImage": "https://images.unsplash.com/photo-1607432750402-48f85c94f63a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80",
+    "headline": "Criteria and Hazardous Air Pollutants",
+    "mainText": "The Clean Air Act requires EPA to regulate two categories of air pollutants. EPA sets National Ambient Air Quality Standards (NAAQS) for six air pollutants, which are known as criteria pollutants. Those pollutants are ozone, particulate matter, sulfur dioxide, nitrogen dioxide, carbon monoxide, and lead." ,
+		"subText": "EPA also has identified 187 hazardous air pollutants (HAPs) which are known or suspected to cause cancer or other serious health effects. EPA regulates HAPs with technology-based rules which are called National Emissions Standards for Hazardous Air Pollutants (NESHAPs). Although EPA has not set air quality standards for HAPs, many states have developed health-based standards and guidelines for evaluating air quality impacts of the federal HAPs and other toxic air pollutants.",
+    "bodyText": [
+      {
+        "title": "Criteria Air Pollutants",
+        "underline": true,
+        "largeText": true
+      },
+      {
+        "title": "National Ambient Air Quality Standards (NAAQS).",
+        "text": " The Clean Air Act requires EPA to conduct periodic reviews of the NAAQS for the six criteria air pollutants. The NAAQS are the foundation of a wide range of air quality programs, so it is essential that those standards are protective of the public health and welfare of all communities.  NESCAUM reviews and comments on EPA proposals concerning NAAQS standard setting, including:",
+        "bullet": true
+      },
+      {
+        "text": "Procedures that affect the derivation of the NAAQS,",
+        "bullet": true,
+        "extraMargin": true
+      },
+      {
+        "text": "Planning, science, and policy assessments developed by EPA and its advisory committees during the mandated periodic reviews, and",
+        "bullet": true,
+        "extraMargin": true
+      },
+      {
+        "text": "NAAQS proposed subsequent to the reviews. ",
+        "bullet": true,
+        "extraMargin": true
+      },
+      {
+        "text": "Recent NECAUM comments have addressed EPA proposals concerning <a href='https://www.nescaum.org/documents/nescaum-transparency-snprm-comments-2020518-final.pdf/' target='_blank' rel='noopener noreferrer'>cost-benefit analyses, the use of scientific study data</a>, and the NAAQS for fine particulate matter <a href='https://www.nescaum.org/documents/nescaum-pm2-5-naaqs-comments-final-20200629.pdf/' target='_blank' rel='noreferrer noopener'>(PM₂.₅)</a> and <a href='https://www.nescaum.org/documents/nescaum-ozone-naaqs-comments-final-20201001.pdf/' target='_blank' rel='noreferrer noopener'>ozone</a>",
+        "bullet": true
+      },
+      {
+        "title": "Supporting state air quality planning efforts.",
+        "text": "NESCAUM facilitates state discussions and information sharing to support the development of State Implementation Plans, which are designed to enable air quality to attain and maintain the NAAQS. Interstate coordination is particularly essential for ozone, particulate matter, and regional haze, which are highly impacted by regional and long-range pollutant transport. ",
+        "bullet": true
+      },
+      {
+        "title": "HAPs/Toxic Air Pollutants",
+        "underline": true,
+        "largeText": true
+      },
+      {
+        "title": "EPA HAP proposals.",
+        "text": "Working with member states, NESCAUM assesses the impact of proposed EPA actions regarding HAPs and, where appropriate, prepares comments on those proposals. EPA actions reviewed include proposed NESHAPs, the risk and technology assessments that underly the NESHAPs, and risk-related science and policy documents. In 2020, <a href='https://www.nescaum.org/documents/nescaum-mon-rtr-comments-final-20200218.pdf/' target='_blank' rel='noreferrer noopener'>NESCAUM commented</a> on the proposed Residual Risk and Technology Review for the Miscellaneous Organic Chemical Manufacturing NESHAP.",
+        "bullet": true
+      },
+      {
+        "title": "Supporting state air toxics programs.",
+        "text": "NESCAUM coordinates the exchange of about air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS;, and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. In April 2021, NESCAUM, working with state partners, submitted a <a href='https://www.nescaum.org/documents/nescaum-letter-to-epa-on-2017-nata-data-release-20210429.pdf/' target='_blank' rel='noreferrer noopener'>letter to EPA</a> urging the agency to publicly release an updated National Air Toxics Assessment (NATA). The letter details the ways that state programs use those data, including in the identification of communities that are disproportionately impacted by stationary and mobile air toxics sources.",
+        "bullet": true
+      }
+    ]
+  },
+
+  "monitoring": {
+    "heroImage": "/images/monitoring-unsplash.jpg",
+    "sideImage": "/images/monitoring-nescaum.jpg", 
+    "headline": "MONITORING",
+    "mainText": "", 
+    "bodyText": [
+      {
+        "text": "<b>Supporting the collection and distribution of criteria pollutant monitoring data</b>. NESCAUM facilitates communication among states and with EPA ensure uniform approaches to regional air monitoring and data assessment and to communicate those data to state air quality planners. NESCAUM also provides a forum for discussion and exchange of ideas regarding existing or emerging techniques and technologies, which, in turn can be used to inform policies, regulations, and strategies related to, or impacted by, air monitoring. "
+      },
+      {
+        "text": "<b>Conducts research</b>.  NESCAUM coordinates specific monitoring or data assessment projects with member states and EPA regional offices, such as the Monitoring Collaborative, an effort to coordinate State monitoring network designs at the regional level.  NESCAUM has also adapted continuous PM measurement technologies, traditionally used for ambient monitoring, for stack testing to provide highly time resolved particulate matter data. NESCAUM works closely with instrumentation manufacturers to identify and resolve issues with these technologies to facilitate their use in this application."
+      },
+      {
+        "text": "<b>Enhance public awareness. NESCAUM’s CAMNET</b> work raises public awareness about the effects of air pollution on visibility. This is accomplished, in part, through a network of realtime visibility cameras located at scenic urban and rural locations. In addition, near-realtime air pollution and meteorological data are provided to help distinguish natural from man-made causes of poor visibility, and to provide health-relevant data to the public on current air pollution levels. "
+      }
+    ]
+  }, 
+
+  "supporting-regulatory-programs": {
+    "heroImage": "https://images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80",
+    "title": ""
+  },
+  "adoption-of-electric-cars": {
+    "heroImage": "https://images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80",
+    "title": "Light Duty Electrification",
+    "subHeader": "",
+    "mainText": "A rapid transition from gasoline powered cars to zero emissions vehicles (ZEVs) is critically important for curbing greenhouse gas emissions and combating the climate crisis. Electric cars will also result in cleaner air for communities across the nation.",
+    "text-array": [
+      {
+        "title": "DRIVING THE ADOPTION OF ELECTRIC CARS",
+        "paragraph": "Accelerating the transition from gasoline-powered cars to zero-emission electric cars is critically important for curbing greenhouse gas emissions and addressing the climate crisis. It is also urgently needed to reduce air pollution burdens on communities across the United States. NESCAUM supports and guides work by state governments to accelerate this transformation in \"light-duty\" transportation."
+      },
+      {
+        "title": "Forming the Multi-State Task Force",
+        "paragraph": [
+          "For more than thirty years, NESCAUM has worked directly with states to help them adopt and implement California's clean car standards {{regulatory-compliance}} in lieu of less stringent federal standards",
+          "In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support the goals of these re"
+        ]
+      }
+    ]
+  },
+  "growing-market-for-electric-vehicles": {
+    "heroImage": "/images/electric-busues-unsplash.jpg",
+    "sideImage": "/images/electric-truck-sideImages.png", 
+    "mainText": "While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers.",
+    "body-text-headline": "A Governors’ Agreement and Action Plan",
+    "bodyText": [
+      
+    ]
+  },
+  "aboutUs": {
+    "committees": {
+      "title": "Committees",
+      "desc": "NESCAUM provides an ongoing forum for state staff to discuss program-specific issues on a regional basis. This helps foster federal-state relationships, as EPA regional staff are members of all NESCAUM Committees:",
+      "committees": [
+        {
+          "title": "Air Toxics and Public Health",
+          "desc": "NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."
+        },
+        {
+          "title": "Attainment Planning",
+          "desc": "NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."
+        },
+        {
+          "title": "Enforcement and Compliance",
+          "list": [
+            {
+              "title": "Facilitating discussions on compliance and enforcement issues",
+              "desc": "NESCAUM facilitates discussions between EPA and states on several key aspects of these programs including EPA oversight of programs via the State Review Framework (SRF), data reporting tools such as EPA’s Enforcement and Compliance History Online (ECHO) website and Integrated Compliance Information System (ICIS), policy development such as the High Priority Violations policy and requirements for state Compliance Monitoring Strategy (CMS) commitments. NESCAUM also reviews and comments on federal proposals."
+            },
+            {
+              "title": "Identifying regional areas of interest",
+              "desc": "Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches for to enhance compliance with Clean Air Act requirements."
+            }
+          ]
+        },
+        {
+          "title": "Mobile Sources",
+          "desc": "NESCAUM staff works with its member states on a range of technical and policy issues related to onroad light-, medium-, and heavy-duty vehicles and nonroad equipment and machines (including marine, locomotive, construction, and other sources). This work includes development of emissions inventories, undertaking technical studies to evaluate emission control technologies, analysis of policies to reduce emissions from mobile sources, and developing regional approaches to reduce mobile source emissions."
+        },
+        {
+          "title": "Attainment Planning",
+          "desc": "NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."
+        },
+        {
+          "title": "Enforcement and Compliance",
+          "list": [
+            {
+              "title": "Facilitating discussions on compliance and enforcement issues",
+              "desc": "NESCAUM facilitates discussions between EPA and states on several key aspects of these programs including EPA oversight of programs via the State Review Framework (SRF), data reporting tools such as EPA’s Enforcement and Compliance History Online (ECHO) website and Integrated Compliance Information System (ICIS), policy development such as the High Priority Violations policy and requirements for state Compliance Monitoring Strategy (CMS) commitments. NESCAUM also reviews and comments on federal proposals."
+            },
+            {
+              "title": "Identifying regional areas of interest",
+              "desc": "Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches for to enhance compliance with Clean Air Act requirements."
+            }
+          ]
+        },
+        {
+          "title": "Training",
+          "desc": "NESCAUM’s Clean Air Academy program provides air pollution training for our member states. This program is funded through federal grants to provide professional education to individuals from state and local air pollution agencies. State staff may register for any of these courses on APTI Learn. Courses are provided through EPA’s Air Pollution Training Institute (APTI) and the National Air Compliance Training program (NACT). For more information, please contact NESCAUM’s Training Coordinator, Kara Murphy, at kmurphy@nescaum.org."
+        }
+      ]
+    }
+  }
+}
