@@ -34,79 +34,77 @@ import StaffPage from "../pages/about-us/StaffPage";
 const Router = () => {
 	return (
 		<Routes>
-			<Route path="/resource-library">
-				<ResourceLibraryPage />
-			</Route>
-			<Route path="/about-us" exact component={AboutUs} />
-			<Route path="/about-us/committees" component={CommitteesPage} />
-			<Route path="/about-us/staff" component={StaffPage} />
-			<Route exact path="/our-work" component={OurWork}/>
+			<Route path="/resource-library" element={<ResourceLibraryPage/>} />
+			<Route path="/about-us" exact element={<AboutUs/>} />
+			<Route path="/about-us/committees" element={<CommitteesPage/>} />
+			<Route path="/about-us/staff" element={<StaffPage/>} />
+			<Route exact path="/our-work" element={<OurWork/>} />
 			<Route 
 				exact 
 				path="/our-work/clean-transportation" 
-				component={CleanTransportationPage} 
+				element={<CleanTransportationPage/>} 
 			/>
 			<Route 
 				exact 
 				path="/our-work/clean-transportation/adoption-of-electric-cars" 
-				component={DrivingAdoptionElectricCarsPage} 
+				element={<DrivingAdoptionElectricCarsPage/>} 
 			/>
 			<Route 
 				exact 
 				path="/our-work/clean-transportation/supporting-regulatory-programs" 
-				component={SupportingRegulatoryProgramsPage} 
+				element={<SupportingRegulatoryProgramsPage/>} 
 			/>
 			<Route 
 				exact 
 				path="/our-work/criteria-pollutants-and-air-toxics" 
-				component={HazardousAirPollutionPage}
+				element={<HazardousAirPollutionPage/>}
 			/>
 			<Route
 				exact
 				path="/our-work/criteria-pollutants-and-air-toxics/criteria-air-pollutants"
-				component={CriteriaPollutantsPage}
+				element={<CriteriaPollutantsPage/>}
 			/>
 			<Route
 				exact
 				path="/our-work/criteria-pollutants-and-air-toxics/air-toxics"
-				component={AirToxicsPage}
+				element={<AirToxicsPage/>}
 			/>
 			<Route 
 				exact 
 				path="/our-work/monitoring" 
-				component={MonitoringPage} 
+				element={<MonitoringPage/>} 
 			/>
 			<Route
 				exact
 				path="/our-work/regional-modeling/listos"
 				render={(props) => {
-					return <ChangePath {...props} pathName={"/initiatives/listos"}/>
+					return <ChangePath {...props} pathName={"/initiatives/listos"} />
 				}}
 			/>
 			<Route 
 				exact 
 				path="/our-work/regional-modeling" 
-				component={RegionalModeling} 
+				element={<RegionalModeling/>} 
 			/>
 			<Route 
 				exact 
 				path="/our-work/clean-transportation/growing-market-for-electric-vehicles" 
-				component={ElectricVehicleMarketPage} 
+				element={<ElectricVehicleMarketPage/>} 
 			/>
 			<Route 
 				exact 
 				path="/our-work/stationary-sectors/regulatory-compliance"
-				component={RegulatoryCompliancePage}
+				element={<RegulatoryCompliancePage/>}
 			/>
 			<Route 
 				exact 
 				path="/our-work/stationary-sectors/wood-heat"
-				component={WoodHeatPage}
+				element={<WoodHeatPage/>}
 			/>
 			<Route 
 				exact 
 				path="/our-work/stationary-sectors"
-				component={StationarySectorsPage}
+				element={<StationarySectorsPage/>}
 			/>
 			<Route
 				exact
@@ -121,34 +119,32 @@ const Router = () => {
 			<Route
 				exact
 				path="/initiatives/camnet"
-				component={CamnetPage}
+				element={<CamnetPage/>}
 			/>
 			<Route 
 				exact 
 				path="/initiatives/listos" 
-				component={ListosPage} 
+				element={<ListosPage/>} 
 			/>
 			<Route 
 				exact 
 				path="/initiatives/clean-air-academy"
-				component={CleanAirAcademyPage}
+				element={<CleanAirAcademyPage/>}
 			/>
 			<Route 
 				exact 
 				path="/initiatives"
-				component={InitiativesPage}
+				element={<InitiativesPage/>}
 			/>
 			<Route 
 				exact 
 				path="/press"
-				component={PressPage}
+				element={<PressPage/>}
 			/>
 			
-			<Route exact path="/:landing/:subLanding" component={ SubLanding }/>
-			<Route exact path="/:landing/:subLanding/:supportingPage" component={ SupportingPage } />
-			<Route path="/" exact>
-				<Home />
-			</Route>
+			<Route exact path="/:landing/:subLanding" element={< SubLanding />} />
+			<Route exact path="/:landing/:subLanding/:supportingPage" element={< SupportingPage />} />
+			<Route path="/" exact element={<Home/>} />
 		</Routes>
 	);
 }

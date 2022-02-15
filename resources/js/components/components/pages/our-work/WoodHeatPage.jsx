@@ -7,8 +7,8 @@ const WoodHeatPage = () => {
     <>
       <PageScaffold
         headline='Wood Heating'
-        heroImage='/images/wood-burning.jpg'
-        sideImage='/images/woodheat1.jpg'
+        heroImage='/assets/images/stock/wood-burning.jpg'
+        sideImage='/assets/images/stock/woodheat1.jpg'
         mainText='Wood heating is a significant source of fine particulate matter (PM2.5), carbon monoxide (CO), and nitrogen dioxide (NO2). Based on EPA’s 2017 National Emission Inventory (NEI), residential wood combustion emits approximately 340,000 tons of primary PM2.5 annually, making it the largest direct source of particulate matter pollution in the country, after road dust and fires (wildfire and prescribed burning).'
       />
       <Column width='al-fu' center mt={60} mb={60}>

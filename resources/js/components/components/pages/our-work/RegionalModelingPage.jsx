@@ -8,9 +8,9 @@ const RegionalModeling = () => {
   return (
     <>
       <PageScaffold 
-        heroImage="/images/regional-modeling.jpg"
+        heroImage="/assets/images/stock/regional-modeling.jpg"
         headline="Regional Modeling"
-        sideImage="/images/regional-modeling.jpg"
+        sideImage="/assets/images/stock/regional-modeling.jpg"
         mainText="NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications. "
       />
       <Column width="al-fu" center mt={40}>
@@ -37,16 +37,16 @@ const descriptionData = [
     title: "Long Island Sound Tropospheric Ozone Study (LISTOS)", 
     content: "The Long Island Sound Tropospheric Ozone Study investigates how interactions between land masses and water bodies impact ozone formation in and around Long Island Sound. Using the coupled meteorology-chemistry model WRF-CMAQ at a high resolution of 1.33 km by 1.33 km, NESCAUM is leveraging observations gathered during the summer 2018 LISTOS field campaign to conduct model performance evaluation and optimization. Sensitivity simulations are being used to test meteorology parameterizations and develop emissions reductions scenarios based on an improved understanding of formaldehyde to NOX ratios in the New York City/Long Island area.", 
     href: "/initiatives/listos", 
-    imageSrc: "/images/listos.jpg"
+    imageSrc: "/assets/images/stock/listos.jpg"
   }, 
   {
     title: "Mobile Sources", 
     content: "NESCAUM uses modeling to evaluate the air quality benefits of progressive mobile source emission-reduction strategies. This includes, for instance, modeling the impacts of the Cleaner Trucks Initiative, which aims to reduce diesel NOX emissions from on-road trucks by up to 90% nationwide, in terms of  summertime ground-level ozone and wintertime fine particulate matter pollution concentrations.", 
-    imageSrc: "/images/electric-buses-unsplash.jpg"
+    imageSrc: "/assets/images/stock/electric-buses-unsplash.jpg"
   }, 
   {
     title: "Electricity Sources", 
     content: "NESCAUM uses modeling to evaluate the air quality benefits of progressive mobile source emission-reduction strategies. This includes, for instance, modeling the impacts of the Cleaner Trucks Initiative, which aims to reduce diesel NOX emissions from on-road trucks by up to 90% nationwide, in terms of  summertime ground-level ozone and wintertime fine particulate matter pollution concentrations.", 
-    imageSrc: "/images/smokestack-small.jpg"
+    imageSrc: "/assets/images/stock/smokestack-small.jpg"
   }
 ]

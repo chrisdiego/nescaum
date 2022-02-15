@@ -17,7 +17,7 @@ const Footer = () => {
 	return (
 		<StyledFooter className="container-secondary">
 			<Column columns={6}>
-				<Img src="/images/logos/logo_white.png" alt="footer"/>
+				<Img src="/assets/images/logos/logo_white.png" alt="footer"/>
 			</Column>
 
 			<Row className="row">

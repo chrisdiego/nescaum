@@ -11,7 +11,7 @@ const CleanAirAcademyPage = () => {
   return (
     <>
       <PageScaffold 
-        heroImage='/images/classroom.jpg'
+        heroImage='/assets/images/stock/classroom.jpg'
         headline='NESCAUM’s Clean Air Academy'
         mainText='NESCAUM’s Clean Air Academy provides air pollution training for staff in our member state air quality agencies. Courses are provided by EPA’s National Air Quality Training Program through EPA’s Learning Management System (LMS) or by private training contractors. NESCAUM operates the program with federal funding.'
       />
@@ -34,7 +34,7 @@ const CleanAirAcademyPage = () => {
           'Source Emissions Testing and Source Emissions Monitoring',
         ]} />
 
-        <FullWidthHeroImage imageSrc='/images/learning-computer.jpg' width='100%' style={{margin: '40px 0'}}/>
+        <FullWidthHeroImage imageSrc='/assets/images/stock/learning-computer.jpg' width='100%' style={{margin: '40px 0'}}/>
 
         <Heading text='National Joint Training Committee (JTC)'  />
 
@@ -48,7 +48,7 @@ const CleanAirAcademyPage = () => {
           The schedule below shows upcoming NESCAUM training courses. Agency staff may register for any of these courses through EPA’s LMS or through NESCAUM’s Training Coordinator. For more information, contact NESCAUM’s Training Coordinator Kara Murphy at <a href='mailto:kmurphy@nescaum.org'>kmurphy@nescaum.org</a>.
         </Paragraph>
 
-        <Image src='/images/training-schedule.png'/>
+        <Image src='/assets/images/stock/training-schedule.png'/>
       </Column>
     </>
   )

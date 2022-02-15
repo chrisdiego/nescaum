@@ -9,7 +9,7 @@ const SupportingRegulatoryProgramsPage = () => {
   return (
     <>
       <PageScaffold 
-        heroImage="/images/airplane.jpg"
+        heroImage="/assets/images/stock/airplane.jpg"
         headline="Supporting Regulatory Programs"
         subHeadline="IN CLEAN TRANSPORTATION"
       />
@@ -30,7 +30,7 @@ const SupportingRegulatoryProgramsPage = () => {
               With NESCAUM’s technical and policy support, these “Section 177 states” are continuing to work closely together as they update and implement LEV and ZEV standards in coordination with California and consider adopting California’s emissions standards for trucks. NESCAUM’s Mobile Sources Committee (LINK TO MOBILE SOURCES COMM PAGE) creates a unique forum for this cross-state coordination. As other states throughout the country have adopted California standards, this group has expanded to include states beyond the Northeast region and continues to welcome new Section 177 states.     
             </Paragraph>
           </Column>
-          <Image src="/images/lev-zev.png"/>
+          <Image src="/assets/images/stock/lev-zev.png"/>
         </Row>
       </Column>
     </>

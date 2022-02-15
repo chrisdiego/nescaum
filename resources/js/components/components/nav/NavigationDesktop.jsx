@@ -90,7 +90,7 @@ const NavigationDesktop = () => {
               onMouseLeave={!item.handleEnter ? mouseLeaveHandler : null}
             >
               <StyledLink to={`/${item.link}`}> {item.title}</StyledLink>
-              {item.arrowDown && <Svg src="/images/down-arrow.svg" />}
+              {item.arrowDown && <Svg src="/assets/images/svg/down-arrow.svg" />}
             </li>
           );
         })}

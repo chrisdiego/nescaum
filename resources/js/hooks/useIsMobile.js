@@ -12,7 +12,6 @@ const useIsMobile = (pixels) => {
             setIsMobile(window.innerWidth <= 768);
         }
         
-        console.log(window.innerWidth)
     }
 
     const debouncedResize = debounce(def, 300)

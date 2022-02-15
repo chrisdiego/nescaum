@@ -12,30 +12,30 @@ import Button from "../utility/Button";
 
 const Home = () => {
 	const pngList = [
-		'/images/logos/massdep.png',
-		'/images/logos/cte.png',
-		'/images/logos/nhdes.png',
-		'/images/logos/nys.png',
-		'/images/logos/njs.png',
-		'/images/logos/dem.png',
+		'/assets/images/memberstates/massdep.png',
+		'/assets/images/memberstates/cte.png',
+		'/assets/images/memberstates/nhdes.png',
+		'/assets/images/memberstates/nys.png',
+		'/assets/images/memberstates/njs.png',
+		'/assets/images/memberstates/dem.png',
 	]
 
 	const homeData = [
 		{
 			title: 'Zero-Emission Medium- and Heavy-Duty Vehicle Initiative', 
 			content: 'Truck and bus electrification is a top priority for many states. In 2020, the governors of fifteen states and the mayor of the District of Columbia committed to work together as part of a multi-state coalition, facilitated by NESCAUM, to spur truck electrification.', 
-			imageSrc: '/images/electricbus.jpg',
+			imageSrc: '/assets/images/stock/electricbus.jpg',
 			href: '/our-work/clean-transportation/adoption-of-electric-cars'
 		}, 
 		{
 			title: 'Residential/Commerical Wood Combustion', 
 			content: 'Emissions from wood heating have serious public health consequences. NESCAUM evaluated the current certification process for wood stoves and recommended changes to reduce emissions and protect public health.', 
-			imageSrc: '/images/wood-on-fire-pexels.jpg',
+			imageSrc: '/assets/images/stock/wood-on-fire-pexels.jpg',
 		}, 
 		{
 			title: 'Long Island Sound Tropospheric Ozone Study (LISTOS)', 
 			content: 'Air quality problems in the greater New York City metropolitan area impact the health of over 20 million people. Launched in 2017, NESCAUM’s LISTOS initiative brings together a large group of researchers and marshalls a wide array of data sources to help air quality regulators understand and address pollution in and around the NYC metro area.', 
-			imageSrc: '/images/listos.jpg',
+			imageSrc: '/assets/images/stock/listos.jpg',
 			href: '/initiatives/listos'
 		}, 
 	]
@@ -53,7 +53,7 @@ const Home = () => {
 					</StyledLink>
 				</Column>
 				<Column width='half'>
-						<Img src='/images/color-map.png' alt='map'/>
+						<Img src='/assets/images/maps/color-map.png' alt='map'/>
 				</Column>
 			</Row >
 			<ColorUnderlinedText 

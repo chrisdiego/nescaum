@@ -37,7 +37,7 @@ export default PhotoWithTransparentBox;
 const Section = styled.section`
 	min-width: 100vw; 
 	height: 600px;
-	background-image: url("/images/banner.jpg"); 
+	background-image: url("/assets/images/stock/banner.jpg"); 
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -92,7 +92,7 @@ const Span = styled.span`
 
 const MobileSection = styled.section`
 	width: 100vw; 
-	background-image: url("/images/banner.jpg"); 
+	background-image: url("/assets/images/stock/banner.jpg"); 
 	background-size: cover; 
 	background-repeat: no-repeat;
 	background-position: center center;

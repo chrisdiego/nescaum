@@ -15,7 +15,7 @@ const Header = () => {
 					<div>
 						<Logo className="col-3">
 							<StyledLink to="/">
-								<Image src="/images/logo-color@2x.png" />
+								<Image src="/assets/images/logos/logo-color@2x.png" />
 							</StyledLink>
 						</Logo>
 					</div>

@@ -10,9 +10,9 @@ const ListosPage = () => {
   return (
     <>
       <PageScaffold 
-        heroImage='/images/listos.jpg'
+        heroImage='/assets/images/stock/listos.jpg'
         headline='Listos'
-        sideImage='/images/listos-map.png'
+        sideImage='/assets/images/stock/listos-map.png'
         mainText='While air pollution levels have dropped markedly over the years across much of the United States, the New York City (NYC) metropolitan area (comprised of portions of New Jersey, New York, and Connecticut in and around NYC) continues to persistently violate both past and recently revised federal health-based air quality standards for ground-level ozone. '
         subText='This air quality problem afflicts not only the health and well-being of over 20 million people living in the NYC metro area, but also millions of people living downwind in Connecticut, Rhode Island, Massachusetts, and beyond.'
       />

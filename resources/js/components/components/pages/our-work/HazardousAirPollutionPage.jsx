@@ -10,7 +10,7 @@ const HazardousAirPollutionPage = () => {
   return (
     <>
       <PageScaffold 
-        heroImage="/images/chap.jpg"
+        heroImage="/assets/images/stock/chap.jpg"
         headline="Criteria and Hazardous Air Pollutants"
       />
       <Column width="al-fu" center mt={20} mb={40}>

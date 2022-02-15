@@ -24,10 +24,10 @@ const ElectricVehicleMarketPage = () => {
   return (
     <>
       <PageScaffold 
-        heroImage="/images/electric-buses-unsplash.jpg"
+        heroImage="/assets/images/stock/electric-buses-unsplash.jpg"
         headline="Growing the Market for Electric Trucks and Buses"
         subHeadline="IN CLEAN TRANSPORTATION"
-        sideImage="/images/electric-trucks-side-image.png"
+        sideImage="/assets/images/stock/electric-trucks-side-image.png"
         mainText="In the United States, greenhouse gas emissions from vehicles that
         are used to move goods are growning faster than emissions from any
         other segment of the transportation sector. As more consumers turn
@@ -72,7 +72,7 @@ const ElectricVehicleMarketPage = () => {
             </P>
             <ListItems list={bulletPoints} />
           </Column>
-          <Image src="/images/electric-us-map.png" style={{ marginLeft: 40 }} />
+          <Image src="/assets/images/stock/electric-us-map.png" style={{ marginLeft: 40 }} />
         </Row>
       </Column>
 			<DocumentLinks documents={[
