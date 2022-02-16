@@ -66,10 +66,17 @@ return [
             // 'visibility' => 'public', // https://statamic.dev/assets#visibility
         ],
 
-        'assets' => [
+        'images' => [
             'driver' => 'local',
-            'root' => public_path('assets'),
-            'url' => '/assets',
+            'root' => public_path('assets/images'),
+            'url' => '/assets/images',
+            'visibility' => 'public',
+        ],
+
+        'documents' => [
+            'driver' => 'local',
+            'root' => public_path('assets/documents'),
+            'url' => '/assets/documents',
             'visibility' => 'public',
         ],
 

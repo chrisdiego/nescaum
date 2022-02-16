@@ -1,5 +1,5 @@
 title: Documents
-disk: public
+disk: documents
 allow_uploads: true
 allow_downloading: true
 allow_renaming: true
