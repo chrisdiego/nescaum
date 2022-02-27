@@ -12,13 +12,12 @@ import FixedOverlayHandleClick from "../utility/FixedOverlayHandleClick";
 import "react-calendar/dist/Calendar.css";
 import { DateTime } from "luxon";
 
-const ResourceLibraryForm = () => {
-    const { handleSubmit, register, setValue } = useForm();
-
-    const onSubmit = (data) => {
-        console.log(data);
-    };
-
+const ResourceLibraryForm = ({
+    onSubmit,
+    handleSubmit,
+    register,
+    setValue,
+}) => {
     const d = "Thu Nov 11 2021 00:00:00 GMT-0800";
 
     const [startDate, setStartDate] = useState(null);
@@ -36,7 +35,6 @@ const ResourceLibraryForm = () => {
             <Column width="45%">
                 <ContainerWithBorder>
                     <Heading text="Filter By:" size={28} mb="0" />
-
                     <ButtonContainer>
                         <Button
                             text="APPLY"
