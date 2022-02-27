@@ -193,7 +193,7 @@ const ResourceLibraryForm = ({
                         </Row>
                     </Column>
 
-                    <CategoryBoxTitle> TOPIC </CategoryBoxTitle>
+                    {/* <CategoryBoxTitle> TOPIC </CategoryBoxTitle> */}
                 </Form>
             </Column>
 

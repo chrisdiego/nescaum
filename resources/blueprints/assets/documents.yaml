@@ -1,0 +1,19 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: alt
+        field:
+          type: text
+          display: 'Alt Text'
+          instructions: 'Description of the image'
+      -
+        handle: slug
+        field:
+          generate: true
+          display: 'Slug Field'
+          type: slug
+          icon: slug
+          listable: hidden
+          instructions_position: above
