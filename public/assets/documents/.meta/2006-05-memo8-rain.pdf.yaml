@@ -1,6 +1,7 @@
-data: {  }
+data:
+  formatted_title: 'RAIN Preliminary Data Analysis'
 size: 1270807
-last_modified: 1645042023
+last_modified: 1645333641
 width: null
 height: null
 mime_type: application/pdf

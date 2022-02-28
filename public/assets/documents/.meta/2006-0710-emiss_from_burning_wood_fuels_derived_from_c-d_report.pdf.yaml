@@ -1,6 +1,7 @@
-data: {  }
+data:
+  formatted_title: 'Emissions from Burning Wood Fules Derived from Construction and Demolition Debris'
 size: 149072
-last_modified: 1645042023
+last_modified: 1645333641
 width: null
 height: null
 mime_type: application/pdf

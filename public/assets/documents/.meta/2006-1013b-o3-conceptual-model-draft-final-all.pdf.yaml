@@ -1,6 +1,7 @@
-data: {  }
+data:
+  formatted_title: 'Conceptual Model Draft Final All'
 size: 3463189
-last_modified: 1645042024
+last_modified: 1645333641
 width: null
 height: null
 mime_type: application/pdf

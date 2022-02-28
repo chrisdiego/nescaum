@@ -17,7 +17,7 @@ const ResourceLibraryLinks = ({ documents }) => {
                             isOdd={index % 2 === 1}
                         >
                             <StyledDocumentHeading>
-                                {document.title}
+                                {document.formatted_title || document.title}
                             </StyledDocumentHeading>
                         </StyledLinkContainer>
                     );
@@ -42,10 +42,11 @@ const StyledLinkContainer = styled.div`
     width: 100%;
     padding: 10px;
     background-color: ${(props) =>
-        props.isOdd ? "rgba(0, 0, 0, .2)" : "inherit"};
+        props.isOdd ? "rgba(0, 0, 0, .1)" : "inherit"};
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100px;
 `;
 
 const StyledDocumentHeading = styled.h3`

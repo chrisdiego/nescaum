@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { getResourceByTitle } from "../../../requests/formRequest";
 import ResourceLibraryLinks from "../documents-links/ResourceLibraryLinks";
+import ReactPaginate from "react-paginate";
 
 const ResourceLibraryPage = () => {
     const [documents, setDocuments] = useState([]);
@@ -35,6 +36,18 @@ const ResourceLibraryPage = () => {
                         setValue={setValue}
                     />
                 </Row>
+
+                <ReactPaginate
+                    pageCount={17}
+                    className="flex"
+                    previousClassName="prev-btn"
+                    nextClassName="next-btn"
+                    pageLinkClassName="page-link"
+                    pageClassName="page-link"
+                    breakClassName="page-link"
+                    breakLinkClassName="page-link"
+                    pageRangeDisplayed={2}
+                />
             </Column>
         </>
     );
