@@ -11,6 +11,7 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import FixedOverlayHandleClick from "../utility/FixedOverlayHandleClick";
 import "react-calendar/dist/Calendar.css";
 import { DateTime } from "luxon";
+import ResourceLibraryDatePicker from "./ResourceLibraryDatePicker";
 
 const ResourceLibraryForm = ({
     onSubmit,
@@ -18,18 +19,6 @@ const ResourceLibraryForm = ({
     register,
     setValue,
 }) => {
-    const d = "Thu Nov 11 2021 00:00:00 GMT-0800";
-
-    const [startDate, setStartDate] = useState(null);
-    const [endDate, setEndDate] = useState(null);
-    const [showCalendar, setShowCalendar] = useState(false);
-    const [showEndCalendar, setShowEndCalendar] = useState(false);
-
-    const closeHandler = () => {
-        setShowCalendar(false);
-        setShowEndCalendar(false);
-    };
-
     return (
         <>
             <Column width="45%">
@@ -67,92 +56,12 @@ const ResourceLibraryForm = ({
                         placeholder="Enter Search Term..."
                     />
 
-                    <CategoryBoxTitle> DATE RANGE </CategoryBoxTitle>
+                    {/* <ResourceLibraryDatePicker
+                        register={register}
+                        setValue={setValue}
+                    /> */}
 
-                    {/******** CALENDARS *********/}
-                    <Row align="center" style={{ position: "relative" }}>
-                        <Input
-                            placeholder="From:"
-                            name="startDate"
-                            {...register("startDate")}
-                        />
-                        <div onClick={() => setShowCalendar(true)}>
-                            <FontAwesomeIcon
-                                icon={faCalendar}
-                                size="2x"
-                                color="grey"
-                                style={{ marginLeft: 20 }}
-                                className="hover-pointer"
-                            />
-                        </div>
-                        {showCalendar && (
-                            <CalendarContainer>
-                                <Calendar
-                                    onChange={(event) => {
-                                        setStartDate(event);
-                                        const d = DateTime.fromJSDate(event);
-                                        setValue(
-                                            "startDate",
-                                            d.toLocaleString(DateTime.DATE_MED)
-                                        );
-                                    }}
-                                    value={startDate}
-                                />
-                                <Button
-                                    text="APPLY"
-                                    style={{ marginTop: 0, minWidth: "100%" }}
-                                    onClick={() => {
-                                        setShowCalendar(false);
-                                    }}
-                                />
-                            </CalendarContainer>
-                        )}
-                    </Row>
-
-                    <Row align="center" style={{ position: "relative" }}>
-                        <Input
-                            placeholder="To:"
-                            name="endDate"
-                            {...register("endDate")}
-                        />
-                        <div
-                            onClick={() => setShowEndCalendar(true)}
-                            style={{ display: "relative" }}
-                        >
-                            <FontAwesomeIcon
-                                icon={faCalendar}
-                                size="2x"
-                                color="grey"
-                                style={{ marginLeft: 20 }}
-                                className="hover-pointer"
-                            />
-                        </div>
-
-                        {showEndCalendar && (
-                            <CalendarContainer>
-                                <Calendar
-                                    onChange={(event) => {
-                                        console.log("end date");
-                                        setEndDate(event);
-                                        const d = DateTime.fromJSDate(event);
-                                        setValue(
-                                            "endDate",
-                                            d.toLocaleString(DateTime.DATE_MED)
-                                        );
-                                    }}
-                                    value={endDate}
-                                />
-                                <Button
-                                    text="APPLY"
-                                    style={{ marginTop: 0, minWidth: "100%" }}
-                                    onClick={() => {
-                                        setShowEndCalendar(false);
-                                    }}
-                                />
-                            </CalendarContainer>
-                        )}
-                    </Row>
-
+                    {/* Need to turn into it's own component */}
                     <CategoryBoxTitle> DOCUMENT TYPE </CategoryBoxTitle>
                     <Column>
                         <Row align="center">
@@ -196,10 +105,6 @@ const ResourceLibraryForm = ({
                     {/* <CategoryBoxTitle> TOPIC </CategoryBoxTitle> */}
                 </Form>
             </Column>
-
-            {(showCalendar || showEndCalendar) && (
-                <FixedOverlayHandleClick closeHandler={closeHandler} />
-            )}
         </>
     );
 };
@@ -256,12 +161,3 @@ const Label = styled.label`
 `;
 
 const CheckboxInput = styled.input``;
-
-const CalendarContainer = styled.div`
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    z-index: 10;
-`;

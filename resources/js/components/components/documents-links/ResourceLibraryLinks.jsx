@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Column from "../utility/Column";
 import Heading from "../utility/Heading";
+import ExternalLink from "../links/ExternalLink";
 
 const ResourceLibraryLinks = ({ documents }) => {
     return (
@@ -16,9 +17,11 @@ const ResourceLibraryLinks = ({ documents }) => {
                             key={document.id}
                             isOdd={index % 2 === 1}
                         >
-                            <StyledDocumentHeading>
-                                {document.formatted_title || document.title}
-                            </StyledDocumentHeading>
+                            <ExternalLink href={document.permalink}>
+                                <StyledDocumentHeading>
+                                    {document.formatted_title || document.title}
+                                </StyledDocumentHeading>
+                            </ExternalLink>
                         </StyledLinkContainer>
                     );
                 })}
