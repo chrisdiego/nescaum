@@ -80,3 +80,10 @@ ul {
     justify-content: center;
     cursor: pointer;
 }
+
+.active-page-link {
+    background-color: #546fa8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 2px;
+}

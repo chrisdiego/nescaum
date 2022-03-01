@@ -1,7 +1,19 @@
 import { API_URL } from "../constants/constants"
 
-const getResourceByTitle = async (title) => {
-    const url = `${API_URL}/assets/documents?filter[title:contains]=${title}`;
+const getResourceByTitle = async ({title, limit, page}) => {
+    let url = `${API_URL}/assets/documents?`;
+
+    if (title) {
+        url += `filter[title:contains]=${title}`
+    }
+
+    if (limit) {
+        url += `&limit=${limit}`
+    }
+
+    if (page) {
+        url += `&page=${page}`
+    }
 
     const response = await fetch(url, {
         method: "GET",

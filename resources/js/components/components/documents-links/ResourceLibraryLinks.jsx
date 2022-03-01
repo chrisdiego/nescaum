@@ -40,9 +40,9 @@ const ContainerWithBorder = styled.div`
 
 const StyledLinkContainer = styled.div`
     width: 100%;
-    padding: 10px;
+    padding: 10px 15px;
     background-color: ${(props) =>
-        props.isOdd ? "rgba(0, 0, 0, .1)" : "inherit"};
+        props.isOdd ? "rgba(0, 0, 0, .03)" : "inherit"};
     display: flex;
     flex-direction: column;
     justify-content: center;
