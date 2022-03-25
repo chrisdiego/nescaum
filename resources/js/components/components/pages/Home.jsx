@@ -54,15 +54,7 @@ const Home = () => {
                     />
                     <Heading text="(NESCAUM)" />
                     <Paragraph primary>
-                        NESCAUM catalyzes and guides state action to improve air
-                        quality, curb climate-disrupting greenhouse gas
-                        emissions and enable a rapid transition to clean energy.
-                        Building on more than fifty years of experience,
-                        NESCAUM’s special expertise lies in using scientific and
-                        technical analysis to target approaches to improve air
-                        quality and to coordinate and support collaboration
-                        across states to devise, implement, and scale effective
-                        solutions.
+                    NESCAUM as a coalition of state air agencies promotes regional cooperation and action by its member states in support of effective programs to reduce the adverse public health and environmental impacts of air pollution and climate change.
                     </Paragraph>
                     <StyledLink href="/aboutUs" to="/aboutUs">
                         <Button text="LEARN MORE ABOUT US" />

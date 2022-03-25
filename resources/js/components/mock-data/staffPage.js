@@ -54,6 +54,16 @@ const staffPage = [
         src: "/assets/images/staff/russellp.jpg",
         title: ""
     },
+    {
+        name: "Sarah McKearnan",
+        src: "/assets/images/staff/smckearnan.png",
+        title: ""
+    },
+    {
+        name: "Jamie Flynn",
+        src: "/assets/images/staff/jflynn.png",
+        title: ""
+    },
 ]
 
 export { staffPage }

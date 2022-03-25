@@ -1,7 +1,7 @@
 const ourWorkData = [
 	{
 		title: 'Clean Transportation', 
-		content: 'Transportation is the largest source of greenhouse gas emissions nationally and accounts for more than 40 percent of greenhouse emissions in the Northeast. On-road and off-road vehicles also emit smog-forming pollutants, particulate matter, and airborne toxic chemicals that are harmful to human health, especially for people who live near busy roads.', 
+		content: 'Transportation is the largest source of greenhouse gas emissions nationally and accounts for more than 40 percent of greenhouse gas emissions in the Northeast. On-road and off-road vehicles also emit smog-forming pollutants, particulate matter, and airborne toxic chemicals that are harmful to human health, especially for people who live near busy roads.', 
 		imageSrc: '/assets/images/stock/electricbus.jpg',
 		href: '/our-work/clean-transportation'
 	}, 

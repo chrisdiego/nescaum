@@ -28,7 +28,16 @@ const AboutUs = () => {
         <Row width="al-fu" center direction="column">
             <PageHeading>About Us</PageHeading>
             <SectionHeading>Mission Statement</SectionHeading>
-            <Paragraph color="#003354">The Northeast States for Coordinated Air Use Management (NESCAUM) catalyzes and guides state action to improve air quality, curb climate-disrupting greenhouse gas emissions, and enable a rapid transition to clean energy.  Building on more than fifty years of experience, NESCAUM’s special expertise lies in coordinating and supporting collaboration across states to devise, implement, and scale effective solutions.</Paragraph>
+            <Paragraph color="#003354">NESCAUM as a coalition of state air agencies promotes regional cooperation and action by its member states in support of effective programs to reduce the adverse public health and environmental impacts of air pollution and climate change.</Paragraph>
+            <br />
+            <SectionHeading>Vision</SectionHeading>
+            <Paragraph>NESCAUM will remain a nationally-renowned and respected technical and policy resource
+center for its state members and promote collaborative action to make our states influential
+leaders in air quality and climate change policy and innovation. 
+In supporting state needs, NESCAUM will develop strategic emission control options,
+participate in national debates, foster research, build alliances with other states and stakeholders,
+sponsor state training, provide a forum for states to exchange technical and policy information
+through committees and workgroups, and seek outside funding to leverage state support.</Paragraph>
             <br />
             <SectionHeading>What We Do</SectionHeading>
             <Paragraph>

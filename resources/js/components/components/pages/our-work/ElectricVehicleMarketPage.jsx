@@ -5,7 +5,7 @@ import FullWidthHeroImage from "../../content/content-visuals/FullWidthHeroImage
 import Column from "../../utility/Column";
 import BreadcrumbNavigation from "../../breadcrumb/BreadcrumbNavigation";
 import Row from "../../utility/Row";
-import Typography from "../../utility/Typography";
+import { Link } from "react-router-dom";
 import ListItems from "../../content/ListItems";
 import ExternalLink from "../../links/ExternalLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
@@ -26,7 +26,6 @@ const ElectricVehicleMarketPage = () => {
       <PageScaffold 
         heroImage="/assets/images/stock/electric-buses-unsplash.jpg"
         headline="Growing the Market for Electric Trucks and Buses"
-        subHeadline="IN CLEAN TRANSPORTATION"
         sideImage="/assets/images/stock/electric-trucks-side-image.png"
         mainText="In the United States, greenhouse gas emissions from vehicles that
         are used to move goods are growning faster than emissions from any
@@ -64,7 +63,7 @@ const ElectricVehicleMarketPage = () => {
               The MOU sets zero-emission sales targets for new medium- and
               heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further
               commits the signatory states to working with NESCAUM through the
-              ZEV Task Force (LINK TO LDV PAGE) to develop a Multi-State Action
+              <Link to="/our-work/clean-transportation/adoption-of-electric-cars"> ZEV Task Force </Link>to develop a Multi-State Action
               Plan (LINK TO PLAN DEVELOPMENT PAGE) for advancing progress toward
               a self-sustaining market for zero-emission trucks and buses. The
               Action Plan will include recommendations for action in several
