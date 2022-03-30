@@ -17,5 +17,5 @@ const Bullet = styled.span`
   margin-right: 10px; 
   background-color: #669935; 
   border-radius: 75%; 
-  margin-top: 8px;
+  margin-top: 2px;
 `

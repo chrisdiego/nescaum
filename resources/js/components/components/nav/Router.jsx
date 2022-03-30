@@ -30,6 +30,7 @@ import CriteriaPollutantsPage from "../pages/criteria-pollutants-air-toxics/Crit
 import AirToxicsPage from "../pages/criteria-pollutants-air-toxics/AirToxicsPage";
 import CamnetPage from "../pages/initiatives/CamnetPage";
 import StaffPage from "../pages/about-us/StaffPage";
+import MHDZEVPage from "../pages/initiatives/MHDZEVPage";
 
 const Router = () => {
 	return (
@@ -109,12 +110,7 @@ const Router = () => {
 			<Route
 				exact
 				path="/initiatives/growing-market-for-electric-vehicles"
-				render={(props) => {
-					return <ChangePath 
-						{...props} 
-						pathName='/our-work/clean-transportation/growing-market-for-electric-vehicles'
-					/>
-				}}
+				element={<MHDZEVPage/>}
 			/>
 			<Route
 				exact
