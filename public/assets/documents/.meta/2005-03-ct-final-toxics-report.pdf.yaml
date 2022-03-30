@@ -1,6 +1,25 @@
-data: {  }
+data:
+  formatted_title: 'Data Analysis of Air Toxics in Connecticut'
+  document_type:
+    - announcement
+    - comments
+    - excel
+    - meeting_materials
+    - notes
+  topic:
+    - air_toxics
+    - env_justice
+    - training
+  published_date: '2022-03-14'
+  display_on:
+    - supporting_regulatory_programs
+    - monitoring
+    - regional_modeling
+    - listos
+  archive: false
+  key_words: 'these are some key words'
 size: 944359
-last_modified: 1645042023
+last_modified: 1159801692
 width: null
 height: null
 mime_type: application/pdf
