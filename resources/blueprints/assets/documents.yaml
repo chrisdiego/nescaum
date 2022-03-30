@@ -3,29 +3,135 @@ sections:
     display: Main
     fields:
       -
-        handle: alt
-        field:
-          type: text
-          display: 'Alt Text'
-          instructions: 'Description of the image'
-      -
-        handle: slug
-        field:
-          generate: true
-          display: 'Slug Field'
-          type: slug
-          icon: slug
-          listable: hidden
-          instructions_position: above
-      -
         handle: formatted_title
         field:
           input_type: text
           character_limit: 100
           antlers: false
-          display: 'Formatted Title'
+          display: Title
           type: text
           icon: text
           instructions: 'User shown asset title'
           listable: hidden
           instructions_position: above
+      -
+        handle: document_type
+        field:
+          inline: false
+          options:
+            announcement: Announcement
+            article: Article
+            comments: Comments
+            excel: 'Excel File'
+            fact_sheet: 'Fact Sheet'
+            fr_notice: 'FR Notice'
+            legal: 'Legal Document'
+            letter: Letter
+            map: Map
+            meeting_materials: 'Meeting Materials'
+            memorandum: Memorandum
+            notes: Notes
+            presentation: Presentation
+            press_release: 'Press Release'
+            protocol: Protocol
+            recommendations: Recommendations
+            report: Report
+            statement: Statement
+            mou: MOU
+            testimony: Testimony
+            video: Video
+          display: 'Document Type'
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above
+      -
+        handle: topic
+        field:
+          inline: false
+          options:
+            air_toxics: 'Air Toxics'
+            area_sources: 'Area Sources'
+            attainment_planning: 'Attainment Planning'
+            climate_energy: 'Climate and Energy'
+            env_justice: 'Env. Justice'
+            mobile_sources: 'Mobile Sources'
+            stationary_sources: 'Stationary Sources'
+            training: 'Training/Clean Air Academy'
+            interstate_transport: 'Interstate Transport'
+            mercury: Mercury
+            naaqs_development: 'NAAQS Development'
+            naaqs_implementation: 'NAAQS Implementation'
+            neshaps: NESHAPS
+            visibility: 'Regional Haze/Visibility'
+          display: Topic
+          type: checkboxes
+          icon: checkboxes
+          listable: hidden
+          instructions_position: above
+      -
+        handle: published_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Published Date'
+          type: date
+          icon: date
+          listable: hidden
+          instructions_position: above
+      -
+        handle: display_on
+        field:
+          inline: false
+          options:
+            supporting_regulatory_programs: 'Our Work: Clean Transportation: Supporting Regulatory Programs'
+            clean_transportation: 'Our Work: Clean Transportation'
+            electric_cars: 'Our Work: Clean Transportation: Driving Adoption of Electric Cars'
+            electric_trucks: 'Our Work: Clean Transportation: Growing the Market for Electric Trucks'
+            air_toxics: 'Our Work: Criteria Pollutants and Air Toxics'
+            monitoring: 'Our Work: Monitoring'
+            regional_modeling: 'Our Work: Regional Modeling'
+            stationary_sources: 'Our Work: Stationary Sources'
+            wood_heat: 'Our Work: Stationary Sources: Wood Heat'
+            listos: 'Initiative: LISTOS'
+            clean_air_academy: 'Initiative: Clean Air Academy'
+            mhd_zev_initiative: 'Initiative: MHD ZEV'
+            camnet: 'Initiative: CAMNET'
+            test_method_development: 'Initiative: Test Method Development'
+          display: 'Display On'
+          type: checkboxes
+          icon: checkboxes
+          instructions: 'Select the pages to display a link to this document on. The link will appear at the bottom of the selected page(s) in the "Learn More" section.'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: archive
+        field:
+          default: false
+          display: Archive
+          type: toggle
+          icon: toggle
+          instructions: 'Archive this document. It will not appear on the website''s resource library if archived.'
+          listable: hidden
+          instructions_position: above
+      -
+        handle: key_words
+        field:
+          input_type: text
+          antlers: false
+          display: 'Key Words'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: alt
+        field:
+          type: text
+          display: 'Alt Text'
+          instructions: 'Description of the image'
