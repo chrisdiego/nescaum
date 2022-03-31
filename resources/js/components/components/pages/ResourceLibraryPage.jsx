@@ -181,9 +181,9 @@ const ResourceLibraryPage = () => {
             filterable = filters.document_type.every(filter => formattedDocTypes.includes(filter))
         if (filterable && filters.topic?.length)
             filterable = filters.topic.every(filter => formattedTopics.includes(filter))
-        if (filterable && filters.input?.length)
-            filterable = doc?.key_words?.includes(filters.input) || doc?.formatted_title?.includes(filters.input)
-
+        if (filterable && filters.input?.length) {
+            filterable = doc?.key_words?.toLowerCase().includes(filters.input) || doc?.formatted_title?.toLowerCase().includes(filters.input)
+        }
         return filterable;
     })
     
@@ -210,7 +210,7 @@ const ResourceLibraryPage = () => {
                         );
                     })}
 
-                    {!filteredDocuments.length && <NoResultsMessage>No results found</NoResultsMessage>}
+                    {!filteredDocuments.length && (filters.document_type.length || filters.topic.length || filters.input.length) && <NoResultsMessage>No results found</NoResultsMessage>}
                 </Column>
                 <Column width="28%">
                     <ContainerWithBorder>

@@ -21608,7 +21608,7 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
     }, _callee);
   })), [documents]);
   var filteredDocuments = documents === null || documents === void 0 ? void 0 : documents.filter(function (doc) {
-    var _doc$document_type, _doc$topic, _filters$document_typ, _filters$topic, _filters$input, _doc$key_words, _doc$formatted_title;
+    var _doc$document_type, _doc$topic, _filters$document_typ, _filters$topic, _filters$input;
 
     var filterable = true;
     if (doc.archive) return false; //clean up arrays
@@ -21626,7 +21626,13 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
     if (filterable && (_filters$topic = filters.topic) !== null && _filters$topic !== void 0 && _filters$topic.length) filterable = filters.topic.every(function (filter) {
       return formattedTopics.includes(filter);
     });
-    if (filterable && (_filters$input = filters.input) !== null && _filters$input !== void 0 && _filters$input.length) filterable = (doc === null || doc === void 0 ? void 0 : (_doc$key_words = doc.key_words) === null || _doc$key_words === void 0 ? void 0 : _doc$key_words.includes(filters.input)) || (doc === null || doc === void 0 ? void 0 : (_doc$formatted_title = doc.formatted_title) === null || _doc$formatted_title === void 0 ? void 0 : _doc$formatted_title.includes(filters.input));
+
+    if (filterable && (_filters$input = filters.input) !== null && _filters$input !== void 0 && _filters$input.length) {
+      var _doc$key_words, _doc$formatted_title;
+
+      filterable = (doc === null || doc === void 0 ? void 0 : (_doc$key_words = doc.key_words) === null || _doc$key_words === void 0 ? void 0 : _doc$key_words.toLowerCase().includes(filters.input)) || (doc === null || doc === void 0 ? void 0 : (_doc$formatted_title = doc.formatted_title) === null || _doc$formatted_title === void 0 ? void 0 : _doc$formatted_title.toLowerCase().includes(filters.input));
+    }
+
     return filterable;
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -21656,7 +21662,7 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
               children: document.formatted_title || document.title
             })
           }, document.id);
-        }), !filteredDocuments.length && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(NoResultsMessage, {
+        }), !filteredDocuments.length && (filters.document_type.length || filters.topic.length || filters.input.length) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(NoResultsMessage, {
           children: "No results found"
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
