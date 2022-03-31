@@ -1,6 +1,18 @@
-data: {  }
-size: 269842
-last_modified: 1629903860
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - testimony
+  formatted_title: Testimony at Hearing on Proposal to Revise 2023 and Later Model
+    Year Light-duty Vehicle GHG Standards
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1629903860
 mime_type: application/pdf
+size: 269842
+width: null

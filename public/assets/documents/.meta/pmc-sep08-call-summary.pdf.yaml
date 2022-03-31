@@ -1,6 +1,12 @@
-data: {  }
-size: 17364
-last_modified: 1221581166
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Permit Modeling Committee Quarterly Call
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1221581166
 mime_type: application/pdf
+size: 17364
+width: null

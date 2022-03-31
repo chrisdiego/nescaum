@@ -1,6 +1,15 @@
-data: {  }
-size: 78149
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Controlling Emissions from Wood Boilers
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 78149
+width: null

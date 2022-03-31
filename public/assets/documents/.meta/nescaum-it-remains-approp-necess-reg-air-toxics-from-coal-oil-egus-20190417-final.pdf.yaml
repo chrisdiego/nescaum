@@ -1,6 +1,16 @@
-data: {  }
-size: 498960
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: "It Remains \u201CAppropriate and Necessary\u201D to Regulate Toxic\
+    \ Air Emissions from Coal- and Oil-fired Electric Generating Units"
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 498960
+width: null

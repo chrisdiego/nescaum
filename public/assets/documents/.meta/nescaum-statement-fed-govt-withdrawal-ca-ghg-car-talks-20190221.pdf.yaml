@@ -1,6 +1,18 @@
-data: {  }
-size: 233246
-last_modified: 1550770248
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - statement
+  formatted_title: NESCAUM Statement on White House Decision to Withdraw from CA Clean
+    Car Talks
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1550770248
 mime_type: application/pdf
+size: 233246
+width: null

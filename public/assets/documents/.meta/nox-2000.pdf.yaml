@@ -1,6 +1,16 @@
-data: {  }
-size: 4256411
-last_modified: 1231261604
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Status Report on NOx Controls for Gas Turbines, Cement Kilns, Boilers,
+    and Internal Combustion Engines
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1231261604
 mime_type: application/pdf
+size: 4256411
+width: null

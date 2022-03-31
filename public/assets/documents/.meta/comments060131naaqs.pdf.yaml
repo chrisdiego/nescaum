@@ -1,6 +1,15 @@
-data: {  }
-size: 202865
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Rule to Implement the Fine Particulate National Ambient
+    Air Quality Standards
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 202865
+width: null

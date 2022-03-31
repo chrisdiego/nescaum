@@ -1,6 +1,20 @@
-data: {  }
-size: 229965
-last_modified: 1623091394
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  - electric_trucks
+  document_type:
+  - testimony
+  formatted_title: Testimony at EPA Hearing on Reconsideration of a Previous Withdrawal
+    of a Waiver of Preemption
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1623091394
 mime_type: application/pdf
+size: 229965
+width: null

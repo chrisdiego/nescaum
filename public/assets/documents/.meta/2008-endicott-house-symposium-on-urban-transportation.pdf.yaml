@@ -1,6 +1,12 @@
-data: {  }
-size: 240377
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: 2008 MIT-NESCAUM Symposium on Urban Transportation
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 240377
+width: null

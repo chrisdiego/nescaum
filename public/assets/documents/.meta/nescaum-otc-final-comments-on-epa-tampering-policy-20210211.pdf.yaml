@@ -1,6 +1,18 @@
-data: {  }
-size: 461471
-last_modified: 1613074476
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Comments on EPA Tampering Policy and Request for Information Regarding
+    1986 Catalyst Policy
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1613074476
 mime_type: application/pdf
+size: 461471
+width: null

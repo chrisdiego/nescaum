@@ -1,6 +1,13 @@
-data: {  }
-size: 105626
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Senate Energy Bill on Proposed Bump-Up Provisions
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 105626
+width: null

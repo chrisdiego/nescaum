@@ -1,7 +1,16 @@
 data:
-  formatted_title: 'Conceptual Model Draft Final All'
-size: 3463189
-last_modified: 1645333641
-width: null
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: 'The Nature of the Ozone Air Quality Problem in the Ozone Transport
+    Region: A Conceptual Description'
+  key_words: ''
+  topic:
+  - attainment_planning
+  - interstate_transport
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 3463189
+width: null

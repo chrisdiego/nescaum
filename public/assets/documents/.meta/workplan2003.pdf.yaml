@@ -1,6 +1,15 @@
-data: {  }
-size: 282910
-last_modified: 1160164454
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: MANE-VU Years 4 and 5 (2003 and 2004) Grant Application Work Plan
+  key_words: ''
+  topic:
+  - attainment_planning
+  - visibility
 height: null
+last_modified: 1160164454
 mime_type: application/pdf
+size: 282910
+width: null

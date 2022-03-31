@@ -1,6 +1,14 @@
-data: {  }
-size: 2799900
-last_modified: 1156868494
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Scientific Cooperation on Air Quality Issues Between NESCAUM and
+    Ontario
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1156868494
 mime_type: application/pdf
+size: 2799900
+width: null

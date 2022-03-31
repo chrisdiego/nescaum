@@ -1,6 +1,19 @@
-data: {  }
-size: 257548
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  document_type:
+  - recommendations
+  formatted_title: 'Collecting EV Charging Station Utilization Data: Model Language
+    for State Grants and Procurement Contracts'
+  key_words: model contract language
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 257548
+width: null

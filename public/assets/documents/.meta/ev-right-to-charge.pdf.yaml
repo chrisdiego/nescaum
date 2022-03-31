@@ -1,6 +1,18 @@
-data: {  }
-size: 2169528
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  document_type:
+  - presentation
+  formatted_title: Right to Charge Laws Presentation
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 2169528
+width: null

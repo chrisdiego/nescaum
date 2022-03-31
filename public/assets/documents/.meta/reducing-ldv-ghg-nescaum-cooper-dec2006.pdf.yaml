@@ -1,6 +1,17 @@
-data: {  }
-size: 1444778
-last_modified: 1167836296
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - presentation
+  formatted_title: 'Reducing Light-Duty Vehicle GHG Emissions: Technologies and Policies'
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1167836296
 mime_type: application/pdf
+size: 1444778
+width: null

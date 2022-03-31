@@ -1,6 +1,18 @@
-data: {  }
-size: 120447
-last_modified: 1185819332
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Comments on Proposed Rule on Control of Emissions from Nonroad
+    Spark-Ignition Engines @amp; Equipment
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1185819332
 mime_type: application/pdf
+size: 120447
+width: null

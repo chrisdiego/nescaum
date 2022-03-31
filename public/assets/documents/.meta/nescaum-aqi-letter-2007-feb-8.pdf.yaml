@@ -1,6 +1,15 @@
-data: {  }
-size: 112088
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: The Air Quality Index and the PM2.5 National Ambient Air Quality
+    Standards
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_implementation
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 112088
+width: null

@@ -1,6 +1,17 @@
-data: {  }
-size: 241440
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Forms and Collection Activities for the Energy Information
+    Administration's "Electric Power Program
+  key_words: ''
+  topic:
+  - attainment_planning
+  - climate_energy
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 241440
+width: null

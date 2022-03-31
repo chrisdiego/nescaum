@@ -1,6 +1,17 @@
-data: {  }
-size: 123867
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Changes to Power Generator Data Collection Activities
+    and Form EIA-767
+  key_words: ''
+  topic:
+  - attainment_planning
+  - climate_energy
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 123867
+width: null

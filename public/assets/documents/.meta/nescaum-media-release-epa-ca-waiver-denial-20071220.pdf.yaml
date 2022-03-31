@@ -1,6 +1,17 @@
-data: {  }
-size: 87323
-last_modified: 1645333641
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type: []
+  formatted_title: US EPA Thwarts State Climate Efforts -- Rejects California Greenhouse
+    Gas Vehicle Program
+  key_words: LD, GHG
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 87323
+width: null

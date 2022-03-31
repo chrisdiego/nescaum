@@ -1,6 +1,15 @@
-data: {  }
-size: 617021
-last_modified: 1137184548
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: An Analysis of EPA's Changes to the Routine Maintenance, Repair,
+    and Replacement Exclusion of the New Source Review Program
+  key_words: ''
+  topic:
+  - stationary_sources
 height: null
+last_modified: 1137184548
 mime_type: application/pdf
+size: 617021
+width: null

@@ -1,6 +1,14 @@
-data: {  }
-size: 1567106
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Evaluation of the Aethalometer BC Spot Matrix Effect
+  key_words: ''
+  topic:
+  - air_toxics
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 1567106
+width: null

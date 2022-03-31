@@ -1,6 +1,12 @@
-data: {  }
-size: 204141
-last_modified: 1538409510
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Proposed Amendments to CA "Deemed to Comply" Provisions
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1538409510
 mime_type: application/pdf
+size: 204141
+width: null

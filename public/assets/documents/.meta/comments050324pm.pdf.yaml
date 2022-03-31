@@ -1,6 +1,15 @@
-data: {  }
-size: 473545
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Second Draft (January 2005) PM Staff Paper
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 473545
+width: null

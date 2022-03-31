@@ -1,6 +1,15 @@
-data: {  }
-size: 118474
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: "Proposed Rule on PSD for PM2.5 \u2013 Increments, SILs and SMC"
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 118474
+width: null

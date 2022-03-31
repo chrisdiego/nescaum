@@ -1,6 +1,12 @@
-data: {  }
-size: 2990918
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: 'DSNY and Cummins Inc.: A Collaboration Towards Cleaner Air'
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 2990918
+width: null

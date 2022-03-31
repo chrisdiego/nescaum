@@ -1,6 +1,16 @@
-data: {  }
-size: 768075
-last_modified: 1595865432
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - protocol
+  formatted_title: NESCAUM Standard Operating Procedures for Using TEOM 1405 in a
+    Dilution Tunnel
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1595865432
 mime_type: application/pdf
+size: 768075
+width: null

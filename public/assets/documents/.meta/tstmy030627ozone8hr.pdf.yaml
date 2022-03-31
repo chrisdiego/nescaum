@@ -1,6 +1,15 @@
-data: {  }
-size: 124678
-last_modified: 1136915214
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - testimony
+  formatted_title: Proposed Rule for Implementing the 8-Hour Ozone Standard
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_implementation
 height: null
+last_modified: 1136915214
 mime_type: application/pdf
+size: 124678
+width: null

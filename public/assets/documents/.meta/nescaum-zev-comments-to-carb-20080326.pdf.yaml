@@ -1,6 +1,20 @@
-data: {  }
-size: 121175
-last_modified: 1208189316
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_cars
+  - electric_trucks
+  document_type:
+  - comments
+  - letter
+  formatted_title: Comments on 2008 Proposed Amendments to the California Zero Emission
+    Vehicle Program
+  key_words: ZEV
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1208189316
 mime_type: application/pdf
+size: 121175
+width: null

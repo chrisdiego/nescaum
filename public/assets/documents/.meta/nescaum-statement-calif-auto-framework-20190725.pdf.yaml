@@ -1,6 +1,18 @@
-data: {  }
-size: 239038
-last_modified: 1564086898
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - statement
+  formatted_title: NESCAUM Statement on Framework Agreement for GHG Emissions Standards  Between
+    California and Major Automakers
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1564086898
 mime_type: application/pdf
+size: 239038
+width: null

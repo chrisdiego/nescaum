@@ -1,6 +1,12 @@
-data: {  }
-size: 10001
-last_modified: 1220638650
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Permit Modeling Committee Members
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1220638650
 mime_type: application/pdf
+size: 10001
+width: null

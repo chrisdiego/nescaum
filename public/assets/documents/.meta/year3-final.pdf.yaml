@@ -1,6 +1,15 @@
-data: {  }
-size: 256526
-last_modified: 1160164454
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: MANE-VU Year 3 NESCAUM Final Report
+  key_words: ''
+  topic:
+  - attainment_planning
+  - visibility
 height: null
+last_modified: 1160164454
 mime_type: application/pdf
+size: 256526
+width: null

@@ -1,6 +1,17 @@
-data: {  }
-size: 218452
-last_modified: 1364161236
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: 'Technical Statement: OMB Review -- EPA Tier 3 Meeting Record'
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1364161236
 mime_type: application/pdf
+size: 218452
+width: null

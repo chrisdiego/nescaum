@@ -1,6 +1,13 @@
-data: {  }
-size: 236284
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - announcement
+  formatted_title: NESCAUM Welcomes New Deputy Director
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 236284
+width: null

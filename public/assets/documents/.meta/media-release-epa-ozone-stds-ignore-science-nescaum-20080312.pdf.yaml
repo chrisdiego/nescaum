@@ -1,6 +1,15 @@
-data: {  }
-size: 86989
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Northeast States Say EPA Failed to Follow the Science in Changing
+    National Smog Standards
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 86989
+width: null

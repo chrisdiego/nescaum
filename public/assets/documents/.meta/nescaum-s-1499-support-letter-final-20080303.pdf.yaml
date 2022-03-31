@@ -1,6 +1,18 @@
-data: {  }
-size: 102136
-last_modified: 1204735326
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - letter
+  formatted_title: Support for Marine Vessel Emissions Reduction Act of 2007 (S 1499
+    / HR 2548)
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1204735326
 mime_type: application/pdf
+size: 102136
+width: null

@@ -1,6 +1,22 @@
-data: {  }
-size: 740369
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - mhd_zev_initiative
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  - electric_trucks
+  - supporting_regulatory_programs
+  document_type:
+  - presentation
+  formatted_title: Health Impact Assessment of New York State Adoption of the California
+    Omnibus and ACT Regulations
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 740369
+width: null

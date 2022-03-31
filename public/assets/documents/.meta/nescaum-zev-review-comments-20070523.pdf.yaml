@@ -1,6 +1,17 @@
-data: {  }
-size: 107044
-last_modified: 1180034808
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Comments on Status Report on CARB's Zero Emission Vehicle Program
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1180034808
 mime_type: application/pdf
+size: 107044
+width: null

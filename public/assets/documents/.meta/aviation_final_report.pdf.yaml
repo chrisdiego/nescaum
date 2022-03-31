@@ -1,6 +1,17 @@
-data: {  }
-size: 2275235
-last_modified: 1645042024
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - report
+  formatted_title: Controlling Airport-Related Air Pollution
+  key_words: airport, aircraft
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 2275235
+width: null

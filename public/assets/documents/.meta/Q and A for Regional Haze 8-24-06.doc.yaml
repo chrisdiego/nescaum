@@ -1,6 +1,17 @@
-data: {  }
-size: 161280
-last_modified: 1157600192
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Economic Valuation of Human Health Benefits of Controlling Mercury
+    Emissions from U.S. Coal-Fired Power Plants
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
+  - mercury
 height: null
-mime_type: application/msword
+last_modified: 1231259212
+mime_type: application/pdf
+size: 1073780
+width: null

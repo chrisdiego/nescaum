@@ -1,6 +1,19 @@
-data: {  }
-size: 99820
-last_modified: 1645333641
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: 'Comments on Direct Final and Proposed Rule on Control of Hazardous
+    Air Pollutants from Mobile Sources: Early Credit Technology'
+  key_words: HAPs, mobile sources
+  topic:
+  - air_toxics
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 99820
+width: null

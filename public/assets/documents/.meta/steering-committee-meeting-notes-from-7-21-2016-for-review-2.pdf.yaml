@@ -1,6 +1,15 @@
-data: {  }
-size: 225708
-last_modified: 1548796686
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - presentation
+  formatted_title: Cordwood Test Methods Steering Committee Meeting
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1548796686
 mime_type: application/pdf
+size: 225708
+width: null

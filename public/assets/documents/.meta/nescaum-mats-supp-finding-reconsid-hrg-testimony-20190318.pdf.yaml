@@ -1,6 +1,15 @@
-data: {  }
-size: 298721
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - testimony
+  formatted_title: Proposal to Reverse Utility MATS "Appropriate and Necessary" Finding
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 298721
+width: null

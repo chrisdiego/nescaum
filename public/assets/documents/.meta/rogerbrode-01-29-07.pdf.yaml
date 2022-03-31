@@ -1,6 +1,15 @@
-data: {  }
-size: 88969
-last_modified: 1170099250
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - memorandum
+  formatted_title: Review of Modeling Analysis
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1170099250
 mime_type: application/pdf
+size: 88969
+width: null

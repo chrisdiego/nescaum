@@ -1,6 +1,16 @@
-data: {  }
-size: 1238551
-last_modified: 1611599290
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - protocol
+  formatted_title: Integrated Duty Cycle Test Method for Automatic-Feed Hydronic Heating
+    Appliances with External Thermal Storage
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1611599290
 mime_type: application/pdf
+size: 1238551
+width: null

@@ -1,6 +1,20 @@
-data: {  }
-size: 183398
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - mhd_zev_initiative
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  - supporting_regulatory_programs
+  document_type: []
+  formatted_title: 15 States and the District of Columbia Join Forces to Accelerate
+    Bus and Truck Electrification
+  key_words: MHD ZEV, MOU
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 183398
+width: null

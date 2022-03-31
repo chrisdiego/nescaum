@@ -1,6 +1,17 @@
-data: {  }
-size: 2843487
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - report
+  formatted_title: Heavy-Duty Vehicle In-Use NOx Testing Project
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 2843487
+width: null

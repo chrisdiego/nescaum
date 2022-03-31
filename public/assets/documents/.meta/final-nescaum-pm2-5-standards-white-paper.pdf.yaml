@@ -1,6 +1,16 @@
-data: {  }
-size: 92622
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - recommendations
+  formatted_title: Recommendations in Support of Primary Fine Particle National Ambient
+    Air Quality Standards to Protect Northeastern Populations
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 92622
+width: null

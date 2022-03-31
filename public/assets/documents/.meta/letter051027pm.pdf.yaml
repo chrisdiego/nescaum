@@ -1,6 +1,15 @@
-data: {  }
-size: 3673975
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Recommendation to EPA Proposing Stringent PM2.5 National Ambient
+    Air Quality Standards
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 3673975
+width: null

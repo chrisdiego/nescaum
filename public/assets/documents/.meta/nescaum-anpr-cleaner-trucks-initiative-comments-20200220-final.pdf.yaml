@@ -1,6 +1,18 @@
-data: {  }
-size: 945137
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: 'Comments on Advanced Notice on Proposed Control of Air Pollution
+    from New Motor Vehicles: Heavy-Duty Engine Standards'
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 945137
+width: null

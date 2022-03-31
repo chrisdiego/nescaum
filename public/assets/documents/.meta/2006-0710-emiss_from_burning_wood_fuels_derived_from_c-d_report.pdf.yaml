@@ -1,7 +1,16 @@
 data:
-  formatted_title: 'Emissions from Burning Wood Fules Derived from Construction and Demolition Debris'
-size: 149072
-last_modified: 1645333641
-width: null
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Emissions from Burning Wood Fuels Derived from Construction and
+    Demolition Debris
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 149072
+width: null

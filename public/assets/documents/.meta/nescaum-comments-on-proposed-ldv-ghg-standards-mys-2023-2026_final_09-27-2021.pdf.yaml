@@ -1,6 +1,18 @@
-data: {  }
-size: 266341
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Comments on Revised 2023 and Later Model Year Light-Duty Vehicle
+    GHG Emissions Standards
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 266341
+width: null

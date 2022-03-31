@@ -1,6 +1,16 @@
-data: {  }
-size: 367135
-last_modified: 1550163382
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - meeting_materials
+  - recommendations
+  formatted_title: 'PM Measurement Method Workgroup: Summary of Recommendations for
+    Improving Precision of Method 5G'
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1550163382
 mime_type: application/pdf
+size: 367135
+width: null

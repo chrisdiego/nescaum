@@ -1,6 +1,16 @@
-data: {  }
-size: 1389280
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Modeling Mercury in the Northeast United States
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
+  - mercury
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 1389280
+width: null

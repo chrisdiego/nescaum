@@ -1,6 +1,20 @@
-data: {  }
-size: 205986
-last_modified: 1366820410
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - testimony
+  formatted_title: Testimony on Proposed Rule - Tier 3 Motor Vehicle Emission and
+    Fuel Standards
+  key_words: tier 3, LD
+  topic:
+  - air_toxics
+  - attainment_planning
+  - mobile_sources
 height: null
+last_modified: 1366820410
 mime_type: application/pdf
+size: 205986
+width: null

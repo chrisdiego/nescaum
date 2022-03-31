@@ -1,6 +1,16 @@
-data: {  }
-size: 147657
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Reconsideration of Nonattainment Major New Source Review Implementation
+    Under the 8-Hour Ozone Standard
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 147657
+width: null

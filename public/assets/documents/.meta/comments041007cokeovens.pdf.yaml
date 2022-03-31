@@ -1,6 +1,15 @@
-data: {  }
-size: 48385
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: First Residual Risk Standard for Coke Oven Batteries
+  key_words: ''
+  topic:
+  - air_toxics
+  - neshaps
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 48385
+width: null

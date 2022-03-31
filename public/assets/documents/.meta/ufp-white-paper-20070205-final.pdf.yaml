@@ -1,6 +1,18 @@
-data: {  }
-size: 289123
-last_modified: 1175623114
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  document_type:
+  - report
+  formatted_title: 'Ultrafine Particles: Issues Surrounding Diesel Retrofit Technologies
+    for Particulate Matter Control'
+  key_words: ''
+  topic:
+  - air_toxics
+  - mobile_sources
 height: null
+last_modified: 1175623114
 mime_type: application/pdf
+size: 289123
+width: null

@@ -1,6 +1,18 @@
-data: {  }
-size: 3038573
-last_modified: 1137094844
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  document_type:
+  - report
+  formatted_title: Status Report on Clean Mobile Source Diesel Initiatives in the
+    Northeast States and Eastern Canadian Provinces
+  key_words: diesel, retrofit, NEDC
+  topic:
+  - air_toxics
+  - mobile_sources
 height: null
+last_modified: 1137094844
 mime_type: application/pdf
+size: 3038573
+width: null

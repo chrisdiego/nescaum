@@ -1,6 +1,18 @@
-data: {  }
-size: 66473
-last_modified: 1645333641
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - letter
+  formatted_title: Letter on Controlling Emissions from Locomotives and Marine Diesel
+    Engines
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 66473
+width: null

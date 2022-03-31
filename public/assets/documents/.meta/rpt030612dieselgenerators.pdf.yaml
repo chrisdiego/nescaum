@@ -1,6 +1,15 @@
-data: {  }
-size: 1210802
-last_modified: 1137101404
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Stationary Diesel Engines in the Northeast
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1137101404
 mime_type: application/pdf
+size: 1210802
+width: null

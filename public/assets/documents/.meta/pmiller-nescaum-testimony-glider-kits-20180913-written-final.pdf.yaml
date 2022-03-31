@@ -1,6 +1,18 @@
-data: {  }
-size: 662187
-last_modified: 1536949784
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - testimony
+  formatted_title: Examining the Underlying Science and Impacts of Glider Truck Regulations
+  key_words: gliders
+  topic:
+  - attainment_planning
+  - mobile_sources
 height: null
+last_modified: 1536949784
 mime_type: application/pdf
+size: 662187
+width: null

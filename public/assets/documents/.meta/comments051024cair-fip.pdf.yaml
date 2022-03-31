@@ -1,6 +1,15 @@
-data: {  }
-size: 106288
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: "Proposed Rulemaking on North Carolina\u2019s Section 126 Petition\
+    \ and Federal Implementation Plan for the Clean Air Interstate Rule"
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 106288
+width: null

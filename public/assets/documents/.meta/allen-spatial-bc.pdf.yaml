@@ -1,6 +1,15 @@
-data: {  }
-size: 381810
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - presentation
+  formatted_title: Spatial and Temporal Aspects of Black Carbon Concentrations over
+    the Boston Metro Area
+  key_words: ''
+  topic:
+  - air_toxics
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 381810
+width: null

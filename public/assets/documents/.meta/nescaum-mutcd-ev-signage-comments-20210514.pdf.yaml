@@ -1,6 +1,19 @@
-data: {  }
-size: 290797
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  document_type:
+  - comments
+  formatted_title: Comments on National Standards for Traffic Control Devices; the
+    Manual on Uniform Traffic Control Devices for Streets and Highways; Revision
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 290797
+width: null

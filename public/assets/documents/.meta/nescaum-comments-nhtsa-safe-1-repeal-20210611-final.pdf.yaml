@@ -1,6 +1,18 @@
-data: {  }
-size: 245556
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Comments on Proposed Rule on Corporate Average Fuel Economy (CAFE)
+    Preemption
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 245556
+width: null

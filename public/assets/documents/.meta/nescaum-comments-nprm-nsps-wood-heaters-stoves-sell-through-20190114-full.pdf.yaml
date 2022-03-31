@@ -1,6 +1,17 @@
-data: {  }
-size: 10568402
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on:
+  - air_toxics
+  document_type:
+  - comments
+  formatted_title: Proposed Amendments to the Standards of Performance for New Residential
+    Wood Heaters, New Residential Hydronic Heaters and Forced-Air Furnaces
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 10568402
+width: null

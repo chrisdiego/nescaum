@@ -1,6 +1,15 @@
-data: {  }
-size: 262052
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Request to Publicly Release National Air Toxics Assessment 2017
+    Data
+  key_words: ''
+  topic:
+  - air_toxics
+  - env_justice
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 262052
+width: null

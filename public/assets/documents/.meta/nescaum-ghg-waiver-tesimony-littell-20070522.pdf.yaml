@@ -1,6 +1,18 @@
-data: {  }
-size: 111477
-last_modified: 1645333641
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - testimony
+  formatted_title: Testimony for EPA Hearing on California Waiver Request for GHG
+    Limits on Motor Vehicles
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 111477
+width: null

@@ -1,6 +1,19 @@
-data: {  }
-size: 328124
-last_modified: 1575317676
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  document_type:
+  - mou
+  formatted_title: State Zero-Emission Vehicle Programs Memorandum of Understanding
+    - ME Joins
+  key_words: ZEV
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1575317676
 mime_type: application/pdf
+size: 328124
+width: null

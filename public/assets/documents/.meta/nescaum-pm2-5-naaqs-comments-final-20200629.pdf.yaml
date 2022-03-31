@@ -1,6 +1,16 @@
-data: {  }
-size: 654579
-last_modified: 1593459698
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Action - Review of the National Ambient Air Quality Standards
+    for Particulate Matter
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1593459698
 mime_type: application/pdf
+size: 654579
+width: null

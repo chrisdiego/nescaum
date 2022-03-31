@@ -15,7 +15,9 @@ with open('spreadsheetformatted.json') as json_file:
                 dataToConvert = data.get(fileName)
                 originalData = yaml.safe_load(f)
                 if originalData is not None:
-                    originalData['data'] = data.get(fileName)
+                    originalData['data'] = data.get(fileName, {})
+                if originalData is None:
+                    originalData['data'] = {}
         with open(file, "w") as f:
             yaml.safe_dump(originalData, f)
            

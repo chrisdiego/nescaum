@@ -1,6 +1,16 @@
-data: {  }
-size: 19898
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - excel
+  formatted_title: Estimating Annual Excess PM2.5 and Health Costs from 3-year Delay
+    of RWH NSPS
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+size: 19898
+width: null

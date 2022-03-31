@@ -1,6 +1,15 @@
-data: {  }
-size: 58376
-last_modified: 1140806192
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: EPA's Proposed Air Quality Standards for Fine Particle Pollution
+    Are Insufficient to Protect Public Health
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1140806192
 mime_type: application/pdf
+size: 58376
+width: null

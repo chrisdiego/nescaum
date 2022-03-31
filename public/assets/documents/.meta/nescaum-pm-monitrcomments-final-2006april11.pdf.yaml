@@ -1,6 +1,14 @@
-data: {  }
-size: 277969
-last_modified: 1144785098
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Rule -- Revisions to Ambient Air Monitoring Regulations
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1144785098
 mime_type: application/pdf
+size: 277969
+width: null

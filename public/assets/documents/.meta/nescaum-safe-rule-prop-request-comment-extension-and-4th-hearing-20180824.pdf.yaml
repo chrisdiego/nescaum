@@ -1,6 +1,18 @@
-data: {  }
-size: 280689
-last_modified: 1535128462
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - letter
+  formatted_title: Letter re Request to Extend Comment Deadline and Add Hearing in
+    Northeast ZEV State for Proposed SAFE Vehicles Rule
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1535128462
 mime_type: application/pdf
+size: 280689
+width: null

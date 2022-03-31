@@ -1,6 +1,16 @@
-data: {  }
-size: 339434
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Rulemaking for Final 8-Hour Ozone NAAQS Designations for
+    Early Action Compact Areas
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_implementation
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 339434
+width: null

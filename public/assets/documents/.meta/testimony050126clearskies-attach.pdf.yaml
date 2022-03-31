@@ -1,6 +1,17 @@
-data: {  }
-size: 115995
-last_modified: 1135805226
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - testimony
+  formatted_title: Multi-Pollutant Legislation and the Clear Skies Act, Attachment
+    A
+  key_words: ''
+  topic:
+  - air_toxics
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1135805226
 mime_type: application/pdf
+size: 115995
+width: null

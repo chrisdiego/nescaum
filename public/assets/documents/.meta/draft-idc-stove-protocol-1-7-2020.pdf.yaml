@@ -1,6 +1,15 @@
-data: {  }
-size: 1430565
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - protocol
+  formatted_title: Integrated Duty Cycle Test Method for Cordwood Stoves
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 1430565
+width: null

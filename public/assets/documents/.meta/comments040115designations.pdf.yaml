@@ -1,6 +1,15 @@
-data: {  }
-size: 129307
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Rule to Defer Effective Date of Nonattainment Designations
+    for Early Action Compact Areas
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 129307
+width: null

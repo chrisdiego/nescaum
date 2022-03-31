@@ -1,6 +1,14 @@
-data: {  }
-size: 290631
-last_modified: 1171305154
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Indoor/Outdoor School Air Monitoring Pilot Project
+  key_words: ''
+  topic:
+  - air_toxics
 height: null
+last_modified: 1171305154
 mime_type: application/pdf
+size: 290631
+width: null

@@ -1,6 +1,16 @@
-data: {  }
-size: 74337
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Supplemental Notice for the Rule to Reduce Interstate Transport
+    of Fine Particulate Matter and Ozone (Clean Air Interstate Rule)
+  key_words: ''
+  topic:
+  - attainment_planning
+  - interstate_transport
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 74337
+width: null

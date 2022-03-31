@@ -1,6 +1,12 @@
-data: {  }
-size: 472261
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: 2018 EV Advertising Spending
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 472261
+width: null

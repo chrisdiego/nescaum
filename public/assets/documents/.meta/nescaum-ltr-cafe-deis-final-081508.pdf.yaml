@@ -1,6 +1,18 @@
-data: {  }
-size: 112269
-last_modified: 1645333641
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Draft EIS for new CAFE Standards, Passenger Cars and Light Trucks,
+    MY 2011-2015
+  key_words: light-duty, fuel economy
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 112269
+width: null

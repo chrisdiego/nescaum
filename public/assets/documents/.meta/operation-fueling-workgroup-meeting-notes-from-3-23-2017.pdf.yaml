@@ -1,6 +1,14 @@
-data: {  }
-size: 459260
-last_modified: 1548796518
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Operation and Fueling (O/F) Workgroup Meeting
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1548796518
 mime_type: application/pdf
+size: 459260
+width: null

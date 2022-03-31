@@ -1,6 +1,14 @@
-data: {  }
-size: 27603
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Coordinated Analysis of Regionally Archived Particulate Samples
+    for Elements (CARAPACE)
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 27603
+width: null

@@ -1,6 +1,15 @@
-data: {  }
-size: 305355
-last_modified: 1217012930
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Rule on National Ambient Air Quality Standards for Lead
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1217012930
 mime_type: application/pdf
+size: 305355
+width: null

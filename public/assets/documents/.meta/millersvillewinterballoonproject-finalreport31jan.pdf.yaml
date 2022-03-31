@@ -1,6 +1,16 @@
-data: {  }
-size: 610112
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Wintertime Tethered Balloon Measurements of Meterological Variables
+    and Aerosol Characterization in Support of MANE-VU
+  key_words: ''
+  topic:
+  - attainment_planning
+  - visibility
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 610112
+width: null

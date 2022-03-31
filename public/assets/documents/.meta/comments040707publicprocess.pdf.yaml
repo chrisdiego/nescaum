@@ -1,6 +1,16 @@
-data: {  }
-size: 184143
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Public Review and Comment Process for the Supplemental Proposal
+    for the Rule to Reduce Interstate Transport of Fine Particulate Matter and Ozone
+  key_words: ''
+  topic:
+  - attainment_planning
+  - interstate_transport
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 184143
+width: null

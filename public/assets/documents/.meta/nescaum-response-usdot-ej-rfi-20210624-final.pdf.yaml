@@ -1,6 +1,20 @@
-data: {  }
-size: 251678
-last_modified: 1624633734
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  document_type:
+  - comments
+  formatted_title: Comments on U.S. DOT's Request for Information on Transportation
+    Equity Data
+  key_words: ''
+  topic:
+  - climate_energy
+  - env_justice
+  - mobile_sources
 height: null
+last_modified: 1624633734
 mime_type: application/pdf
+size: 251678
+width: null

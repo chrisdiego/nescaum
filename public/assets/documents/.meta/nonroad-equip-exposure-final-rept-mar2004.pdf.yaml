@@ -1,6 +1,19 @@
-data: {  }
-size: 260503
-last_modified: 1170795494
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  document_type:
+  - report
+  formatted_title: Evaluating the Occupational and Environmental Impact of Nonroad
+    Diesel Equipment in the Northeast
+  key_words: nonroad
+  topic:
+  - air_toxics
+  - env_justice
+  - mobile_sources
 height: null
+last_modified: 1170795494
 mime_type: application/pdf
+size: 260503
+width: null

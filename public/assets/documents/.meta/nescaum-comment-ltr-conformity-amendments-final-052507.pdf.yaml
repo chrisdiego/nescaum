@@ -1,6 +1,13 @@
-data: {  }
-size: 97857
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Proposed Rulemaking -- Transportation Conformity Rule Amendments
+    to Implement Provisions Contained in the 2005 SAFETEA-LU
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 97857
+width: null

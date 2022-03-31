@@ -1,6 +1,13 @@
-data: {  }
-size: 377608
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - announcement
+  formatted_title: NESCAUM Announces New Executive Director
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 377608
+width: null

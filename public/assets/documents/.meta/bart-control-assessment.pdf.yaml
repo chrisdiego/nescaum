@@ -1,6 +1,16 @@
-data: {  }
-size: 551936
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Assessment of Control Technology Options for BART-Eligible Sources
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
+  - visibility
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 551936
+width: null

@@ -1,6 +1,18 @@
-data: {  }
-size: 103527
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - testimony
+  formatted_title: Proposed Rule to Reduce Interstate Transport of Fine Particulate
+    and Ozone and Proposed National Emission Standards for Hazardous Air Pollutants
+  key_words: ''
+  topic:
+  - air_toxics
+  - attainment_planning
+  - stationary_sources
+  - interstate_transport
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 103527
+width: null

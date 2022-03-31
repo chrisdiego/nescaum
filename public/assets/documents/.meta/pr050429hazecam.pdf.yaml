@@ -1,6 +1,15 @@
-data: {  }
-size: 149238
-last_modified: 1141160450
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: New High-Res Web Cams Show Air Pollution That Obscures Scenic Vistas,
+    Poses Health Risks
+  key_words: ''
+  topic:
+  - attainment_planning
+  - visibility
 height: null
+last_modified: 1141160450
 mime_type: application/pdf
+size: 149238
+width: null

@@ -1,6 +1,16 @@
-data: {  }
-size: 235110
-last_modified: 1591798502
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - testimony
+  formatted_title: Hearing on Proposal to Allow Continued Sales of Step 1 Wood-burning
+    Devices
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1591798502
 mime_type: application/pdf
+size: 235110
+width: null

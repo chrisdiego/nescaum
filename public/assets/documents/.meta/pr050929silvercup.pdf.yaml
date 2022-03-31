@@ -1,6 +1,16 @@
-data: {  }
-size: 59834
-last_modified: 1141159834
-width: null
+data:
+  archive: true
+  display_on:
+  - air_toxics
+  document_type: []
+  formatted_title: Producing Green at Silvercup Studios -- A Gala Event
+  key_words: environmental justice, building decarbonization
+  topic:
+  - area_sources
+  - climate_energy
+  - env_justice
 height: null
+last_modified: 1141159834
 mime_type: application/pdf
+size: 59834
+width: null

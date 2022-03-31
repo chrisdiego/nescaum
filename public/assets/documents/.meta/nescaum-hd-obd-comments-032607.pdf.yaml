@@ -1,6 +1,17 @@
-data: {  }
-size: 139132
-last_modified: 1645333641
-width: null
+data:
+  archive: true
+  display_on:
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Comments on Proposed Rulemaking -- Heavy-Duty Engine Onboard Diagnostic
+    Systems
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 139132
+width: null

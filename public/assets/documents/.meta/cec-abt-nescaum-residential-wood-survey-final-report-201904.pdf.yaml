@@ -1,6 +1,16 @@
-data: {  }
-size: 1560650
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Residential Wood Use Survey to Improve U.S. Black Carbon Emissions
+    Inventory Data for Small-Scale Biomass Combustion
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 1560650
+width: null

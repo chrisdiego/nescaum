@@ -1,6 +1,14 @@
-data: {  }
-size: 110696
-last_modified: 1209581078
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Performance Standards for Wood-Burning Devices
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1209581078
 mime_type: application/pdf
+size: 110696
+width: null

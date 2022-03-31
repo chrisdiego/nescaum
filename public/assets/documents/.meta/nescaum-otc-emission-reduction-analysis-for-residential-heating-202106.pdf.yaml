@@ -1,6 +1,16 @@
-data: {  }
-size: 173641
-last_modified: 1624316202
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Estimating the Emissions Benefits of Switching to Heat Pumps for
+    Residential Heating
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1624316202
 mime_type: application/pdf
+size: 173641
+width: null

@@ -1,6 +1,15 @@
-data: {  }
-size: 1097728
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Reclassification (Bump-Down) Request for the Ann Arbor-Detroit
+    8-Hour Nonattainment Area
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
-mime_type: application/vnd.ms-powerpoint
+last_modified: 1645042024
+mime_type: application/pdf
+size: 134796
+width: null

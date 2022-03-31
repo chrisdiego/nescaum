@@ -1,6 +1,16 @@
-data: {  }
-size: 2220965
-last_modified: 1617131400
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: "Assessment of EPA\u201A\xC4\xF4s Residential Wood Heater Certification\
+    \ Program"
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1617131400
 mime_type: application/pdf
+size: 2220965
+width: null

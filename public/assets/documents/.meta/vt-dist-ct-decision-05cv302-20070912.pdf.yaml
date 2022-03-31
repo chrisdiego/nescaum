@@ -1,6 +1,19 @@
-data: {  }
-size: 427518
-last_modified: 1192815188
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - legal
+  - map
+  formatted_title: Vermont Federal Court Decision Upholding CA GHG Vehicle Limits
+  key_words: VT court decision
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1192815188
 mime_type: application/pdf
+size: 427518
+width: null

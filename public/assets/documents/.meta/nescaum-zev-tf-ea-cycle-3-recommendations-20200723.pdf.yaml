@@ -1,6 +1,19 @@
-data: {  }
-size: 233287
-last_modified: 1595861420
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  document_type:
+  - recommendations
+  formatted_title: "Recommendations for Electrify America\u2019s Cycle 3 National\
+    \ ZEV Investment Plan"
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1595861420
 mime_type: application/pdf
+size: 233287
+width: null

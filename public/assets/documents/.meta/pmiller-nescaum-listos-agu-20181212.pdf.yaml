@@ -1,6 +1,14 @@
-data: {  }
-size: 3409991
-last_modified: 1545676774
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - presentation
+  formatted_title: Long Island Sound Tropospheric Ozone Study (LISTOS)
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1545676774
 mime_type: application/pdf
+size: 3409991
+width: null

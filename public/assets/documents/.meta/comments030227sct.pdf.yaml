@@ -1,6 +1,16 @@
-data: {  }
-size: 151833
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed NESHAP for Stationary Combustion Turbines
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
+  - neshaps
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 151833
+width: null

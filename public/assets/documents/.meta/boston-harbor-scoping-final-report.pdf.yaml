@@ -1,6 +1,13 @@
-data: {  }
-size: 305012
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Scoping Study to Evaluate the Emissions of Harbor Craft Operating
+    in Boston Harbor and Potential Control Options
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 305012
+width: null

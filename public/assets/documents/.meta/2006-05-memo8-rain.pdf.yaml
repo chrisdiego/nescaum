@@ -1,7 +1,15 @@
 data:
-  formatted_title: 'RAIN Preliminary Data Analysis'
-size: 1270807
-last_modified: 1645333641
-width: null
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Rural Aerosol Intensive Network (RAIN) Data Analysis
+  key_words: ''
+  topic:
+  - attainment_planning
+  - visibility
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 1270807
+width: null

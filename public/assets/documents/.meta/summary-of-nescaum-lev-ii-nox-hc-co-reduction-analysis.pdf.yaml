@@ -1,6 +1,19 @@
-data: {  }
-size: 131474
-last_modified: 1167836566
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - report
+  formatted_title: Summary of NESCAUM Analysis Evaluating the NOx, HC, and CO Emission
+    Reduction Potential from Adoption of the California Low Emission Vehicle (LEV
+    II) Standards
+  key_words: ''
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1167836566
 mime_type: application/pdf
+size: 131474
+width: null

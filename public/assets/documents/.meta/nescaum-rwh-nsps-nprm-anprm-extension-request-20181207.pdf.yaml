@@ -1,6 +1,16 @@
-data: {  }
-size: 246683
-last_modified: 1544197972
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Request to Extend Comment Periods and Hold Additional Hearing on
+    EPA Residential Wood Heaters NSPS Proposals
+  key_words: ''
+  topic:
+  - area_sources
+  - stationary_sources
 height: null
+last_modified: 1544197972
 mime_type: application/pdf
+size: 246683
+width: null

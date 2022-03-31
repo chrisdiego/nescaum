@@ -1,6 +1,15 @@
-data: {  }
-size: 679404
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Northeast Regional Mercury Total Maximum Daily Load
+  key_words: ''
+  topic:
+  - air_toxics
+  - mercury
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 679404
+width: null

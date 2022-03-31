@@ -1,6 +1,18 @@
-data: {  }
-size: 194025
-last_modified: 1568994784
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - statement
+  formatted_title: "NESCAUM Response to Trump Administration Announcement Revoking\
+    \ California\u2019s Authority to Require Cleaner Cars"
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1568994784
 mime_type: application/pdf
+size: 194025
+width: null

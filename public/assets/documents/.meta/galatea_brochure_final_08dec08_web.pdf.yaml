@@ -1,6 +1,17 @@
-data: {  }
-size: 1638306
-last_modified: 1645042024
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  document_type:
+  - report
+  formatted_title: New England Aquarium Research Vessel Retrofit Project XA-97172701-0
+  key_words: diesel, retrofit
+  topic:
+  - air_toxics
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 1638306
+width: null

@@ -1,6 +1,21 @@
-data: {  }
-size: 291462
-last_modified: 1619464496
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: "NESCAUM Statement on EPA's Reconsideration of the 2019 Withdrawal\
+    \ of California\u201A\xC4\xF4s Waiver to Enforce Greenhouse Gas Standards for\
+    \ Cars and Light Trucks"
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1619464496
 mime_type: application/pdf
+size: 291462
+width: null

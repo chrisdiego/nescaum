@@ -1,6 +1,17 @@
-data: {  }
-size: 597191
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - presentation
+  formatted_title: Status of States Strategies to Address Mercury Emissions from Coal-Fired
+    Power Plants
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
+  - mercury
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 597191
+width: null

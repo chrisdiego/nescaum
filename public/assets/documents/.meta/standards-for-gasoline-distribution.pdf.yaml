@@ -1,6 +1,16 @@
-data: {  }
-size: 74501
-last_modified: 1159300822
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: Promulgation of MACT/GACT Standards for Gasoline Distribution
+  key_words: ''
+  topic:
+  - air_toxics
+  - area_sources
+  - stationary_sources
+  - neshaps
 height: null
+last_modified: 1159300822
 mime_type: application/pdf
+size: 74501
+width: null

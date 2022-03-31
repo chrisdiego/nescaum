@@ -1,6 +1,13 @@
-data: {  }
-size: 163351
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type: []
+  formatted_title: EPA's Proposed Rule on Control of Emissions of Air Pollution from
+    Locomotive and Marine Engines
+  key_words: ''
+  topic: []
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 163351
+width: null

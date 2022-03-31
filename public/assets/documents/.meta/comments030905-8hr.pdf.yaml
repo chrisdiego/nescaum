@@ -1,6 +1,16 @@
-data: {  }
-size: 55739
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Draft Regulatory Text for Proposed Rule to Implement the 8-Hour
+    Ozone
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_implementation
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 55739
+width: null

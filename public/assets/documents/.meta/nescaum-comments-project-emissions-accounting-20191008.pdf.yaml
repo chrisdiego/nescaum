@@ -1,6 +1,15 @@
-data: {  }
-size: 287536
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: 'Proposed Rule on PSD and NNSR: Project Emissions Accounting'
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 287536
+width: null

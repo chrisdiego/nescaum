@@ -1,7 +1,18 @@
 data:
-  formatted_title: 'MSAT Comments Nescaum'
-size: 139642
-last_modified: 1645333641
-width: null
+  archive: true
+  display_on:
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: MSAT Notice of Proposed Rulemaking
+  key_words: MSAT
+  topic:
+  - air_toxics
+  - env_justice
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 139642
+width: null

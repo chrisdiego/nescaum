@@ -1,6 +1,15 @@
-data: {  }
-size: 1176821
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - presentation
+  formatted_title: Haze Communication Using the CAMNET and IMPROVE Archives
+  key_words: ''
+  topic:
+  - attainment_planning
+  - visibility
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 1176821
+width: null

@@ -1,6 +1,19 @@
-data: {  }
-size: 58521
-last_modified: 1153163168
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - testimony
+  formatted_title: Testimony for EPA Public Hearing on California State Nonroad Engine
+    and Vehicle Pollution Control Standards
+  key_words: nonroad, CARB, criteria
+  topic:
+  - air_toxics
+  - mobile_sources
 height: null
+last_modified: 1153163168
 mime_type: application/pdf
+size: 58521
+width: null

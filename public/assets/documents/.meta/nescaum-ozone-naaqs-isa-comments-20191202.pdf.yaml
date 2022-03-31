@@ -1,6 +1,16 @@
-data: {  }
-size: 381416
-last_modified: 1575304012
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: NESCAUM Comments on ISA for Ozone and Related Photochemical Oxidants
+    (External Review Draft)
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1575304012
 mime_type: application/pdf
+size: 381416
+width: null

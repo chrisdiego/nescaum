@@ -1,6 +1,15 @@
-data: {  }
-size: 445380
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - presentation
+  formatted_title: Exploring the Energy, Economic, and Environmental Benefits of Insulation
+    Investment and Home Weatherization in New England
+  key_words: ''
+  topic:
+  - climate_energy
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 445380
+width: null

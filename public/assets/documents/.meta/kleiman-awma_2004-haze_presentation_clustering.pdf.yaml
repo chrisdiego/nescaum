@@ -1,6 +1,15 @@
-data: {  }
-size: 2687820
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - presentation
+  formatted_title: Trajectory Clustering Techniques
+  key_words: ''
+  topic:
+  - attainment_planning
+  - visibility
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 2687820
+width: null

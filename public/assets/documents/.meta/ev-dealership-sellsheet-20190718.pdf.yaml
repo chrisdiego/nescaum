@@ -1,6 +1,17 @@
-data: {  }
-size: 3995467
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - air_toxics
+  - electric_cars
+  document_type:
+  - fact_sheet
+  formatted_title: What It Takes to Sell Electric Vehicles
+  key_words: ZEV, light-duty
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 3995467
+width: null

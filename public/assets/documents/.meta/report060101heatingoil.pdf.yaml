@@ -1,6 +1,18 @@
-data: {  }
-size: 261153
-last_modified: 1141158924
-width: null
+data:
+  archive: true
+  display_on: []
+  document_type:
+  - report
+  formatted_title: 'Low Sulfur Heating Oil in the Northeast States: An Overview of
+    Benefits, Costs and Implementation Issues'
+  key_words: ''
+  topic:
+  - area_sources
+  - attainment_planning
+  - climate_energy
+  - stationary_sources
 height: null
+last_modified: 1141158924
 mime_type: application/pdf
+size: 261153
+width: null

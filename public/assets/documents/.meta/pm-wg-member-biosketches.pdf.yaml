@@ -1,6 +1,15 @@
-data: {  }
-size: 142495
-last_modified: 1550163656
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - meeting_materials
+  - notes
+  formatted_title: PM Measurement Method Workgroup Members
+  key_words: ''
+  topic:
+  - attainment_planning
 height: null
+last_modified: 1550163656
 mime_type: application/pdf
+size: 142495
+width: null

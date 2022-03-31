@@ -1,6 +1,18 @@
-data: {  }
-size: 167792
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - testimony
+  formatted_title: Testimony on Proposed Safer Affordable Fuel-Efficient (SAFE) Vehicles
+    Rule
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 167792
+width: null

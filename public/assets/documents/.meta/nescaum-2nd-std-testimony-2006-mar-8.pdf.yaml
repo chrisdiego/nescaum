@@ -1,6 +1,16 @@
-data: {  }
-size: 87659
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Rule on the National Ambient Air Quality Standards for
+    Particulate Matter
+  key_words: ''
+  topic:
+  - attainment_planning
+  - naaqs_development
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 87659
+width: null

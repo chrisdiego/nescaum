@@ -1,6 +1,19 @@
-data: {  }
-size: 218857
-last_modified: 1632276724
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  document_type:
+  - statement
+  formatted_title: NESCAUM Welcomes the Province of Quebec to the Multi-State MHD
+    Zero-Emission Vehicle Initiative
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1632276724
 mime_type: application/pdf
+size: 218857
+width: null

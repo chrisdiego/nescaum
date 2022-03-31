@@ -1,6 +1,16 @@
-data: {  }
-size: 345582
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: 'Proposed NESHAP: Miscellaneous Organic Chemical Manufacturing'
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
+  - neshaps
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 345582
+width: null

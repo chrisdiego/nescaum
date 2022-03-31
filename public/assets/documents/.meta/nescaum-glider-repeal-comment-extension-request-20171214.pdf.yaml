@@ -1,6 +1,19 @@
-data: {  }
-size: 273316
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - letter
+  formatted_title: Comment Deadline Extension Request for Proposed Repeal of Diesel
+    Truck Glider Emission Requirements
+  key_words: ''
+  topic:
+  - attainment_planning
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 273316
+width: null

@@ -1,6 +1,15 @@
-data: {  }
-size: 27230
-last_modified: 1176911788
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - recommendations
+  formatted_title: Technical Guidance on Significant Impact Levels (SILs) for PM2.5
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1176911788
 mime_type: application/pdf
+size: 27230
+width: null

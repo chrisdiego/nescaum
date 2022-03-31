@@ -1,6 +1,15 @@
-data: {  }
-size: 178981
-last_modified: 1186409660
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: 'Proposed Rule on PSD NSR: Refinement of Increment Modeling Procedures'
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1186409660
 mime_type: application/pdf
+size: 178981
+width: null

@@ -1,6 +1,17 @@
-data: {  }
-size: 174086
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: NESHAPs for Brick and Structural Clay Products Manufacturing and
+    Clay Ceramics Manufacturing
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
+  - neshaps
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 174086
+width: null

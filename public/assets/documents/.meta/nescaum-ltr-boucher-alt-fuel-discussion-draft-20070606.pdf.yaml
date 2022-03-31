@@ -1,6 +1,18 @@
-data: {  }
-size: 103249
-last_modified: 1645333641
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - letter
+  formatted_title: Letter re June 1, 2007 Discussion Draft on Alternative Fuels, Infrastructure,
+    and Vehicles
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 103249
+width: null

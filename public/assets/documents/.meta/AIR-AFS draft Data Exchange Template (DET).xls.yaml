@@ -1,6 +1,20 @@
-data: {  }
-size: 116736
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_cars
+  - electric_trucks
+  document_type:
+  - comments
+  formatted_title: Comments on Reconsideration of the Withdrawal of a Waiver for California
+    Light-duty Vehicle ZEV and GHG Standards
+  key_words: ''
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
-mime_type: application/vnd.ms-excel
+last_modified: 1645333641
+mime_type: application/pdf
+size: 431338
+width: null

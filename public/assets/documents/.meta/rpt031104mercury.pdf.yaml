@@ -1,6 +1,16 @@
-data: {  }
-size: 723407
-last_modified: 1137177708
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Mercury Emissions from Coal-Fired Power Plants
+  key_words: ''
+  topic:
+  - air_toxics
+  - stationary_sources
+  - mercury
 height: null
+last_modified: 1137177708
 mime_type: application/pdf
+size: 723407
+width: null

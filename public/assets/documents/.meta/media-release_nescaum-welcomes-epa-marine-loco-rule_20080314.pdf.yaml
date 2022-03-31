@@ -1,6 +1,18 @@
-data: {  }
-size: 83931
-last_modified: 1645042024
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type: []
+  formatted_title: NESCAUM Welcomes Stricter Air Pollution Standards for Locomotive
+    and Marine Engines
+  key_words: locomotive
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 83931
+width: null

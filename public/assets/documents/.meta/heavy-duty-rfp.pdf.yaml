@@ -1,6 +1,18 @@
-data: {  }
-size: 123835
-last_modified: 1645042024
-width: null
+data:
+  archive: true
+  display_on:
+  - clean_transportation
+  - electric_trucks
+  document_type:
+  - announcement
+  formatted_title: Heavy-Duty Vehicle Emissions and Fuel Consumption Improvement Project
+    RFP
+  key_words: RFP, HDV, GHG
+  topic:
+  - climate_energy
+  - mobile_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 123835
+width: null

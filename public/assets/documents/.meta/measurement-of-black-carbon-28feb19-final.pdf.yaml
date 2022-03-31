@@ -1,6 +1,18 @@
-data: {  }
-size: 7391693
-last_modified: 1645042024
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - report
+  formatted_title: Measurement of Black Carbon in a Wood Stove Method 5g Dilution
+    Tunnel
+  key_words: ''
+  topic:
+  - air_toxics
+  - area_sources
+  - climate_energy
+  - stationary_sources
 height: null
+last_modified: 1645042024
 mime_type: application/pdf
+size: 7391693
+width: null

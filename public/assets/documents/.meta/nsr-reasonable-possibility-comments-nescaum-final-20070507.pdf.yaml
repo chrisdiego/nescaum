@@ -1,6 +1,16 @@
-data: {  }
-size: 96942
-last_modified: 1178803642
-width: null
+data:
+  archive: false
+  display_on: []
+  document_type:
+  - comments
+  formatted_title: Proposed Rule Regarding the "Reasonable Possibility" Recordkeeping
+    and Reporting Standard of the 2002 New Source Review (NSR) Reform Rule
+  key_words: ''
+  topic:
+  - attainment_planning
+  - stationary_sources
 height: null
+last_modified: 1178803642
 mime_type: application/pdf
+size: 96942
+width: null

@@ -1,6 +1,17 @@
-data: {  }
-size: 125227
-last_modified: 1645333641
-width: null
+data:
+  archive: false
+  display_on:
+  - clean_transportation
+  - air_toxics
+  - electric_trucks
+  document_type:
+  - statement
+  formatted_title: NESCAUM Statement on EPA Cleaner Trucks Initiative
+  key_words: CTI
+  topic:
+  - mobile_sources
 height: null
+last_modified: 1645333641
 mime_type: application/pdf
+size: 125227
+width: null
