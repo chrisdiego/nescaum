@@ -74,16 +74,7 @@ const ElectricVehicleMarketPage = () => {
           <Image src="/assets/images/stock/electric-us-map.png" style={{ marginLeft: 40 }} />
         </Row>
       </Column>
-			<DocumentLinks documents={[
-					{
-						href: 'https://www.nescaum.org/files/mhd-zev-comments.php', 
-						text: 'Action Plan Development Process and Public Comments'
-					}
-				]}
-			>
-				<BoldP> We Need Your Input </BoldP>
-				<P>Stakeholders are invited and encouraged to provide feedback and suggestions for the new Action Plan. <br/> Click below to learn more.</P>
-			</DocumentLinks>
+      <DocumentLinks docFilter="electric_trucks"/>
     </>
   );
 };

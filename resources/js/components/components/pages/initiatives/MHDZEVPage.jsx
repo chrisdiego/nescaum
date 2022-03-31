@@ -5,7 +5,7 @@ import Column from "../../utility/Column";
 import Heading from "../../utility/Heading";
 import Paragraph from "../../utility/Paragraph";
 import styled from 'styled-components';
-import { HashLink } from 'react-router-hash-link';
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const jurisdictions = [
     {
@@ -121,6 +121,7 @@ const MHDZEVPage = () => {
         </Paragraph>
         <br />
       </Column>
+      <DocumentLinks docFilter="mhd_zev_initiative"/>
     </>
   )
 }

@@ -5,6 +5,7 @@ import Column from '../../utility/Column';
 import Heading from '../../utility/Heading';
 import Paragraph from '../../utility/Paragraph';
 import { Link } from 'react-router-dom';
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const HazardousAirPollutionPage = () => {
   return (
@@ -61,7 +62,9 @@ const HazardousAirPollutionPage = () => {
         <ListItems singular>
           In April 2021, NESCAUM, working with state partners, submitted a letter to EPA urging the agency to publicly release an updated National Air Toxics Assessment (NATA). The letter details the ways that state programs use those data, including in the identification of communities that are disproportionately impacted by stationary and mobile air toxics sources.
         </ListItems>
+        
       </Column>
+      <DocumentLinks docFilter="air_toxics"/>
     </>
   )
 }

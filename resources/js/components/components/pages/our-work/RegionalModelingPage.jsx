@@ -3,6 +3,7 @@ import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
 import Heading from "../../utility/Heading";
 import Paragraph from "../../utility/Paragraph";
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const RegionalModeling = () => {
   return (
@@ -26,6 +27,7 @@ const RegionalModeling = () => {
           data={data}
         />
       ))}
+      <DocumentLinks docFilter="regional_modeling"/>
     </>
   )
 }

@@ -5,6 +5,7 @@ import PageScaffold from '../../scaffold/PageScaffold';
 import Column from '../../utility/Column';
 import Paragraph from '../../utility/Paragraph';
 import Heading from '../../utility/Heading';
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const ListosPage = () => {
   return (
@@ -58,6 +59,7 @@ const ListosPage = () => {
           )
         })}
       </Column>
+      <DocumentLinks docFilter="listos"/>
     </>
   )
 }

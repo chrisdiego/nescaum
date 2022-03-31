@@ -56,7 +56,7 @@ const Home = () => {
                     <Paragraph primary>
                     NESCAUM as a coalition of state air agencies promotes regional cooperation and action by its member states in support of effective programs to reduce the adverse public health and environmental impacts of air pollution and climate change.
                     </Paragraph>
-                    <StyledLink href="/aboutUs" to="/aboutUs">
+                    <StyledLink href="/about-us" to="/about-us">
                         <Button text="LEARN MORE ABOUT US" />
                     </StyledLink>
                 </Column>

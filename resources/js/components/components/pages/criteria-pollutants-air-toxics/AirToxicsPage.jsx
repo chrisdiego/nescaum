@@ -1,4 +1,5 @@
 import PageScaffold from "../../scaffold/PageScaffold";
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const AirToxicsPage = () => {
     return (
@@ -7,6 +8,7 @@ const AirToxicsPage = () => {
                 headline='Air Toxics'
                 mainText='Placeholder'
             />
+            <DocumentLinks docFilter="air_toxics"/>
         </>
     )
 }

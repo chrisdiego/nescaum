@@ -156,6 +156,10 @@ const ResourceLibraryPage = () => {
         topic: [],
         input: ''
     })
+    const [page, setPage] = useState({
+        start: 0,
+        end: 24,
+    })
 
     useEffect(async () => {
         if (!documents.length) {
@@ -187,6 +191,8 @@ const ResourceLibraryPage = () => {
         return filterable;
     })
     
+    const paginatedDocuments = filteredDocuments.slice(page.start, page.end)
+
     return (
         <Column center width="al-fu" pt={80} mb={60}>
             <Heading text="RESOURCE LIBRARY" bold />
@@ -197,7 +203,7 @@ const ResourceLibraryPage = () => {
                         <Heading text="Your Search Results" size={28} mb="0" />
                     </ContainerWithBorder>
 
-                    {filteredDocuments?.map((document, index) => {
+                    {paginatedDocuments?.map((document, index) => {
                         return (
                             <StyledLinkContainer
                                 key={document.id}
@@ -211,6 +217,11 @@ const ResourceLibraryPage = () => {
                     })}
 
                     {!filteredDocuments.length && (filters.document_type.length || filters.topic.length || filters.input.length) && <NoResultsMessage>No results found</NoResultsMessage>}
+                    <Pagination>
+                        <PageButton onClick={() => setPage({start: page.start - 24 < 0 ? 0 : page.start - 24 , end: page.end - 24 == 0 ? 24 : page.end - 24})}>back</PageButton>
+                        <h3>{`Page ${(page.start / 24) + 1}`}</h3>
+                        <PageButton onClick={() => {if (page.end + 24 <= filteredDocuments.length) setPage({start: page.start + 24 , end: page.end + 24})}}>next</PageButton>
+                    </Pagination>
                 </Column>
                 <Column width="28%">
                     <ContainerWithBorder>
@@ -319,4 +330,21 @@ const ResetButton = styled.button`
     margin-top: 15px;
     border: none;
     margin-left: 1px;
+`;
+
+const Pagination = styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+`;
+
+const PageButton = styled.button`
+    background-color: #669935;
+    font-size: 14px;
+    color: white;
+    padding: 3px 5px;
+    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
 `;

@@ -1,6 +1,7 @@
 import ListItems from "../../content/ListItems";
 import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const MonitoringPage = () => {
   return (
@@ -20,6 +21,7 @@ const MonitoringPage = () => {
           <b>Enhance public awareness.</b> NESCAUM’s CAMNET work raises public awareness about the effects of air pollution on visibility. This is accomplished, in part, through a network of realtime visibility cameras located at scenic urban and rural locations. In addition, near-realtime air pollution and meteorological data are provided to help distinguish natural from man-made causes of poor visibility, and to provide health-relevant data to the public on current air pollution levels. 
         </ListItems>
       </Column>
+      <DocumentLinks docFilter="monitoring"/>
     </>
   )
 }

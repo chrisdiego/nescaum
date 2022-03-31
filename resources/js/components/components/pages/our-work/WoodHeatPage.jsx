@@ -1,6 +1,7 @@
 import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
 import Paragraph from "../../utility/Paragraph";
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const WoodHeatPage = () => {
   return (
@@ -25,6 +26,7 @@ const WoodHeatPage = () => {
           NESCAUM’s work in this area includes original research into wood heat-related emissions; leading multi-state workgroups focused on residential wood heating emissions and test methods; commenting on federal proposals and actions; and constructive engagement with EPA on wood heating issues. 
         </Paragraph>
       </Column>
+      <DocumentLinks docFilter="wood_heat"/>
     </>
   )
 }

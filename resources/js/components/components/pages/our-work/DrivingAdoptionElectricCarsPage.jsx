@@ -76,15 +76,7 @@ const DrivingAdoptionElectricCarsPage = () => {
           </ImageContainer>
         </Row>
       </Column>
-      <DocumentLinks documents={[
-        {
-          href: 'https://www.nescaum.org/files/mhd-zev-comments.php', 
-					text: 'Action Plan Development Process and Public Comments'
-        }, {
-          href: 'https://www.nescaum.org/files/mhd-zev-comments.php', 
-					text: 'Action Plan Development Process and Public Comments'
-        }
-      ]}/>
+      <DocumentLinks docFilter="electric_cars"/>
     </>
   )
 }

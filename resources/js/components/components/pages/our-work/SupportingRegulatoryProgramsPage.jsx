@@ -4,6 +4,7 @@ import Heading from "../../utility/Heading";
 import Paragraph from "../../utility/Paragraph";
 import Row from "../../utility/Row";
 import styled from 'styled-components';
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const SupportingRegulatoryProgramsPage = () => {
   return (
@@ -33,6 +34,7 @@ const SupportingRegulatoryProgramsPage = () => {
           <Image src="/assets/images/stock/lev-zev.png"/>
         </Row>
       </Column>
+      <DocumentLinks docFilter="supporting_regulatory_programs"/>
     </>
   )
 }

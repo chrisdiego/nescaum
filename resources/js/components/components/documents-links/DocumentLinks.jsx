@@ -1,31 +1,45 @@
 import Column from "../utility/Column";
 import Paragraph from "../utility/Paragraph";
 import styled from "styled-components";
+import { API_URL } from "../../../constants/constants";
+import { useEffect, useState } from "react";
 
-const DocumentLinks = ({ documents, children }) => {
+const DocumentLinks = ({ children, docFilter }) => {
+    const [documents, setDocuments] = useState([]);
+        
+    useEffect(async () => {
+        if (!documents?.length) {
+            let url = `${API_URL}/assets/documents?limit=999999999`;
+            const response = await fetch(url);
+            const results = await response.json();
+            setDocuments(results.data);
+        }
+    }, [documents]);
+
+    const filteredResults = documents?.filter(result => result?.display_on?.some(page => page["key"] == docFilter))
     return (
         <Container>
             <Column width={"al-fu"} center>
                 {children}
 
                 <PdfGrid className="pdfGrid">
-                    {documents.map((document, index) => {
+                    {filteredResults?.map((document, index) => {
                         return (
                             <a
                                 key={index}
-                                href={document.href}
+                                href={document.url}
                                 rel="noopener noreferrer"
                                 target="_blank"
                             >
                                 <DocumentDiv>
                                     <Paragraph align="center" size="30px">
-                                        {document.type || "PDF"}
+                                        {document.mime_type ==  "application/pdf" ? "PDF" : "Document"}
                                     </Paragraph>
                                     <br />
                                     <Paragraph>Open link in new tab</Paragraph>
                                 </DocumentDiv>
                                 <Paragraph bold align="center" size="20px">
-                                    {document.text}
+                                    {document.formatted_title}
                                 </Paragraph>
                             </a>
                         );
