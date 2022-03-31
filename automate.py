@@ -20,8 +20,3 @@ with open('spreadsheetformatted.json') as json_file:
                     originalData['data'] = {}
         with open(file, "w") as f:
             yaml.safe_dump(originalData, f)
-           
-#loop through files and look for match in filename to json
-#build out yaml config for topics, doc type, published date, any other info
-#write yaml to file
-#close file
