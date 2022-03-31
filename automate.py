@@ -8,15 +8,16 @@ json_data = glob('spreadsheetformatted.json')
 with open('spreadsheetformatted.json') as json_file:
     data = json.load(json_file)
     for file in yaml_files:
-        with open(file, "r+") as f:
+        with open(file, "r") as f:
             fileName = f.name.replace('public/assets/documents/.meta/', '')
             fileName = fileName.replace('.yaml', '')
             if not ' ' in fileName:
                 dataToConvert = data.get(fileName)
-                originalData = yaml.load(f)
+                originalData = yaml.safe_load(f)
                 if originalData is not None:
                     originalData['data'] = data.get(fileName)
-                    yaml.dump(originalData)
+        with open(file, "w") as f:
+            yaml.safe_dump(originalData, f)
            
 #loop through files and look for match in filename to json
 #build out yaml config for topics, doc type, published date, any other info
