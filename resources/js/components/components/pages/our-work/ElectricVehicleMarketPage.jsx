@@ -51,13 +51,11 @@ const ElectricVehicleMarketPage = () => {
         <Row>
           <Column>
             <P>
-              In July 2020, NESCAUM coordinated the development and release of a
-              governor’s{" "}
-              <ExternalLink href="https://www.nescaum.org/documents/zev-mou-8-governors-signed-20131024.pdf/">
-                Memorandum of Understanding (MOU)
+            A diverse coalition of 18 jurisdictions in the United States and Canada has committed, through the {" "}
+              <ExternalLink href="/assets/documents/mhdv-zev-mou_12-14-2021.pdf">
+              Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding (MOU)
               </ExternalLink>{" "}
-              committing fifteen states and the District of Columbia to work
-              together to advance the market for electric trucks and buses.
+              , to work to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.
             </P>
             <P>
               The MOU sets zero-emission sales targets for new medium- and

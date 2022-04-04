@@ -46,7 +46,7 @@ const DrivingAdoptionElectricCarsPage = () => {
             </Paragraph>
             <ListItems singular>
               <Paragraph>
-                electric car purchase incentive programs
+                Drive Change. Drive Electric., a regional consumer education and awareness campaign.
               </Paragraph>
             </ListItems>
             <ListItems singular>
@@ -74,6 +74,14 @@ const DrivingAdoptionElectricCarsPage = () => {
               src='/assets/images/stock/zev-mutli-state.jpg'
             />
           </ImageContainer>
+        </Row>
+        <Row justify='space-between'>
+            <Column>
+                <Image src='/assets/images/stock/map-10-nescaum.png'/>
+            </Column>
+            <Column>
+                <Image src='/assets/images/stock/map-10-nescaum.png'/>
+            </Column>
         </Row>
       </Column>
       <DocumentLinks docFilter="electric_cars"/>

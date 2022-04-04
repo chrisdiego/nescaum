@@ -24,7 +24,7 @@ const Home = () => {
         {
             title: "Zero-Emission Medium- and Heavy-Duty Vehicle Initiative",
             content:
-                "Truck and bus electrification is a top priority for many states. In 2020, the governors of fifteen states and the mayor of the District of Columbia committed to work together as part of a multi-state coalition, facilitated by NESCAUM, to spur truck electrification.",
+                "Truck and bus electrification is a top priority for many states. A coalition of 18 jurisdictions in the United States and Canada has committed to work together to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.",
             imageSrc: "/assets/images/stock/electricbus.jpg",
             href: "/our-work/clean-transportation/adoption-of-electric-cars",
         },

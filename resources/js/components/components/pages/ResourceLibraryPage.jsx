@@ -239,11 +239,17 @@ const ResourceLibraryPage = () => {
                             const checked = filters.document_type.includes(type.key)
                             return (
                                 <li>
-                                    <input name={type.key} type="checkbox" checked={filters.document_type.includes(type.key)} onChange={(e) => setFilters(
-                                        {
-                                            ...filters, 
-                                            document_type: checked ? filters.document_type.filter(filterType => filterType !== type.key) : filters.document_type.concat(type.key)
+                                    <input name={type.key} type="checkbox" checked={filters.document_type.includes(type.key)} onChange={(e) => {
+                                        setPage({
+                                            start: 0,
+                                            end: 24
                                         })
+                                        setFilters(
+                                            {
+                                                ...filters, 
+                                                document_type: checked ? filters.document_type.filter(filterType => filterType !== type.key) : filters.document_type.concat(type.key)
+                                            })
+                                        }
                                     }></input>
                                     <CheckboxLabel>{type.name}</CheckboxLabel>
                                 </li>
@@ -256,11 +262,17 @@ const ResourceLibraryPage = () => {
                             const checked = filters.topic.includes(topic.key)
                             return (
                                 <li>
-                                    <input name={topic.key} type="checkbox" checked={checked} onChange={(e) => setFilters(
-                                        {
-                                            ...filters, 
-                                            topic: checked ? filters.topic.filter(filterTopic => filterTopic !== topic.key) : filters.topic.concat(topic.key)
+                                    <input name={topic.key} type="checkbox" checked={checked} onChange={(e) => {
+                                        setPage({
+                                            start: 0,
+                                            end: 24
                                         })
+                                        setFilters(
+                                            {
+                                                ...filters, 
+                                                topic: checked ? filters.topic.filter(filterTopic => filterTopic !== topic.key) : filters.topic.concat(topic.key)
+                                            })
+                                        }
                                     }></input>
                                     <CheckboxLabel>{topic.name}</CheckboxLabel>
                                 </li>
