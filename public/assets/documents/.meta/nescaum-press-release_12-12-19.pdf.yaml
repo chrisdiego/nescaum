@@ -1,20 +1,20 @@
 data:
   archive: false
   display_on:
-  - mhd_zev_initiative
-  - clean_transportation
-  - air_toxics
-  - electric_trucks
-  - supporting_regulatory_programs
-  document_type: []
-  formatted_title: California and Seven States Commit to Faster Transition to Zero-Emission
-    Trucks and Buses
-  key_words: MHD, ZEV
+    - mhd_zev_initiative
+    - clean_transportation
+    - air_toxics
+    - electric_trucks
+    - supporting_regulatory_programs
+  document_type:
+    - press_release
+  formatted_title: 'California and Seven States Commit to Faster Transition to Zero-Emission Trucks and Buses'
+  key_words: 'MHD, ZEV'
   topic:
-  - climate_energy
-  - mobile_sources
-height: null
-last_modified: 1576143800
-mime_type: application/pdf
+    - climate_energy
+    - mobile_sources
 size: 299263
+last_modified: 1576143800
 width: null
+height: null
+mime_type: application/pdf

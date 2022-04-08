@@ -20,7 +20,6 @@ import HazardousAirPollutionPage from "../pages/our-work/HazardousAirPollutionPa
 import MonitoringPage from "../pages/our-work/MonitoringPage";
 import RegionalModeling from "../pages/our-work/RegionalModelingPage";
 import ListosPage from "../pages/initiatives/ListosPage";
-import ChangePath from "./ChangePath";
 import CleanAirAcademyPage from "../pages/initiatives/CleanAirAcademyPage";
 import RegulatoryCompliancePage from "../pages/our-work/RegulatoryCompliancePage";
 import StationarySectorsPage from "../pages/our-work/StationarySectorsPage";
@@ -30,7 +29,10 @@ import CriteriaPollutantsPage from "../pages/criteria-pollutants-air-toxics/Crit
 import AirToxicsPage from "../pages/criteria-pollutants-air-toxics/AirToxicsPage";
 import CamnetPage from "../pages/initiatives/CamnetPage";
 import StaffPage from "../pages/about-us/StaffPage";
+import OTCPage from "../pages/about-us/OTCPage";
 import MHDZEVPage from "../pages/initiatives/MHDZEVPage";
+import TestMethodDevelopmentPage from "../pages/initiatives/TestMethodDevelopmentPage";
+import ModelingListosPage from "../pages/our-work/ModelingListosPage";
 
 const Router = () => {
 	return (
@@ -39,6 +41,7 @@ const Router = () => {
 			<Route path="/about-us" exact element={<AboutUs/>} />
 			<Route path="/about-us/committees" element={<CommitteesPage/>} />
 			<Route path="/about-us/staff" element={<StaffPage/>} />
+            <Route path="/about-us/otc" element={<OTCPage/>} />
 			<Route exact path="/our-work" element={<OurWork/>} />
 			<Route 
 				exact 
@@ -78,9 +81,7 @@ const Router = () => {
 			<Route
 				exact
 				path="/our-work/regional-modeling/listos"
-				render={(props) => {
-					return <ChangePath {...props} pathName={"/initiatives/listos"} />
-				}}
+				element={<ModelingListosPage/>} 
 			/>
 			<Route 
 				exact 
@@ -111,6 +112,11 @@ const Router = () => {
 				exact
 				path="/initiatives/growing-market-for-electric-vehicles"
 				element={<MHDZEVPage/>}
+			/>
+            <Route
+				exact
+				path="/initiatives/test-method-development"
+				element={<TestMethodDevelopmentPage/>}
 			/>
 			<Route
 				exact

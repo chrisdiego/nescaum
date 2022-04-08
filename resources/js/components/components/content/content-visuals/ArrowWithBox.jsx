@@ -9,7 +9,6 @@ const ArrowWithBox = ({
 	href, 
 	openNewTab, 
 }) => {
-	console.log('openNewTab::', openNewTab)
 	return (
 		<>
 			{openNewTab && (

@@ -97,7 +97,7 @@ const data = {
         },
         {
             title: "OTC",
-            href: "otc",
+            href: "about-us/otc",
         },
     ],
 };

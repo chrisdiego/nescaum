@@ -37,7 +37,7 @@ export default RegionalModeling;
 const descriptionData = [
   {
     title: "Long Island Sound Tropospheric Ozone Study (LISTOS)", 
-    content: "The Long Island Sound Tropospheric Ozone Study investigates how interactions between land masses and water bodies impact ozone formation in and around Long Island Sound. Using the coupled meteorology-chemistry model WRF-CMAQ at a high resolution of 1.33 km by 1.33 km, NESCAUM is leveraging observations gathered during the summer 2018 LISTOS field campaign to conduct model performance evaluation and optimization. Sensitivity simulations are being used to test meteorology parameterizations and develop emissions reductions scenarios based on an improved understanding of formaldehyde to NOX ratios in the New York City/Long Island area.", 
+    content: "The Long Island Sound Tropospheric Ozone Study investigates how interactions between land masses and water bodies impact ozone formation in and around Long Island Sound.", 
     href: "/initiatives/listos", 
     imageSrc: "/assets/images/stock/listos.jpg"
   }, 
@@ -48,7 +48,7 @@ const descriptionData = [
   }, 
   {
     title: "Electricity Sources", 
-    content: "NESCAUM uses modeling to evaluate the air quality benefits of progressive mobile source emission-reduction strategies. This includes, for instance, modeling the impacts of the Cleaner Trucks Initiative, which aims to reduce diesel NOX emissions from on-road trucks by up to 90% nationwide, in terms of  summertime ground-level ozone and wintertime fine particulate matter pollution concentrations.", 
+    content: "With the Ozone Transport Commission (OTC) Modeling Committee, NESCAUM is contributing modeling to understand the pollution impacts specifically from electricity generating units used during peak electricity demand conditions. A series of simulations targeting peak and non-peak plants have been designed through coordination with the Stationary and Area Sources Committee of the OTC.", 
     imageSrc: "/assets/images/stock/smokestack-small.jpg"
   }
 ]

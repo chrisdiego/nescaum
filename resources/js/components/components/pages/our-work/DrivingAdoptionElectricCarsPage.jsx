@@ -32,7 +32,7 @@ const DrivingAdoptionElectricCarsPage = () => {
           <Paragraph>
             In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support their zero-emission vehicle (ZEV) regulatory programs (LINK TO REGULATIONS PAGE).  A governor’s Memorandum of Understanding (LINK TO PDF) officially launched the Multi-State ZEV Task Force. NESCAUM facilitates and guides the Task Force, which serves as a unique forum for galvanizing state leadership on transportation electrification.
           </Paragraph>
-          <Image src='/assets/images/stock/map-10-nescaum.png'/>
+          <Image src='/assets/images/maps/map-10-nescaum.png'/>
         </Row>
         <Heading 
           text='A Track Record of Effective Action'
@@ -74,14 +74,6 @@ const DrivingAdoptionElectricCarsPage = () => {
               src='/assets/images/stock/zev-mutli-state.jpg'
             />
           </ImageContainer>
-        </Row>
-        <Row justify='space-between'>
-            <Column>
-                <Image src='/assets/images/stock/map-10-nescaum.png'/>
-            </Column>
-            <Column>
-                <Image src='/assets/images/stock/map-10-nescaum.png'/>
-            </Column>
         </Row>
       </Column>
       <DocumentLinks docFilter="electric_cars"/>

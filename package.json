@@ -31,7 +31,7 @@
         "@fortawesome/react-fontawesome": "^0.1.17",
         "axios": "^0.25.0",
         "luxon": "^2.3.0",
-        "react-bootstrap": "^2.1.2",
+        "react-bootstrap": "^2.2.3",
         "react-calendar": "^3.7.0",
         "react-hook-form": "^7.27.0",
         "react-is": "^17.0.2",
