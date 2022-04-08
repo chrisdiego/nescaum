@@ -19731,7 +19731,8 @@ var PhotoWithTransparentBox = function PhotoWithTransparentBox() {
           children: " Learn More "
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_content_content_visuals_ArrowWithBox__WEBPACK_IMPORTED_MODULE_0__["default"], {
           color: "white",
-          position: "center"
+          position: "center",
+          href: "/our-work"
         })]
       })
     })
@@ -20481,7 +20482,7 @@ var Dropdown = function Dropdown(_ref) {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dropdown);
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    position: absolute;\n    min-width: 100vw;\n    min-height: 420px;\n    background-color: white;\n    left: 0;\n    top: 180px;\n    border-top: 1px solid rgba(0, 0, 0, 0.2);\n    border-bottom: 1px solid grey;\n    z-index: 1;\n"])));
 var CenterContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    margin: 0 auto;\n    padding: 40px 0 0 0;\n    margin-bottom: -20px;\n    width: 90%;\n    max-width: 1200px;\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n"])));
-var HR = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 100%;\n    border-top: 2px solid #003354;\n    position: absolute;\n    top: 145px;\n"])));
+var HR = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 100%;\n    border-top: 2px solid #003354;\n    position: absolute;\n    top: 120px;\n"])));
 var Column = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    max-width: 240px;\n"])));
 var SectionHeader = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].span(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    font-size: 18px;\n    color: #003354;\n    margin: 10px 20px 30px 20px;\n    max-width: 280px;\n    align-items: center;\n    min-height: 81px;\n    display: flex;\n    justify-content: center;\n\n    a {\n        font-weight: 700;\n        display: inline-block;\n    }\n\n    &:first-child {\n        margin-left: 0 !important;\n    }\n\n    &:nth-child(4) {\n        padding-left: 20px;\n    }\n\n    &:last-child {\n        margin-right: 0;\n    }\n"])));
 var FloatingContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n    position: absolute;\n    top: ", "px;\n    left: ", "px;\n    min-width: 300px;\n    background-color: white;\n    z-index: 1000000 !important;\n    display: flex;\n    flex-direction: column;\n    padding: 10px;\n\n    a {\n        margin-bottom: 20px;\n\n        &:first-child {\n            margin-top: 20px;\n        }\n    }\n"])), function (props) {

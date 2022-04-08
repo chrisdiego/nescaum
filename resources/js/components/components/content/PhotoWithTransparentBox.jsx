@@ -14,7 +14,7 @@ const PhotoWithTransparentBox = () => {
 					<CenteredContent>
 						<H2>Empowering States Through Collaboration</H2>
 						<Span> Learn More </Span>
-						<ArrowWithBox color='white' position='center' />
+						<ArrowWithBox color='white' position='center' href='/our-work' />
 					</CenteredContent>
 				</TransparentBox>
 			</Section>

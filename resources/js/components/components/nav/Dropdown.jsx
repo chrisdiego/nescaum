@@ -209,7 +209,7 @@ const HR = styled.hr`
     width: 100%;
     border-top: 2px solid #003354;
     position: absolute;
-    top: 145px;
+    top: 120px;
 `;
 
 const Column = styled.div`
