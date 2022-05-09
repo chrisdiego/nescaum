@@ -3,8 +3,10 @@ import Paragraph from "../utility/Paragraph";
 import styled from "styled-components";
 import { API_URL } from "../../../constants/constants";
 import { useEffect, useState } from "react";
+import ExternalLink from "../links/ExternalLink";
+import Row from "../utility/Row";
 
-const DocumentLinks = ({ children, docFilter }) => {
+const DocumentLinks = ({ docFilter }) => {
     const [documents, setDocuments] = useState([]);
         
     useEffect(async () => {
@@ -16,13 +18,13 @@ const DocumentLinks = ({ children, docFilter }) => {
         }
     }, [documents]);
 
-    const filteredResults = documents?.filter(result => result?.display_on?.some(page => page["key"] == docFilter))
+    const filteredResults = documents?.filter(result => result?.display_on?.some(page => (page["key"] == docFilter) && result?.show_document_preview_on_page));
+    
+    if(!filteredResults.length)
+        return null;
+ 
     return (
-        <Container>
-            <Column width={"al-fu"} center>
-                {children}
-
-                <PdfGrid className="pdfGrid">
+                <Column width="al-fu" center>
                     {filteredResults?.map((document, index) => {
                         return (
                             <a
@@ -31,22 +33,21 @@ const DocumentLinks = ({ children, docFilter }) => {
                                 rel="noopener noreferrer"
                                 target="_blank"
                             >
-                                <DocumentDiv>
-                                    <Paragraph align="center" size="30px">
-                                        {document.mime_type ==  "application/pdf" ? "PDF" : "Document"}
-                                    </Paragraph>
-                                    <br />
-                                    <Paragraph>Open link in new tab</Paragraph>
-                                </DocumentDiv>
-                                <Paragraph bold align="center" size="20px">
-                                    {document.formatted_title}
-                                </Paragraph>
+                                <Row wrap>
+                                    {filteredResults.map(document => (
+                                        <Document>
+                                            <ExternalLink href={document.url} aria_label={`Link to ${document.formatted_title} Document`}>
+                                                <h5>{document.formatted_title}</h5>
+                                                <Paragraph>{document.description} <i><small>{document.date}</small></i></Paragraph>
+                                                <Image src={document.thumbnail?.url} alt={document.alt_tex}/>
+                                            </ExternalLink>
+                                        </Document>
+                                    ))}
+                                </Row>
                             </a>
                         );
                     })}
-                </PdfGrid>
-            </Column>
-        </Container>
+                </Column>
     );
 };
 
@@ -64,26 +65,19 @@ const Container = styled.div`
     }
 `;
 
-const PdfGrid = styled.div`
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: minmax(100, 300);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-`;
+const Image = styled.img`
+  max-width: 350px; 
+  margin: 0 auto;
+  display: block;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+`
 
-const DocumentDiv = styled.div`
-    width: 200px;
-    min-height: 250px;
-    border: 2px solid white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto 20px auto;
+const Document = styled.div`
+    max-width: 400px;
+    padding-top: 20px;
 
-    &:hover {
-        cursor: pointer;
+    h5 {
+        text-align: center;
     }
 `;

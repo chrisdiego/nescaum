@@ -1,9 +1,10 @@
 import PageScaffold from "../../scaffold/PageScaffold";
-import DocumentLinks from "../../documents-links/DocumentLinks";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import ListItems from "../../content/ListItems";
 import ExternalLink from "../../links/ExternalLink";
 import Column from "../../utility/Column";
 import Paragraph from "../../utility/Paragraph";
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const TestMethodDevelopmentPage = () => {
     return (
@@ -42,7 +43,8 @@ const TestMethodDevelopmentPage = () => {
                 </ExternalLink>
             </ListItems>
             </Column>
-            <DocumentLinks docFilter="camnet"/>
+            <DocumentLinks docFilter="test_method_development"/>
+            <ResourceLibraryLink docFilter="test_method_development"/>
         </>
     );
 };

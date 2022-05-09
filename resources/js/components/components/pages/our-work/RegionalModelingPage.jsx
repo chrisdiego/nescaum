@@ -1,8 +1,8 @@
 import DescriptionWithPhotoSideBySideNoBackground from "../../content/DescriptionWithPhotoSideBySideNoBackground";
 import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
-import Heading from "../../utility/Heading";
 import Paragraph from "../../utility/Paragraph";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const RegionalModeling = () => {
@@ -28,6 +28,7 @@ const RegionalModeling = () => {
         />
       ))}
       <DocumentLinks docFilter="regional_modeling"/>
+      <ResourceLibraryLink docFilter="regional_modeling"/>
     </>
   )
 }

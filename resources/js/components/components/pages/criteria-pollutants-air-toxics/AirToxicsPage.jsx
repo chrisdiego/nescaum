@@ -1,9 +1,11 @@
 import PageScaffold from "../../scaffold/PageScaffold";
-import DocumentLinks from "../../documents-links/DocumentLinks";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import Column from "../../utility/Column";
 import ListItems from "../../content/ListItems";
 import Heading from "../../utility/Heading";
 import ExternalLink from "../../links/ExternalLink";
+import DocumentLinks from "../../documents-links/DocumentLinks";
+
 const AirToxicsPage = () => {
     return (
         <>
@@ -24,6 +26,7 @@ const AirToxicsPage = () => {
             </ListItems>
             </Column>
             <DocumentLinks docFilter="air_toxics"/>
+            <ResourceLibraryLink docFilter="air_toxics"/>
         </>
     )
 }

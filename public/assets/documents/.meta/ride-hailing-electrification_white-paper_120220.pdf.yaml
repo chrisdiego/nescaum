@@ -1,0 +1,13 @@
+data:
+  archive: false
+  thumbnail: stock/ride-hailing.jpg
+  formatted_title: 'Accelerating Ride-Hailing Electrification: Challenges, Benefits and Options for State Action'
+  description: 'A discussion of reasons why states should actively support the electrification of ride-hailing services and a review of actions that state governments can take.'
+  display_on:
+    - state_policy_documents
+  show_document_preview_on_page: true
+size: 465731
+last_modified: 1652048371
+width: null
+height: null
+mime_type: application/pdf

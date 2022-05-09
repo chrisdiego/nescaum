@@ -1,8 +1,9 @@
 import ListItems from "../../content/ListItems"
-import DocumentLinks from "../../documents-links/DocumentLinks"
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink"
 import PageScaffold from "../../scaffold/PageScaffold"
 import Column from "../../utility/Column"
 import Paragraph from "../../utility/Paragraph"
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const RegulatoryCompliancePage = () => {
   return (
@@ -23,7 +24,8 @@ const RegulatoryCompliancePage = () => {
           </Paragraph>
         </ListItems>
       </Column>
-      <DocumentLinks documents={[
+      <DocumentLinks docFilter="regulatory_compliance"/>
+      <ResourceLibraryLink documents={[
         {
           text: 'ICR Air Stationary Source Compliance and Enforcement Information Reporting', 
           href: 'https://www.nescaum.org/documents/nescaum-icr-air-sources-repting-comments-to-epa-20150211.pdf/'

@@ -1,6 +1,8 @@
 import DescriptionWithPhotoSideBySide from "../../content/DescriptionWithPhotoSideBySide";
 import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink"
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const StationarySectorsPage = () => {
   return (
@@ -22,7 +24,8 @@ const StationarySectorsPage = () => {
           )
         })}
       </Column>
-        
+      <DocumentLinks docFilter="stationary_sectors"/>
+      <ResourceLibraryLink docFilter="stationary_sectors"/>
     </>
   )  
 }

@@ -10,6 +10,10 @@ const data = {
                 {
                     title: "Driving Adoption of Electric Cars",
                     href: "adoption-of-electric-cars",
+                    subLink: {
+                        title: "State Policy Documents",
+                        href: "state-policy-documents",
+                    }
                 },
                 {
                     title: "Growing the Market for Electric Trucks",
@@ -105,7 +109,7 @@ const data = {
 const Dropdown = ({ hoveredText, mouseLeaveHandler, initRef, aboutRef }) => {
     if (hoveredText === "our-work") {
         return (
-            <Container onMouseLeave={mouseLeaveHandler}>
+            <Container>
                 <CenterContainer>
                     {data[hoveredText] &&
                         data[hoveredText].map((obj, index) => (
@@ -120,7 +124,8 @@ const Dropdown = ({ hoveredText, mouseLeaveHandler, initRef, aboutRef }) => {
                                 </SectionHeader>
                                 <Column>
                                     {obj.subLinks &&
-                                        obj.subLinks.map((link) => (
+                                        obj.subLinks.map(link => (
+                                            <>
                                             <Link
                                                 key={link.href}
                                                 className="m-down"
@@ -129,6 +134,17 @@ const Dropdown = ({ hoveredText, mouseLeaveHandler, initRef, aboutRef }) => {
                                             >
                                                 {link.title}
                                             </Link>
+                                            {link.subLink && 
+                                                <Link
+                                                    key={link.subLink.href}
+                                                    className="m-down sublink"
+                                                    href={`/${hoveredText}/${obj.href}/${link.href}/${link.subLink.href}`}
+                                                    to={`/${hoveredText}/${obj.href}/${link.href}/${link.subLink.href}`}
+                                                >
+                                                    {link.subLink.title}
+                                                </Link>
+                                            }
+                                            </>
                                         ))}
                                 </Column>
                             </Column>
@@ -188,10 +204,10 @@ const Container = styled.div`
     min-height: 420px;
     background-color: white;
     left: 0;
-    top: 180px;
+    top: 152px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid grey;
-    z-index: 1;
+    z-index: 999;
 `;
 
 const CenterContainer = styled.div`

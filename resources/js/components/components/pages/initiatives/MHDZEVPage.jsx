@@ -5,6 +5,7 @@ import Column from "../../utility/Column";
 import Heading from "../../utility/Heading";
 import Paragraph from "../../utility/Paragraph";
 import styled from 'styled-components';
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const jurisdictions = [
@@ -122,6 +123,7 @@ const MHDZEVPage = () => {
         <br />
       </Column>
       <DocumentLinks docFilter="mhd_zev_initiative"/>
+      <ResourceLibraryLink docFilter="mhd_zev_initiative"/>
     </>
   )
 }

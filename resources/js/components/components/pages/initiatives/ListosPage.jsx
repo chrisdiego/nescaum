@@ -5,6 +5,7 @@ import PageScaffold from '../../scaffold/PageScaffold';
 import Column from '../../utility/Column';
 import Paragraph from '../../utility/Paragraph';
 import Heading from '../../utility/Heading';
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const ListosPage = () => {
@@ -60,6 +61,7 @@ const ListosPage = () => {
         })}
       </Column>
       <DocumentLinks docFilter="listos"/>
+      <ResourceLibraryLink docFilter="listos"/>
     </>
   )
 }

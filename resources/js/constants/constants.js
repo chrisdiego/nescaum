@@ -1,4 +1,4 @@
-export const API_URL = 'http://157.245.138.21/api'
+export const API_URL = 'http://127.0.0.1:8000/api'
 
 export const PageParams = {
     'PER_PAGE': 10, 

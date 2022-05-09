@@ -8,8 +8,9 @@ import Row from "../../utility/Row";
 import { Link } from "react-router-dom";
 import ListItems from "../../content/ListItems";
 import ExternalLink from "../../links/ExternalLink";
-import DocumentLinks from "../../documents-links/DocumentLinks";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import PageScaffold from "../../scaffold/PageScaffold";
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const ElectricVehicleMarketPage = () => {
   const bulletPoints = [
@@ -73,6 +74,7 @@ const ElectricVehicleMarketPage = () => {
         </Row>
       </Column>
       <DocumentLinks docFilter="electric_trucks"/>
+      <ResourceLibraryLink docFilter="electric_trucks"/>
     </>
   );
 };

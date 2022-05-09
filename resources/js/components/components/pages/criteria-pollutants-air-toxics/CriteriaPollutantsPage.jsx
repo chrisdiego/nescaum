@@ -2,6 +2,8 @@ import PageScaffold from "../../scaffold/PageScaffold";
 import ListItems from "../../content/ListItems";
 import ExternalLink from "../../links/ExternalLink";
 import Column from "../../utility/Column";
+import DocumentLinks from "../../documents-links/DocumentLinks";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 
 const CriteriaPollutantsPage = () => {
     return (
@@ -36,6 +38,8 @@ const CriteriaPollutantsPage = () => {
                 <b>Supporting state air quality planning efforts.</b> NESCAUM facilitates state discussions and information sharing to support the development of State Implementation Plans, which are designed to enable air quality to attain and maintain the NAAQS. Interstate coordination is particularly essential for ozone, particulate matter, and regional haze, which are highly impacted by regional and long-range pollutant transport. 
                 </ListItems>
             </Column>
+            <DocumentLinks docFilter="air_toxics"/>
+            <ResourceLibraryLink docFilter="air_toxics"/>
         </>
     )
 }

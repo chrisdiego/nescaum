@@ -15,6 +15,29 @@ sections:
           listable: hidden
           instructions_position: above
       -
+        handle: description
+        field:
+          antlers: false
+          display: Description
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+      -
+        handle: thumbnail
+        field:
+          mode: list
+          container: images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Thumbnail
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          max_files: 1
+      -
         handle: document_type
         field:
           inline: false
@@ -103,20 +126,20 @@ sections:
             mhd_zev_initiative: 'Initiative: MHD ZEV'
             camnet: 'Initiative: CAMNET'
             test_method_development: 'Initiative: Test Method Development'
-          display: 'Display On'
+            state_policy_documents: 'State Policy Documents'
+          display: 'Pages to Link To'
           type: checkboxes
           icon: checkboxes
           instructions: 'Select the pages to display a link to this document on. The link will appear at the bottom of the selected page(s) in the "Learn More" section.'
           listable: hidden
           instructions_position: above
       -
-        handle: archive
+        handle: show_document_preview_on_page
         field:
           default: false
-          display: Archive
+          display: 'Show Document Preview on Page'
           type: toggle
           icon: toggle
-          instructions: 'Archive this document. It will not appear on the website''s resource library if archived.'
           listable: hidden
           instructions_position: above
       -
@@ -130,8 +153,12 @@ sections:
           listable: hidden
           instructions_position: above
       -
-        handle: alt
+        handle: archive
         field:
-          type: text
-          display: 'Alt Text'
-          instructions: 'Description of the image'
+          default: false
+          display: Archive
+          type: toggle
+          icon: toggle
+          instructions: 'Archive this document. It will not appear on the website''s resource library if archived.'
+          listable: hidden
+          instructions_position: above

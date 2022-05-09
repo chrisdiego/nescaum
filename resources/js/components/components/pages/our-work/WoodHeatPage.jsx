@@ -1,6 +1,7 @@
 import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
 import Paragraph from "../../utility/Paragraph";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const WoodHeatPage = () => {
@@ -27,6 +28,7 @@ const WoodHeatPage = () => {
         </Paragraph>
       </Column>
       <DocumentLinks docFilter="wood_heat"/>
+      <ResourceLibraryLink docFilter="wood_heat"/>
     </>
   )
 }

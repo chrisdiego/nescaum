@@ -1,5 +1,6 @@
 import PageScaffold from '../../scaffold/PageScaffold';
 import React from 'react'; 
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 
@@ -28,6 +29,7 @@ const CleanTransportationPage = () => {
         }}
       />
       <DocumentLinks docFilter="clean_transportation"/>
+      <ResourceLibraryLink docFilter="clean_transportation"/>
     </>
   )
 }

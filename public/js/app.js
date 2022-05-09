@@ -19947,10 +19947,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/constants */ "./resources/js/constants/constants.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
+/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject, _templateObject2, _templateObject3;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -19981,9 +19983,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var DocumentLinks = function DocumentLinks(_ref) {
-  var children = _ref.children,
-      docFilter = _ref.docFilter;
+  var docFilter = _ref.docFilter;
 
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)([]),
       _useState2 = _slicedToArray(_useState, 2),
@@ -20025,45 +20028,99 @@ var DocumentLinks = function DocumentLinks(_ref) {
     var _result$display_on;
 
     return result === null || result === void 0 ? void 0 : (_result$display_on = result.display_on) === null || _result$display_on === void 0 ? void 0 : _result$display_on.some(function (page) {
-      return page["key"] == docFilter;
+      return page["key"] == docFilter && (result === null || result === void 0 ? void 0 : result.show_document_preview_on_page);
     });
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Container, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      width: "al-fu",
-      center: true,
-      children: [children, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(PdfGrid, {
-        className: "pdfGrid",
-        children: filteredResults === null || filteredResults === void 0 ? void 0 : filteredResults.map(function (document, index) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("a", {
-            href: document.url,
-            rel: "noopener noreferrer",
-            target: "_blank",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(DocumentDiv, {
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                align: "center",
-                size: "30px",
-                children: document.mime_type == "application/pdf" ? "PDF" : "Document"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                children: "Open link in new tab"
-              })]
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-              bold: true,
-              align: "center",
-              size: "20px",
-              children: document.formatted_title
-            })]
-          }, index);
+  if (!filteredResults.length) return null;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    width: "al-fu",
+    center: true,
+    children: filteredResults === null || filteredResults === void 0 ? void 0 : filteredResults.map(function (document, index) {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("a", {
+        href: document.url,
+        rel: "noopener noreferrer",
+        target: "_blank",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          wrap: true,
+          children: filteredResults.map(function (document) {
+            var _document$thumbnail;
+
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Document, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                href: document.url,
+                aria_label: "Link to ".concat(document.formatted_title, " Document"),
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h5", {
+                  children: document.formatted_title
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                  children: [document.description, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("i", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("small", {
+                      children: document.date
+                    })
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Image, {
+                  src: (_document$thumbnail = document.thumbnail) === null || _document$thumbnail === void 0 ? void 0 : _document$thumbnail.url,
+                  alt: document.alt_tex
+                })]
+              })
+            });
+          })
         })
-      })]
+      }, index);
     })
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DocumentLinks);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    min-width: 100vw;\n    min-height: 400px;\n    background-color: #daebf5;\n    padding: 40px;\n    margin-top: 40px;\n\n    & > p {\n        color: #006cb3;\n    }\n"])));
-var PdfGrid = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-auto-columns: minmax(100, 300);\n    grid-column-gap: 20px;\n    grid-row-gap: 20px;\n"])));
-var DocumentDiv = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 200px;\n    min-height: 250px;\n    border: 2px solid white;\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    flex-direction: column;\n    margin: 0 auto 20px auto;\n\n    &:hover {\n        cursor: pointer;\n    }\n"])));
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    min-width: 100vw;\n    min-height: 400px;\n    background-color: #daebf5;\n    padding: 40px;\n    margin-top: 40px;\n\n    & > p {\n        color: #006cb3;\n    }\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  max-width: 350px; \n  margin: 0 auto;\n  display: block;\n  border-bottom: 1px solid black;\n  padding-bottom: 25px;\n"])));
+var Document = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    max-width: 400px;\n    padding-top: 20px;\n\n    h5 {\n        text-align: center;\n    }\n"])));
+
+/***/ }),
+
+/***/ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/components/documents-links/ResourceLibraryLink.jsx ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject, _templateObject2;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+var ResourceLibraryLink = function ResourceLibraryLink(_ref) {
+  var children = _ref.children,
+      docFilter = _ref.docFilter;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Container, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      width: "al-fu",
+      center: true,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(StyledResourceLibraryLink, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+          to: "/resource-library/".concat(docFilter),
+          children: "Learn More"
+        })
+      })
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResourceLibraryLink);
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    min-width: 100vw;\n    min-height: 110px;\n    background-color: #daebf5;\n    padding: 40px;\n    margin-top: 40px;\n\n    & > p {\n        color: #006cb3;\n    }\n"])));
+var StyledResourceLibraryLink = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].h3(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    font-weight: bold;\n    text-align: center;\n    width: 100%;\n"])));
 
 /***/ }),
 
@@ -20265,7 +20322,7 @@ var Header = function Header() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
-var H = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].header(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tdisplay: flex; \n\tpadding: 20px 40px; \n\talign-items: flex-end;\n\tposition: relative;\n\tborder-bottom: 1px solid rgba(0, 0, 0, .2);\n\n"])));
+var H = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].header(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tdisplay: flex; \n\tpadding: 10px 40px; \n\talign-items: flex-end;\n\tposition: relative;\n\tborder-bottom: 1px solid rgba(0, 0, 0, .2);\n\n"])));
 var Logo = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tdisplay: flex; \n\tflex-direction: column; \n\twidth: 300px; \n"])));
 var StyledLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_5__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\twidth: 300px;\n"])));
 var Image = styled_components__WEBPACK_IMPORTED_MODULE_5__["default"].img(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n\tmax-width: 100%;\n"])));
@@ -20341,13 +20398,18 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var data = {
   "our-work": [{
     title: "CLEAN TRANSPORTATION",
     href: "clean-transportation",
     subLinks: [{
       title: "Driving Adoption of Electric Cars",
-      href: "adoption-of-electric-cars"
+      href: "adoption-of-electric-cars",
+      subLink: {
+        title: "State Policy Documents",
+        href: "state-policy-documents"
+      }
     }, {
       title: "Growing the Market for Electric Trucks",
       href: "growing-market-for-electric-vehicles"
@@ -20422,7 +20484,6 @@ var Dropdown = function Dropdown(_ref) {
 
   if (hoveredText === "our-work") {
     return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Container, {
-      onMouseLeave: mouseLeaveHandler,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(CenterContainer, {
         children: [data[hoveredText] && data[hoveredText].map(function (obj, index) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(Column, {
@@ -20434,12 +20495,19 @@ var Dropdown = function Dropdown(_ref) {
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(Column, {
               children: obj.subLinks && obj.subLinks.map(function (link) {
-                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-                  className: "m-down",
-                  href: "/".concat(hoveredText, "/").concat(obj.href, "/").concat(link.href),
-                  to: "/".concat(hoveredText, "/").concat(obj.href, "/").concat(link.href),
-                  children: link.title
-                }, link.href);
+                return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+                    className: "m-down",
+                    href: "/".concat(hoveredText, "/").concat(obj.href, "/").concat(link.href),
+                    to: "/".concat(hoveredText, "/").concat(obj.href, "/").concat(link.href),
+                    children: link.title
+                  }, link.href), link.subLink && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+                    className: "m-down sublink",
+                    href: "/".concat(hoveredText, "/").concat(obj.href, "/").concat(link.href, "/").concat(link.subLink.href),
+                    to: "/".concat(hoveredText, "/").concat(obj.href, "/").concat(link.href, "/").concat(link.subLink.href),
+                    children: link.subLink.title
+                  }, link.subLink.href)]
+                });
               })
             })]
           }, index);
@@ -20480,7 +20548,7 @@ var Dropdown = function Dropdown(_ref) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dropdown);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    position: absolute;\n    min-width: 100vw;\n    min-height: 420px;\n    background-color: white;\n    left: 0;\n    top: 180px;\n    border-top: 1px solid rgba(0, 0, 0, 0.2);\n    border-bottom: 1px solid grey;\n    z-index: 1;\n"])));
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    position: absolute;\n    min-width: 100vw;\n    min-height: 420px;\n    background-color: white;\n    left: 0;\n    top: 152px;\n    border-top: 1px solid rgba(0, 0, 0, 0.2);\n    border-bottom: 1px solid grey;\n    z-index: 999;\n"])));
 var CenterContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    margin: 0 auto;\n    padding: 40px 0 0 0;\n    margin-bottom: -20px;\n    width: 90%;\n    max-width: 1200px;\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n"])));
 var HR = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 100%;\n    border-top: 2px solid #003354;\n    position: absolute;\n    top: 120px;\n"])));
 var Column = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    max-width: 240px;\n"])));
@@ -20601,6 +20669,7 @@ var NavigationDesktop = function NavigationDesktop() {
   };
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(Nav, {
+    onMouseLeave: mouseLeaveHandler,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Ul, {
       className: "list-unstyled",
       children: navLinks.map(function (item, i) {
@@ -20629,8 +20698,8 @@ var NavigationDesktop = function NavigationDesktop() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavigationDesktop);
-var Nav = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex; \n    width: 100%;\n\n    .m-down {\n        margin-bottom: 20px !important;\n    }\n"])));
-var Ul = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].ul(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  max-width: 1000px;\n  width: 100%;\n  padding-left: 40px;\n  min-width: 600px;\n  justify-content: space-between;\n  align-items: flex-end;\n  margin-bottom: 5px;\n  margin-left: 30px;\n\n  li {\n    display: flex;\n  }\n"])));
+var Nav = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].nav(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    display: flex; \n    width: 100%;\n    .m-down {\n        margin-bottom: 12px;\n    }\n\n    .sublink {\n        font-size: 13px;\n        margin-left: 10px;\n    }\n"])));
+var Ul = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].ul(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  display: flex;\n  max-width: 1000px;\n  width: 100%;\n  padding-left: 40px;\n  min-width: 600px;\n  justify-content: space-between;\n  align-items: flex-end;\n  padding-bottom: 5px;\n  margin-left: 30px;\n  margin-bottom: 0;\n  li {\n    display: flex;\n  }\n"])));
 var StyledLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_4__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  color: #003354;\n  transition: 0.4s ease-all;\n  position: relative;\n  padding-bottom: 4px;\n  border-bottom: 3px solid white; //this is to keep text from moving up on hover.\n\n  :hover {\n    color: #1187ba;\n    border-bottom: 3px solid #669935;\n  }\n"])));
 var Svg = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].img(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  width: 20px;\n  margin-left: 10px;\n  margin-bottom: 4px;\n"])));
 
@@ -20648,7 +20717,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/Home */ "./resources/js/components/components/pages/Home.jsx");
 /* harmony import */ var _pages_OurWork__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/OurWork */ "./resources/js/components/components/pages/OurWork.jsx");
 /* harmony import */ var _pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/ResourceLibraryPage */ "./resources/js/components/components/pages/ResourceLibraryPage.jsx");
@@ -20679,7 +20748,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_initiatives_MHDZEVPage__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../pages/initiatives/MHDZEVPage */ "./resources/js/components/components/pages/initiatives/MHDZEVPage.jsx");
 /* harmony import */ var _pages_initiatives_TestMethodDevelopmentPage__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../pages/initiatives/TestMethodDevelopmentPage */ "./resources/js/components/components/pages/initiatives/TestMethodDevelopmentPage.jsx");
 /* harmony import */ var _pages_our_work_ModelingListosPage__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../pages/our-work/ModelingListosPage */ "./resources/js/components/components/pages/our-work/ModelingListosPage.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _pages_our_work_StatePolicyDocumentsPage__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../pages/our-work/StatePolicyDocumentsPage */ "./resources/js/components/components/pages/our-work/StatePolicyDocumentsPage.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -20716,119 +20787,126 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Router = function Router() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Routes, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Routes, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
+      path: "/resource-library/:displayOn",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/resource-library",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us",
       exact: true,
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_AboutUs__WEBPACK_IMPORTED_MODULE_5__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_AboutUs__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us/committees",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_about_us_CommitteesPage__WEBPACK_IMPORTED_MODULE_8__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_about_us_CommitteesPage__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us/staff",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_about_us_StaffPage__WEBPACK_IMPORTED_MODULE_26__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_about_us_StaffPage__WEBPACK_IMPORTED_MODULE_26__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us/otc",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_about_us_OTCPage__WEBPACK_IMPORTED_MODULE_27__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_about_us_OTCPage__WEBPACK_IMPORTED_MODULE_27__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_OurWork__WEBPACK_IMPORTED_MODULE_2__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_OurWork__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_CleanTransportationPage__WEBPACK_IMPORTED_MODULE_10__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_CleanTransportationPage__WEBPACK_IMPORTED_MODULE_10__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation/adoption-of-electric-cars",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_DrivingAdoptionElectricCarsPage__WEBPACK_IMPORTED_MODULE_12__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_DrivingAdoptionElectricCarsPage__WEBPACK_IMPORTED_MODULE_12__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
+      exact: true,
+      path: "/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_StatePolicyDocumentsPage__WEBPACK_IMPORTED_MODULE_31__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation/supporting-regulatory-programs",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_SupportingRegulatoryProgramsPage__WEBPACK_IMPORTED_MODULE_13__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_SupportingRegulatoryProgramsPage__WEBPACK_IMPORTED_MODULE_13__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/criteria-pollutants-and-air-toxics",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_HazardousAirPollutionPage__WEBPACK_IMPORTED_MODULE_14__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_HazardousAirPollutionPage__WEBPACK_IMPORTED_MODULE_14__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/criteria-pollutants-and-air-toxics/criteria-air-pollutants",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_criteria_pollutants_air_toxics_CriteriaPollutantsPage__WEBPACK_IMPORTED_MODULE_23__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_criteria_pollutants_air_toxics_CriteriaPollutantsPage__WEBPACK_IMPORTED_MODULE_23__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/criteria-pollutants-and-air-toxics/air-toxics",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_criteria_pollutants_air_toxics_AirToxicsPage__WEBPACK_IMPORTED_MODULE_24__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_criteria_pollutants_air_toxics_AirToxicsPage__WEBPACK_IMPORTED_MODULE_24__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/monitoring",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_MonitoringPage__WEBPACK_IMPORTED_MODULE_15__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_MonitoringPage__WEBPACK_IMPORTED_MODULE_15__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/regional-modeling/listos",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_ModelingListosPage__WEBPACK_IMPORTED_MODULE_30__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_ModelingListosPage__WEBPACK_IMPORTED_MODULE_30__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/regional-modeling",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_RegionalModelingPage__WEBPACK_IMPORTED_MODULE_16__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_RegionalModelingPage__WEBPACK_IMPORTED_MODULE_16__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation/growing-market-for-electric-vehicles",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_ElectricVehicleMarketPage__WEBPACK_IMPORTED_MODULE_9__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_ElectricVehicleMarketPage__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/stationary-sectors/regulatory-compliance",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_RegulatoryCompliancePage__WEBPACK_IMPORTED_MODULE_19__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_RegulatoryCompliancePage__WEBPACK_IMPORTED_MODULE_19__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/stationary-sectors/wood-heat",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_WoodHeatPage__WEBPACK_IMPORTED_MODULE_22__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_WoodHeatPage__WEBPACK_IMPORTED_MODULE_22__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/stationary-sectors",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_StationarySectorsPage__WEBPACK_IMPORTED_MODULE_20__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_StationarySectorsPage__WEBPACK_IMPORTED_MODULE_20__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/growing-market-for-electric-vehicles",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_MHDZEVPage__WEBPACK_IMPORTED_MODULE_28__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_MHDZEVPage__WEBPACK_IMPORTED_MODULE_28__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/test-method-development",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_TestMethodDevelopmentPage__WEBPACK_IMPORTED_MODULE_29__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_TestMethodDevelopmentPage__WEBPACK_IMPORTED_MODULE_29__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/camnet",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_CamnetPage__WEBPACK_IMPORTED_MODULE_25__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_CamnetPage__WEBPACK_IMPORTED_MODULE_25__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/listos",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_ListosPage__WEBPACK_IMPORTED_MODULE_17__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_ListosPage__WEBPACK_IMPORTED_MODULE_17__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/clean-air-academy",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_CleanAirAcademyPage__WEBPACK_IMPORTED_MODULE_18__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_CleanAirAcademyPage__WEBPACK_IMPORTED_MODULE_18__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_InitiativesPage__WEBPACK_IMPORTED_MODULE_11__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_InitiativesPage__WEBPACK_IMPORTED_MODULE_11__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/press",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_press_PressPage__WEBPACK_IMPORTED_MODULE_21__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_press_PressPage__WEBPACK_IMPORTED_MODULE_21__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/:landing/:subLanding",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_SubLanding__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_SubLanding__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/:landing/:subLanding/:supportingPage",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_SupportingPage__WEBPACK_IMPORTED_MODULE_7__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_SupportingPage__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/",
       exact: true,
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_1__["default"], {})
     })]
   });
 };
@@ -21457,8 +21535,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../constants/constants */ "./resources/js/constants/constants.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9;
 
@@ -21487,6 +21566,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -21609,9 +21689,12 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
       documents = _useState2[0],
       setDocuments = _useState2[1];
 
+  var params = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_8__.useParams)();
+
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_4__.useState)({
     document_type: [],
     topic: [],
+    display_on: params !== null && params !== void 0 && params.displayOn ? [params.displayOn] : [],
     input: ''
   }),
       _useState4 = _slicedToArray(_useState3, 2),
@@ -21626,6 +21709,8 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
       page = _useState6[0],
       setPage = _useState6[1];
 
+  console.log(params);
+  console.log(filters);
   (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
     var url, response, results;
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
@@ -21658,7 +21743,7 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
     }, _callee);
   })), [documents]);
   var filteredDocuments = documents === null || documents === void 0 ? void 0 : documents.filter(function (doc) {
-    var _doc$document_type, _doc$topic, _filters$document_typ, _filters$topic, _filters$input;
+    var _doc$document_type, _doc$topic, _doc$display_on, _filters$document_typ, _filters$topic, _filters$display_on, _filters$input;
 
     var filterable = true;
     if (doc.archive) return false; //clean up arrays
@@ -21668,6 +21753,9 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
     })) || [];
     var formattedTopics = (doc === null || doc === void 0 ? void 0 : (_doc$topic = doc.topic) === null || _doc$topic === void 0 ? void 0 : _doc$topic.map(function (topic) {
       return topic["key"];
+    })) || [];
+    var formattedDisplayOn = (doc === null || doc === void 0 ? void 0 : (_doc$display_on = doc.display_on) === null || _doc$display_on === void 0 ? void 0 : _doc$display_on.map(function (display) {
+      return display["key"];
     })) || []; //filter test cases
 
     if ((_filters$document_typ = filters.document_type) !== null && _filters$document_typ !== void 0 && _filters$document_typ.length) filterable = filters.document_type.every(function (filter) {
@@ -21675,6 +21763,9 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
     });
     if (filterable && (_filters$topic = filters.topic) !== null && _filters$topic !== void 0 && _filters$topic.length) filterable = filters.topic.every(function (filter) {
       return formattedTopics.includes(filter);
+    });
+    if (filterable && (_filters$display_on = filters.display_on) !== null && _filters$display_on !== void 0 && _filters$display_on.length) filterable = filters.display_on.every(function (filter) {
+      return formattedDisplayOn.includes(filter);
     });
 
     if (filterable && (_filters$input = filters.input) !== null && _filters$input !== void 0 && _filters$input.length) {
@@ -21713,7 +21804,7 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
               children: document.formatted_title || document.title
             })
           }, document.id);
-        }), !filteredDocuments.length && (filters.document_type.length || filters.topic.length || filters.input.length) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(NoResultsMessage, {
+        }), !filteredDocuments.length && (filters.document_type.length || filters.topic.length || filters.display_on.length || filters.input.length) && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(NoResultsMessage, {
           children: "No results found"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(Pagination, {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(PageButton, {
@@ -21749,7 +21840,8 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
             return setFilters({
               document_type: [],
               topic: [],
-              input: ''
+              input: '',
+              display_on: []
             });
           },
           children: "Reset"
@@ -21827,17 +21919,17 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResourceLibraryPage);
-var ContainerWithBorder = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    width: 100%;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.2);\n    display: flex;\n    align-items: flex-start;\n    height: 50px;\n    align-items: center;\n"])));
-var StyledLinkContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    width: 100%;\n    padding: 10px 15px;\n    background-color: ", ";\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    min-height: 50px;\n"])), function (props) {
+var ContainerWithBorder = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    width: 100%;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.2);\n    display: flex;\n    align-items: flex-start;\n    height: 50px;\n    align-items: center;\n"])));
+var StyledLinkContainer = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    width: 100%;\n    padding: 10px 15px;\n    background-color: ", ";\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    min-height: 50px;\n"])), function (props) {
   return props.isOdd ? "rgba(0, 0, 0, .03)" : "inherit";
 });
-var StyledSearch = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].input(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 100%;\n    border-radius: 5px;\n    margin-top: 5px;\n    height: 35px;\n"])));
-var CheckboxHeading = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].h3(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    margin-top: 20px;\n    margin-bottom: 5px;\n    padding: 5px 12px;\n    width: 100%;\n    background-color: #003354;\n    color: white;\n"])));
-var CheckboxLabel = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].label(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    font-size: 12px;\n    padding-left: 5px;\n"])));
-var NoResultsMessage = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].h2(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n    color: #003354;\n    font-weight: bold;\n    margin-top: 30px;\n"])));
-var ResetButton = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].button(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n    background-color: #669935;\n    font-size: 14px;\n    color: white;\n    padding: 3px 5px;\n    margin-top: 15px;\n    border: none;\n    margin-left: 1px;\n"])));
-var Pagination = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    display: flex;\n    width: 100%;\n    justify-content: center;\n    margin-top: 15px;\n"])));
-var PageButton = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].button(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n    background-color: #669935;\n    font-size: 14px;\n    color: white;\n    padding: 3px 5px;\n    border: none;\n    margin-left: 8px;\n    margin-right: 8px;\n"])));
+var StyledSearch = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].input(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 100%;\n    border-radius: 5px;\n    margin-top: 5px;\n    height: 35px;\n"])));
+var CheckboxHeading = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].h3(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    margin-top: 20px;\n    margin-bottom: 5px;\n    padding: 5px 12px;\n    width: 100%;\n    background-color: #003354;\n    color: white;\n"])));
+var CheckboxLabel = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].label(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    font-size: 12px;\n    padding-left: 5px;\n"])));
+var NoResultsMessage = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].h2(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n    color: #003354;\n    font-weight: bold;\n    margin-top: 30px;\n"])));
+var ResetButton = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].button(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n    background-color: #669935;\n    font-size: 14px;\n    color: white;\n    padding: 3px 5px;\n    margin-top: 15px;\n    border: none;\n    margin-left: 1px;\n"])));
+var Pagination = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n    display: flex;\n    width: 100%;\n    justify-content: center;\n    margin-top: 15px;\n"])));
+var PageButton = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].button(_templateObject9 || (_templateObject9 = _taggedTemplateLiteral(["\n    background-color: #669935;\n    font-size: 14px;\n    color: white;\n    padding: 3px 5px;\n    border: none;\n    margin-left: 8px;\n    margin-right: 8px;\n"])));
 
 /***/ }),
 
@@ -22259,12 +22351,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -22276,40 +22370,42 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var AirToxicsPage = function AirToxicsPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       headline: "Hazardous Air Pollutants and Toxic Air Pollution"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
       mt: 20,
       mb: 40,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "HAPs/Toxic Air Pollutants",
         mb: "20px",
         mt: "20px",
         style: {
           textDecoration: 'underline'
         }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
         singular: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("b", {
           children: "EPA HAP proposals."
-        }), " Working with member states, NESCAUM assesses the impact of proposed EPA actions regarding HAPs and, where appropriate, prepares comments on those proposals. EPA actions reviewed include proposed NESHAPs, the risk and technology assessments that underly the NESHAPs, and risk-related science and policy documents. In 2020, ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        }), " Working with member states, NESCAUM assesses the impact of proposed EPA actions regarding HAPs and, where appropriate, prepares comments on those proposals. EPA actions reviewed include proposed NESHAPs, the risk and technology assessments that underly the NESHAPs, and risk-related science and policy documents. In 2020, ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
           href: "https://www.nescaum.org/documents/nescaum-mon-rtr-comments-final-20200218.pdf/",
           rel: "noopener noreferrer",
           children: "NESCAUM commented"
         }), " on the proposed Residual Risk and Technology Review for the Miscellaneous Organic Chemical Manufacturing NESHAP."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
         singular: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("b", {
           children: "Supporting state air toxics programs."
         }), " NESCAUM coordinates the exchange of about air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS;, and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. [I have presentations from the February ATPH meeting on almost all of these issues if you want to link to them.]"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_3__["default"], {
         singular: true,
         children: "In April 2021, NESCAUM, working with state partners, submitted a letter to EPA urging the agency to publicly release an updated National Air Toxics Assessment (NATA). The letter details the ways that state programs use those data, including in the identification of communities that are disproportionately impacted by stationary and mobile air toxics sources."
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      docFilter: "air_toxics"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
       docFilter: "air_toxics"
     })]
   });
@@ -22334,7 +22430,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -22344,51 +22444,55 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var CriteriaPollutantsPage = function CriteriaPollutantsPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       headline: "Criteria and Hazardous Air Pollutants"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
       mt: 20,
       mb: 40,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
         singular: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("b", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
           children: "National Ambient Air Quality Standards (NAAQS)"
         }), ". National Ambient Air Quality Standards (NAAQS). The Clean Air Act requires EPA to conduct periodic reviews of the NAAQS for the six criteria air pollutants. The NAAQS are the foundation of a wide range of air quality programs, so it is essential that those standards are protective of the public health and welfare of all communities.  NESCAUM reviews and comments on EPA proposals concerning NAAQS standard setting, including:"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
         singular: true,
         children: "Procedures that affect the derivation of the NAAQS,"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
         singular: true,
         children: "Planning, science, and policy assessments developed by EPA and its advisory committees during the mandated periodic reviews, and"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
         singular: true,
         children: "NAAQS proposed subsequent to the reviews."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
         singular: true,
-        children: ["Recent NECAUM comments have addressed EPA proposals concerning", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        children: ["Recent NECAUM comments have addressed EPA proposals concerning", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
           href: "https://www.nescaum.org/documents/nescaum-transparency-snprm-comments-2020518-final.pdf/",
           children: "cost-benefit analyses, the use of scientific study data"
-        }), ", and the NAAQS for fine particulate matter", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        }), ", and the NAAQS for fine particulate matter", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
           href: "https://www.nescaum.org/documents/nescaum-pm2-5-naaqs-comments-final-20200629.pdf/",
-          children: ["(PM", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("span", {
+          children: ["(PM", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
             style: {
               fontSize: 8
             },
             children: "2.5"
           }), ")"]
-        }), ' ', "and", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        }), ' ', "and", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
           href: "https://www.nescaum.org/documents/nescaum-ozone-naaqs-comments-final-20201001.pdf/",
           children: "ozone"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
         singular: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("b", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
           children: "Supporting state air quality planning efforts."
         }), " NESCAUM facilitates state discussions and information sharing to support the development of State Implementation Plans, which are designed to enable air quality to attain and maintain the NAAQS. Interstate coordination is particularly essential for ozone, particulate matter, and regional haze, which are highly impacted by regional and long-range pollutant transport."]
       })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      docFilter: "air_toxics"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      docFilter: "air_toxics"
     })]
   });
 };
@@ -22409,8 +22513,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -22418,12 +22524,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var CamnetPage = function CamnetPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       heroImage: "/assets/images/stock/camnet.jpg",
       headline: "CAMNET",
       mainText: "CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without man-made air pollution."
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      docFilter: "camnet"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
       docFilter: "camnet"
     })]
   });
@@ -22451,7 +22559,102 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var CleanAirAcademyPage = function CleanAirAcademyPage() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      heroImage: "/assets/images/stock/classroom.jpg",
+      headline: "NESCAUM\u2019s Clean Air Academy",
+      mainText: "NESCAUM\u2019s Clean Air Academy provides air pollution training for staff in our member state air quality agencies. Courses are provided by EPA\u2019s National Air Quality Training Program through EPA\u2019s Learning Management System (LMS) or by private training contractors. NESCAUM operates the program with federal funding."
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      width: "al-fu",
+      center: true,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        text: "EPA\u2019s Learning Management System"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        children: ["In 2021, EPA launched a new ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          href: "https://epaapti.csod.com/client/epaapti/default.aspx",
+          children: "Learning Management System"
+        }), " (LMS) to better deliver technical training to air pollution professionals in state, local government, and tribal air agencies. The LMS is part of the National Air Quality Training Program that EPA operates in collaboration with multi-jurisdictional organizations (MJOs) like NESCAUM. The new LMS delivers a modernized user experience and is organized around eight air quality curricula or \u201Cfunctional areas\u201D:"]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        list: ['Air Pollution Basics', 'Air Quality Modeling', 'Air Quality Planning', 'Air Toxics Rule Development and Implementation', 'Ambient Air Monitoring ', 'Emissions Inventories ', 'Permitting', 'Source Emissions Testing and Source Emissions Monitoring']
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_content_visuals_FullWidthHeroImage__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        imageSrc: "/assets/images/stock/learning-computer.jpg",
+        width: "100%",
+        style: {
+          margin: '40px 0'
+        }
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        text: "National Joint Training Committee (JTC)"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        children: ["The National Joint Training Committee (JTC) consists of multijurisdictional organizations, EPA OAQPS staff and state representatives to engage in national training initiatives to improve how training is being delivered to state/local air programs. The JTC additionally responds to emerging and current training needs. The initiatives are identified and planned within the JTC Steering Committee and executed by the JTC workgroups. For more information on JTC activities, please click ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          href: "https://www.ladco.org/wiki/index.php?title=National_Air_Pollution_Training_Program",
+          children: "here."
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        text: "NESCAUM Training Calendar",
+        mt: "20px"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        children: ["The schedule below shows upcoming NESCAUM training courses. Agency staff may register for any of these courses through EPA\u2019s LMS or through NESCAUM\u2019s Training Coordinator. For more information, contact NESCAUM\u2019s Training Coordinator Kara Murphy at ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("a", {
+          href: "mailto:kmurphy@nescaum.org",
+          children: "kmurphy@nescaum.org"
+        }), "."]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
+        src: "/assets/images/stock/training-schedule.png"
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      docFilter: "clean_air_academy"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      docFilter: "clean_air_academy"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CleanAirAcademyPage);
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 40px;\n"])));
+
+/***/ }),
+
+/***/ "./resources/js/components/components/pages/initiatives/ListosPage.jsx":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/components/pages/initiatives/ListosPage.jsx ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ColorUnderlinedText */ "./resources/js/components/components/content/ColorUnderlinedText.jsx");
+/* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
+/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
+/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
@@ -22471,159 +22674,72 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var CleanAirAcademyPage = function CleanAirAcademyPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      heroImage: "/assets/images/stock/classroom.jpg",
-      headline: "NESCAUM\u2019s Clean Air Academy",
-      mainText: "NESCAUM\u2019s Clean Air Academy provides air pollution training for staff in our member state air quality agencies. Courses are provided by EPA\u2019s National Air Quality Training Program through EPA\u2019s Learning Management System (LMS) or by private training contractors. NESCAUM operates the program with federal funding."
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      width: "al-fu",
-      center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        text: "EPA\u2019s Learning Management System"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        children: ["In 2021, EPA launched a new ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          href: "https://epaapti.csod.com/client/epaapti/default.aspx",
-          children: "Learning Management System"
-        }), " (LMS) to better deliver technical training to air pollution professionals in state, local government, and tribal air agencies. The LMS is part of the National Air Quality Training Program that EPA operates in collaboration with multi-jurisdictional organizations (MJOs) like NESCAUM. The new LMS delivers a modernized user experience and is organized around eight air quality curricula or \u201Cfunctional areas\u201D:"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        list: ['Air Pollution Basics', 'Air Quality Modeling', 'Air Quality Planning', 'Air Toxics Rule Development and Implementation', 'Ambient Air Monitoring ', 'Emissions Inventories ', 'Permitting', 'Source Emissions Testing and Source Emissions Monitoring']
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_content_visuals_FullWidthHeroImage__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        imageSrc: "/assets/images/stock/learning-computer.jpg",
-        width: "100%",
-        style: {
-          margin: '40px 0'
-        }
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        text: "National Joint Training Committee (JTC)"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        children: ["The National Joint Training Committee (JTC) consists of multijurisdictional organizations, EPA OAQPS staff and state representatives to engage in national training initiatives to improve how training is being delivered to state/local air programs. The JTC additionally responds to emerging and current training needs. The initiatives are identified and planned within the JTC Steering Committee and executed by the JTC workgroups. For more information on JTC activities, please click ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          href: "https://www.ladco.org/wiki/index.php?title=National_Air_Pollution_Training_Program",
-          children: "here."
-        })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        text: "NESCAUM Training Calendar",
-        mt: "20px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        children: ["The schedule below shows upcoming NESCAUM training courses. Agency staff may register for any of these courses through EPA\u2019s LMS or through NESCAUM\u2019s Training Coordinator. For more information, contact NESCAUM\u2019s Training Coordinator Kara Murphy at ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
-          href: "mailto:kmurphy@nescaum.org",
-          children: "kmurphy@nescaum.org"
-        }), "."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Image, {
-        src: "/assets/images/stock/training-schedule.png"
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      docFilter: "clean_air_academy"
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CleanAirAcademyPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 40px;\n"])));
-
-/***/ }),
-
-/***/ "./resources/js/components/components/pages/initiatives/ListosPage.jsx":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/components/components/pages/initiatives/ListosPage.jsx ***!
-  \*****************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ColorUnderlinedText */ "./resources/js/components/components/content/ColorUnderlinedText.jsx");
-/* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
-/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject;
-
-function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-
-
-
-
-
-
-
-
-
-
-
-
-
 var ListosPage = function ListosPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
       heroImage: "/assets/images/stock/listos.jpg",
       headline: "Listos",
       sideImage: "/assets/images/maps/listos-map.png",
       mainText: "While air pollution levels have dropped markedly over the years across much of the United States, the New York City (NYC) metropolitan area (comprised of portions of New Jersey, New York, and Connecticut in and around NYC) continues to persistently violate both past and recently revised federal health-based air quality standards for ground-level ozone. ",
       subText: "This air quality problem afflicts not only the health and well-being of over 20 million people living in the NYC metro area, but also millions of people living downwind in Connecticut, Rhode Island, Massachusetts, and beyond."
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
       pb: 40,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_0__["default"], {
         text: "ABOUT LISTOS"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
           children: "A unique feature of this chronic ozone problem is pollution transported in a northeast direction out of NYC over Long Island Sound. The relatively cool waters of Long Island Sound confine the pollutants in a shallow and stable marine boundary layer. Afternoon heating over coastal land creates a sea breeze that carries the air pollution inland from the confined marine layer, resulting in high ozone concentrations in Connecticut and at times farther east into Rhode Island and Massachusetts. The following map shows a recent example of this from May 18, 2017, with high ozone levels seen along the entire Connecticut shoreline and farther downwind along the Rhode Island/Massachusetts border."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
           width: "half",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
             children: "A key research problem in addressing this regional pollution problem is understanding the sources and temporal emission profiles of the ozone precursors nitrogen oxides (NOx) and volatile organic compounds (VOCs). The NYC metropolitan area has a large concentration of emission sources, including cars and trucks, ships, industrial boilers, stationary diesel engines, consumer products, power plants, and vegetation. The multitude of these and other source types and their temporally varying emission profiles throughout a day and across a multi-day ozone episode creates a complex and dynamic atmospheric mixture. Underlying the emissions are diverse weather patterns that can promote, or dampen, the evolution and transport of a polluted air mass across the region."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
             children: "To investigate the evolving nature of ozone formation and transport in the NYC region and downwind, NESCAUM has launched the Long Island Sound Tropospheric Ozone Study (LISTOS). LISTOS involves a large group of researchers with state and federal agencies and academia that bring a diverse set of resources, expertise, and instrumentation skills. These encompass satellite, aircraft, balloon (ozone sondes), marine, and ground-based data collection and analysis methods to probe the New York City pollution plume and its evolution over and around Long Island Sound. Initial aircraft studies began in May 2017, with expanded activities and planning efforts during 2018 and beyond."
           })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_0__["default"], {
         text: "DATA ACCESS"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        children: ["After performing QA/QC, LISTOS researchers will be posting publicly available data sets on the LISTOS data archive site maintained by NASA: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        children: ["After performing QA/QC, LISTOS researchers will be posting publicly available data sets on the LISTOS data archive site maintained by NASA: ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
           href: "https://www-air.larc.nasa.gov/missions/listos/index.html.",
           children: "https://www-air.larc.nasa.gov/missions/listos/index.html. "
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
         children: "Below are lists of the LISTOS research organizations and supporting funders. For more information on LISTOS, contact Dr. Paul Miller, NESCAUM Executive Director, pmiller @ nescaum.org."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
         text: "LISTOS PARTICIPANTS",
         mb: "40px",
         mt: "20px"
       }), participants.map(function (p) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(UnderlinedAnchor, {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(UnderlinedAnchor, {
           href: p.href,
           target: "_blank",
           rel: "noreferrer noopener",
           children: p.text
         }, p.href);
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
         text: "LISTOS SUPPORTERS",
         mb: "40px",
         mt: "40px"
       }), supporters.map(function (s) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(UnderlinedAnchor, {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(UnderlinedAnchor, {
           href: s.href,
           target: "_blank",
           rel: "noreferrer noopener",
           children: s.text
         }, s.href);
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      docFilter: "listos"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__["default"], {
       docFilter: "listos"
     })]
   });
 };
 
-var UnderlinedAnchor = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].a(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  color: #222; \n  text-decoration: underline; \n  font-family: Roboto, sans-serif; \n"])));
+var UnderlinedAnchor = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].a(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  color: #222; \n  text-decoration: underline; \n  font-family: Roboto, sans-serif; \n"])));
 var participants = [{
   href: 'https://www.noaacrest.org/',
   text: 'The City College of New York / NOAA-CREST Center'
@@ -22710,12 +22826,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -22774,56 +22892,58 @@ var jurisdictions = [{
 }];
 
 var MHDZEVPage = function MHDZEVPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
       headline: "Medium- and Heavy-Duty Zero-Emission Vehicles: Action Plan Development Process"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "Through a memorandum of understanding, 16 states, the District of Columbia, and the Canadian province of Quebec are working collaboratively to advance and accelerate the market for electric medium- and heavy-duty (MHD) vehicles, including large pickup trucks and vans, delivery trucks, box trucks, school and transit buses, and long-haul delivery trucks. The goal is to ensure that 100 percent of all new truck and bus sales are zero-emission vehicles (ZEVs) by 2050, with an interim target of at least 30 percent by 2030."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "To provide a framework for meeting these goals, the signatory jurisdictions are working through the Multi-State ZEV Task Force facilitated by NESCAUM to develop a MHD ZEV Action Plan. This page provides information about the process for developing the Action Plan and includes the following:"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Announcements",
         mb: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Key Documents",
         mb: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Signatory Jurisdictions",
         mb: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "The signatory jurisdictions are listed below. To access an individual jurisdiction's MHD ZEV website, please click on the jurisdiction name. You will then be redirected to the corresponding website."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), jurisdictions.map(function (_ref) {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), jurisdictions.map(function (_ref) {
         var jurisdiction = _ref.jurisdiction,
             link = _ref.link;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
           singular: true,
-          children: link ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          children: link ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
             href: link,
             children: jurisdiction
           }) : jurisdiction
         });
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Online Learning Resources",
         mb: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "NESCAUM is holding a series of webinars for the multi-state ZEV Task Force to inform the development of the Action Plan. Recordings of the webinars will be posted here as they become available:"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Portal for Public Input",
         mb: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: ["You can submit comments, ideas, or suggestions for the MHD ZEV Action Plan on the portal for public input.", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), "You can also view the collected stakeholder submissions."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {})]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        children: ["You can submit comments, ideas, or suggestions for the MHD ZEV Action Plan on the portal for public input.", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), "You can also view the collected stakeholder submissions."]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {})]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      docFilter: "mhd_zev_initiative"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__["default"], {
       docFilter: "mhd_zev_initiative"
     })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MHDZEVPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 40px;\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 40px;\n"])));
 
 /***/ }),
 
@@ -22839,12 +22959,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -22856,48 +22978,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var TestMethodDevelopmentPage = function TestMethodDevelopmentPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       heroImage: "/assets/images/stock/tmd.png",
       headline: "Residential Wood Heater Test Method Development"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_4__["default"], {
       width: "al-fu",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "State and local air quality agencies rely on EPA's emission certification program under the 2015 Residential Wood Heater New Source Performance Standards (NSPS) for standards and testing of residential wood heaters. The NSPS program is intended to reduce emissions from new wood-burning devices, protect public health, and assist states in attaining and maintaining the National Ambient Air Quality Standards (NAAQS) for particulate matter (PM2.5). Current federal test methods for residential wood heaters are based on burning a 100 percent fuel load under steady-state conditions. This approach, however, does not reflect how appliances are used since significant fluctuations in operating conditions are more typical of \u201Creal-world\u201D stove use. Because of this, current test methods may not accurately characterize appliance emissions and efficiency performance in the real world."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: ["In an effort to develop next generation testing protocols that accurately characterize real world stove use and emissions, NESCAUM is researching operating and fueling protocols for stoves and central heating units. The research focuses on a group of tests collectively known as the Integrated Duty Cycle (IDC) test methods. The IDC includes a test method for certification of cordwood or pellet-fired hydronic heating appliances based on a real-world load profile that measures PM, carbon monoxide, and heating efficiency. The IDC methods are widely accepted as providing a robust approach to assessing wood heater emissions. For example, EPA\u2019s \u201CDiscussion Paper on Cordwood Test Methods\u201D stated: \u201CThe EPA believes that [the IDC method]is a reasonable approach to further the science and to develop cordwood methods that reflect in-home use, improve the precision of wood stove testing, and be protective of human health and the environment as the cornerstone of the NSPS certification program.\u201D", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("sup", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        children: ["In an effort to develop next generation testing protocols that accurately characterize real world stove use and emissions, NESCAUM is researching operating and fueling protocols for stoves and central heating units. The research focuses on a group of tests collectively known as the Integrated Duty Cycle (IDC) test methods. The IDC includes a test method for certification of cordwood or pellet-fired hydronic heating appliances based on a real-world load profile that measures PM, carbon monoxide, and heating efficiency. The IDC methods are widely accepted as providing a robust approach to assessing wood heater emissions. For example, EPA\u2019s \u201CDiscussion Paper on Cordwood Test Methods\u201D stated: \u201CThe EPA believes that [the IDC method]is a reasonable approach to further the science and to develop cordwood methods that reflect in-home use, improve the precision of wood stove testing, and be protective of human health and the environment as the cornerstone of the NSPS certification program.\u201D", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("sup", {
           children: "1"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("small", {
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("i", {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("sup", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("small", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)("i", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("sup", {
             children: "1"
           }), "US EPA Office Air Quality Planning and Standards, \u201CProcess for Developing Improved Cordwood Test Methods for Wood Heaters.\u201D Page 28, March 2016."]
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "For more information on the IDC method and NESCAUM work in this area, see:"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
         singular: true,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
           href: "https://www.nescaum.org/documents/nyserda-idc-protocols-for-epa-wood-stove-test-method-research/nyserda-idc-protocols-for-epa-wood-stove-test-method-research/",
           children: "NYSERDA IDC Protocols for EPA Wood Stove Test Method Research"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
         singular: true,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
           href: "/assets/documents/pellet-boiler-idc-draft-jan-2021.pdf",
           children: "Integrated Duty Cycle Test Method for Automatic-Feed Hydronic Heating Appliances with External Thermal Storage"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_2__["default"], {
         singular: true,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
           href: "/assets/documents/nescaum-standard-operating-procedures-for-using-teom-1405-in-a-dilution-tunnel-20-07-20.pdf",
           children: "NESCAUM Standard Operating Procedures for Using TEOM 1405 in a Dilution Tunnel"
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      docFilter: "camnet"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      docFilter: "test_method_development"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      docFilter: "test_method_development"
     })]
   });
 };
@@ -22919,8 +23043,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -22936,8 +23062,8 @@ var CleanTransportationPage = function CleanTransportationPage() {
       subText = data.subText,
       subArticles = data.subArticles,
       subHeader = data.subHeader;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       heroImage: heroImage,
       headline: headline,
       sideImage: sideImage,
@@ -22945,7 +23071,9 @@ var CleanTransportationPage = function CleanTransportationPage() {
       subText: subText,
       subArticles: subArticles,
       subHeader: subHeader
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      docFilter: "clean_transportation"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
       docFilter: "clean_transportation"
     })]
   });
@@ -22991,17 +23119,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject, _templateObject2, _templateObject3;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -23017,74 +23147,76 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var DrivingAdoptionElectricCarsPage = function DrivingAdoptionElectricCarsPage() {
   var listItems = [];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
       heroImage: "/assets/images/stock/electric-bmw.jpg",
       headline: "DRIVING THE ADOPTION OF ELECTRIC CARS"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "Accelerating the transition to zero-emission passenger vehicles is critically important for curbing greenhouse gas emissions and tackling the global climate crisis. Further, wide-scale adoption of electric cars is needed to reduce tailpipe emissions of smog-forming pollutants that cause air quality and public health problems in many communities across the United States."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Forming the Multi-State Task Force",
         mt: "40px",
         mb: "20px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
           children: "In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support their zero-emission vehicle (ZEV) regulatory programs (LINK TO REGULATIONS PAGE).  A governor\u2019s Memorandum of Understanding (LINK TO PDF) officially launched the Multi-State ZEV Task Force. NESCAUM facilitates and guides the Task Force, which serves as a unique forum for galvanizing state leadership on transportation electrification."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Image, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Image, {
           src: "/assets/images/maps/map-10-nescaum.png"
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "A Track Record of Effective Action",
         mt: "40px",
         mb: "20px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
         justify: "space-between",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
           width: "70%",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
             children: "NESCAUM worked with the Task Force to develop two ZEV Action Plans (LINK to most recent Action Plan). Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
             singular: true,
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
               children: "Drive Change. Drive Electric., a regional consumer education and awareness campaign."
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
             singular: true,
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
               children: "a regional consumer education and awareness campaign (LINK)"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
             singular: true,
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
               children: "collaboration with electric utilities to support greater investments in charging infrastructure; and"
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
             singular: true,
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
               children: "development of policies to ensure that emerging charging networks are accessible and convenient for consumers."
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
             children: "Today, The Task Force is working more aggressively than ever to hasten a tipping point in the electric car market."
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(ImageContainer, {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(ZedImage, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageContainer, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ZedImage, {
             src: "/assets/images/stock/zev-mutli-state.jpg"
           })
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      docFilter: "electric_cars"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
       docFilter: "electric_cars"
     })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DrivingAdoptionElectricCarsPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tmax-width: 600px; \n\tmargin-right: 40px; \n  width: 100%; \n  min-width: 400px; \n  margin-left: 60px;\n"])));
-var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  max-width: 300px; \n  width: 300px; \n"])));
-var ZedImage = (0,styled_components__WEBPACK_IMPORTED_MODULE_8__["default"])(Image)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  width: 100%; \n  max-width: 100%; \n  min-width: unset; \n  margin-left: 0;\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tmax-width: 600px; \n\tmargin-right: 40px; \n  width: 100%; \n  min-width: 400px; \n  margin-left: 60px;\n"])));
+var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  max-width: 300px; \n  width: 300px; \n"])));
+var ZedImage = (0,styled_components__WEBPACK_IMPORTED_MODULE_9__["default"])(Image)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  width: 100%; \n  max-width: 100%; \n  min-width: unset; \n  margin-left: 0;\n"])));
 
 /***/ }),
 
@@ -23100,21 +23232,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _content_content_visuals_FullWidthHeroImage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../content/content-visuals/FullWidthHeroImage */ "./resources/js/components/components/content/content-visuals/FullWidthHeroImage.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _breadcrumb_BreadcrumbNavigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../breadcrumb/BreadcrumbNavigation */ "./resources/js/components/components/breadcrumb/BreadcrumbNavigation.jsx");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject, _templateObject2, _templateObject3;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -23134,53 +23268,55 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var ElectricVehicleMarketPage = function ElectricVehicleMarketPage() {
   var bulletPoints = ["Ways to ensure an equitable transition", "Incentives for vehicles and charging infrastructure", "Adoption of regulatory standards", "Measures to encourage fleet purchases", "Utility actions to support infrastructure buildout", "Innovative financing strategies"];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_9__["default"], {
       heroImage: "/assets/images/stock/electric-buses-unsplash.jpg",
       headline: "Growing the Market for Electric Trucks and Buses",
       sideImage: "/assets/images/stock/electric-trucks-side-image.png",
       mainText: "In the United States, greenhouse gas emissions from vehicles that are used to move goods are growning faster than emissions from any other segment of the transportation sector. As more consumers turn to online shopping, truck volumes are to be expected to increase by 36% over the next decade.",
       subText: "While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers."
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
         text: "A Governors\u2019 Agreement and Action Plan",
         size: "24px",
         mt: "20px",
         mb: "40px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(P, {
-            children: ["A diverse coalition of 18 jurisdictions in the United States and Canada has committed, through the ", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(P, {
+            children: ["A diverse coalition of 18 jurisdictions in the United States and Canada has committed, through the ", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
               href: "/assets/documents/mhdv-zev-mou_12-14-2021.pdf",
               children: "Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding (MOU)"
             }), " ", ", to work to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses."]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsxs)(P, {
-            children: ["The MOU sets zero-emission sales targets for new medium- and heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further commits the signatory states to working with NESCAUM through the", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(P, {
+            children: ["The MOU sets zero-emission sales targets for new medium- and heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further commits the signatory states to working with NESCAUM through the", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Link, {
               to: "/our-work/clean-transportation/adoption-of-electric-cars",
               children: " ZEV Task Force "
             }), "to develop a Multi-State Action Plan (LINK TO PLAN DEVELOPMENT PAGE) for advancing progress toward a self-sustaining market for zero-emission trucks and buses. The Action Plan will include recommendations for action in several areas, such as:"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_6__["default"], {
             list: bulletPoints
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(Image, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(Image, {
           src: "/assets/images/stock/electric-us-map.png",
           style: {
             marginLeft: 40
           }
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_10__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      docFilter: "electric_trucks"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_8__["default"], {
       docFilter: "electric_trucks"
     })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ElectricVehicleMarketPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 400px;\n  margin-right: 40px;\n"])));
-var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
-var P = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 400px;\n  margin-right: 40px;\n"])));
+var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
 
 /***/ }),
 
@@ -23198,9 +23334,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -23211,25 +23349,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var HazardousAirPollutionPage = function HazardousAirPollutionPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       heroImage: "/assets/images/stock/chap.jpg",
       headline: "Criteria and Hazardous Air Pollutants"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
       width: "al-fu",
       center: true,
       mt: 20,
       mb: 40,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        children: ["The Clean Air Act requires EPA to regulate two categories of air pollutants. EPA sets National Ambient Air Quality Standards (NAAQS) for six air pollutants, which are known as ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("b", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        children: ["The Clean Air Act requires EPA to regulate two categories of air pollutants. EPA sets National Ambient Air Quality Standards (NAAQS) for six air pollutants, which are known as ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("b", {
           children: "criteria pollutants."
         }), " Those pollutants are ozone, particulate matter, sulfur dioxide, nitrogen dioxide, carbon monoxide, and lead."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        children: ["EPA also has identified 187 ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("b", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        children: ["EPA also has identified 187 ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("b", {
           children: "hazardous air pollutants (HAPs)"
         }), " which are known or suspected to cause cancer or other serious health effects. EPA regulates HAPs with technology-based rules which are called National Emissions Standards for Hazardous Air Pollutants (NESHAPs). Although EPA has not set air quality standards for HAPs, many states have developed health-based standards and guidelines for evaluating air quality impacts of the federal HAPs and other toxic air pollutants."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-        children: ["NESCAUM supports state criteria and toxic air pollutant ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        children: ["NESCAUM supports state criteria and toxic air pollutant ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
           style: {
             color: '#003354'
           },
@@ -23238,7 +23376,9 @@ var HazardousAirPollutionPage = function HazardousAirPollutionPage() {
           children: "monitoring programs"
         }), ". NESCAUM\u2019s other criteria and toxic air pollutant activities include:"]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      docFilter: "air_toxics"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
       docFilter: "air_toxics"
     })]
   });
@@ -23312,8 +23452,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -23323,32 +23465,34 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var MonitoringPage = function MonitoringPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__["default"], {
       heroImage: "/assets/images/stock/monitoring-nescaum.jpg",
       headline: "Monitoring"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
       mt: 40,
       mb: 40,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
         singular: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("b", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("b", {
           children: "Supporting the collection and distribution of criteria pollutant monitoring data."
         }), " NESCAUM facilitates communication among states and with EPA ensure uniform approaches to regional air monitoring and data assessment and to communicate those data to state air quality planners. NESCAUM also provides a forum for discussion and exchange of ideas regarding existing or emerging techniques and technologies, which, in turn can be used to inform policies, regulations, and strategies related to, or impacted by, air monitoring."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
         singular: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("b", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("b", {
           children: "Conducts research."
         }), "  NESCAUM coordinates specific monitoring or data assessment projects with member states and EPA regional offices, such as the Monitoring Collaborative, an effort to coordinate State monitoring network designs at the regional level.  NESCAUM has also adapted continuous PM measurement technologies, traditionally used for ambient monitoring, for stack testing to provide highly time resolved particulate matter data. NESCAUM works closely with instrumentation manufacturers to identify and resolve issues with these technologies to facilitate their use in this application."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
         singular: true,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("b", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("b", {
           children: "Enhance public awareness."
         }), " NESCAUM\u2019s CAMNET work raises public awareness about the effects of air pollution on visibility. This is accomplished, in part, through a network of realtime visibility cameras located at scenic urban and rural locations. In addition, near-realtime air pollution and meteorological data are provided to help distinguish natural from man-made causes of poor visibility, and to provide health-relevant data to the public on current air pollution levels."]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      docFilter: "monitoring"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
       docFilter: "monitoring"
     })]
   });
@@ -23372,8 +23516,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _content_DescriptionWithPhotoSideBySideNoBackground__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/DescriptionWithPhotoSideBySideNoBackground */ "./resources/js/components/components/content/DescriptionWithPhotoSideBySideNoBackground.jsx");
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
-/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
+/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
@@ -23397,7 +23541,7 @@ var RegionalModeling = function RegionalModeling() {
       width: "al-fu",
       center: true,
       mt: 40,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
         children: "NESCAUM uses the Community Multi-Scale Air Quality (CMAQ) model to simulate the transport and behavior of ozone, fine particulate matter, and ozone precursor pollutants. CMAQ simulates air pollution using a complex set of meteorological and atmospheric chemistry equations, utilizing representative emissions inputs to produce estimates of ambient pollutant concentrations. Our modeling supplements work performed to prepare state implementation plans for meeting air quality standards; we test emission reduction scenarios based on pollution mitigation strategies and leverage observations from regional field campaigns to optimize model performance for the region. Specific examples of projects that utilize this  modeling platform are listed below. To learn more about the sources and sectors that contribute to air pollution across our member states, NESCAUM has the capacity to rapidly design, implement, and analyze sensitivity scenarios as the need arises, including scenarios designed to explore how bulk local or sectoral contributions and targeted emission-sector adjustments work."
       })
     }), descriptionData.map(function (data) {
@@ -23405,6 +23549,8 @@ var RegionalModeling = function RegionalModeling() {
         data: data
       });
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      docFilter: "regional_modeling"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_4__["default"], {
       docFilter: "regional_modeling"
     })]
   });
@@ -23440,11 +23586,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -23455,29 +23603,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var RegulatoryCompliancePage = function RegulatoryCompliancePage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
       heroImage: "/assets/images/stock/smoke-stack-regulatory-compliance.jpg",
       headline: "Regualatory Compliance"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
         singular: true,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("b", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
             children: "Facilitating discussions on compliance and enforcement issues."
           }), " NESCAUM facilitates discussions between the U.S. Environmental Protection Agency (EPA) and states on several key aspects of regulatory compliance including EPA oversight of compliance programs via the State Review Framework (SRF) and data reporting tools such as EPA's Enforcement and Compliance History Online (ECHO) website, and the integrated Compliance Information System (ICIS). NESCAUM also works with states and the EPA to develop compliance and enforcement policies, such as the High Priority Violations policy and requirements for state Compliance Monitoring Strategy (CMS) commitments, and reviews and comments on federal proposals."]
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
         singular: true,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("b", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
             children: "Identifying regional areas of interest."
           }), " NESCAUM identifies regional areas of interest through it's regional network of contacts. Examples include emissions sectors of concern, new testing and assessment tools, and new approaches to enhance compliance with Clean Air Act requirements."]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      docFilter: "regulatory_compliance"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
       documents: [{
         text: 'ICR Air Stationary Source Compliance and Enforcement Information Reporting',
         href: 'https://www.nescaum.org/documents/nescaum-icr-air-sources-repting-comments-to-epa-20150211.pdf/'
@@ -23511,6 +23661,72 @@ var RegulatoryCompliancePage = function RegulatoryCompliancePage() {
 
 /***/ }),
 
+/***/ "./resources/js/components/components/pages/our-work/StatePolicyDocumentsPage.jsx":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/components/pages/our-work/StatePolicyDocumentsPage.jsx ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
+/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
+/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var StatePolicyDocumentsPage = function StatePolicyDocumentsPage() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      heroImage: "assets/images/stock/statepolicybanner.jpg",
+      headline: "State Policy Documents"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      width: "al-fu",
+      center: true,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        children: ["This page provides links to a selection of recent NESCAUM documents that present policy and program recommendations for supporting state transportation electrification efforts. Additional documents can be found ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
+          to: "/resource-library",
+          children: "here"
+        }), "."]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        wrap: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          docFilter: "state_policy_documents"
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      docFilter: "electric_cars"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      docFilter: "electric_cars"
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StatePolicyDocumentsPage);
+
+/***/ }),
+
 /***/ "./resources/js/components/components/pages/our-work/StationarySectorsPage.jsx":
 /*!*************************************************************************************!*\
   !*** ./resources/js/components/components/pages/our-work/StationarySectorsPage.jsx ***!
@@ -23525,7 +23741,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _content_DescriptionWithPhotoSideBySide__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/DescriptionWithPhotoSideBySide */ "./resources/js/components/components/content/DescriptionWithPhotoSideBySide.jsx");
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
 
 
 
@@ -23534,21 +23754,25 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var StationarySectorsPage = function StationarySectorsPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__["default"], {
       heroImage: "/assets/images/stock/smokestack-pexels.jpg",
       headline: "Stationary Sectors",
       sideImage: "/assets/images/stock/street-smoke.jpg",
       mainText: "Various types of stationary sources emit pollutants that affect air quality. This is a particular issue when sources are located near homes or other sensitive places, such as schools and hospitals, and when an area is impacted by multiple sources. NESCAUM is involved in several activities that target emissions from stationary sources:"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       mt: 80,
       children: subArticles.map(function (data, index) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_content_DescriptionWithPhotoSideBySide__WEBPACK_IMPORTED_MODULE_0__["default"], {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_content_DescriptionWithPhotoSideBySide__WEBPACK_IMPORTED_MODULE_0__["default"], {
           data: data,
           index: index,
           inverse: index % 2 === 0
         });
       })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      docFilter: "stationary_sectors"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      docFilter: "stationary_sectors"
     })]
   });
 };
@@ -23592,9 +23816,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -23610,43 +23835,46 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var SupportingRegulatoryProgramsPage = function SupportingRegulatoryProgramsPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       heroImage: "/assets/images/stock/airplane.jpg",
       headline: "Supporting Regulatory Programs",
       subHeadline: "IN CLEAN TRANSPORTATION"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
       width: "al-fu",
       center: true,
       mb: 40,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
         children: "NESCAUM provides regulatory and technical support to its member states on policies for controlling air pollutants emitted by on-road and off-road vehicles, such as cars, buses, trucks, construction equipment, locomotives, and airplanes. Implementing effective pollution control regulations for these mobile sources is vitally important for improving air quality, protecting public health, and addressing the climate crisis."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
         children: "Some recent examples of NESCAUM\u2019s work in this area include supporting state adoption and implementation of California\u2019s Advanced Clean Cars regulations, conducting in-use emissions testing for trucks, analyzing the emissions benefits of adopting California emission standards for medium- and heavy-duty trucks, and pushing for strong federal standards."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
         text: "Working with Section 177 States",
         mb: "20px",
         mt: "20px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
             children: "With support from NESCAUM, the Northeast states became the first states to exercise their right under Section 177 of the Clean Air Act to adopt California\u2019s Low Emission Vehicle (LEV) standards and Zero-Emission Vehicle (ZEV) standards. This action was part of a coordinated regional effort to reduce motor vehicle pollution and drive the rapid adoption of  electric vehicle technology."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
             children: "With NESCAUM\u2019s technical and policy support, these \u201CSection 177 states\u201D are continuing to work closely together as they update and implement LEV and ZEV standards in coordination with California and consider adopting California\u2019s emissions standards for trucks. NESCAUM\u2019s Mobile Sources Committee (LINK TO MOBILE SOURCES COMM PAGE) creates a unique forum for this cross-state coordination. As other states throughout the country have adopted California standards, this group has expanded to include states beyond the Northeast region and continues to welcome new Section 177 states."
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(Image, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Image, {
           src: "/assets/images/stock/lev-zev.png"
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      docFilter: "supporting_regulatory_programs"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
       docFilter: "supporting_regulatory_programs"
     })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SupportingRegulatoryProgramsPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 300px;\n  margin-right: 40px;\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 300px;\n  margin-right: 40px;\n"])));
 
 /***/ }),
 
@@ -23664,8 +23892,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -23675,27 +23905,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var WoodHeatPage = function WoodHeatPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       headline: "Wood Heating",
       heroImage: "/assets/images/stock/wood-burning.jpg",
       sideImage: "/assets/images/stock/woodheat1.jpg",
       mainText: "Wood heating is a significant source of fine particulate matter (PM2.5), carbon monoxide (CO), and nitrogen dioxide (NO2). Based on EPA\u2019s 2017 National Emission Inventory (NEI), residential wood combustion emits approximately 340,000 tons of primary PM2.5 annually, making it the largest direct source of particulate matter pollution in the country, after road dust and fires (wildfire and prescribed burning)."
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
       width: "al-fu",
       center: true,
       mt: 60,
       mb: 60,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
         children: "Other studies have concluded that the level of wood-burning may be significantly higher than assumed in the NEI data. Further, analysis by states has found that many residential wood heating appliances emit at levels far above the certified numbers, which EPA uses as inputs in the NEI."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
         children: "Wood smoke also contains carcinogenic and other toxic air pollutants, such as benzene, formaldehyde, acrolein, and polycyclic aromatic hydrocarbons (PAHs). A 2017 study determined that residential wood heating accounts for 10,000 premature deaths annually in the U.S."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
         children: "Wood heating is most prevalent in rural communities, many of which have a high percentage of low-income residents, and few have air quality monitors. Counties with per-capita income below the federal poverty threshold have almost three times more wood heat users than counties above the federal poverty threshold. Additionally, an EIA study of wood use patterns found that lower-income households consume more wood annually than higher-income households. Consequently, residents of these low-income communities are more affected by adverse public health outcomes associated with exposure to wood smoke."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
         children: "NESCAUM\u2019s work in this area includes original research into wood heat-related emissions; leading multi-state workgroups focused on residential wood heating emissions and test methods; commenting on federal proposals and actions; and constructive engagement with EPA on wood heating issues."
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      docFilter: "wood_heat"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
       docFilter: "wood_heat"
     })]
   });
@@ -24589,7 +24821,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://157.245.138.21/api';
+var API_URL = 'http://127.0.0.1:8000/api';
 var PageParams = {
   'PER_PAGE': 10
 };

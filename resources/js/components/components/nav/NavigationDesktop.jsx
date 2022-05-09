@@ -71,7 +71,7 @@ const NavigationDesktop = () => {
   };
 
   return (
-    <Nav>
+    <Nav onMouseLeave={mouseLeaveHandler}>
       <Ul className="list-unstyled">
         {navLinks.map((item, i) => {
           return (
@@ -113,9 +113,13 @@ export default NavigationDesktop;
 const Nav = styled.nav`
     display: flex; 
     width: 100%;
-
     .m-down {
-        margin-bottom: 20px !important;
+        margin-bottom: 12px;
+    }
+
+    .sublink {
+        font-size: 13px;
+        margin-left: 10px;
     }
 `;
 
@@ -127,9 +131,9 @@ const Ul = styled.ul`
   min-width: 600px;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
   margin-left: 30px;
-
+  margin-bottom: 0;
   li {
     display: flex;
   }

@@ -33,11 +33,13 @@ import OTCPage from "../pages/about-us/OTCPage";
 import MHDZEVPage from "../pages/initiatives/MHDZEVPage";
 import TestMethodDevelopmentPage from "../pages/initiatives/TestMethodDevelopmentPage";
 import ModelingListosPage from "../pages/our-work/ModelingListosPage";
+import StatePolicyDocumentsPage from "../pages/our-work/StatePolicyDocumentsPage";
 
 const Router = () => {
 	return (
 		<Routes>
-			<Route path="/resource-library" element={<ResourceLibraryPage/>} />
+			<Route path="/resource-library/:displayOn" element={<ResourceLibraryPage/>} />
+            <Route path="/resource-library" element={<ResourceLibraryPage/>} />
 			<Route path="/about-us" exact element={<AboutUs/>} />
 			<Route path="/about-us/committees" element={<CommitteesPage/>} />
 			<Route path="/about-us/staff" element={<StaffPage/>} />
@@ -52,6 +54,11 @@ const Router = () => {
 				exact 
 				path="/our-work/clean-transportation/adoption-of-electric-cars" 
 				element={<DrivingAdoptionElectricCarsPage/>} 
+			/>
+            <Route 
+				exact 
+				path="/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents" 
+				element={<StatePolicyDocumentsPage/>}
 			/>
 			<Route 
 				exact 

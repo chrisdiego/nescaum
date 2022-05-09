@@ -1,11 +1,12 @@
 import ListItems from "../../content/ListItems";
-import DocumentLinks from "../../documents-links/DocumentLinks";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
 import Heading from "../../utility/Heading";
 import Paragraph from "../../utility/Paragraph";
 import Row from "../../utility/Row";
 import styled from 'styled-components';
+import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const DrivingAdoptionElectricCarsPage = () => {
 
@@ -77,6 +78,7 @@ const DrivingAdoptionElectricCarsPage = () => {
         </Row>
       </Column>
       <DocumentLinks docFilter="electric_cars"/>
+      <ResourceLibraryLink docFilter="electric_cars"/>
     </>
   )
 }

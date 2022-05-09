@@ -1,6 +1,7 @@
 import ListItems from "../../content/ListItems";
 import PageScaffold from "../../scaffold/PageScaffold";
 import Column from "../../utility/Column";
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const MonitoringPage = () => {
@@ -22,6 +23,7 @@ const MonitoringPage = () => {
         </ListItems>
       </Column>
       <DocumentLinks docFilter="monitoring"/>
+      <ResourceLibraryLink docFilter="monitoring"/>
     </>
   )
 }

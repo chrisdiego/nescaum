@@ -6,6 +6,7 @@ import Column from "../../utility/Column";
 import Heading from "../../utility/Heading";
 import Paragraph from "../../utility/Paragraph";
 import styled from 'styled-components';
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const CleanAirAcademyPage = () => {
@@ -52,6 +53,7 @@ const CleanAirAcademyPage = () => {
         <Image src='/assets/images/stock/training-schedule.png'/>
       </Column>
       <DocumentLinks docFilter="clean_air_academy"/>
+      <ResourceLibraryLink docFilter="clean_air_academy"/>
     </>
   )
 }

@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { API_URL } from "../../../constants/constants";
 import styled from "styled-components";
 import ExternalLink from "../links/ExternalLink";
+import { useParams } from "react-router-dom";
 
 const documentTypes = [
     {
@@ -151,16 +152,20 @@ const topics = [
 
 const ResourceLibraryPage = () => {
     const [documents, setDocuments] = useState([]);
+    const params = useParams();
     const [filters, setFilters] = useState({
         document_type: [],
         topic: [],
+        display_on: params?.displayOn ? [params.displayOn] : [],
         input: ''
     })
     const [page, setPage] = useState({
         start: 0,
         end: 24,
     })
-
+    console.log(params)
+    console.log(filters)
+    
     useEffect(async () => {
         if (!documents.length) {
             let url = `${API_URL}/assets/documents?limit=999999999`;
@@ -179,12 +184,15 @@ const ResourceLibraryPage = () => {
         //clean up arrays
         const formattedDocTypes = doc?.document_type?.map(doc => doc["key"]) || [];
         const formattedTopics = doc?.topic?.map(topic => topic["key"]) || [];
+        const formattedDisplayOn = doc?.display_on?.map(display => display["key"]) || [];
 
         //filter test cases
         if (filters.document_type?.length)
             filterable = filters.document_type.every(filter => formattedDocTypes.includes(filter))
         if (filterable && filters.topic?.length)
             filterable = filters.topic.every(filter => formattedTopics.includes(filter))
+        if (filterable && filters.display_on?.length)
+            filterable = filters.display_on.every(filter => formattedDisplayOn.includes(filter))
         if (filterable && filters.input?.length) {
             filterable = doc?.key_words?.toLowerCase().includes(filters.input) || doc?.formatted_title?.toLowerCase().includes(filters.input)
         }
@@ -216,7 +224,7 @@ const ResourceLibraryPage = () => {
                         );
                     })}
 
-                    {!filteredDocuments.length && (filters.document_type.length || filters.topic.length || filters.input.length) && <NoResultsMessage>No results found</NoResultsMessage>}
+                    {!filteredDocuments.length && (filters.document_type.length || filters.topic.length || filters.display_on.length || filters.input.length) && <NoResultsMessage>No results found</NoResultsMessage>}
                     <Pagination>
                         <PageButton onClick={() => setPage({start: page.start - 24 < 0 ? 0 : page.start - 24 , end: page.end - 24 == 0 ? 24 : page.end - 24})}>back</PageButton>
                         <h3>{`Page ${(page.start / 24) + 1}`}</h3>
@@ -230,7 +238,8 @@ const ResourceLibraryPage = () => {
                     <ResetButton onClick={() => setFilters({
                         document_type: [],
                         topic: [],
-                        input: ''
+                        input: '',
+                        display_on: [],
                     })}>Reset</ResetButton>
                     <StyledSearch type="text" value={filters.input} placeholder="Enter Search Term" onChange={(e) => setFilters({...filters, input: e.target.value})}></StyledSearch>
                     <CheckboxHeading>Document Type</CheckboxHeading>

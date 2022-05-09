@@ -2,6 +2,7 @@ import PageScaffold from '../../scaffold/PageScaffold';
 import Column from '../../utility/Column';
 import Paragraph from '../../utility/Paragraph';
 import { Link } from 'react-router-dom';
+import ResourceLibraryLink from "../../documents-links/ResourceLibraryLink";
 import DocumentLinks from "../../documents-links/DocumentLinks";
 
 const HazardousAirPollutionPage = () => {
@@ -24,6 +25,7 @@ const HazardousAirPollutionPage = () => {
         
       </Column>
       <DocumentLinks docFilter="air_toxics"/>
+      <ResourceLibraryLink docFilter="air_toxics"/>
     </>
   )
 }

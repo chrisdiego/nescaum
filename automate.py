@@ -1,12 +1,14 @@
 from glob import glob
 import yaml
 import json
+import logging
 
 yaml_files = glob('public/assets/documents/.meta/*.yaml')
 json_data = glob('spreadsheetformatted.json')
 
 with open('spreadsheetformatted.json') as json_file:
     data = json.load(json_file)
+    loadedFiles = []
     for file in yaml_files:
         with open(file, "r") as f:
             fileName = f.name.replace('public/assets/documents/.meta/', '')
@@ -18,5 +20,5 @@ with open('spreadsheetformatted.json') as json_file:
                     originalData['data'] = data.get(fileName, {})
                 if originalData is None:
                     originalData['data'] = {}
-        with open(file, "w") as f:
-            yaml.safe_dump(originalData, f)
+            loadedFiles.append(fileName)
+            logging.warning(len(loadedFiles))

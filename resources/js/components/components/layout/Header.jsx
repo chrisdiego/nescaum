@@ -35,7 +35,7 @@ export default Header;
 
 const H = styled.header`
 	display: flex; 
-	padding: 20px 40px; 
+	padding: 10px 40px; 
 	align-items: flex-end;
 	position: relative;
 	border-bottom: 1px solid rgba(0, 0, 0, .2);
