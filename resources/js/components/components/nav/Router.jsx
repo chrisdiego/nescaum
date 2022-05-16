@@ -25,6 +25,7 @@ import RegulatoryCompliancePage from "../pages/our-work/RegulatoryCompliancePage
 import StationarySectorsPage from "../pages/our-work/StationarySectorsPage";
 import PressPage from "../pages/press/PressPage";
 import WoodHeatPage from "../pages/our-work/WoodHeatPage";
+import BuildingElectrificationPage from "../pages/our-work/BuildingElectrificationPage";
 import CriteriaPollutantsPage from "../pages/criteria-pollutants-air-toxics/CriteriaPollutantsPage";
 import AirToxicsPage from "../pages/criteria-pollutants-air-toxics/AirToxicsPage";
 import CamnetPage from "../pages/initiatives/CamnetPage";
@@ -109,6 +110,11 @@ const Router = () => {
 				exact 
 				path="/our-work/stationary-sectors/wood-heat"
 				element={<WoodHeatPage/>}
+			/>
+            <Route 
+				exact 
+				path="/our-work/stationary-sectors/building-electrification"
+				element={<BuildingElectrificationPage/>}
 			/>
 			<Route 
 				exact 

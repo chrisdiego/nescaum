@@ -65,6 +65,10 @@ const data = {
                     title: "Wood Heat",
                     href: "wood-heat",
                 },
+                {
+                    title: "Building Electrification",
+                    href: "building-electrification",
+                },
             ],
         },
     ],

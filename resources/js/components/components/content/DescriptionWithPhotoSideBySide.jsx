@@ -148,7 +148,7 @@ const Img = styled.img`
     height: 100%;
     width: 100%;
     min-width: 100%;
-
+    max-height: 550px;
     @media screen and (max-width: 768px) {
         min-height: 200px;
         max-width: 100vw;

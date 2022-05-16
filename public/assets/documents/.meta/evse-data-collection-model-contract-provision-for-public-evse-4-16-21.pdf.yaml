@@ -1,19 +1,19 @@
 data:
   archive: false
   display_on:
-  - clean_transportation
-  - air_toxics
-  - electric_cars
+    - state_policy_documents
   document_type:
-  - recommendations
-  formatted_title: 'Collecting EV Charging Station Utilization Data: Model Language
-    for State Grants and Procurement Contracts'
-  key_words: model contract language
+    - recommendations
+  formatted_title: 'Collecting EV Charging Station Utilization Data: Model Language for State Grants and Procurement Contracts'
+  key_words: 'model contract language'
   topic:
-  - climate_energy
-  - mobile_sources
-height: null
-last_modified: 1645042024
-mime_type: application/pdf
+    - climate_energy
+    - mobile_sources
+  description: 'Test Description'
+  thumbnail: stock/charging-utilization.jpg
+  show_document_preview_on_page: false
 size: 257548
+last_modified: 1619119598
 width: null
+height: null
+mime_type: application/pdf
