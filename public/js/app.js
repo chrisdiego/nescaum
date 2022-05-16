@@ -19947,12 +19947,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/constants */ "./resources/js/constants/constants.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject, _templateObject2, _templateObject3;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -19974,6 +19975,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -20032,32 +20034,39 @@ var DocumentLinks = function DocumentLinks(_ref) {
     });
   });
   if (!filteredResults.length) return null;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
     width: "al-fu",
     center: true,
-    children: filteredResults === null || filteredResults === void 0 ? void 0 : filteredResults.map(function (document, index) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("a", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      text: "Resources",
+      size: "24",
+      mt: "20px",
+      mb: "20px",
+      align: "center",
+      width: "100%"
+    }), filteredResults === null || filteredResults === void 0 ? void 0 : filteredResults.map(function (document, index) {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
         href: document.url,
         rel: "noopener noreferrer",
         target: "_blank",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
           wrap: true,
           children: filteredResults.map(function (document) {
             var _document$thumbnail;
 
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Document, {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Document, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
                 href: document.url,
                 aria_label: "Link to ".concat(document.formatted_title, " Document"),
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("h5", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h5", {
                   children: document.formatted_title
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                  children: [document.description, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("i", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("small", {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+                  children: [document.description, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("i", {
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("small", {
                       children: document.date
                     })
                   })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Image, {
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Image, {
                   src: (_document$thumbnail = document.thumbnail) === null || _document$thumbnail === void 0 ? void 0 : _document$thumbnail.url,
                   alt: document.alt_tex
                 })]
@@ -20066,14 +20075,14 @@ var DocumentLinks = function DocumentLinks(_ref) {
           })
         })
       }, index);
-    })
+    })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DocumentLinks);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    min-width: 100vw;\n    min-height: 400px;\n    background-color: #daebf5;\n    padding: 40px;\n    margin-top: 40px;\n\n    & > p {\n        color: #006cb3;\n    }\n"])));
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  max-width: 350px; \n  margin: 0 auto;\n  display: block;\n  border-bottom: 1px solid black;\n  padding-bottom: 25px;\n"])));
-var Document = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    max-width: 400px;\n    padding-top: 20px;\n\n    h5 {\n        text-align: center;\n    }\n"])));
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    min-width: 100vw;\n    min-height: 400px;\n    background-color: #daebf5;\n    padding: 40px;\n    margin-top: 40px;\n\n    & > p {\n        color: #006cb3;\n    }\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  max-width: 350px; \n  margin: 0 auto;\n  display: block;\n  border-bottom: 1px solid black;\n  padding-bottom: 25px;\n"])));
+var Document = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    max-width: 400px;\n    padding-top: 20px;\n\n    h5 {\n        text-align: center;\n    }\n"])));
 
 /***/ }),
 
@@ -23088,7 +23097,7 @@ var BuildingElectrificationPage = function BuildingElectrificationPage() {
       mb: 60,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_5__["default"], {
         text: "Building Electrification Task Force",
-        size: "20px",
+        size: "24",
         mt: "20px",
         mb: "40px"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {

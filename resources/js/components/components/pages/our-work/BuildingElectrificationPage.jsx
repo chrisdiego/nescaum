@@ -19,7 +19,7 @@ const BuildingElectrificationPage = () => {
       <Column width='al-fu' center mt={60} mb={60}>
         <Heading 
             text="Building Electrification Task Force"
-          size="20px"
+          size="24"
           mt="20px"
           mb="40px" />
         <Paragraph>

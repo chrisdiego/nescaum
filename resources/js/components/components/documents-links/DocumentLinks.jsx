@@ -5,6 +5,7 @@ import { API_URL } from "../../../constants/constants";
 import { useEffect, useState } from "react";
 import ExternalLink from "../links/ExternalLink";
 import Row from "../utility/Row";
+import Heading from "../utility/Heading";
 
 const DocumentLinks = ({ docFilter }) => {
     const [documents, setDocuments] = useState([]);
@@ -25,6 +26,14 @@ const DocumentLinks = ({ docFilter }) => {
  
     return (
                 <Column width="al-fu" center>
+                    <Heading
+                        text="Resources"
+                        size="24"
+                        mt="20px"
+                        mb="20px"
+                        align="center"
+                        width="100%"
+                    />
                     {filteredResults?.map((document, index) => {
                         return (
                             <a
