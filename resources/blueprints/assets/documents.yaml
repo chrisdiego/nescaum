@@ -113,6 +113,7 @@ sections:
           inline: false
           options:
             supporting_regulatory_programs: 'Our Work: Clean Transportation: Supporting Regulatory Programs'
+            state_policy_documents: 'Our Work:  Clean Transportation: Driving Adoption of Electric Cars: State Policy Documents'
             clean_transportation: 'Our Work: Clean Transportation'
             electric_cars: 'Our Work: Clean Transportation: Driving Adoption of Electric Cars'
             electric_trucks: 'Our Work: Clean Transportation: Growing the Market for Electric Trucks'
@@ -120,13 +121,13 @@ sections:
             monitoring: 'Our Work: Monitoring'
             regional_modeling: 'Our Work: Regional Modeling'
             stationary_sources: 'Our Work: Stationary Sources'
-            wood_heat: 'Stationary Sectors: Wood Heat'
+            wood_heat: 'Our Work: Stationary Sources: Wood Heat'
+            building_electrification: 'Our Work: Stationary Sources: Building Electrification'
             listos: 'Initiative: LISTOS'
             clean_air_academy: 'Initiative: Clean Air Academy'
             mhd_zev_initiative: 'Initiative: MHD ZEV'
             camnet: 'Initiative: CAMNET'
             test_method_development: 'Initiative: Test Method Development'
-            state_policy_documents: 'State Policy Documents'
           display: 'Pages to Link To'
           type: checkboxes
           icon: checkboxes

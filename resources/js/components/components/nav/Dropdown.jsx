@@ -10,10 +10,6 @@ const data = {
                 {
                     title: "Driving Adoption of Electric Cars",
                     href: "adoption-of-electric-cars",
-                    subLink: {
-                        title: "State Policy Documents",
-                        href: "state-policy-documents",
-                    }
                 },
                 {
                     title: "Growing the Market for Electric Trucks",
