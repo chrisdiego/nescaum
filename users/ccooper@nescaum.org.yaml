@@ -1,4 +1,15 @@
 name: 'Coralie Cooper'
 super: true
 id: 829e2150-be0f-477f-b037-6d61ea938aed
-password_hash: $2y$10$QrhAbxe/89NI3RD16Pl.ZO7sV1AhCVJSSOYGqozs5Tzxo2KPYN6SO
+password_hash: $2y$10$qBk.V8ig0wq7SWIHLxd/5e6Rdu1tmrm7pHBoMMbWawz5xRZMmhtxu
+preferences:
+  favorites:
+    -
+      name: Dashboard
+      url: dashboard
+  assets:
+    images:
+      per_page: 100
+    documents:
+      mode: grid
+      per_page: 100
