@@ -4,7 +4,6 @@ blueprint: staff
 title: 'Kara Murphy'
 position: 'Environmental Analyst'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
-updated_at: 1644265502
-image:
-  - images/staff/karam.jpg
+updated_at: 1654965742
+image: staff/karam.jpg
 ---

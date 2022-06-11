@@ -4,7 +4,6 @@ blueprint: staff
 title: 'George Allen'
 position: 'Chief Scientist'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
-updated_at: 1644265483
-image:
-  - images/staff/georgea.jpg
+updated_at: 1654965718
+image: staff/georgea.jpg
 ---

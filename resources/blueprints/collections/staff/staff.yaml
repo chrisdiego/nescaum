@@ -28,6 +28,16 @@ sections:
           instructions_position: above
           validate:
             - required
+      -
+        handle: description
+        field:
+          input_type: text
+          antlers: false
+          display: Description
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
   sidebar:
     display: Sidebar
     fields:
@@ -45,6 +55,7 @@ sections:
           instructions: 'Staff photo'
           listable: hidden
           instructions_position: above
+          max_files: 1
       -
         handle: slug
         field:

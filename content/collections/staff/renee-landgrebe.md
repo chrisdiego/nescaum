@@ -4,7 +4,6 @@ blueprint: staff
 title: 'Renee Landgrebe'
 position: 'Office Manager'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
-updated_at: 1644265546
-image:
-  - images/staff/reneel.jpg
+updated_at: 1654965813
+image: staff/reneel.jpg
 ---

@@ -13,7 +13,6 @@ const SupportingRegulatoryProgramsPage = () => {
       <PageScaffold 
         heroImage="/assets/images/stock/airplane.jpg"
         headline="Supporting Regulatory Programs"
-        subHeadline="IN CLEAN TRANSPORTATION"
       />
       <Column width="al-fu" center mb={40}>
         <Paragraph>

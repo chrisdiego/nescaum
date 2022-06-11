@@ -4,7 +4,6 @@ blueprint: staff
 title: 'Coralie Cooper'
 position: 'Deputy Director'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
-updated_at: 1644265463
-image:
-  - images/staff/coraliec.png
+updated_at: 1654965710
+image: staff/coraliec.png
 ---

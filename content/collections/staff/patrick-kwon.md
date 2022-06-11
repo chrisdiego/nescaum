@@ -4,7 +4,6 @@ blueprint: staff
 title: 'Patrick Kwon'
 position: 'IT Manager'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
-updated_at: 1644265525
-image:
-  - images/staff/patrickk.png
+updated_at: 1654965794
+image: staff/patrickk.png
 ---

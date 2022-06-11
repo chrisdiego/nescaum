@@ -1,32 +1,8 @@
-import React from "react";
-import { staffPage } from "../../../mock-data/staffPage";
+import React, {useEffect, useState} from "react";
 import Row from "../../utility/Row";
+import StaffMember from "./StaffMember.jsx";
 import styled from "styled-components";
-
-const Staff = styled.div`
-    width: 280px;
-    height: 280px;
-    background: url(${(props) => props.src}) no-repeat;
-    background-size: cover;
-    border-radius: 350px;
-    color: transparent;
-    }
-    & img {
-        max-height: 150px;
-        border-radius: 65px;
-    }
-`;
-
-const StaffCard = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`;
-
-const StaffName = styled.h5`
-    font-weight: bold;
-    margin: 60px;
-`;
+import {API_URL} from "../../../../constants/constants";
 
 const PageHeading = styled.h1`
     font-weight: bold;
@@ -37,21 +13,22 @@ const PageHeading = styled.h1`
 `;
 
 const StaffPage = () => {
+    const [staff, setStaff] = useState([]);
+
+    useEffect(async () => {
+        if (!staff.length) {
+            let url = `${API_URL}/collections/staff/entries?limit=999999999`;
+            const response = await fetch(url);
+            const results = await response.json();
+            setStaff(results.data);
+        }
+    }, [staff]);
+    //TODO MOVE STAFF CARD TO SEPARATE COMPONENT AND CREATE COLLAPSIBLE DESC
     return (
         <Row width="al-fu" center wrap="true" justify="space-between">
             <PageHeading>Staff</PageHeading>
-            {staffPage.map((staff) => {
-                return (
-                    <StaffCard>
-                        <Staff src={staff.src}>{staff.name}</Staff>
-                        <StaffName>
-                            {staff.name}
-                            <br />
-                            <i>{staff.title}</i>
-                        </StaffName>
-                    </StaffCard>
-                );
-            })}
+            {staff?.map((staff) =>  <StaffMember staff={staff} />
+            )}
         </Row>
     );
 };

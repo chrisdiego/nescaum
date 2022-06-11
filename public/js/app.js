@@ -22293,6 +22293,81 @@ var OTCPage = function OTCPage() {
 
 /***/ }),
 
+/***/ "./resources/js/components/components/pages/about-us/StaffMember.jsx":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/components/pages/about-us/StaffMember.jsx ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+
+
+var Staff = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    width: 280px;\n    height: 280px;\n    background: url(", ") no-repeat;\n    background-size: cover;\n    border-radius: 350px;\n    color: transparent;\n    }\n    & img {\n        max-height: 150px;\n        border-radius: 65px;\n    }\n"])), function (props) {
+  return props.src;
+});
+var StaffCard = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 40px;\n    width: 33%;\n"])));
+var StaffName = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].h6(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    font-weight: bold;\n    margin: 20px 60px 0 60px;\n    text-align: center;\n"])));
+var StaffDescription = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    margin: 10px 40px 0 40px;\n    font-size: 13px;\n"])));
+
+var StaffMember = function StaffMember(_ref) {
+  var _ref$staff = _ref.staff,
+      image = _ref$staff.image,
+      title = _ref$staff.title,
+      description = _ref$staff.description,
+      position = _ref$staff.position;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      collapsed = _useState2[0],
+      setCollapsed = _useState2[1];
+
+  var shortDesc = description ? (description === null || description === void 0 ? void 0 : description.substring(0, 30)) + '...' : null;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(StaffCard, {
+    onClick: function onClick() {
+      return setCollapsed(!collapsed);
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Staff, {
+      src: image === null || image === void 0 ? void 0 : image.permalink,
+      children: title
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(StaffName, {
+      children: [title, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+        children: position
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(StaffDescription, {
+      children: collapsed ? description : shortDesc
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StaffMember);
+
+/***/ }),
+
 /***/ "./resources/js/components/components/pages/about-us/StaffPage.jsx":
 /*!*************************************************************************!*\
   !*** ./resources/js/components/components/pages/about-us/StaffPage.jsx ***!
@@ -22304,12 +22379,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _mock_data_staffPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../mock-data/staffPage */ "./resources/js/components/mock-data/staffPage.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+/* harmony import */ var _StaffMember_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StaffMember.jsx */ "./resources/js/components/components/pages/about-us/StaffMember.jsx");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../constants/constants */ "./resources/js/constants/constants.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -22319,31 +22415,57 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Staff = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    width: 280px;\n    height: 280px;\n    background: url(", ") no-repeat;\n    background-size: cover;\n    border-radius: 350px;\n    color: transparent;\n    }\n    & img {\n        max-height: 150px;\n        border-radius: 65px;\n    }\n"])), function (props) {
-  return props.src;
-});
-var StaffCard = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n"])));
-var StaffName = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h5(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    font-weight: bold;\n    margin: 60px;\n"])));
-var PageHeading = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h1(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    font-weight: bold;\n    margin-top: 20px;\n    margin-bottom: 40px;\n    color: #003354;\n    width: 100%;\n"])));
+
+var PageHeading = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].h1(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    font-weight: bold;\n    margin-top: 20px;\n    margin-bottom: 40px;\n    color: #003354;\n    width: 100%;\n"])));
 
 var StaffPage = function StaffPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      staff = _useState2[0],
+      setStaff = _useState2[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+    var url, response, results;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            if (staff.length) {
+              _context.next = 9;
+              break;
+            }
+
+            url = "".concat(_constants_constants__WEBPACK_IMPORTED_MODULE_4__.API_URL, "/collections/staff/entries?limit=999999999");
+            _context.next = 4;
+            return fetch(url);
+
+          case 4:
+            response = _context.sent;
+            _context.next = 7;
+            return response.json();
+
+          case 7:
+            results = _context.sent;
+            setStaff(results.data);
+
+          case 9:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  })), [staff]); //TODO MOVE STAFF CARD TO SEPARATE COMPONENT AND CREATE COLLAPSIBLE DESC
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
     width: "al-fu",
     center: true,
     wrap: "true",
     justify: "space-between",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(PageHeading, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(PageHeading, {
       children: "Staff"
-    }), _mock_data_staffPage__WEBPACK_IMPORTED_MODULE_1__.staffPage.map(function (staff) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(StaffCard, {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Staff, {
-          src: staff.src,
-          children: staff.name
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(StaffName, {
-          children: [staff.name, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
-            children: staff.title
-          })]
-        })]
+    }), staff === null || staff === void 0 ? void 0 : staff.map(function (staff) {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_StaffMember_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        staff: staff
       });
     })]
   });
@@ -23905,8 +24027,7 @@ var SupportingRegulatoryProgramsPage = function SupportingRegulatoryProgramsPage
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       heroImage: "/assets/images/stock/airplane.jpg",
-      headline: "Supporting Regulatory Programs",
-      subHeadline: "IN CLEAN TRANSPORTATION"
+      headline: "Supporting Regulatory Programs"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
       width: "al-fu",
       center: true,
@@ -24813,74 +24934,6 @@ var ourWorkData = [{
 
 /***/ }),
 
-/***/ "./resources/js/components/mock-data/staffPage.js":
-/*!********************************************************!*\
-  !*** ./resources/js/components/mock-data/staffPage.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "staffPage": () => (/* binding */ staffPage)
-/* harmony export */ });
-var staffPage = [{
-  name: "Alexandra Karambelas",
-  src: "/assets/images/staff/alexk.jpg",
-  title: "Environmental Analyst"
-}, {
-  name: "Coralie Cooper",
-  src: "/assets/images/staff/coraliec.png",
-  title: "Deputy Director"
-}, {
-  name: "Debjani Brahmachari",
-  src: "/assets/images/staff/debjanib.jpg",
-  title: "Director of Finances"
-}, {
-  name: "Jeremy Hunt",
-  src: "/assets/images/staff/jeremyh.jpg",
-  title: "Policy Advisor & Analyst"
-}, {
-  name: "George Allen",
-  src: "/assets/images/staff/georgea.jpg",
-  title: "Chief Scientist"
-}, {
-  name: "Kara Murphy",
-  src: "/assets/images/staff/karam.jpg",
-  title: "Environmental Analyst"
-}, {
-  name: "Kathy Kinsey",
-  src: "/assets/images/staff/kathyk.jpg",
-  title: "Senior Policy Advisor"
-}, {
-  name: "Patrick Kwon",
-  src: "/assets/images/staff/patrickk.png",
-  title: "IT Manager"
-}, {
-  name: "Paul Miller",
-  src: "/assets/images/staff/paulm.jpg",
-  title: "Executive Director"
-}, {
-  name: "Renee Landgrebe",
-  src: "/assets/images/staff/reneel.jpg",
-  title: "Office Manager"
-}, {
-  name: "Russell Pildes",
-  src: "/assets/images/staff/russellp.jpg",
-  title: ""
-}, {
-  name: "Sarah McKearnan",
-  src: "/assets/images/staff/smckearnan.png",
-  title: ""
-}, {
-  name: "Jamie Flynn",
-  src: "/assets/images/staff/jflynn.png",
-  title: ""
-}];
-
-
-/***/ }),
-
 /***/ "./resources/js/constants/constants.js":
 /*!*********************************************!*\
   !*** ./resources/js/constants/constants.js ***!
@@ -24893,7 +24946,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://159.223.119.211/api';
+var API_URL = 'http://127.0.0.1:8000/api';
 var PageParams = {
   'PER_PAGE': 10
 };

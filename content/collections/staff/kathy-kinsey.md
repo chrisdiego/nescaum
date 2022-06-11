@@ -4,7 +4,6 @@ blueprint: staff
 title: 'Kathy Kinsey'
 position: 'Senior Policy Advisor'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
-updated_at: 1644265514
-image:
-  - images/staff/kathyk.jpg
+updated_at: 1654965750
+image: staff/kathyk.jpg
 ---

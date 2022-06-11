@@ -4,7 +4,6 @@ blueprint: staff
 title: 'Paul Miller'
 position: 'Executive Director'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
-updated_at: 1644265535
-image:
-  - images/staff/paulm.jpg
+updated_at: 1654965802
+image: staff/paulm.jpg
 ---
