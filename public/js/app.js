@@ -22665,6 +22665,15 @@ var CamnetPage = function CamnetPage() {
       heroImage: "/assets/images/stock/camnet.jpg",
       headline: "CAMNET",
       mainText: "CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without man-made air pollution."
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      style: {
+        textAlign: 'center'
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+        href: "https://hazecam.net/",
+        target: "_blank",
+        children: "CAMNET Website"
+      })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_2__["default"], {
       docFilter: "camnet"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -24946,7 +24955,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://127.0.0.1:8000/api';
+var API_URL = 'http://159.223.119.211/api';
 var PageParams = {
   'PER_PAGE': 10
 };
