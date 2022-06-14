@@ -9,9 +9,7 @@ const StationarySectorsPage = () => {
     <> 
       <PageScaffold 
         heroImage="/assets/images/stock/smokestack-pexels.jpg"
-        headline="Stationary Sectors"
-        sideImage="/assets/images/stock/street-smoke.jpg"
-        mainText="Various types of stationary sources emit pollutants that affect air quality. This is a particular issue when sources are located near homes or other sensitive places, such as schools and hospitals, and when an area is impacted by multiple sources. NESCAUM is involved in several activities that target emissions from stationary sources:"
+        headline="Stationary Sources"
       />
 
       <Column mt={80}>

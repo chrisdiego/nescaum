@@ -10,7 +10,7 @@ highlights:
   -
     cells:
       - 'Identifying regional areas of interest'
-      - 'Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches for to enhance compliance with Clean Air Act requirements.'
+      - 'Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches to enhance compliance with Clean Air Act requirements.'
 updated_by: c21113cb-baf4-47a8-b589-7651dece9448
 updated_at: 1644258508
 ---

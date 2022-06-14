@@ -34,9 +34,19 @@ const StaffDescription = styled.p`
     font-size: 13px;
 `;
 
+const StaffDescriptionButton = styled.button`
+    color: #003354;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+`;
+
 const StaffMember = ({ staff: { image, title, description, position } }) => {
     const [collapsed, setCollapsed] = useState(false);
-    const shortDesc = description ? description?.substring(0, 30) + '...' : null;
+    
+    const safeEmptyDesc = description ? description : 'No description found.';
 
     return (    
         <StaffCard onClick={() => setCollapsed(!collapsed)}>
@@ -47,7 +57,8 @@ const StaffMember = ({ staff: { image, title, description, position } }) => {
                     <i>{position}</i>
                 </StaffName>
                 <StaffDescription>
-                    {collapsed ?  description : shortDesc}
+                    <StaffDescriptionButton onClick={() => setCollapsed(!collapsed)}>{collapsed ? 'Hide' : 'Show'} Description</StaffDescriptionButton>
+                    {collapsed ?  <p>{safeEmptyDesc}</p> : null}
                 </StaffDescription>
         </StaffCard>
     );
