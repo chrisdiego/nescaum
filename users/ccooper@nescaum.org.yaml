@@ -11,5 +11,4 @@ preferences:
     images:
       per_page: 100
     documents:
-      mode: grid
       per_page: 100
