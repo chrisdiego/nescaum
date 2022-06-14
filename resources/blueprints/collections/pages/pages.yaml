@@ -1,0 +1,86 @@
+title: pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: heroimage
+        field:
+          input_type: text
+          antlers: false
+          display: heroImage
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: headline
+        field:
+          input_type: text
+          antlers: false
+          display: headline
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: maintext
+        field:
+          input_type: text
+          antlers: false
+          display: mainText
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: subtext
+        field:
+          input_type: text
+          antlers: false
+          display: subText
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: subheader
+        field:
+          input_type: text
+          antlers: false
+          display: subHeader
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: page_data
+        field:
+          theme: material
+          mode: javascript
+          mode_selectable: false
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: page_data
+          type: code
+          icon: code
+          listable: hidden
+          instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true

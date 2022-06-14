@@ -18,6 +18,7 @@ const Home = () => {
         "/assets/images/logos/nys.png",
         "/assets/images/logos/njs.png",
         "/assets/images/logos/dem.png",
+        "/assets/images/logos/maine.png",
     ];
 
     const homeData = [

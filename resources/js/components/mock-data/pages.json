@@ -149,10 +149,6 @@
           "desc": "NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."
         },
         {
-          "title": "Attainment Planning",
-          "desc": "NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."
-        },
-        {
           "title": "Enforcement and Compliance",
           "list": [
             {
@@ -161,7 +157,7 @@
             },
             {
               "title": "Identifying regional areas of interest",
-              "desc": "Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches for to enhance compliance with Clean Air Act requirements."
+              "desc": "Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches to enhance compliance with Clean Air Act requirements."
             }
           ]
         },
@@ -171,25 +167,25 @@
         },
         {
           "title": "Attainment Planning",
-          "desc": "NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."
-        },
-        {
-          "title": "Enforcement and Compliance",
-          "list": [
-            {
-              "title": "Facilitating discussions on compliance and enforcement issues",
-              "desc": "NESCAUM facilitates discussions between EPA and states on several key aspects of these programs including EPA oversight of programs via the State Review Framework (SRF), data reporting tools such as EPA’s Enforcement and Compliance History Online (ECHO) website and Integrated Compliance Information System (ICIS), policy development such as the High Priority Violations policy and requirements for state Compliance Monitoring Strategy (CMS) commitments. NESCAUM also reviews and comments on federal proposals."
-            },
-            {
-              "title": "Identifying regional areas of interest",
-              "desc": "Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches for to enhance compliance with Clean Air Act requirements."
-            }
-          ]
+          "desc": "NESCAUM staff works with its member states on a broad range of SIP development activities, including: modeling, emissions inventories, establishing partnerships with EPA to ensure states have a clear understanding of federal requirements, and developing regional approaches to address nonattainment challenges."
         },
         {
           "title": "Training",
           "desc": "NESCAUM’s Clean Air Academy program provides air pollution training for our member states. This program is funded through federal grants to provide professional education to individuals from state and local air pollution agencies. State staff may register for any of these courses on APTI Learn. Courses are provided through EPA’s Air Pollution Training Institute (APTI) and the National Air Compliance Training program (NACT). For more information, please contact NESCAUM’s Training Coordinator, Kara Murphy, at kmurphy@nescaum.org."
-        }
+        },
+        {
+            "title": "Stationary Sources and Permitting",
+            "list": [
+              {
+                "title": "Facilitating discussions on stationary sources and permitting issues",
+                "desc": "NESCAUM facilitates communication among states and with the EPA on critical permitting and stationary source issues. Quarterly committee meetings include states updates on recent permitting activities, EPA reports on pertinent regulatory actions and guidance, and presentations about emerging issues that affect permitting and stationary source programs. When applicable, NESCAUM coordinates the preparation of comments on EPA proposals with state committee members."
+              },
+              {
+                "title": "Providing additional resources on areas of regional interest",
+                "desc": "NESCAUM facilitates the in-depth exploration of areas that are of interest to states. When those issues overlap with over state programs, NESCAUM coordinates joint sessions with other committees that are open to all interested state and EPA participants. Recent examples include webinars on Environmental Justice in Permitting and Petroleum Terminal Emissions, Regulation and Impacts."
+              }
+            ]
+          }
       ]
     }
   }

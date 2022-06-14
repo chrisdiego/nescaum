@@ -24,10 +24,10 @@ const ourWorkData = [
         href: '/our-work/regional-modeling'
 	}, 
 	{
-		title: 'Stationary Sectors',
+		title: 'Stationary Sources',
 		content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.', 
 		imageSrc: '/assets/images/stock/smokestack-pexels.jpg',
-        href: '/our-work/stationary-sectors'
+        href: '/our-work/stationary-sources'
 	}, 
     {
 		title: 'Driving the Adoption of Electric Vehicles',

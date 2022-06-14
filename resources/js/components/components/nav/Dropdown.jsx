@@ -50,8 +50,8 @@ const data = {
             ],
         },
         {
-            title: "STATIONARY SECTORS",
-            href: "stationary-sectors",
+            title: "STATIONARY SOURCES",
+            href: "stationary-sources",
             subLinks: [
                 {
                     title: "Regulatory Compliance",

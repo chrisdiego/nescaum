@@ -23,11 +23,17 @@ const StaffPage = () => {
             setStaff(results.data);
         }
     }, [staff]);
-    //TODO MOVE STAFF CARD TO SEPARATE COMPONENT AND CREATE COLLAPSIBLE DESC
+
+    const sortedStaff = staff?.sort((a, b) => {
+        const lastName1 = a.title.split(" ")[1];
+        const lastName2 = b.title.split(" ")[1];
+        return lastName1.localeCompare(lastName2)
+    })
+    console.log(sortedStaff)
     return (
         <Row width="al-fu" center wrap="true" justify="space-between">
             <PageHeading>Staff</PageHeading>
-            {staff?.map((staff) =>  <StaffMember staff={staff} />
+            {sortedStaff?.map((staff) =>  <StaffMember staff={staff} />
             )}
         </Row>
     );

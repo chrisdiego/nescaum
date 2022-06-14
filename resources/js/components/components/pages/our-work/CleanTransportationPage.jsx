@@ -45,22 +45,22 @@ const data = {
   subHeader: "NESCAUM'S MULTI-STATE INITIATIVES TO DRIVE CLEAN VEHICLE ADOPTION",
   subArticles: [
     {
+        title: "Driving the Adoption of Electric Cars",
+        content: "NESCAUM leads the Multi-State Zero-Emission Vehicle (ZEV) Task Force, a forum for states that have adopted California’s ZEV regulation to collaborate on complementary policies and programs to accelerate widespread consumer adoption of electric cars.",
+        imageSrc: "/assets/images/stock/electric_adoption.jpg",
+        "href": "/our-work/clean-transportation/adoption-of-electric-cars"
+    },
+    {
+        title: "Growing the Market for Electric Trucks and Buses",
+        content: "NESCAUM facilitates a multi-state collaboration aimed at electrifying trucks and buses to improve air quality in over-burdened communities and to combat climate change.",
+        imageSrc: "/assets/images/stock/mhd.jpg",
+        "href": "/our-work/clean-transportation/growing-market-for-electric-vehicles"
+    },
+    {
       title: "Supporting Regulatory Programs",
       content: "NESCAUM helps northeast states coordinate their regulation of mobile sources of air pollution and assists states across the country in adopting and implementing California’s motor vehicle emission standards.",
       imageSrc: "https://images.unsplash.com/photo-1605257638792-9d0e2197fb0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
       "href": "/our-work/clean-transportation/supporting-regulatory-programs"
     },
-    {
-      title: "Driving the Adoption of Electric Cars",
-      content: "NESCAUM leads the Multi-State Zero-Emission Vehicle (ZEV) Task Force, a forum for states that have adopted California’s ZEV regulation to collaborate on complementary policies and programs to accelerate widespread consumer adoption of electric cars.",
-      imageSrc: "/assets/images/stock/electric_adoption.jpg",
-      "href": "/our-work/clean-transportation/adoption-of-electric-cars"
-    },
-    {
-      title: "Growing the Market for Electric Trucks and Buses",
-      content: "NESCAUM facilitates a multi-state collaboration aimed at electrifying trucks and buses to improve air quality in over-burdened communities and to combat climate change.",
-      imageSrc: "/assets/images/stock/mhd.jpg",
-      "href": "/our-work/clean-transportation/growing-market-for-electric-vehicles"
-    }
   ]
 }

@@ -103,22 +103,22 @@ const Router = () => {
 			/>
 			<Route 
 				exact 
-				path="/our-work/stationary-sectors/regulatory-compliance"
+				path="/our-work/stationary-sources/regulatory-compliance"
 				element={<RegulatoryCompliancePage/>}
 			/>
 			<Route 
 				exact 
-				path="/our-work/stationary-sectors/wood-heat"
+				path="/our-work/stationary-sources/wood-heat"
 				element={<WoodHeatPage/>}
 			/>
             <Route 
 				exact 
-				path="/our-work/stationary-sectors/building-electrification"
+				path="/our-work/stationary-sources/building-electrification"
 				element={<BuildingElectrificationPage/>}
 			/>
 			<Route 
 				exact 
-				path="/our-work/stationary-sectors"
+				path="/our-work/stationary-sources"
 				element={<StationarySectorsPage/>}
 			/>
 			<Route

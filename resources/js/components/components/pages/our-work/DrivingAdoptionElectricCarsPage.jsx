@@ -7,12 +7,9 @@ import Paragraph from "../../utility/Paragraph";
 import Row from "../../utility/Row";
 import styled from 'styled-components';
 import DocumentLinks from "../../documents-links/DocumentLinks";
+import { Link } from "react-router-dom";
 
 const DrivingAdoptionElectricCarsPage = () => {
-
-  const listItems = [
-    
-  ]
 
   return (
     <>
@@ -77,6 +74,9 @@ const DrivingAdoptionElectricCarsPage = () => {
           </ImageContainer>
         </Row>
       </Column>
+      <ButtonContainer>
+        <Link to="/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents">State Policy Documents</Link>
+      </ButtonContainer>
       <DocumentLinks docFilter="electric_cars"/>
       <ResourceLibraryLink docFilter="electric_cars"/>
     </>
@@ -104,3 +104,6 @@ const ZedImage = styled(Image)`
   min-width: unset; 
   margin-left: 0;
 `
+const ButtonContainer = styled.div`
+    text-align: center;
+`;
