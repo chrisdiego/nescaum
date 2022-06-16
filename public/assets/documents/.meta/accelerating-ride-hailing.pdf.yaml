@@ -1,0 +1,18 @@
+data:
+  formatted_title: 'Model Language for State Grants and Procurement Contracts'
+  description: 'This document describes the benefits of collecting EVSE utilization data and provides model language for establishing uniform EVSE data collection and reporting standards in state EVSE grant and procurement contracts.'
+  document_type:
+    - fact_sheet
+    - recommendations
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-15'
+  show_document_preview_on_page: false
+  key_words: 'EVSE, EVSE procurement, ZEV'
+  archive: false
+size: 257548
+last_modified: 1655305117
+width: null
+height: null
+mime_type: application/pdf
