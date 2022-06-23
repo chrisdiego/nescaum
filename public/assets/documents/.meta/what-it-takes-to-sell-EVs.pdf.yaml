@@ -1,0 +1,19 @@
+data:
+  formatted_title: 'What it Takes to Sell Electric Vehicles'
+  description: 'Leading electric vehicle dealers offer advice on how to sell EVs'
+  thumbnail: stock/what-it-takes-to-sell-EVs.jpg
+  document_type:
+    - fact_sheet
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-16'
+  display_on:
+    - state_policy_documents
+  show_document_preview_on_page: true
+  archive: false
+size: 3995467
+last_modified: 1655415563
+width: null
+height: null
+mime_type: application/pdf

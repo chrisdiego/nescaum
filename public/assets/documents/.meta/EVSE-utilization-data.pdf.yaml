@@ -1,0 +1,21 @@
+data:
+  formatted_title: 'EVSE Utilization Data and Model Language for Contracts'
+  description: 'This document describes the benefits of collecting EVSE utilization data and provides model language for establishing uniform EVSE data collection standards'
+  thumbnail: stock/charging-utilization-data.jpg
+  document_type:
+    - fact_sheet
+    - recommendations
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-17'
+  display_on:
+    - state_policy_documents
+  show_document_preview_on_page: true
+  key_words: 'EVSE, EVSE data, utilization data, procurement'
+  archive: false
+size: 257548
+last_modified: 1655417087
+width: null
+height: null
+mime_type: application/pdf

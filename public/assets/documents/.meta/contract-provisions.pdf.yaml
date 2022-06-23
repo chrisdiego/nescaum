@@ -1,4 +1,19 @@
-data: {  }
+data:
+  formatted_title: 'Model Procurement Contract Provisions for EV Charging'
+  description: 'This document provides model state EVSE grant and procurement provisions'
+  document_type:
+    - fact_sheet
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-16'
+  display_on:
+    - state_policy_documents
+    - clean_transportation
+    - electric_cars
+  show_document_preview_on_page: false
+  key_words: 'EVSE, EVSE procurement provisions, procurement'
+  archive: false
 size: 397676
 last_modified: 1655305117
 width: null

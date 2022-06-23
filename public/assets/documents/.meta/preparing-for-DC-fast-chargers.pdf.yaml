@@ -1,4 +1,18 @@
-data: {  }
+data:
+  show_document_preview_on_page: true
+  archive: false
+  formatted_title: 'Facilitating Deployment of DC Fast Charging'
+  description: 'This document provides information about common issues that arise when permitting DCFC stations.'
+  thumbnail: stock/folders.jpg
+  document_type:
+    - recommendations
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-20'
+  display_on:
+    - state_policy_documents
+  key_words: 'EVSE, DCFC, permitting'
 size: 457178
 last_modified: 1655305120
 width: null

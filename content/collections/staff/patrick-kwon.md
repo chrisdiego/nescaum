@@ -4,7 +4,7 @@ blueprint: staff
 title: 'Patrick Kwon'
 position: 'IT Manager'
 updated_by: 829e2150-be0f-477f-b037-6d61ea938aed
-updated_at: 1655234882
+updated_at: 1655758887
 image: staff/patrickk.png
-description: 'Patrick is the Information Technology Manager at NESCAUM.'
+description: 'Patrick manages all aspects of NESCAUM''s IT systems. In this role he works with project teams to implement new internal software and hardware systems.'
 ---

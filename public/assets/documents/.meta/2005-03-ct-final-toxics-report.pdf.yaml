@@ -1,14 +1,16 @@
 data:
   archive: false
-  display_on: []
+  display_on:
+    - air_toxics
   document_type:
-  - report
-  formatted_title: Data Analysis of Air Toxics in Connecticut
-  key_words: ''
+    - report
+  formatted_title: 'Data Analysis of Air Toxics in Connecticut'
   topic:
-  - air_toxics
-height: null
-last_modified: 1159801692
-mime_type: application/pdf
+    - air_toxics
+  show_document_preview_on_page: false
+  key_words: 'air toxics'
 size: 944359
+last_modified: 1652931296
 width: null
+height: null
+mime_type: application/pdf

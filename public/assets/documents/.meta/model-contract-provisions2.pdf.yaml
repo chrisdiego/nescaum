@@ -1,0 +1,20 @@
+data:
+  formatted_title: 'Model Grant and Procurement Contract Provisions for Public EV Charging'
+  description: 'This document provides model language for state EVSE grant and procurement contracts.'
+  thumbnail: stock/model-procurement-policies-1655478831.jpg
+  document_type:
+    - recommendations
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-17'
+  display_on:
+    - state_policy_documents
+  show_document_preview_on_page: true
+  key_words: 'EVSE, contract provisions, model provisions, electric vehicles, charging'
+  archive: false
+size: 397676
+last_modified: 1655483263
+width: null
+height: null
+mime_type: application/pdf

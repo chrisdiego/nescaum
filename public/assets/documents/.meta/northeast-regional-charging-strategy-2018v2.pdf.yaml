@@ -1,0 +1,21 @@
+data:
+  formatted_title: 'Northeast Corridor Regional Strategy 2018-2021'
+  description: 'The Northeast Corridor Regional Strategy for Electric Vehicle Charging Infrastructure 2018-2021 provides a set of recommendations for regional charging infrastructure development.'
+  thumbnail: stock/northeast-corridor-regional-strategy.png
+  document_type:
+    - recommendations
+    - report
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-17'
+  display_on:
+    - state_policy_documents
+  show_document_preview_on_page: true
+  key_words: 'EVSE, charging infrastructure, regional plan, electric vehicle charging'
+  archive: false
+size: 1143036
+last_modified: 1655475916
+width: null
+height: null
+mime_type: application/pdf

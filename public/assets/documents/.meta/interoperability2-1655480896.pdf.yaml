@@ -1,0 +1,21 @@
+data:
+  formatted_title: 'EV Charging Interoperability Recommendations'
+  description: 'This document provides recommendations for state policy makers on how to promote EVSE interoperability'
+  thumbnail: stock/interoperability.jpg
+  document_type:
+    - fact_sheet
+    - recommendations
+  topic:
+    - climate_energy
+    - mobile_sources
+  published_date: '2022-06-17'
+  display_on:
+    - state_policy_documents
+  show_document_preview_on_page: true
+  key_words: 'EVSE, interoperability, procurement, contracts'
+  archive: false
+size: 1079225
+last_modified: 1655480896
+width: null
+height: null
+mime_type: application/pdf
