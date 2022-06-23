@@ -23,17 +23,25 @@ const Home = () => {
 
     const homeData = [
         {
-            title: "Zero-Emission Medium- and Heavy-Duty Vehicle Initiative",
+            title: 'CAMNET', 
+            content: 'CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without manmade air pollution.', 
+            imageSrc: '/assets/images/stock/electricbus.jpg',
+            href: 'https://hazecam.net/', 
+            external: true
+        }, 
+        {
+            title: "Zero-Emission Medium and Heavy-Duty Vehicle Initiative",
             content:
                 "Truck and bus electrification is a top priority for many states. A coalition of 18 jurisdictions in the United States and Canada has committed to work together to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.",
-            imageSrc: "/assets/images/stock/electricbus.jpg",
-            href: "/our-work/clean-transportation/adoption-of-electric-cars",
+            imageSrc: '/assets/images/stock/electric-truck1.jpg',
+            href: "/initiatives/mhd-zev-initiative",
         },
         {
             title: "Residential/Commerical Wood Combustion",
             content:
                 "Emissions from wood heating have serious public health consequences. NESCAUM evaluated the current certification process for wood stoves and recommended changes to reduce emissions and protect public health.",
             imageSrc: "/assets/images/stock/wood-on-fire-pexels.jpg",
+            href: "/initiatives/test-method-development",
         },
         {
             title: "Long Island Sound Tropospheric Ozone Study (LISTOS)",

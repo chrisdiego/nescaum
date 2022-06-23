@@ -43,26 +43,30 @@ const data = [
 		content: 'CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without manmade air pollution.', 
 		imageSrc: '/assets/images/stock/electricbus.jpg',
 		href: 'https://hazecam.net/', 
-    external: true
+        external: true
 	}, 
 	{
 		title: 'NESCAUMS Clean Air Academy', 
 		content: 'NESCAUM’s Clean Air Academy provides air pollution training for staff in our member state air quality agencies. Courses are provided by EPA’s National Air Quality Training Program through EPA’s Learning Management System (LMS) or by private training contractors. NESCAUM operates the program with federal funding.', 
-		imageSrc: '/assets/images/stock/wood-on-fire-pexels.jpg',
+		imageSrc: '/assets/images/stock/training.jpg',
+        href: '/initiatives/clean-air-academy', 
 	}, 
 	{
 		title: 'Long Island Sound Tropospheric Ozone Study (LISTOS)', 
 		content: 'While air pollution levels have dropped markedly over the years across much of the United States, the New York City (NYC) metropolitan area (comprised of portions of New Jersey, New York, and Connecticut in and around NYC) continues to persistently violate both past and recently revised federal health-based air quality standards for ground-level ozone.', 
 		imageSrc: '/assets/images/stock/listos.jpg',
+        href: '/initiatives/listos',
 	}, 
 	{
-		title: 'MHD ZEV Initiatives', 
+		title: 'Medium and Heavy-Duty ZEV Initiative', 
 		content: 'In the United States, greenhouse gas emissions from the movement of goods are growing faster than any other segment of the transportation sector. As more and more consumers turn to online shopping, truck volumes are expected to increase by 36% over the next decade. ', 
-		imageSrc: '/assets/images/stock/listos.jpg',
+		imageSrc: '/assets/images/stock/electric-truck1.jpg',
+        href: '/initiatives/mhd-zev-initiative',
 	}, 
 	{
 		title: 'Test Method Development', 
 		content: 'NYSERDA Integrated Duty Cycle Test Method for Certification of Wood-Fired Stoves Using Cordwood: Measurement of Particulate Matter (PM) and Carbon Monoxide (CO) Emissions and Heating Efficiency', 
 		imageSrc: '/assets/images/stock/wood-burning.jpg',
+        href: '/initiatives/test-method-development',
 	}, 
 ]

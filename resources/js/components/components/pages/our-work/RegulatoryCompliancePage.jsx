@@ -11,7 +11,7 @@ const RegulatoryCompliancePage = () => {
     <>
       <PageScaffold 
         heroImage='/assets/images/stock/smoke-stack-regulatory-compliance.jpg'
-        headline='Regualatory Compliance'
+        headline='Regulatory Compliance'
       />
       <Column width='al-fu' center>
           <Image src="/assets/images/stock/compliance.jpg" alt="Image of smoke stack" />

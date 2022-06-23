@@ -20467,7 +20467,7 @@ var data = {
     href: "listos"
   }, {
     title: "MHD ZEV Initiative",
-    href: "growing-market-for-electric-vehicles"
+    href: "mhd-zev-initiative"
   }, {
     title: "Test Method Development",
     href: "test-method-development"
@@ -20556,7 +20556,7 @@ var Dropdown = function Dropdown(_ref) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dropdown);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    position: absolute;\n    min-width: 100vw;\n    min-height: 420px;\n    background-color: white;\n    left: 0;\n    top: 152px;\n    border-top: 1px solid rgba(0, 0, 0, 0.2);\n    border-bottom: 1px solid grey;\n    z-index: 999;\n"])));
+var Container = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    position: absolute;\n    min-width: 100vw;\n    min-height: 420px;\n    background-color: white;\n    left: 0;\n    top: 152px;\n    border-bottom: 1px solid grey;\n    z-index: 999;\n"])));
 var CenterContainer = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    margin: 0 auto;\n    padding: 40px 0 0 0;\n    margin-bottom: -20px;\n    width: 90%;\n    max-width: 1200px;\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n"])));
 var HR = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].hr(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    width: 100%;\n    border-top: 2px solid #003354;\n    position: absolute;\n    top: 120px;\n"])));
 var Column = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    max-width: 240px;\n"])));
@@ -20883,7 +20883,7 @@ var Router = function Router() {
       element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_33__.jsx)(_pages_our_work_StationarySectorsPage__WEBPACK_IMPORTED_MODULE_20__["default"], {})
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_33__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_34__.Route, {
       exact: true,
-      path: "/initiatives/growing-market-for-electric-vehicles",
+      path: "/initiatives/mhd-zev-initiative",
       element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_33__.jsx)(_pages_initiatives_MHDZEVPage__WEBPACK_IMPORTED_MODULE_29__["default"], {})
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_33__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_34__.Route, {
       exact: true,
@@ -21258,14 +21258,21 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var Home = function Home() {
   var pngList = ["/assets/images/logos/massdep.png", "/assets/images/logos/cte.png", "/assets/images/logos/nhdes.png", "/assets/images/logos/nys.png", "/assets/images/logos/njs.png", "/assets/images/logos/dem.png", "/assets/images/logos/maine.png"];
   var homeData = [{
-    title: "Zero-Emission Medium- and Heavy-Duty Vehicle Initiative",
+    title: 'CAMNET',
+    content: 'CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without manmade air pollution.',
+    imageSrc: '/assets/images/stock/electricbus.jpg',
+    href: 'https://hazecam.net/',
+    external: true
+  }, {
+    title: "Zero-Emission Medium and Heavy-Duty Vehicle Initiative",
     content: "Truck and bus electrification is a top priority for many states. A coalition of 18 jurisdictions in the United States and Canada has committed to work together to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.",
-    imageSrc: "/assets/images/stock/electricbus.jpg",
-    href: "/our-work/clean-transportation/adoption-of-electric-cars"
+    imageSrc: '/assets/images/stock/electric-truck1.jpg',
+    href: "/initiatives/mhd-zev-initiative"
   }, {
     title: "Residential/Commerical Wood Combustion",
     content: "Emissions from wood heating have serious public health consequences. NESCAUM evaluated the current certification process for wood stoves and recommended changes to reduce emissions and protect public health.",
-    imageSrc: "/assets/images/stock/wood-on-fire-pexels.jpg"
+    imageSrc: "/assets/images/stock/wood-on-fire-pexels.jpg",
+    href: "/initiatives/test-method-development"
   }, {
     title: "Long Island Sound Tropospheric Ozone Study (LISTOS)",
     content: "Air quality problems in the greater New York City metropolitan area impact the health of over 20 million people. Launched in 2017, NESCAUM’s LISTOS initiative brings together a large group of researchers and marshalls a wide array of data sources to help air quality regulators understand and address pollution in and around the NYC metro area.",
@@ -21413,19 +21420,23 @@ var data = [{
 }, {
   title: 'NESCAUMS Clean Air Academy',
   content: 'NESCAUM’s Clean Air Academy provides air pollution training for staff in our member state air quality agencies. Courses are provided by EPA’s National Air Quality Training Program through EPA’s Learning Management System (LMS) or by private training contractors. NESCAUM operates the program with federal funding.',
-  imageSrc: '/assets/images/stock/wood-on-fire-pexels.jpg'
+  imageSrc: '/assets/images/stock/training.jpg',
+  href: '/initiatives/clean-air-academy'
 }, {
   title: 'Long Island Sound Tropospheric Ozone Study (LISTOS)',
   content: 'While air pollution levels have dropped markedly over the years across much of the United States, the New York City (NYC) metropolitan area (comprised of portions of New Jersey, New York, and Connecticut in and around NYC) continues to persistently violate both past and recently revised federal health-based air quality standards for ground-level ozone.',
-  imageSrc: '/assets/images/stock/listos.jpg'
+  imageSrc: '/assets/images/stock/listos.jpg',
+  href: '/initiatives/listos'
 }, {
-  title: 'MHD ZEV Initiatives',
+  title: 'Medium and Heavy-Duty ZEV Initiative',
   content: 'In the United States, greenhouse gas emissions from the movement of goods are growing faster than any other segment of the transportation sector. As more and more consumers turn to online shopping, truck volumes are expected to increase by 36% over the next decade. ',
-  imageSrc: '/assets/images/stock/listos.jpg'
+  imageSrc: '/assets/images/stock/electric-truck1.jpg',
+  href: '/initiatives/mhd-zev-initiative'
 }, {
   title: 'Test Method Development',
   content: 'NYSERDA Integrated Duty Cycle Test Method for Certification of Wood-Fired Stoves Using Cordwood: Measurement of Particulate Matter (PM) and Carbon Monoxide (CO) Emissions and Heating Efficiency',
-  imageSrc: '/assets/images/stock/wood-burning.jpg'
+  imageSrc: '/assets/images/stock/wood-burning.jpg',
+  href: '/initiatives/test-method-development'
 }];
 
 /***/ }),
@@ -22216,7 +22227,9 @@ var CommitteesPage = function CommitteesPage() {
         style: {
           width: "100%"
         },
-        children: _mock_data_pages_json__WEBPACK_IMPORTED_MODULE_2__.aboutUs.committees.committees.map(function (committee, i) {
+        children: _mock_data_pages_json__WEBPACK_IMPORTED_MODULE_2__.aboutUs.committees.committees.sort(function (a, b) {
+          return a.title.localeCompare(b.title);
+        }).map(function (committee, i) {
           var _committee$list;
 
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Item, {
@@ -22850,7 +22863,7 @@ var ListosPage = function ListosPage() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
           children: "A unique feature of this chronic ozone problem is pollution transported in a northeast direction out of NYC over Long Island Sound. The relatively cool waters of Long Island Sound confine the pollutants in a shallow and stable marine boundary layer. Afternoon heating over coastal land creates a sea breeze that carries the air pollution inland from the confined marine layer, resulting in high ozone concentrations in Connecticut and at times farther east into Rhode Island and Massachusetts. The following map shows a recent example of this from May 18, 2017, with high ozone levels seen along the entire Connecticut shoreline and farther downwind along the Rhode Island/Massachusetts border."
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          width: "half",
+          width: "al-fu",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
             children: "A key research problem in addressing this regional pollution problem is understanding the sources and temporal emission profiles of the ozone precursors nitrogen oxides (NOx) and volatile organic compounds (VOCs). The NYC metropolitan area has a large concentration of emission sources, including cars and trucks, ships, industrial boilers, stationary diesel engines, consumer products, power plants, and vegetation. The multitude of these and other source types and their temporally varying emission profiles throughout a day and across a multi-day ozone episode creates a complex and dynamic atmospheric mixture. Underlying the emissions are diverse weather patterns that can promote, or dampen, the evolution and transport of a polluted air mass across the region."
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -23052,7 +23065,8 @@ var jurisdictions = [{
 var MHDZEVPage = function MHDZEVPage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      headline: "Medium- and Heavy-Duty Zero-Emission Vehicles: Action Plan Development Process"
+      headline: "Medium- and Heavy-Duty Zero-Emission Vehicles: Action Plan Development Process",
+      heroImage: "/assets/images/stock/electric-bus1.png"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
@@ -23403,17 +23417,16 @@ var DrivingAdoptionElectricCarsPage = function DrivingAdoptionElectricCarsPage()
         justify: "space-between",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
           width: "70%",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            children: "NESCAUM worked with the Task Force to develop two ZEV Action Plans (LINK to most recent Action Plan). Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:"
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: ["NESCAUM worked with the Task Force to develop two ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+              href: "/assets/documents/mhd-zev-action-plan-public-draft-03-10-2022.pdf",
+              target: "_blank",
+              children: "ZEV Action Plans"
+            }), ". Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:"]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
             singular: true,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
               children: "Drive Change. Drive Electric., a regional consumer education and awareness campaign."
-            })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
-            singular: true,
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              children: "a regional consumer education and awareness campaign (LINK)"
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
             singular: true,
@@ -23434,11 +23447,15 @@ var DrivingAdoptionElectricCarsPage = function DrivingAdoptionElectricCarsPage()
           })
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ButtonContainer, {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(ButtonContainer, {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
         to: "/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents",
         children: "State Policy Documents"
-      })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+        href: "https://driveelectricus.com/",
+        target: "_blank",
+        children: "Drive Change. Drive Electric."
+      })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
       docFilter: "electric_cars"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -23529,7 +23546,10 @@ var ElectricVehicleMarketPage = function ElectricVehicleMarketPage() {
             children: ["The MOU sets zero-emission sales targets for new medium- and heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further commits the signatory states to working with NESCAUM through the", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Link, {
               to: "/our-work/clean-transportation/adoption-of-electric-cars",
               children: " ZEV Task Force "
-            }), "to develop a Multi-State Action Plan (LINK TO PLAN DEVELOPMENT PAGE) for advancing progress toward a self-sustaining market for zero-emission trucks and buses. The Action Plan will include recommendations for action in several areas, such as:"]
+            }), "to develop a ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Link, {
+              to: "/initiatives/mhd-zev-initiative",
+              children: "Multi-State Action Plan"
+            }), " for advancing progress toward a self-sustaining market for zero-emission trucks and buses. The Action Plan will include recommendations for action in several areas, such as:"]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_6__["default"], {
             list: bulletPoints
           })]
@@ -23847,7 +23867,7 @@ var RegulatoryCompliancePage = function RegulatoryCompliancePage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
       heroImage: "/assets/images/stock/smoke-stack-regulatory-compliance.jpg",
-      headline: "Regualatory Compliance"
+      headline: "Regulatory Compliance"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
       width: "al-fu",
       center: true,
@@ -23996,11 +24016,12 @@ var subArticles = [{
   title: 'Permitting and enforcement',
   content: 'NESCAUM works with states and the EPA to coordinate discussions and facilitate communication on critical permitting, permit modeling, compliance, and enforcement issues. Topics include states’ testing of EPA air quality model updates, emissions calculations, permitting and enforcement issues, and addressing concerns about overburdened communities.',
   imageSrc: '/assets/images/stock/paperwork-pexels.jpg',
-  href: '#'
+  href: '/our-work/stationary-sources/regulatory-compliance'
 }, {
   title: 'Building electrification',
   content: 'Fossil-fuel use in residential and commercial buildings accounts for  approximately 36 percent of criteria pollutants and greenhouse gases. Switching thermal heating, cooling, and water heating systems to electricity can substantially reduce emissions from buildings. To help states develop policies, NESCAUM is estimating the emissions reduction potential of residential and commercial heating systems.',
-  imageSrc: '/assets/images/stock/ge-pexels.jpg'
+  imageSrc: '/assets/images/stock/ge-pexels.jpg',
+  href: '/our-work/stationary-sources/building-electrification'
 }, {
   title: 'Emerging issues:',
   content: 'As emissions from major stationary sources decline, the relative impact of smaller sources, often referred to as “area sources”, has increased. Reducing emissions from these sources presents unique challenges. NESCAUM’s work has focused on industrial, commercial, and institutional (ICI) boilers; home heating oil; residential wood heating; dry cleaners; and gasoline stations. NESCAUM also reviews and comments on federal proposals. ',
@@ -24009,7 +24030,7 @@ var subArticles = [{
   title: 'Wood heating',
   content: 'NESCAUM works regionally and nationally on issues related to the use of wood for thermal energy for residential, commercial, and institutional applications. Specific areas of focus include test method development, inventory analysis, emission factor development, and policy strategies.',
   imageSrc: '/assets/images/stock/wood-on-fire-pexels.jpg',
-  href: '#'
+  href: '/our-work/stationary-sources/wood-heat'
 }];
 
 /***/ }),
@@ -24973,7 +24994,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://159.223.119.211/api';
+var API_URL = 'http://127.0.0.1:8000/api';
 var PageParams = {
   'PER_PAGE': 10
 };

@@ -13,7 +13,9 @@ const CommitteesPage = () => {
                     desc={pages["aboutUs"].committees.desc}
                 />
                 <Accordion defaultActiveKey="0" style={{ width: "100%" }}>
-                    {pages["aboutUs"].committees.committees.map(
+                    {pages["aboutUs"].committees.committees.sort((a,b) => {
+                        return a.title.localeCompare(b.title)
+                    }).map(
                         (committee, i) => {
                             return (
                                 <Accordion.Item key={i} eventKey={i}>

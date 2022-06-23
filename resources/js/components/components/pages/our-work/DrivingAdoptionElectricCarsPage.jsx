@@ -40,16 +40,11 @@ const DrivingAdoptionElectricCarsPage = () => {
         <Row justify='space-between'>
           <Column width='70%'>
             <Paragraph>
-              NESCAUM worked with the Task Force to develop two ZEV Action Plans (LINK to most recent Action Plan). Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:
+              NESCAUM worked with the Task Force to develop two <a href="/assets/documents/mhd-zev-action-plan-public-draft-03-10-2022.pdf" target="_blank">ZEV Action Plans</a>. Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:
             </Paragraph>
             <ListItems singular>
               <Paragraph>
                 Drive Change. Drive Electric., a regional consumer education and awareness campaign.
-              </Paragraph>
-            </ListItems>
-            <ListItems singular>
-              <Paragraph >
-                a regional consumer education and awareness campaign (LINK)
               </Paragraph>
             </ListItems>
             <ListItems singular>
@@ -75,7 +70,8 @@ const DrivingAdoptionElectricCarsPage = () => {
         </Row>
       </Column>
       <ButtonContainer>
-        <Link to="/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents">State Policy Documents</Link>
+        <Link to="/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents">State Policy Documents</Link><br />
+        <a href="https://driveelectricus.com/" target="_blank">Drive Change. Drive Electric.</a>
       </ButtonContainer>
       <DocumentLinks docFilter="electric_cars"/>
       <ResourceLibraryLink docFilter="electric_cars"/>
