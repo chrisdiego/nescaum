@@ -78,6 +78,7 @@ const MHDZEVPage = () => {
     <>
       <PageScaffold 
         headline='Medium- and Heavy-Duty Zero-Emission Vehicles: Action Plan Development Process'
+        heroImage='/assets/images/stock/electric-bus1.png'
       />
       <Column width='al-fu' center>
         <Paragraph>

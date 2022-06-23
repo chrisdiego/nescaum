@@ -62,8 +62,8 @@ const ElectricVehicleMarketPage = () => {
               The MOU sets zero-emission sales targets for new medium- and
               heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further
               commits the signatory states to working with NESCAUM through the
-              <Link to="/our-work/clean-transportation/adoption-of-electric-cars"> ZEV Task Force </Link>to develop a Multi-State Action
-              Plan (LINK TO PLAN DEVELOPMENT PAGE) for advancing progress toward
+              <Link to="/our-work/clean-transportation/adoption-of-electric-cars"> ZEV Task Force </Link>to develop a <Link to="/initiatives/mhd-zev-initiative">Multi-State Action
+              Plan</Link> for advancing progress toward
               a self-sustaining market for zero-emission trucks and buses. The
               Action Plan will include recommendations for action in several
               areas, such as:

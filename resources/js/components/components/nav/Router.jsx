@@ -123,7 +123,7 @@ const Router = () => {
 			/>
 			<Route
 				exact
-				path="/initiatives/growing-market-for-electric-vehicles"
+				path="/initiatives/mhd-zev-initiative"
 				element={<MHDZEVPage/>}
 			/>
             <Route

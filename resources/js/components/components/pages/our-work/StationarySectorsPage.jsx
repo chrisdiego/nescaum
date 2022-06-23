@@ -35,12 +35,13 @@ const subArticles = [
     title: 'Permitting and enforcement', 
     content: 'NESCAUM works with states and the EPA to coordinate discussions and facilitate communication on critical permitting, permit modeling, compliance, and enforcement issues. Topics include states’ testing of EPA air quality model updates, emissions calculations, permitting and enforcement issues, and addressing concerns about overburdened communities.', 
     imageSrc: '/assets/images/stock/paperwork-pexels.jpg', 
-    href: '#' 
+    href: '/our-work/stationary-sources/regulatory-compliance',
   },
   {
     title: 'Building electrification', 
     content: 'Fossil-fuel use in residential and commercial buildings accounts for  approximately 36 percent of criteria pollutants and greenhouse gases. Switching thermal heating, cooling, and water heating systems to electricity can substantially reduce emissions from buildings. To help states develop policies, NESCAUM is estimating the emissions reduction potential of residential and commercial heating systems.', 
     imageSrc: '/assets/images/stock/ge-pexels.jpg', 
+    href: '/our-work/stationary-sources/building-electrification',
   },
   {
     title: 'Emerging issues:', 
@@ -51,6 +52,6 @@ const subArticles = [
     title: 'Wood heating', 
     content: 'NESCAUM works regionally and nationally on issues related to the use of wood for thermal energy for residential, commercial, and institutional applications. Specific areas of focus include test method development, inventory analysis, emission factor development, and policy strategies.', 
     imageSrc: '/assets/images/stock/wood-on-fire-pexels.jpg', 
-    href: '#' 
+    href: '/our-work/stationary-sources/wood-heat' 
   },
 ]

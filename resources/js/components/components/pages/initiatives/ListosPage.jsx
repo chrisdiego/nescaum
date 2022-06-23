@@ -24,7 +24,7 @@ const ListosPage = () => {
           <Paragraph>
             A unique feature of this chronic ozone problem is pollution transported in a northeast direction out of NYC over Long Island Sound. The relatively cool waters of Long Island Sound confine the pollutants in a shallow and stable marine boundary layer. Afternoon heating over coastal land creates a sea breeze that carries the air pollution inland from the confined marine layer, resulting in high ozone concentrations in Connecticut and at times farther east into Rhode Island and Massachusetts. The following map shows a recent example of this from May 18, 2017, with high ozone levels seen along the entire Connecticut shoreline and farther downwind along the Rhode Island/Massachusetts border.
           </Paragraph>
-          <Column width='half'>
+          <Column width='al-fu'>
             <Paragraph>
               A key research problem in addressing this regional pollution problem is understanding the sources and temporal emission profiles of the ozone precursors nitrogen oxides (NOx) and volatile organic compounds (VOCs). The NYC metropolitan area has a large concentration of emission sources, including cars and trucks, ships, industrial boilers, stationary diesel engines, consumer products, power plants, and vegetation. The multitude of these and other source types and their temporally varying emission profiles throughout a day and across a multi-day ozone episode creates a complex and dynamic atmospheric mixture. Underlying the emissions are diverse weather patterns that can promote, or dampen, the evolution and transport of a polluted air mass across the region.          
             </Paragraph>

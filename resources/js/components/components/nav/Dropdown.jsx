@@ -83,7 +83,7 @@ const data = {
         },
         {
             title: "MHD ZEV Initiative",
-            href: "growing-market-for-electric-vehicles",
+            href: "mhd-zev-initiative",
         },
         {
             title: "Test Method Development",
@@ -205,7 +205,6 @@ const Container = styled.div`
     background-color: white;
     left: 0;
     top: 152px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid grey;
     z-index: 999;
 `;
