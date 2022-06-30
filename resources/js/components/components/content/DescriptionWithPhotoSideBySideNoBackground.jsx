@@ -50,6 +50,10 @@ const Container = styled.div`
 	flex-direction: ${ props => !props.inverse ? 'row' : 'row-reverse'};
 	padding: 40px 0;
 	overflow: hidden;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `
 
 const TextContainer = styled.div`
@@ -65,6 +69,10 @@ const TextContainer = styled.div`
 			margin-right: 100px; 
 		`
 	}}
+
+    @media (max-width: 768px) {
+        margin: 0;
+    }
 `	
 
 const PhotoContainer = styled.div`

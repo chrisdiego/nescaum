@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const data = {
+export const data = {
     "our-work": [
         {
             title: "CLEAN TRANSPORTATION",

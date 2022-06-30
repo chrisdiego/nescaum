@@ -21,6 +21,10 @@ const StaffCard = styled.div`
     align-items: center;
     margin-bottom: 40px;
     width: 33%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 const StaffName = styled.h6`

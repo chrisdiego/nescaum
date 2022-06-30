@@ -76,9 +76,8 @@ DescriptionWithPhotoSideBySide.defaultProps = {
 };
 
 const Container = styled.div`
-    min-width: 100vw;
-    max-width: 100vw;
-    width: 100vw;
+    max-width: 100%;
+    width: 100%;
     min-height: 400px;
     justify-content: center;
     display: flex;
@@ -90,7 +89,7 @@ const Container = styled.div`
 
     @media screen and (max-width: 1000px) {
         flex-direction: column;
-        max-width: 100vw;
+        max-width: 100%;
         height: auto;
         min-height: unset;
     }
@@ -103,7 +102,7 @@ const CenterContainer = styled.div`
     min-width: 800px;
 
     @media screen and (max-width: 1000px) {
-        max-width: 100vw;
+        max-width: 100%;
         border-bottom: 5px solid white;
         min-width: unset;
     }
@@ -112,7 +111,7 @@ const CenterContainer = styled.div`
 const TextContainer = styled.div`
     width: 100%;
     height: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     padding: 50px 60px;
     display: flex;
     flex-direction: column;
@@ -151,7 +150,7 @@ const Img = styled.img`
     max-height: 550px;
     @media screen and (max-width: 768px) {
         min-height: 200px;
-        max-width: 100vw;
+        max-width: 100%;
         height: 400px;
     }
 `;

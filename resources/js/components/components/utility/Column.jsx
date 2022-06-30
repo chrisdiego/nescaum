@@ -52,11 +52,10 @@ export default Column;
 const Container = styled.div`
 	display: flex; 
 	flex-direction: column; 
-	max-width: 1200px;
-	width: 100%;
+	max-width: 100%;
+	width: 1200px;
 	width: ${ props => {
 		if (props.width === 'half') return '50%'; 
-		if (props.width === 'al-fu') return '90%'; //almost-full which I treat as 90% with margin 0 auto
 		if (props.columns) return `${props.columns * 8.3}%`; // 100 / 12 = 8.3inf
 		if (props.width) return props.width;
 		return '100%';
@@ -78,7 +77,7 @@ const Container = styled.div`
 	margin-right: ${ props => props.ml ? props.ml + 'px' : null};
 
 	@media screen and (max-width: 768px) {
-		width: ${props => props.mobileFull ? '100%' : '90%'}; 
+		width: 100%; 
 		margin: 0 auto; 
 	}
 `

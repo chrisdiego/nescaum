@@ -25,7 +25,7 @@ const PhotoWithTransparentBox = () => {
 						Empowering States Through Collaboration
 					</MobileHeader>
 					<Span>Learn More</Span>
-					<ArrowWithBox />
+					<ArrowWithBox color='white' position='center' href='/our-work'/>
 				</Column>
 			</MobileSection>
 		)

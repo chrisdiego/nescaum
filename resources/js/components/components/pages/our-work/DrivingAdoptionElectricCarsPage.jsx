@@ -82,11 +82,14 @@ const DrivingAdoptionElectricCarsPage = () => {
 export default DrivingAdoptionElectricCarsPage; 
 
 const Image = styled.img`
-	max-width: 600px; 
-	margin-right: 40px; 
+    max-width: 600px; 
+    margin-right: 40px; 
   width: 100%; 
-  min-width: 400px; 
   margin-left: 60px;
+
+  @media (max-width: 768px) {
+      margin: 0;
+  }
 `
 
 const ImageContainer = styled.div`

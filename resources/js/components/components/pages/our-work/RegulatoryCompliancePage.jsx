@@ -36,5 +36,6 @@ export default RegulatoryCompliancePage;
 
 const Image = styled.img`
   margin: 0 auto;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  max-width: 100%;
 `;

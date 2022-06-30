@@ -83,6 +83,7 @@ const SubHeader = styled.h3`
 `
 
 const Image = styled.img`
-	max-width: 400px; 
+	max-width: 100%;
+    width: 100%; 
 	margin-right: 60px; 
 `
