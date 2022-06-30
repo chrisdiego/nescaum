@@ -1,0 +1,19 @@
+data:
+  formatted_title: 'NEEP: Nexus of Building Energy Codes and Emissions'
+  document_type:
+    - presentation
+  topic:
+    - climate_energy
+    - stationary_sources
+  published_date: '2022-06-27'
+  display_on:
+    - stationary_sources
+    - building_electrification
+  show_document_preview_on_page: false
+  key_words: 'buildings, building codes'
+  archive: false
+size: 2493795
+last_modified: 1656327297
+width: null
+height: null
+mime_type: application/pdf

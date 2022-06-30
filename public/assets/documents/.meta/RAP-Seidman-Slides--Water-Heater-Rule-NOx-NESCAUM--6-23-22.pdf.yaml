@@ -1,0 +1,18 @@
+data:
+  formatted_title: 'DRAFT RAP Model Rule for Water Heater NOx Emissions'
+  document_type:
+    - presentation
+  topic:
+    - climate_energy
+    - stationary_sources
+  display_on:
+    - stationary_sources
+    - building_electrification
+  show_document_preview_on_page: false
+  key_words: 'buildings, water heater'
+  archive: false
+size: 1225045
+last_modified: 1656327408
+width: null
+height: null
+mime_type: application/pdf
