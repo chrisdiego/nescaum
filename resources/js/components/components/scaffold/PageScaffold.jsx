@@ -16,8 +16,8 @@ const PageScaffold = ({
   subHeader, 
   subText, 
   subArticles, 
+  heroWidth,
 }) => {
-	console.log('HERO IMAGE: ', heroImage)
 	return (
 		<>
 			{heroImage && <FullWidthHeroImage imageSrc={ heroImage } />}
@@ -42,7 +42,7 @@ const PageScaffold = ({
 
 				{ sideImage && (
 					<Row>
-							<Image src={ sideImage } alt="sub page photo"/> 
+							<Image src={ sideImage } alt="sub page photo" heroWidth={heroWidth}/> 
 						<Column mobileFull>
 							<Paragraph bold color='#003354'> { mainText } </Paragraph>
 							<Paragraph variant={'roboto'}> { subText } </Paragraph>
@@ -84,6 +84,6 @@ const SubHeader = styled.h3`
 
 const Image = styled.img`
 	max-width: 100%;
-    width: 100%; 
+    width: ${props => props.heroWidth ? props.heroWidth + 'px' : '100%'};
 	margin-right: 60px; 
 `

@@ -13,6 +13,7 @@ const RegionalModeling = () => {
         headline="Regional Modeling"
         sideImage="/assets/images/stock/regional-modeling.jpg"
         mainText="NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications. "
+        heroWidth="500"
       />
       <Column width="al-fu" center mt={40}>
         <Paragraph>

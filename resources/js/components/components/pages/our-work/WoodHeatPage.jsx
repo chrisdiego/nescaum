@@ -14,6 +14,7 @@ const WoodHeatPage = () => {
         sideImage='/assets/images/stock/woodheat1.jpg'
         mainText='Wood heating is a significant source of fine particulate matter (PM2.5), carbon monoxide (CO), and nitrogen dioxide (NO2). Based on EPA’s 2017 National Emission Inventory (NEI), residential wood combustion emits approximately 340,000 tons of primary PM2.5 annually, making it the largest direct source of particulate matter pollution in the country, after road dust and fires (wildfire and prescribed burning). Other studies have concluded that the level of wood-burning may be significantly higher than assumed in the NEI data. Further, analysis by states has found that many residential wood heating appliances emit at levels far above the certified numbers, which EPA uses as inputs in the NEI.'
         subText="Wood smoke also contains carcinogenic and other toxic air pollutants, such as benzene, formaldehyde, acrolein, and polycyclic aromatic hydrocarbons (PAHs). A 2017 study determined that residential wood heating accounts for 10,000 premature deaths annually in the U.S."
+        heroWidth="500"
       />
       <Column width='al-fu' center mt={60} mb={60}>
          <Image src="/assets/images/stock/wood-heat-chart.png" alt="wood heat chart" />

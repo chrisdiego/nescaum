@@ -23405,7 +23405,8 @@ var BuildingElectrificationPage = function BuildingElectrificationPage() {
       heroImage: "/assets/images/stock/building-electrification.jpg",
       sideImage: "/assets/images/stock/building-electrification2.jpg",
       mainText: "Emissions from fossil fuel combustion in commercial and residential buildings account for approximately one third of greenhouse gas (GHG) and nitrogen oxide (NOx) emissions in the Northeast. In addition, on-site combustion of fossil fuels results in particulate matter (PM2.5) and air toxics emissions.",
-      subText: "A transition from fossil fuel powered space and water heating, cooking, and other building-related fossil fuel combustion is essential to lowering GHG and criteria air emissions. To assist states in evaluating approaches to effect this transition, NESCAUM launched its Building Electrification Initiative (BEI). As part of this effort, NESCAUM has convened a multi-state Building Electrification Task Force of state air program and climate staff."
+      subText: "A transition from fossil fuel powered space and water heating, cooking, and other building-related fossil fuel combustion is essential to lowering GHG and criteria air emissions. To assist states in evaluating approaches to effect this transition, NESCAUM launched its Building Electrification Initiative (BEI). As part of this effort, NESCAUM has convened a multi-state Building Electrification Task Force of state air program and climate staff.",
+      heroWidth: "500"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
       width: "al-fu",
       center: true,
@@ -23964,7 +23965,8 @@ var RegionalModeling = function RegionalModeling() {
       heroImage: "/assets/images/stock/regional-modeling.jpg",
       headline: "Regional Modeling",
       sideImage: "/assets/images/stock/regional-modeling.jpg",
-      mainText: "NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications. "
+      mainText: "NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications. ",
+      heroWidth: "500"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
@@ -24329,7 +24331,8 @@ var WoodHeatPage = function WoodHeatPage() {
       heroImage: "/assets/images/stock/wood-burning.jpg",
       sideImage: "/assets/images/stock/woodheat1.jpg",
       mainText: "Wood heating is a significant source of fine particulate matter (PM2.5), carbon monoxide (CO), and nitrogen dioxide (NO2). Based on EPA\u2019s 2017 National Emission Inventory (NEI), residential wood combustion emits approximately 340,000 tons of primary PM2.5 annually, making it the largest direct source of particulate matter pollution in the country, after road dust and fires (wildfire and prescribed burning). Other studies have concluded that the level of wood-burning may be significantly higher than assumed in the NEI data. Further, analysis by states has found that many residential wood heating appliances emit at levels far above the certified numbers, which EPA uses as inputs in the NEI.",
-      subText: "Wood smoke also contains carcinogenic and other toxic air pollutants, such as benzene, formaldehyde, acrolein, and polycyclic aromatic hydrocarbons (PAHs). A 2017 study determined that residential wood heating accounts for 10,000 premature deaths annually in the U.S."
+      subText: "Wood smoke also contains carcinogenic and other toxic air pollutants, such as benzene, formaldehyde, acrolein, and polycyclic aromatic hydrocarbons (PAHs). A 2017 study determined that residential wood heating accounts for 10,000 premature deaths annually in the U.S.",
+      heroWidth: "500"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
       width: "al-fu",
       center: true,
@@ -24535,8 +24538,8 @@ var PageScaffold = function PageScaffold(_ref) {
       sideImage = _ref.sideImage,
       subHeader = _ref.subHeader,
       subText = _ref.subText,
-      subArticles = _ref.subArticles;
-  console.log('HERO IMAGE: ', heroImage);
+      subArticles = _ref.subArticles,
+      heroWidth = _ref.heroWidth;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.Fragment, {
     children: [heroImage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_content_content_visuals_FullWidthHeroImage__WEBPACK_IMPORTED_MODULE_0__["default"], {
       imageSrc: heroImage
@@ -24556,7 +24559,8 @@ var PageScaffold = function PageScaffold(_ref) {
       }), sideImage && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Image, {
           src: sideImage,
-          alt: "sub page photo"
+          alt: "sub page photo",
+          heroWidth: heroWidth
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
           mobileFull: true,
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -24592,7 +24596,9 @@ var PageScaffold = function PageScaffold(_ref) {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PageScaffold);
 var SubHeader = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].h3(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tmargin-top: 80px; \n\tmax-width: 800px; \n\tmargin-bottom: 40px;\n"])));
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tmax-width: 100%;\n    width: 100%; \n\tmargin-right: 60px; \n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tmax-width: 100%;\n    width: ", ";\n\tmargin-right: 60px; \n"])), function (props) {
+  return props.heroWidth ? props.heroWidth + 'px' : '100%';
+});
 
 /***/ }),
 

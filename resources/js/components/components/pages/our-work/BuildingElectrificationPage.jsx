@@ -15,6 +15,7 @@ const BuildingElectrificationPage = () => {
         sideImage='/assets/images/stock/building-electrification2.jpg'
         mainText='Emissions from fossil fuel combustion in commercial and residential buildings account for approximately one third of greenhouse gas (GHG) and nitrogen oxide (NOx) emissions in the Northeast. In addition, on-site combustion of fossil fuels results in particulate matter (PM2.5) and air toxics emissions.'
         subText="A transition from fossil fuel powered space and water heating, cooking, and other building-related fossil fuel combustion is essential to lowering GHG and criteria air emissions. To assist states in evaluating approaches to effect this transition, NESCAUM launched its Building Electrification Initiative (BEI). As part of this effort, NESCAUM has convened a multi-state Building Electrification Task Force of state air program and climate staff."
+        heroWidth="500"
       />
       <Column width='al-fu' center mt={60} mb={60}>
         <Heading 
