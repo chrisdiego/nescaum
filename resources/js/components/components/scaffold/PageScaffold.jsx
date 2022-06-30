@@ -86,4 +86,8 @@ const Image = styled.img`
 	max-width: 100%;
     width: ${props => props.heroWidth ? props.heroWidth + 'px' : '100%'};
 	margin-right: 60px; 
+
+    @media (max-width: 768px) {
+        margin: 0;
+    }
 `
