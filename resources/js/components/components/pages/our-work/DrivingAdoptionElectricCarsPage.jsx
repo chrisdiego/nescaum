@@ -28,7 +28,7 @@ const DrivingAdoptionElectricCarsPage = () => {
         />
         <Row>
           <Paragraph>
-            In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support their zero-emission vehicle (ZEV) regulatory programs (LINK TO REGULATIONS PAGE).  A governor’s Memorandum of Understanding (LINK TO PDF) officially launched the Multi-State ZEV Task Force. NESCAUM facilitates and guides the Task Force, which serves as a unique forum for galvanizing state leadership on transportation electrification.
+            In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support their  <Link to="/our-work/clean-transportation/supporting-regulatory-programs">zero-emission vehicle (ZEV) regulatory programs</Link>.  A governor's <a href="/assets/documents/State-Zero-Emission-Vehicle-Programs-Memorandum-of-Understanding.pdf" target="_blank">Memorandum of Understanding</a> officially launched the Multi-State ZEV Task Force. NESCAUM facilitates and guides the Task Force, which serves as a unique forum for galvanizing state leadership on transportation electrification.
           </Paragraph>
           <Image src='/assets/images/maps/map-10-nescaum.png'/>
         </Row>
@@ -40,7 +40,7 @@ const DrivingAdoptionElectricCarsPage = () => {
         <Row justify='space-between'>
           <Column width='70%'>
             <Paragraph>
-              NESCAUM worked with the Task Force to develop two <a href="/assets/documents/mhd-zev-action-plan-public-draft-03-10-2022.pdf" target="_blank">ZEV Action Plans</a>. Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:
+            NESCAUM worked with the ZEV Task Force to develop two action plans, the first in <a href="/assets/documents/multi-state-zev-action-plan.pdf" target="_blank">2014</a> and the second in <a href="/assets/documents/2018-zev-action-plan.pdf" target="_blank">2018</a>. Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:
             </Paragraph>
             <ListItems singular>
               <Paragraph>

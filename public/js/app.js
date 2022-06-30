@@ -20044,37 +20044,30 @@ var DocumentLinks = function DocumentLinks(_ref) {
       mb: "20px",
       align: "center",
       width: "100%"
-    }), filteredResults === null || filteredResults === void 0 ? void 0 : filteredResults.map(function (document, index) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
-        href: document.url,
-        rel: "noopener noreferrer",
-        target: "_blank",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          wrap: true,
-          children: filteredResults.map(function (document) {
-            var _document$thumbnail;
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      wrap: true,
+      children: filteredResults.map(function (document) {
+        var _document$thumbnail;
 
-            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Document, {
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                href: document.url,
-                aria_label: "Link to ".concat(document.formatted_title, " Document"),
-                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h5", {
-                  children: document.formatted_title
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
-                  children: [document.description, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("i", {
-                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("small", {
-                      children: document.date
-                    })
-                  })]
-                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Image, {
-                  src: (_document$thumbnail = document.thumbnail) === null || _document$thumbnail === void 0 ? void 0 : _document$thumbnail.url,
-                  alt: document.alt_tex
-                })]
-              })
-            });
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Document, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            href: document.url,
+            aria_label: "Link to ".concat(document.formatted_title, " Document"),
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("h5", {
+              children: document.formatted_title
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_2__["default"], {
+              children: [document.description, " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("i", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("small", {
+                  children: document.date
+                })
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Image, {
+              src: (_document$thumbnail = document.thumbnail) === null || _document$thumbnail === void 0 ? void 0 : _document$thumbnail.url,
+              alt: document.alt_tex
+            })]
           })
-        })
-      }, index);
+        });
+      })
     })]
   });
 };
@@ -21418,7 +21411,7 @@ var data = [{
   href: 'https://hazecam.net/',
   external: true
 }, {
-  title: 'NESCAUMS Clean Air Academy',
+  title: 'Clean Air Academy',
   content: 'NESCAUM’s Clean Air Academy provides air pollution training for staff in our member state air quality agencies. Courses are provided by EPA’s National Air Quality Training Program through EPA’s Learning Management System (LMS) or by private training contractors. NESCAUM operates the program with federal funding.',
   imageSrc: '/assets/images/stock/training.jpg',
   href: '/initiatives/clean-air-academy'
@@ -21734,8 +21727,6 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
       page = _useState6[0],
       setPage = _useState6[1];
 
-  console.log(params);
-  console.log(filters);
   (0,react__WEBPACK_IMPORTED_MODULE_4__.useEffect)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
     var url, response, results;
     return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
@@ -21796,7 +21787,7 @@ var ResourceLibraryPage = function ResourceLibraryPage() {
     if (filterable && (_filters$input = filters.input) !== null && _filters$input !== void 0 && _filters$input.length) {
       var _doc$key_words, _doc$formatted_title;
 
-      filterable = (doc === null || doc === void 0 ? void 0 : (_doc$key_words = doc.key_words) === null || _doc$key_words === void 0 ? void 0 : _doc$key_words.toLowerCase().includes(filters.input)) || (doc === null || doc === void 0 ? void 0 : (_doc$formatted_title = doc.formatted_title) === null || _doc$formatted_title === void 0 ? void 0 : _doc$formatted_title.toLowerCase().includes(filters.input));
+      filterable = (doc === null || doc === void 0 ? void 0 : (_doc$key_words = doc.key_words) === null || _doc$key_words === void 0 ? void 0 : _doc$key_words.toLowerCase().includes(filters.input.toLowerCase())) || (doc === null || doc === void 0 ? void 0 : (_doc$formatted_title = doc.formatted_title) === null || _doc$formatted_title === void 0 ? void 0 : _doc$formatted_title.toLowerCase().includes(filters.input.toLowerCase()));
     }
 
     return filterable;
@@ -23061,6 +23052,51 @@ var jurisdictions = [{
 }, {
   jurisdiction: "Washington"
 }];
+var announcements = [{
+  announcement: "NESCAUM Extends Period for Public Comment on Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
+  link: "https://www.nescaum.org/documents/mhd-zev-ap-draft-comment-extension.pdf/"
+}, {
+  announcement: "NESCAUM Welcomes Nevada's Participation in the Multi-State Zero-Emission Electric Trucks Initiative",
+  link: "https://www.nescaum.org/documents/nescaum-welcomes-nevada-s-participation-in-the-multi-state-zero-emission-electric-trucks-initiative/"
+}, {
+  announcement: "Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
+  link: "/assets/documents/announcement-mhd-zev-ap-public-draft.pdf"
+}, {
+  announcement: "NESCAUM Welcomes the Province of Quebec to the Multi-State MHD Zero-Emission Vehicle Initiative",
+  link: "/assets/documents/quebec-statement_9-22-2021.pdf"
+}, {
+  announcement: "15 States and the District of Columbia Join Forces to Accelerate Bus and Truck Electrification",
+  link: "/assets/documents/multistate-truck-zev-mou-media-release-20200714.pdf"
+}];
+var key_documents = [{
+  document: "Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding",
+  link: "/assets/documents/mhdv-zev-mou-20220329.pdf"
+}, {
+  document: "Draft Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Action Plan",
+  link: "/assets/documents/mhd-zev-action-plan-public-draft-03-10-2022.pdf"
+}];
+var resources = [{
+  resource: "Understanding the Truck Market, Multi-State ZEV Task Force Webinar, October 29, 2020",
+  link: "https://www.nescaum.org/documents/understanding-the-truck-market-webinar-20201029.mp4"
+}, {
+  resource: "Early Experiences in Truck Electrification: A Panel Discussion with Commercial and Public Sector Fleets, November 24, 2020",
+  link: "https://www.nescaum.org/documents/mhd-zev-commercial-and-public-fleets-webinar-2-20201124-2002-1.mp4"
+}, {
+  resource: "Transit and School Bus Electrification, December 17, 2020",
+  link: "https://www.nescaum.org/documents/transit-and-school-bus-electrification-webinar-20201217-2013-1.mp4"
+}, {
+  resource: "The Role of Utilities in Accelerating Electrification of Medium- and Heavy-Duty Vehicles, January 7, 2021",
+  link: "https://www.nescaum.org/documents/the-role-of-utilities-in-accelerating-electrification-of-medium-and-heavy-duty-vehicles-webinar-1-20210107-2003-1.mp4"
+}, {
+  resource: "The Utility Role in MHDV Electrification: Building the Infrastructure and Managing Costs, January 21, 2021",
+  link: "https://www.nescaum.org/documents/the-utility-role-in-mhdv-electrification-webinar-20210121-2002-1.mp4"
+}, {
+  resource: "Innovative Finance to Accelerate Truck and Bus Electrification, April 1, 2021",
+  link: "https://www.nescaum.org/documents/innovative-finance-to-accelerate-truck-and-bus-electrification-webinar-20210401-1902-1.mp4"
+}, {
+  resource: "Prioritizing Transportation Policy for Health and Equity, December 9, 2021",
+  link: "https://www.nescaum.org/documents/prioritizing-transportation-policy-for-health-and-equity-webinar-20211209-2006-1.mp4"
+}];
 
 var MHDZEVPage = function MHDZEVPage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
@@ -23077,17 +23113,41 @@ var MHDZEVPage = function MHDZEVPage() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Announcements",
         mb: "10px"
+      }), announcements.map(function (_ref) {
+        var announcement = _ref.announcement,
+            link = _ref.link;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          singular: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            href: link,
+            target: "_blank",
+            children: announcement
+          })
+        });
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Key Documents",
-        mb: "10px"
+        mb: "10px",
+        mt: "10px"
+      }), key_documents.map(function (_ref2) {
+        var document = _ref2.document,
+            link = _ref2.link;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          singular: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            href: link,
+            target: "_blank",
+            children: document
+          })
+        });
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Signatory Jurisdictions",
-        mb: "10px"
+        mb: "10px",
+        mt: "10px"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "The signatory jurisdictions are listed below. To access an individual jurisdiction's MHD ZEV website, please click on the jurisdiction name. You will then be redirected to the corresponding website."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), jurisdictions.map(function (_ref) {
-        var jurisdiction = _ref.jurisdiction,
-            link = _ref.link;
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), jurisdictions.map(function (_ref3) {
+        var jurisdiction = _ref3.jurisdiction,
+            link = _ref3.link;
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
           singular: true,
           children: link ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -23100,6 +23160,17 @@ var MHDZEVPage = function MHDZEVPage() {
         mb: "10px"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
         children: "NESCAUM is holding a series of webinars for the multi-state ZEV Task Force to inform the development of the Action Plan. Recordings of the webinars will be posted here as they become available:"
+      }), resources.map(function (_ref4) {
+        var resource = _ref4.resource,
+            link = _ref4.link;
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          singular: true,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            href: link,
+            target: "_blank",
+            children: resource
+          })
+        });
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
         text: "Portal for Public Input",
         mb: "10px"
@@ -23404,8 +23475,15 @@ var DrivingAdoptionElectricCarsPage = function DrivingAdoptionElectricCarsPage()
         mt: "40px",
         mb: "20px"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          children: "In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support their zero-emission vehicle (ZEV) regulatory programs (LINK TO REGULATIONS PAGE).  A governor\u2019s Memorandum of Understanding (LINK TO PDF) officially launched the Multi-State ZEV Task Force. NESCAUM facilitates and guides the Task Force, which serves as a unique forum for galvanizing state leadership on transportation electrification."
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: ["In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support their  ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
+            to: "/our-work/clean-transportation/supporting-regulatory-programs",
+            children: "zero-emission vehicle (ZEV) regulatory programs"
+          }), ".  A governor's ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+            href: "/assets/documents/State-Zero-Emission-Vehicle-Programs-Memorandum-of-Understanding.pdf",
+            target: "_blank",
+            children: "Memorandum of Understanding"
+          }), " officially launched the Multi-State ZEV Task Force. NESCAUM facilitates and guides the Task Force, which serves as a unique forum for galvanizing state leadership on transportation electrification."]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Image, {
           src: "/assets/images/maps/map-10-nescaum.png"
         })]
@@ -23418,10 +23496,14 @@ var DrivingAdoptionElectricCarsPage = function DrivingAdoptionElectricCarsPage()
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
           width: "70%",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-            children: ["NESCAUM worked with the Task Force to develop two ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
-              href: "/assets/documents/mhd-zev-action-plan-public-draft-03-10-2022.pdf",
+            children: ["NESCAUM worked with the ZEV Task Force to develop two action plans, the first in ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+              href: "/assets/documents/multi-state-zev-action-plan.pdf",
               target: "_blank",
-              children: "ZEV Action Plans"
+              children: "2014"
+            }), " and the second in ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+              href: "/assets/documents/2018-zev-action-plan.pdf",
+              target: "_blank",
+              children: "2018"
             }), ". Guided by the Action Plans, Task Force states have mobilized many market-enabling actions, including:"]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
             singular: true,
@@ -24051,13 +24133,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -24092,8 +24176,11 @@ var SupportingRegulatoryProgramsPage = function SupportingRegulatoryProgramsPage
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
             children: "With support from NESCAUM, the Northeast states became the first states to exercise their right under Section 177 of the Clean Air Act to adopt California\u2019s Low Emission Vehicle (LEV) standards and Zero-Emission Vehicle (ZEV) standards. This action was part of a coordinated regional effort to reduce motor vehicle pollution and drive the rapid adoption of  electric vehicle technology."
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
-            children: "With NESCAUM\u2019s technical and policy support, these \u201CSection 177 states\u201D are continuing to work closely together as they update and implement LEV and ZEV standards in coordination with California and consider adopting California\u2019s emissions standards for trucks. NESCAUM\u2019s Mobile Sources Committee (LINK TO MOBILE SOURCES COMM PAGE) creates a unique forum for this cross-state coordination. As other states throughout the country have adopted California standards, this group has expanded to include states beyond the Northeast region and continues to welcome new Section 177 states."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            children: ["With NESCAUM\u2019s technical and policy support, these \u201CSection 177 states\u201D are continuing to work closely together as they update and implement LEV and ZEV standards in coordination with California and consider adopting California\u2019s emissions standards for trucks. NESCAUM\u2019s ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_8__.Link, {
+              to: "/about-us/committees",
+              children: "Mobile Sources Committee"
+            }), " creates a unique forum for this cross-state coordination. As other states throughout the country have adopted California standards, this group has expanded to include states beyond the Northeast region and continues to welcome new Section 177 states."]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)(Image, {
           src: "/assets/images/stock/lev-zev.png"
@@ -24108,7 +24195,7 @@ var SupportingRegulatoryProgramsPage = function SupportingRegulatoryProgramsPage
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SupportingRegulatoryProgramsPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 300px;\n  margin-right: 40px;\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 300px;\n  margin-right: 40px;\n"])));
 
 /***/ }),
 
@@ -24945,7 +25032,7 @@ __webpack_require__.r(__webpack_exports__);
 var ourWorkData = [{
   title: 'Clean Transportation',
   content: 'Transportation is our nation’s largest source of greenhouse gas emissions and accounts for more than 40 percent of greenhouse gas emissions in the Northeast. On-road and off-road vehicles also emit smog-forming pollutants, particulate matter, and airborne toxic chemicals that are harmful to human health, especially for people who live near busy roads.',
-  imageSrc: '/assets/images/stock/electricbus.jpg',
+  imageSrc: '/assets/images/stock/electric-bus1.png',
   href: '/our-work/clean-transportation'
 }, {
   title: 'Criteria and Hazardous Air Pollutants',
@@ -24955,7 +25042,7 @@ var ourWorkData = [{
 }, {
   title: 'Monitoring',
   content: 'NESCAUM facilitates communication among states and with EPA ensure uniform approaches to regional air monitoring and data assessment and to communicate those data to state air quality planners.',
-  imageSrc: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80',
+  imageSrc: '/assets/images/stock/monitoring-nescaum.jpg',
   href: '/our-work/monitoring'
 }, {
   title: 'Regional Modeling',
@@ -24965,18 +25052,8 @@ var ourWorkData = [{
 }, {
   title: 'Stationary Sources',
   content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.',
-  imageSrc: '/assets/images/stock/smokestack-pexels.jpg',
+  imageSrc: '/assets/images/stock/boiler-pexels.jpg',
   href: '/our-work/stationary-sources'
-}, {
-  title: 'Driving the Adoption of Electric Vehicles',
-  content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.',
-  imageSrc: '/assets/images/stock/electric_adoption.jpg',
-  href: '/our-work/clean-transportation/adoption-of-electric-cars'
-}, {
-  title: 'Growing the Market for Electric Trucks',
-  content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.',
-  imageSrc: '/assets/images/stock/mhd.jpg',
-  href: '/our-work/clean-transportation/growing-market-for-electric-vehicles'
 }];
 
 

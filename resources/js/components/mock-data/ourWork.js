@@ -2,7 +2,7 @@ const ourWorkData = [
 	{
 		title: 'Clean Transportation', 
 		content: 'Transportation is our nation’s largest source of greenhouse gas emissions and accounts for more than 40 percent of greenhouse gas emissions in the Northeast. On-road and off-road vehicles also emit smog-forming pollutants, particulate matter, and airborne toxic chemicals that are harmful to human health, especially for people who live near busy roads.', 
-		imageSrc: '/assets/images/stock/electricbus.jpg',
+		imageSrc: '/assets/images/stock/electric-bus1.png',
 		href: '/our-work/clean-transportation'
 	}, 
 	{
@@ -14,7 +14,7 @@ const ourWorkData = [
 	{
 		title: 'Monitoring', 
 		content: 'NESCAUM facilitates communication among states and with EPA ensure uniform approaches to regional air monitoring and data assessment and to communicate those data to state air quality planners.', 
-		imageSrc: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1374&q=80',
+		imageSrc: '/assets/images/stock/monitoring-nescaum.jpg',
         href: '/our-work/monitoring'
 	}, 
 	{
@@ -26,20 +26,8 @@ const ourWorkData = [
 	{
 		title: 'Stationary Sources',
 		content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.', 
-		imageSrc: '/assets/images/stock/smokestack-pexels.jpg',
+		imageSrc: '/assets/images/stock/boiler-pexels.jpg',
         href: '/our-work/stationary-sources'
-	}, 
-    {
-		title: 'Driving the Adoption of Electric Vehicles',
-		content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.', 
-		imageSrc: '/assets/images/stock/electric_adoption.jpg',
-        href: '/our-work/clean-transportation/adoption-of-electric-cars'
-	}, 
-    {
-		title: 'Growing the Market for Electric Trucks',
-		content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.', 
-		imageSrc: '/assets/images/stock/mhd.jpg',
-        href: '/our-work/clean-transportation/growing-market-for-electric-vehicles'
 	}, 
 ]
 

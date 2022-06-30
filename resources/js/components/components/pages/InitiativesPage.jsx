@@ -46,7 +46,7 @@ const data = [
         external: true
 	}, 
 	{
-		title: 'NESCAUMS Clean Air Academy', 
+		title: 'Clean Air Academy', 
 		content: 'NESCAUM’s Clean Air Academy provides air pollution training for staff in our member state air quality agencies. Courses are provided by EPA’s National Air Quality Training Program through EPA’s Learning Management System (LMS) or by private training contractors. NESCAUM operates the program with federal funding.', 
 		imageSrc: '/assets/images/stock/training.jpg',
         href: '/initiatives/clean-air-academy', 

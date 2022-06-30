@@ -70,7 +70,71 @@ const jurisdictions = [
     {
         jurisdiction: "Washington",
     },
-    
+];
+
+const announcements = [
+    {
+        announcement: "NESCAUM Extends Period for Public Comment on Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
+        link: "https://www.nescaum.org/documents/mhd-zev-ap-draft-comment-extension.pdf/"
+    },
+    {
+        announcement: "NESCAUM Welcomes Nevada's Participation in the Multi-State Zero-Emission Electric Trucks Initiative",
+        link: "https://www.nescaum.org/documents/nescaum-welcomes-nevada-s-participation-in-the-multi-state-zero-emission-electric-trucks-initiative/"
+    },
+    {
+        announcement: "Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
+        link: "/assets/documents/announcement-mhd-zev-ap-public-draft.pdf"
+    },
+    {
+        announcement: "NESCAUM Welcomes the Province of Quebec to the Multi-State MHD Zero-Emission Vehicle Initiative",
+        link: "/assets/documents/quebec-statement_9-22-2021.pdf"
+    },
+    {
+        announcement: "15 States and the District of Columbia Join Forces to Accelerate Bus and Truck Electrification",
+        link: "/assets/documents/multistate-truck-zev-mou-media-release-20200714.pdf"
+    },
+];
+
+const key_documents = [
+    {
+        document: "Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding",
+        link: "/assets/documents/mhdv-zev-mou-20220329.pdf",
+    },
+    {
+        document: "Draft Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Action Plan",
+        link: "/assets/documents/mhd-zev-action-plan-public-draft-03-10-2022.pdf",
+    }
+];
+
+const resources = [
+    {
+        resource: "Understanding the Truck Market, Multi-State ZEV Task Force Webinar, October 29, 2020",
+        link: "https://www.nescaum.org/documents/understanding-the-truck-market-webinar-20201029.mp4",
+    },
+    {
+        resource: "Early Experiences in Truck Electrification: A Panel Discussion with Commercial and Public Sector Fleets, November 24, 2020",
+        link: "https://www.nescaum.org/documents/mhd-zev-commercial-and-public-fleets-webinar-2-20201124-2002-1.mp4",
+    },
+    {
+        resource: "Transit and School Bus Electrification, December 17, 2020",
+        link: "https://www.nescaum.org/documents/transit-and-school-bus-electrification-webinar-20201217-2013-1.mp4",
+    },
+    {
+        resource: "The Role of Utilities in Accelerating Electrification of Medium- and Heavy-Duty Vehicles, January 7, 2021",
+        link: "https://www.nescaum.org/documents/the-role-of-utilities-in-accelerating-electrification-of-medium-and-heavy-duty-vehicles-webinar-1-20210107-2003-1.mp4",
+    },
+    {
+        resource: "The Utility Role in MHDV Electrification: Building the Infrastructure and Managing Costs, January 21, 2021",
+        link: "https://www.nescaum.org/documents/the-utility-role-in-mhdv-electrification-webinar-20210121-2002-1.mp4",
+    },
+    {
+        resource: "Innovative Finance to Accelerate Truck and Bus Electrification, April 1, 2021",
+        link: "https://www.nescaum.org/documents/innovative-finance-to-accelerate-truck-and-bus-electrification-webinar-20210401-1902-1.mp4",
+    },
+    {
+        resource: "Prioritizing Transportation Policy for Health and Equity, December 9, 2021",
+        link: "https://www.nescaum.org/documents/prioritizing-transportation-policy-for-health-and-equity-webinar-20211209-2006-1.mp4",
+    },
 ];
 
 const MHDZEVPage = () => {
@@ -90,10 +154,26 @@ const MHDZEVPage = () => {
         </Paragraph>
         <br />
         <Heading text='Announcements' mb='10px' />
-        
-        <Heading text='Key Documents' mb='10px' />
-
-        <Heading text='Signatory Jurisdictions' mb='10px' />
+            {announcements.map(({ announcement, link }) => {
+                return (
+                    <ListItems singular>
+                        <ExternalLink href={link} target="_blank">
+                            {announcement}
+                        </ExternalLink>
+                    </ListItems>
+                );
+            })}
+        <Heading text='Key Documents' mb='10px' mt='10px' />
+            {key_documents.map(({ document, link }) => {
+                return (
+                    <ListItems singular>
+                        <ExternalLink href={link} target="_blank">
+                            {document}
+                        </ExternalLink>
+                    </ListItems>
+                );
+            })}
+        <Heading text='Signatory Jurisdictions' mb='10px' mt='10px' />
         <Paragraph>
             The signatory jurisdictions are listed below. To access an individual jurisdiction's MHD ZEV website, please click on the jurisdiction name. You will then be redirected to the corresponding website.
         </Paragraph>
@@ -114,6 +194,15 @@ const MHDZEVPage = () => {
         <Paragraph>
             NESCAUM is holding a series of webinars for the multi-state ZEV Task Force to inform the development of the Action Plan. Recordings of the webinars will be posted here as they become available:
         </Paragraph>
+            {resources.map(({ resource, link }) => {
+                return (
+                    <ListItems singular>
+                        <ExternalLink href={link} target="_blank">
+                            {resource}
+                        </ExternalLink>
+                    </ListItems>
+                );
+            })}
         <br />
         <Heading text='Portal for Public Input' mb='10px'  />
         <Paragraph>

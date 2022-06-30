@@ -23,7 +23,7 @@ const DocumentLinks = ({ docFilter }) => {
     
     if(!filteredResults.length)
         return null;
- 
+    
     return (
                 <Column width="al-fu" center>
                     <Heading
@@ -34,28 +34,17 @@ const DocumentLinks = ({ docFilter }) => {
                         align="center"
                         width="100%"
                     />
-                    {filteredResults?.map((document, index) => {
-                        return (
-                            <a
-                                key={index}
-                                href={document.url}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                            >
-                                <Row wrap>
-                                    {filteredResults.map(document => (
-                                        <Document>
-                                            <ExternalLink href={document.url} aria_label={`Link to ${document.formatted_title} Document`}>
-                                                <h5>{document.formatted_title}</h5>
-                                                <Paragraph>{document.description} <i><small>{document.date}</small></i></Paragraph>
-                                                <Image src={document.thumbnail?.url} alt={document.alt_tex}/>
-                                            </ExternalLink>
-                                        </Document>
-                                    ))}
-                                </Row>
-                            </a>
-                        );
-                    })}
+                    <Row wrap>
+                        {filteredResults.map(document => (
+                            <Document>
+                                <ExternalLink href={document.url} aria_label={`Link to ${document.formatted_title} Document`}>
+                                    <h5>{document.formatted_title}</h5>
+                                    <Paragraph>{document.description} <i><small>{document.date}</small></i></Paragraph>
+                                    <Image src={document.thumbnail?.url} alt={document.alt_tex}/>
+                                </ExternalLink>
+                            </Document>
+                        ))}
+                    </Row>
                 </Column>
     );
 };

@@ -163,8 +163,6 @@ const ResourceLibraryPage = () => {
         start: 0,
         end: 24,
     })
-    console.log(params)
-    console.log(filters)
     
     useEffect(async () => {
         if (!documents.length) {
@@ -194,7 +192,7 @@ const ResourceLibraryPage = () => {
         if (filterable && filters.display_on?.length)
             filterable = filters.display_on.every(filter => formattedDisplayOn.includes(filter))
         if (filterable && filters.input?.length) {
-            filterable = doc?.key_words?.toLowerCase().includes(filters.input) || doc?.formatted_title?.toLowerCase().includes(filters.input)
+            filterable = doc?.key_words?.toLowerCase().includes(filters.input.toLowerCase()) || doc?.formatted_title?.toLowerCase().includes(filters.input.toLowerCase())
         }
         return filterable;
     })
