@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::statamic('example', 'example-view', [
-//    'title' => 'Example'
-// ]);
+Route::get('/images/{all}', function (Request $request) {
+    $uri = $request->url();
+
+    $replaced = str_replace('images', 'assets/images', $uri);
+
+    return redirect($replaced);
+})->where('all', '.*');;
+
+Route::get('/documents/{all}', function (Request $request) {
+    $uri = $request->url();
+
+    $replaced = str_replace('documents', 'assets/documents', $uri);
+
+    return redirect($replaced);
+})->where('all', '.*');;
