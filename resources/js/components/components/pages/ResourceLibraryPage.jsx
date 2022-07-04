@@ -203,7 +203,7 @@ const ResourceLibraryPage = () => {
         <Column center width="al-fu" pt={80} mb={60}>
             <Heading text="RESOURCE LIBRARY" bold />
 
-            <Row justify="space-between" mt={40}>
+            <Row justify="space-between" mt={40} inverse>
                 <Column width="70%">
                     <ContainerWithBorder>
                         <Heading text="Your Search Results" size={28} mb="0" />

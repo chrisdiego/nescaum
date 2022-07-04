@@ -6,10 +6,7 @@ import {
 import Home from "../pages/Home";
 import OurWork from "../pages/OurWork";
 import ResourceLibraryPage from "../pages/ResourceLibraryPage";
-import Press from "../pages/Press";
 import AboutUs from "../pages/AboutUs";
-import SubLanding from "../pages/SubLanding";
-import SupportingPage from "../pages/SupportingPage";
 import CommitteesPage from "../pages/about-us/CommitteesPage";
 import ElectricVehicleMarketPage from "../pages/our-work/ElectricVehicleMarketPage";
 import CleanTransportationPage from "../pages/our-work/CleanTransportationPage";
@@ -35,6 +32,7 @@ import MHDZEVPage from "../pages/initiatives/MHDZEVPage";
 import TestMethodDevelopmentPage from "../pages/initiatives/TestMethodDevelopmentPage";
 import ModelingListosPage from "../pages/our-work/ModelingListosPage";
 import StatePolicyDocumentsPage from "../pages/our-work/StatePolicyDocumentsPage";
+import NotFound from "../pages/NotFound";
 
 const Router = () => {
 	return (
@@ -156,10 +154,8 @@ const Router = () => {
 				path="/press"
 				element={<PressPage/>}
 			/>
-			
-			<Route exact path="/:landing/:subLanding" element={< SubLanding />} />
-			<Route exact path="/:landing/:subLanding/:supportingPage" element={< SupportingPage />} />
 			<Route path="/" exact element={<Home/>} />
+            <Route path='*' element={<NotFound />} status={404} />
 		</Routes>
 	);
 }

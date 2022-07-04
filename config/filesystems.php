@@ -69,7 +69,7 @@ return [
         'images' => [
             'driver' => 'local',
             'root' => public_path('assets/images'),
-            'url' => '/assets/images',
+            'url' => '/images',
             'visibility' => 'public',
         ],
 

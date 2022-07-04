@@ -1,6 +1,6 @@
 import { useEffect, useRef, useCallback } from 'react';
 import styled from 'styled-components';
-import { data } from '../Dropdown';
+import { mobileData } from '../Dropdown';
 import { Link } from "react-router-dom";
 
 
@@ -30,7 +30,9 @@ const SlidePanel = ({ navOpen, setNavOpen }) => {
     const sectionHeadings = {
         'our-work': "Our Work",
         initiatives: "Initiatives",
-        'about-us': "About Us"
+        'about-us': "About Us",
+        'resource-library': "Resource Library",
+        press: "Press"
     }
 
 
@@ -46,7 +48,7 @@ const SlidePanel = ({ navOpen, setNavOpen }) => {
                     Home
                 </Link>
             </SectionHeader>
-            {Object.keys(data).map((obj, index) => {
+            {Object.keys(mobileData).map((obj, index) => {
                 return (
                     <>
                         <SectionHeader>
@@ -58,8 +60,8 @@ const SlidePanel = ({ navOpen, setNavOpen }) => {
                                 {sectionHeadings[obj]}
                             </Link>
                         </SectionHeader>
-                        {data[obj].map((navItem) => {
-                            return (
+                        {mobileData[obj].map((navItem) => {
+                            return mobileData[obj].length <= 1 ? '' : (
                                 <Column key={index}>
                                     <SubSectionHeader>
                                         <Link
@@ -100,19 +102,11 @@ const SlidePanel = ({ navOpen, setNavOpen }) => {
                                 </Column>
                             )
                         })}
-                    </>
-                )
-            })}
-            <SectionHeader>
-                <Link to="/resource-library" onClick={() => setNavOpen(false)}>
-                    Resource Library
-                </Link>
-            </SectionHeader>
-            <SectionHeader>
-                <Link to="/press" onClick={() => setNavOpen(false)}>
-                    Press
-                </Link>
-            </SectionHeader>
+                    </>)
+            })
+            }
+
+
         </Container>
     )
 }

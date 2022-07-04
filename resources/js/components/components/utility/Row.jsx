@@ -15,11 +15,13 @@ const Row = ({
     p,
     classNames,
     mobileProps,
+    inverse,
     ...props
 }) => {
     return (
         <Container
             {...{
+                inverse,
                 width,
                 justify,
                 align,
@@ -65,7 +67,7 @@ const Container = styled.div`
     @media screen and (max-width: 768px) {
         width: 100%;
         margin: 0 auto;
-        flex-direction: column;
+        flex-direction: ${props => props.inverse ? 'column-reverse' : 'column'};
         padding: 20px;
     }
 `;

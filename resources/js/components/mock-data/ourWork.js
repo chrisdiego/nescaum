@@ -20,7 +20,7 @@ const ourWorkData = [
 	{
 		title: 'Regional Modeling', 
 		content: 'NESCAUM supports its member states by conducting modeling simulations to better understand local, regional, and sectoral contributions to air quality problems and explore policy implications.', 
-		imageSrc: '/assets/images/stock/regional-modeling.jpg',
+		imageSrc: '/assets/images/stock/monitoring-tab.png',
         href: '/our-work/regional-modeling'
 	}, 
 	{

@@ -8,7 +8,7 @@ import Column from "../utility/Column";
 import { Link } from "react-router-dom";
 
 const ImageThumbnailWithLabel = styled.div`
-    & a {
+    
         padding: 15px;
         height: 300px;
         width: 300px;
@@ -22,7 +22,7 @@ const ImageThumbnailWithLabel = styled.div`
         align-items: center;
         justify-content: center;
         position: relative;
-    }
+    
     &:hover {
         color: white;
         cursor: pointer;
@@ -36,6 +36,18 @@ const ImageThumbnailWithLabel = styled.div`
         height: 100%;
         position: absolute;
     }
+
+    &:after {
+        content: " ";
+        z-index: 10;
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
 `;
 
 const OurWork = () => {
@@ -48,13 +60,15 @@ const OurWork = () => {
             <Row width="al-fu" center wrap="true">
                 {ourWorkData.map((work) => {
                     return (
-                        <Column style={{ margin: "30px" }} width="initial">
-                            <ImageThumbnailWithLabel
-                                img={work.imageSrc}
-                                target="_blank"
-                            >
-                                <Link to={work.href}>{work.title}</Link>
-                            </ImageThumbnailWithLabel>
+                        <Column style={{ margin: "30px", position: "relative" }} width="initial">
+                            <Link to={work.href}>
+                                <ImageThumbnailWithLabel
+                                    img={work.imageSrc}
+                                    target="_blank"
+                                >
+                                    {work.title}
+                                </ImageThumbnailWithLabel>
+                            </Link>
                         </Column>
                     );
                 })}

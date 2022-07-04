@@ -2,25 +2,29 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import Hamburger from './Hamburger';
 import SlidePanel from './SlidePanel';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
-	const [ navOpen, setNavOpen ] = useState(false);
+    const [navOpen, setNavOpen] = useState(false);
 
-	return (
-		<>
-			<PlaceHolderContainer></PlaceHolderContainer>
-			<Container>
-				<Hamburger { ...{ navOpen, setNavOpen } }/>
-				<SlidePanel { ...{ navOpen, setNavOpen } }/>
-			</Container>
-		</>
-	)
+    return (
+        <>
+            <PlaceHolderContainer></PlaceHolderContainer>
+            <Container>
+                <Hamburger {...{ navOpen, setNavOpen }} />
+                <SlidePanel {...{ navOpen, setNavOpen }} />
+                <Link to="/"><img style={{maxWidth: "100%", maxHeight: "55px", marginLeft: "50px", marginTop: "10px"}} src="/assets/images/logos/logo-color@2x.png" /></Link>
+            </Container>
+        </>
+    )
 }
 
 export default NavBar;
 
 const Container = styled.div`
+    display: flex; 
+    justify-content: start;
 	width: 100vw;
 	background-color: white; 
 	position: fixed;

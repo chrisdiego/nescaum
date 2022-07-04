@@ -106,6 +106,123 @@ export const data = {
     ],
 };
 
+export const mobileData = {
+    "our-work": [
+        {
+            title: "CLEAN TRANSPORTATION",
+            href: "clean-transportation",
+            subLinks: [
+                {
+                    title: "Driving Adoption of Electric Cars",
+                    href: "adoption-of-electric-cars",
+                },
+                {
+                    title: "Growing the Market for Electric Trucks",
+                    href: "growing-market-for-electric-vehicles",
+                },
+                {
+                    title: "Supporting Regulatory Programs",
+                    href: "supporting-regulatory-programs",
+                },
+            ],
+        },
+        {
+            title: "CRITERIA POLLUTANTS AND AIR TOXICS",
+            href: "criteria-pollutants-and-air-toxics",
+            subLinks: [
+                {
+                    title: "Criteria Air Pollutants",
+                    href: "criteria-air-pollutants",
+                },
+                {
+                    title: "Air Toxics",
+                    href: "air-toxics",
+                },
+            ],
+        },
+        {
+            title: "MONITORING",
+            href: "monitoring",
+        },
+        {
+            title: "REGIONAL MODELING",
+            href: "regional-modeling",
+            subLinks: [
+                {
+                    title: "LISTOS",
+                    href: "listos",
+                },
+            ],
+        },
+        {
+            title: "STATIONARY SOURCES",
+            href: "stationary-sources",
+            subLinks: [
+                {
+                    title: "Regulatory Compliance",
+                    href: "regulatory-compliance",
+                },
+                {
+                    title: "Wood Heat",
+                    href: "wood-heat",
+                },
+                {
+                    title: "Building Electrification",
+                    href: "building-electrification",
+                },
+            ],
+        },
+    ],
+    initiatives: [
+        {
+            title: "CAMNET",
+            href: "camnet",
+        },
+        {
+            title: "Clean Air Academy",
+            href: "clean-air-academy",
+        },
+        {
+            title: "LISTOS",
+            href: "listos",
+        },
+        {
+            title: "MHD ZEV Initiative",
+            href: "mhd-zev-initiative",
+        },
+        {
+            title: "Test Method Development",
+            href: "test-method-development",
+        },
+    ],
+    "resource-library": [
+        {
+            title: "RESOURCE LIBRARY",
+            href: "/resource-library"
+        }
+    ],
+    "press": [
+        {
+            title: "PRESS",
+            href: "/press"
+        }
+    ],
+    "about-us": [
+        {
+            title: "Our Staff",
+            href: "staff",
+        },
+        {
+            title: "Committees",
+            href: "committees",
+        },
+        {
+            title: "OTC",
+            href: "otc",
+        },
+    ],
+};
+
 const Dropdown = ({ hoveredText, mouseLeaveHandler, initRef, aboutRef }) => {
     if (hoveredText === "our-work") {
         return (
