@@ -20,7 +20,7 @@ Route::get('/images/{all}', function (Request $request) {
     $replaced = str_replace('images', 'assets/images', $uri);
 
     return redirect($replaced);
-})->where('all', '.*');;
+})->where('all', '.*');
 
 Route::get('/documents/{all}', function (Request $request) {
     $uri = $request->url();
@@ -28,4 +28,4 @@ Route::get('/documents/{all}', function (Request $request) {
     $replaced = str_replace('documents', 'assets/documents', $uri);
 
     return redirect($replaced);
-})->where('all', '.*');;
+})->where('/{all}', '.*');
