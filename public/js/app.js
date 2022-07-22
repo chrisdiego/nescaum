@@ -22612,7 +22612,7 @@ var CriteriaPollutantsPage = function CriteriaPollutantsPage() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CriteriaPollutantsPage);
-var TopicSection = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    margin-bottom: 20px;\n    font-size: 14px;\n\n    b {\n        font-size: 16px;\n        display: block;\n    }\n\n    li {\n        font-size: 13px;\n        margin-left: 10px;\n    }\n\n    a {\n        text-decoration: underline;\n    }\n    \n"])));
+var TopicSection = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    margin-bottom: 20px;\n    font-size: 14px;\n\n    b {\n        font-size: 18px;\n        display: block;\n        margin-bottom: 5px;\n    }\n\n    li {\n        font-size: 13px;\n        margin-left: 10px;\n    }\n\n    a {\n        text-decoration: underline;\n    }\n    \n"])));
 
 /***/ }),
 

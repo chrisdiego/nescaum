@@ -54,8 +54,9 @@ const TopicSection = styled.div`
     font-size: 14px;
 
     b {
-        font-size: 16px;
+        font-size: 18px;
         display: block;
+        margin-bottom: 5px;
     }
 
     li {
