@@ -19634,7 +19634,7 @@ var ListItems = function ListItems(_ref) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItems);
-var P = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n  margin-left: 15px;\n  margin-bottom: 5px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n\n  @media screen and (max-width: 768px) {\n\n  }\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].p(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  font-weight: 400;\n  font-size: 16px;\n  margin-left: 15px;\n  margin-bottom: 5px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n\n  @media screen and (max-width: 768px) {\n\n  }\n"])));
 var R = (0,styled_components__WEBPACK_IMPORTED_MODULE_3__["default"])(_utility_Row__WEBPACK_IMPORTED_MODULE_1__["default"])(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  @media screen and (max-width: 768px) {\n    flex-direction: row!important; \n    align-items: center;\n  }\n"])));
 
 /***/ }),
@@ -19670,7 +19670,6 @@ var PageHeading = function PageHeading(_ref) {
       title = _ref.title,
       desc = _ref.desc,
       props = _ref.props;
-  console.log(props);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_1__["default"], {
     children: [image && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Image, {
       src: image,
@@ -19709,7 +19708,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hooks_useIsMobile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../hooks/useIsMobile */ "./resources/js/hooks/useIsMobile.js");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -19737,29 +19736,33 @@ var PhotoWithTransparentBox = function PhotoWithTransparentBox() {
       })
     })
   }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(MobileSection, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      pt: 100,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(MobileHeader, {
-        children: "Empowering States Through Collaboration"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Span, {
-        children: "Learn More"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_content_content_visuals_ArrowWithBox__WEBPACK_IMPORTED_MODULE_0__["default"], {
-        color: "white",
-        position: "center",
-        href: "/our-work"
-      })]
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(TransparentBoxMobile, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        pt: 20,
+        pb: 20,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(MobileHeader, {
+          children: "Empowering States Through Collaboration"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Span, {
+          children: "Learn More"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_content_content_visuals_ArrowWithBox__WEBPACK_IMPORTED_MODULE_0__["default"], {
+          color: "white",
+          position: "center",
+          href: "/our-work"
+        })]
+      })
     })
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PhotoWithTransparentBox);
 var Section = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].section(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tmin-width: 100vw; \n\theight: 600px;\n\tbackground-image: url(\"/assets/images/stock/banner.jpg\"); \n\tbackground-size: cover; \n\tbackground-repeat: no-repeat;\n\tbackground-position: center center;\n"])));
-var TransparentBox = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tmin-height: 100%; \n\theight: 100%; \n\twidth: 40%; \n\tdisplay: flex; \n\tbackground-color: rgba(23, 78, 150, .5); \n\tjustify-content: flex-end; \n\talign-items: center;\n\n\t@media screen and (max-width: 1250px) {\n\t\twidth: 50%;\n\t}\n\n"])));
-var CenteredContent = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\tcolor: white; \n\tmin-width: 500px; \n\tdisplay: flex; \n\tflex-direction: column; \n\tmin-height: 80%;\n\theight: 80%; \n\tpadding: 0 15px;\n"])));
-var H2 = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h2(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n\tfont-weight: 700; \n\tmax-width: 300px;\n\tfont-size: 48px; \n\tline-height: 56px;\n\n\t@media screen and (max-width: 768px) {\n\t\tfont-size: 26px;\n\t}\n"])));
-var Span = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].span(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n\tfont-size: 36px; \n\tmargin: 40px 0 20px 0;\n\n\t@media screen and (max-width: 1000px) {\n\t\tcolor: white; \n\t\tfont-size: 24px;\n\t\tmargin: 60px 0 20px 0;\n\t}\n"])));
-var MobileSection = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].section(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n\twidth: 100vw; \n\tbackground-image: url(\"/assets/images/stock/banner.jpg\"); \n\tbackground-size: cover; \n\tbackground-repeat: no-repeat;\n\tbackground-position: center center;\n\tmin-height: 600px; \n\tpadding: 20px;\n\tmargin-bottom: 40px;\n"])));
-var MobileHeader = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h2(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n\tcolor: white; \n\tfont-weight: bold; \n\tmax-width: 360px;\n"])));
+var TransparentBox = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tmin-height: 100%; \n\theight: 100%; \n\twidth: 40%; \n\tdisplay: flex; \n\tbackground-color: rgba(23, 78, 150, .5); \n\tjustify-content: flex-end; \n\talign-items: center;\n\n\t@media screen and (max-width: 1250px) {\n\t\twidth: 50%;\n\t}\n"])));
+var TransparentBoxMobile = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n\tmin-height: 100%; \n\theight: 100%; \n\tdisplay: flex; \n\tbackground-color: rgba(23, 78, 150, .5); \n\tjustify-content: flex-end; \n\talign-items: center;\n"])));
+var CenteredContent = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n\tcolor: white; \n\tmin-width: 500px; \n\tdisplay: flex; \n\tflex-direction: column; \n\tmin-height: 80%;\n\theight: 80%; \n\tpadding: 0 15px;\n"])));
+var H2 = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h2(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n\tfont-weight: 700; \n\tmax-width: 300px;\n\tfont-size: 48px; \n\tline-height: 56px;\n\n\t@media screen and (max-width: 768px) {\n\t\tfont-size: 26px;\n\t}\n"])));
+var Span = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].span(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n\tfont-size: 36px; \n\tmargin: 40px 0 20px 0;\n\n\t@media screen and (max-width: 1000px) {\n\t\tcolor: white; \n\t\tfont-size: 24px;\n\t\tmargin: 60px 0 20px 0;\n\t}\n"])));
+var MobileSection = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].section(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["\n\twidth: 100vw; \n\tbackground-image: url(\"/assets/images/stock/banner.jpg\"); \n\tbackground-size: cover; \n\tbackground-repeat: no-repeat;\n\tbackground-position: center center;\n\tmin-height: 600px; \n\tpadding: 20px;\n\tmargin-bottom: 40px;\n"])));
+var MobileHeader = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].h2(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["\n\tcolor: white; \n\tfont-weight: bold; \n\tmax-width: 360px;\n"])));
 
 /***/ }),
 
@@ -22428,7 +22431,6 @@ var StaffPage = function StaffPage() {
     var lastName2 = b.title.split(" ")[1];
     return lastName1.localeCompare(lastName2);
   });
-  console.log(sortedStaff);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
     width: "al-fu",
     center: true,
@@ -22535,6 +22537,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
@@ -22542,6 +22545,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
 /* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
 
 
 
@@ -22561,42 +22569,39 @@ var CriteriaPollutantsPage = function CriteriaPollutantsPage() {
       center: true,
       mt: 20,
       mb: 40,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        singular: true,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(TopicSection, {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
           children: "National Ambient Air Quality Standards (NAAQS)"
-        }), ". National Ambient Air Quality Standards (NAAQS). The Clean Air Act requires EPA to conduct periodic reviews of the NAAQS for the six criteria air pollutants. The NAAQS are the foundation of a wide range of air quality programs, so it is essential that those standards are protective of the public health and welfare of all communities.  NESCAUM reviews and comments on EPA proposals concerning NAAQS standard setting, including:"]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        singular: true,
-        children: "Procedures that affect the derivation of the NAAQS,"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        singular: true,
-        children: "Planning, science, and policy assessments developed by EPA and its advisory committees during the mandated periodic reviews, and"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        singular: true,
-        children: "NAAQS proposed subsequent to the reviews."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        singular: true,
-        children: ["Recent NECAUM comments have addressed EPA proposals concerning", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          href: "https://www.nescaum.org/documents/nescaum-transparency-snprm-comments-2020518-final.pdf/",
-          children: "cost-benefit analyses, the use of scientific study data"
-        }), ", and the NAAQS for fine particulate matter", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          href: "https://www.nescaum.org/documents/nescaum-pm2-5-naaqs-comments-final-20200629.pdf/",
-          children: ["(PM", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
-            style: {
-              fontSize: 8
-            },
-            children: "2.5"
-          }), ")"]
-        }), ' ', "and", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
-          href: "https://www.nescaum.org/documents/nescaum-ozone-naaqs-comments-final-20201001.pdf/",
-          children: "ozone"
+        }), "National Ambient Air Quality Standards (NAAQS). The Clean Air Act requires EPA to conduct periodic reviews of the NAAQS for the six criteria air pollutants. The NAAQS are the foundation of a wide range of air quality programs, so it is essential that those standards are protective of the public health and welfare of all communities.  NESCAUM reviews and comments on EPA proposals concerning NAAQS standard setting, including:", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+          style: {
+            marginTop: "10px"
+          },
+          children: "Procedures that affect the derivation of the NAAQS,"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+          children: "Planning, science, and policy assessments developed by EPA and its advisory committees during the mandated periodic reviews, and"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("li", {
+          children: "NAAQS proposed subsequent to the reviews."
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("li", {
+          children: ["Recent NECAUM comments have addressed EPA proposals concerning", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            href: "https://www.nescaum.org/documents/nescaum-transparency-snprm-comments-2020518-final.pdf/",
+            children: "cost-benefit analyses, the use of scientific study data"
+          }), ", and the NAAQS for fine particulate matter", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            href: "https://www.nescaum.org/documents/nescaum-pm2-5-naaqs-comments-final-20200629.pdf/",
+            children: ["(PM", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
+              style: {
+                fontSize: 8
+              },
+              children: "2.5"
+            }), ")"]
+          }), ' ', "and", ' ', /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            href: "https://www.nescaum.org/documents/nescaum-ozone-naaqs-comments-final-20201001.pdf/",
+            children: "ozone"
+          })]
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_content_ListItems__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        singular: true,
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(TopicSection, {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("b", {
-          children: "Supporting state air quality planning efforts."
-        }), " NESCAUM facilitates state discussions and information sharing to support the development of State Implementation Plans, which are designed to enable air quality to attain and maintain the NAAQS. Interstate coordination is particularly essential for ozone, particulate matter, and regional haze, which are highly impacted by regional and long-range pollutant transport."]
+          children: "Supporting state air quality planning efforts"
+        }), "NESCAUM facilitates state discussions and information sharing to support the development of State Implementation Plans, which are designed to enable air quality to attain and maintain the NAAQS. Interstate coordination is particularly essential for ozone, particulate matter, and regional haze, which are highly impacted by regional and long-range pollutant transport."]
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__["default"], {
       docFilter: "air_toxics"
@@ -22607,6 +22612,7 @@ var CriteriaPollutantsPage = function CriteriaPollutantsPage() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CriteriaPollutantsPage);
+var TopicSection = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    margin-bottom: 20px;\n    font-size: 14px;\n\n    b {\n        font-size: 16px;\n        display: block;\n    }\n\n    li {\n        font-size: 13px;\n        margin-left: 10px;\n    }\n\n    a {\n        text-decoration: underline;\n    }\n    \n"])));
 
 /***/ }),
 
@@ -24319,8 +24325,6 @@ var PressPage = function PressPage() {
       return type["key"] == 'press_release';
     });
   });
-  console.log(documents);
-  console.log(filteredResults);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_1__["default"], {
     width: "al-fu",
     center: true,
@@ -24328,7 +24332,8 @@ var PressPage = function PressPage() {
     mb: 80,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
       bold: true,
-      text: "Press"
+      text: "Press",
+      mt: "15px"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(PdfList, {
       className: "pdfGrid",
       children: filteredResults === null || filteredResults === void 0 ? void 0 : filteredResults.map(function (document, index) {

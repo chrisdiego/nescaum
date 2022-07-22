@@ -26,7 +26,6 @@ const SubLanding = () => {
 	}, [ params, content?.title ])
 
 
-	if (!content) return <> {console.log('NO CONTENT FOUND')} </>
 	return (
 		<>
 			<FullWidthHeroImage imageSrc={ content['heroImage']} />

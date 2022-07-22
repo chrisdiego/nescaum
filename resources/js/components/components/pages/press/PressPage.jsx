@@ -18,11 +18,10 @@ const PressPage = () => {
     }, [documents]);
     
     const filteredResults = documents?.filter(result => result?.document_type?.some(type => type["key"] == 'press_release'))
-    console.log(documents)
-    console.log(filteredResults)
+
   return (
     <Column width='al-fu' center mt={60} mb={80}>
-      <Heading bold text='Press' />
+      <Heading bold text='Press' mt='15px' />
                 <PdfList className="pdfGrid">
                     {filteredResults?.map((document, index) => {
                         const lastUpdated = new Date(document?.last_modified)

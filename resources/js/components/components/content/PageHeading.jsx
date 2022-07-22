@@ -3,7 +3,6 @@ import Row from '../utility/Row';
 import styled from 'styled-components';
 
 const PageHeading = ({ image, alt, title, desc, props}) => {
-    console.log(props)
     return (
         <Row>
             { image && (

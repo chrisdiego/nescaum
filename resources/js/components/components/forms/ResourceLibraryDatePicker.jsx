@@ -88,7 +88,6 @@ const ResourceLibraryDatePicker = ({ register, setValue }) => {
                     <CalendarContainer>
                         <Calendar
                             onChange={(event) => {
-                                console.log("end date");
                                 setEndDate(event);
                                 const d = DateTime.fromJSDate(event);
                                 setValue(

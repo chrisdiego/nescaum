@@ -29,7 +29,6 @@ const StaffPage = () => {
         const lastName2 = b.title.split(" ")[1];
         return lastName1.localeCompare(lastName2)
     })
-    console.log(sortedStaff)
     return (
         <Row width="al-fu" center wrap="true" justify="space-between">
             <PageHeading>Staff</PageHeading>

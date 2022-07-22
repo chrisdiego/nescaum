@@ -31,7 +31,6 @@ const ListItems = ({ list, singular, children }) => {
 export default ListItems;
 
 const P = styled.p`
-  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   margin-left: 15px;

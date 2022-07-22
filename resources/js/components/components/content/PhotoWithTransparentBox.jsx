@@ -20,13 +20,15 @@ const PhotoWithTransparentBox = () => {
 			</Section>
 		) : (
 			<MobileSection>
-				<Column pt={ 100 }>
+                <TransparentBoxMobile>
+				<Column pt={ 20 } pb={ 20 }>
 					<MobileHeader>
 						Empowering States Through Collaboration
 					</MobileHeader>
 					<Span>Learn More</Span>
 					<ArrowWithBox color='white' position='center' href='/our-work'/>
 				</Column>
+                </TransparentBoxMobile>
 			</MobileSection>
 		)
 	)
@@ -55,7 +57,15 @@ const TransparentBox = styled.div`
 	@media screen and (max-width: 1250px) {
 		width: 50%;
 	}
+`
 
+const TransparentBoxMobile = styled.div`
+	min-height: 100%; 
+	height: 100%; 
+	display: flex; 
+	background-color: rgba(23, 78, 150, .5); 
+	justify-content: flex-end; 
+	align-items: center;
 `
 
 const CenteredContent = styled.div`
