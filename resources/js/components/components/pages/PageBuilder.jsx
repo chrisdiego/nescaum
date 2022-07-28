@@ -26,8 +26,8 @@ const PageBuilder = () => {
             const response = await fetch(urlF);
             const results = await response.json();
             const sortedResults = results.data.find(entry => entry.page_url === url)
-            
-            if(!sortedResults)
+
+            if (!sortedResults)
                 setPageData('not found');
             else
                 setPageData(sortedResults);
@@ -47,83 +47,95 @@ const PageBuilder = () => {
 
         const ImageAndText = () => {
             return (
-            <Row style={{ marginTop: "30px", marginBottom: "30px"}}>
-                <Column>
-                    <P>
-                        {text}
-                    </P>
-                    {
-                        document?.map(({ document_link, document_title }) => (
-                            <Li>
-                                <a href={document_link?.url} target="_blank">{document_title}</a>
-                            </Li>
-                        ))
-                    }
-                </Column>
-                <Column>
-                    <ImageStyled src={image[0].url} />
-                </Column>
-            </Row>
-            );
+                <>
+                    <Row style={{ marginTop: "30px", marginBottom: "30px", flexDirection: "row" }}>
+                        <P style={{ marginLeft: "15px" }}>
+                            {text}
+                            {
+                                document?.map(({ document_link, document_title }) => (
+                                    <Li>
+                                        <a href={document_link?.url} target="_blank">{document_title}</a>
+                                    </Li>
+                                ))
+                            }
+                        </P>
+                        <Column>
+                            {image && <ImageStyled src={image.url} />}
+                        </Column>
+                    </Row>
+                </>
+            )
         };
 
         const ImageAndTextInverse = () => {
             return (
-            <Row style={{ marginTop: "30px", marginBottom: "30px"}}>
-                 <Column>
-                    <ImageStyled src={image[0].url} />
-                </Column>
-                <Column>
-                    <P>
-                        {text}
-                    </P> 
-                </Column>
-            </Row>
-            );
+                <>
+                    <Row style={{ marginTop: "30px", marginBottom: "30px", flexDirection: "row" }}>
+                        <Column>
+                            {image && <ImageStyled src={image.url} />}
+                        </Column>
+                        <P style={{ marginLeft: "15px" }}>
+                            {text}
+                            {
+                                document?.map(({ document_link, document_title }) => (
+                                    <Li>
+                                        <a href={document_link?.url} target="_blank">{document_title}</a>
+                                    </Li>
+                                ))
+                            }
+                        </P>
+                    </Row>
+                </>
+            )
         };
 
         const Text = () => {
             return (
-            <Row style={{ margin: "30px" }}>
-                <Column>
+                <Row style={{ margin: "30px", textAlign: "center" }}>
                     <P>
                         {text}
-                    </P> 
-                </Column>
-            </Row>
+                        {
+                            document?.map(({ document_link, document_title }) => (
+                                <Li>
+                                    <a href={document_link?.url} target="_blank">{document_title}</a>
+                                </Li>
+                            ))
+                        }
+                    </P>
+                </Row>
             );
         };
 
         const Image = () => {
             return (
-            <Row style={{ margin: "30px" }}>
-                 <Column>
-                    <ImageStyled src={image[0].url} />
-                </Column>
-            </Row>
+                <Row style={{ margin: "30px" }}>
+                    <Column>
+                        {image && <ImageStyledSolo src={image.url} />}
+                    </Column>
+                </Row>
             );
         };
 
         const sectionLayouts = {
             heading: <Header />,
-            imageAndText: <ImageAndText/>,
+            imageAndText: <ImageAndText />,
             imageAndTextInverse: <ImageAndTextInverse />,
-            image: <Image/>,
-            text: <Text/>,
+            image: <Image />,
+            text: <Text />,
         };
 
         return sectionLayouts[key];
     }
 
-    if(pageData === 'not found') 
+    if (pageData === 'not found')
         return <NotFound />
-    
+
     return !pageData?.notFound ? (
         <>
             <PageScaffold
-                heroImage={pageData?.banner?.reduce(url => url).url}
+                heroImage={pageData?.banner?.url}
                 headline={pageData?.title}
-                sideImage={pageData?.intro_image?.reduce(url => url).url}
+                sideImage={pageData?.intro_image?.url}
                 mainText={pageData?.intro}
                 subText={pageData?.introsubtext}
             />
@@ -144,11 +156,14 @@ const PageBuilder = () => {
 export default PageBuilder;
 
 const ImageStyled = styled.img`
-  max-width: 100%;
-  margin-right: 40px;
+
 `;
 
-const P = styled.p`
+const ImageStyledSolo = styled.img`
+  margin: 0 auto;
+`;
+
+const P = styled.div`
   font-weight: 400;
   font-size: 16px;
 
@@ -162,4 +177,8 @@ const P = styled.p`
 
 const Li = styled.li`
   color: #669935;
+  margin-top: 8px;
+  a {
+
+  }
 `;

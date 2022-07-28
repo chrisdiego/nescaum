@@ -21748,7 +21748,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _NotFound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./NotFound */ "./resources/js/components/components/pages/NotFound.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject, _templateObject2, _templateObject3;
+var _templateObject, _templateObject2, _templateObject3, _templateObject4;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -21849,17 +21849,79 @@ var PageBuilder = function PageBuilder() {
     };
 
     var ImageAndText = function ImageAndText() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          style: {
+            marginTop: "30px",
+            marginBottom: "30px",
+            flexDirection: "row"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(P, {
+            style: {
+              marginLeft: "15px"
+            },
+            children: [text, document === null || document === void 0 ? void 0 : document.map(function (_ref3) {
+              var document_link = _ref3.document_link,
+                  document_title = _ref3.document_title;
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+                  href: document_link === null || document_link === void 0 ? void 0 : document_link.url,
+                  target: "_blank",
+                  children: document_title
+                })
+              });
+            })]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: image && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
+              src: image.url
+            })
+          })]
+        })
+      });
+    };
+
+    var ImageAndTextInverse = function ImageAndTextInverse() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          style: {
+            marginTop: "30px",
+            marginBottom: "30px",
+            flexDirection: "row"
+          },
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            children: image && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
+              src: image.url
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(P, {
+            style: {
+              marginLeft: "15px"
+            },
+            children: [text, document === null || document === void 0 ? void 0 : document.map(function (_ref4) {
+              var document_link = _ref4.document_link,
+                  document_title = _ref4.document_title;
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+                  href: document_link === null || document_link === void 0 ? void 0 : document_link.url,
+                  target: "_blank",
+                  children: document_title
+                })
+              });
+            })]
+          })]
+        })
+      });
+    };
+
+    var Text = function Text() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
         style: {
-          marginTop: "30px",
-          marginBottom: "30px"
+          margin: "30px",
+          textAlign: "center"
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(P, {
-            children: text
-          }), document === null || document === void 0 ? void 0 : document.map(function (_ref3) {
-            var document_link = _ref3.document_link,
-                document_title = _ref3.document_title;
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(P, {
+          children: [text, document === null || document === void 0 ? void 0 : document.map(function (_ref5) {
+            var document_link = _ref5.document_link,
+                document_title = _ref5.document_title;
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
                 href: document_link === null || document_link === void 0 ? void 0 : document_link.url,
@@ -21868,41 +21930,6 @@ var PageBuilder = function PageBuilder() {
               })
             });
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
-            src: image[0].url
-          })
-        })]
-      });
-    };
-
-    var ImageAndTextInverse = function ImageAndTextInverse() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        style: {
-          marginTop: "30px",
-          marginBottom: "30px"
-        },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
-            src: image[0].url
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(P, {
-            children: text
-          })
-        })]
-      });
-    };
-
-    var Text = function Text() {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        style: {
-          margin: "30px"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(P, {
-            children: text
-          })
         })
       });
     };
@@ -21913,8 +21940,8 @@ var PageBuilder = function PageBuilder() {
           margin: "30px"
         },
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
-            src: image[0].url
+          children: image && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyledSolo, {
+            src: image.url
           })
         })
       });
@@ -21933,13 +21960,9 @@ var PageBuilder = function PageBuilder() {
   if (pageData === 'not found') return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_NotFound__WEBPACK_IMPORTED_MODULE_7__["default"], {});
   return !(pageData !== null && pageData !== void 0 && pageData.notFound) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      heroImage: pageData === null || pageData === void 0 ? void 0 : (_pageData$banner = pageData.banner) === null || _pageData$banner === void 0 ? void 0 : _pageData$banner.reduce(function (url) {
-        return url;
-      }).url,
+      heroImage: pageData === null || pageData === void 0 ? void 0 : (_pageData$banner = pageData.banner) === null || _pageData$banner === void 0 ? void 0 : _pageData$banner.url,
       headline: pageData === null || pageData === void 0 ? void 0 : pageData.title,
-      sideImage: pageData === null || pageData === void 0 ? void 0 : (_pageData$intro_image = pageData.intro_image) === null || _pageData$intro_image === void 0 ? void 0 : _pageData$intro_image.reduce(function (url) {
-        return url;
-      }).url,
+      sideImage: pageData === null || pageData === void 0 ? void 0 : (_pageData$intro_image = pageData.intro_image) === null || _pageData$intro_image === void 0 ? void 0 : _pageData$intro_image.url,
       mainText: pageData === null || pageData === void 0 ? void 0 : pageData.intro,
       subText: pageData === null || pageData === void 0 ? void 0 : pageData.introsubtext
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -21955,9 +21978,10 @@ var PageBuilder = function PageBuilder() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PageBuilder);
-var ImageStyled = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  margin-right: 40px;\n"])));
-var P = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
-var Li = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].li(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  color: #669935;\n"])));
+var ImageStyled = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\n"])));
+var ImageStyledSolo = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin: 0 auto;\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
+var Li = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].li(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  color: #669935;\n  margin-top: 8px;\n  a {\n\n  }\n"])));
 
 /***/ }),
 
@@ -25270,7 +25294,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://159.223.119.211/api';
+var API_URL = 'http://127.0.0.1:8000/api';
 var PageParams = {
   'PER_PAGE': 10
 };
