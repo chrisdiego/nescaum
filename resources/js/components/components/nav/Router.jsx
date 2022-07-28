@@ -33,10 +33,12 @@ import TestMethodDevelopmentPage from "../pages/initiatives/TestMethodDevelopmen
 import ModelingListosPage from "../pages/our-work/ModelingListosPage";
 import StatePolicyDocumentsPage from "../pages/our-work/StatePolicyDocumentsPage";
 import NotFound from "../pages/NotFound";
+import PageBuilder from "../pages/PageBuilder";
 
 const Router = () => {
 	return (
 		<Routes>
+            <Route path="/page/:url" element={<PageBuilder/>} exact />
 			<Route path="/resource-library/:displayOn" element={<ResourceLibraryPage/>} />
             <Route path="/resource-library" element={<ResourceLibraryPage/>} />
 			<Route path="/about-us" exact element={<AboutUs/>} />

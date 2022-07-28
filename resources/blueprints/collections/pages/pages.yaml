@@ -4,76 +4,154 @@ sections:
     display: Main
     fields:
       -
+        handle: page_url
+        field:
+          input_type: text
+          antlers: false
+          display: url
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
         handle: title
         field:
           type: text
           required: true
+          input_type: text
+          antlers: false
+          display: title
+          icon: text
+          listable: hidden
+          instructions_position: above
           validate:
             - required
       -
-        handle: heroimage
+        handle: banner
         field:
-          input_type: text
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: banner
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          container: images
+      -
+        handle: intro
+        field:
           antlers: false
-          display: heroImage
-          type: text
-          icon: text
+          display: intro
+          type: textarea
+          icon: textarea
           listable: hidden
           instructions_position: above
       -
-        handle: headline
+        handle: intro_image
         field:
-          input_type: text
-          antlers: false
-          display: headline
-          type: text
-          icon: text
+          mode: list
+          container: images
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: intro_image
+          type: assets
+          icon: assets
           listable: hidden
           instructions_position: above
       -
-        handle: maintext
+        handle: sections
         field:
-          input_type: text
-          antlers: false
-          display: mainText
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-      -
-        handle: subtext
-        field:
-          input_type: text
-          antlers: false
-          display: subText
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-      -
-        handle: subheader
-        field:
-          input_type: text
-          antlers: false
-          display: subHeader
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-      -
-        handle: page_data
-        field:
-          theme: material
-          mode: javascript
-          mode_selectable: false
-          indent_type: tabs
-          indent_size: 4
-          key_map: default
-          line_numbers: true
-          line_wrapping: true
-          display: page_data
-          type: code
-          icon: code
+          collapse: false
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: section_type
+                  field:
+                    options:
+                      heading: null
+                      imageAndText: null
+                      imageAndTextInverse: null
+                      text: null
+                      image: null
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    display: section_type
+                    type: select
+                    icon: select
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: text
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: text
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: image
+                  field:
+                    mode: list
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    display: image
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    container: images
+                -
+                  handle: document
+                  field:
+                    collapse: false
+                    sets:
+                      new_set:
+                        display: 'New Set'
+                        fields:
+                          -
+                            handle: document_title
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: 'Document Title'
+                              type: text
+                              icon: text
+                              listable: hidden
+                              instructions_position: above
+                          -
+                            handle: document_link
+                            field:
+                              mode: list
+                              restrict: false
+                              allow_uploads: true
+                              show_filename: true
+                              display: document_link
+                              type: assets
+                              icon: assets
+                              listable: hidden
+                              instructions_position: above
+                              container: documents
+                              max_files: 1
+                    display: document
+                    type: replicator
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
+          display: sections
+          type: replicator
+          icon: replicator
           listable: hidden
           instructions_position: above
   sidebar:

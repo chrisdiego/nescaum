@@ -51,25 +51,13 @@ const DocumentLinks = ({ docFilter }) => {
 
 export default DocumentLinks;
 
-const Container = styled.div`
-    min-width: 100vw;
-    min-height: 400px;
-    background-color: #daebf5;
-    padding: 40px;
-    margin-top: 40px;
-
-    & > p {
-        color: #006cb3;
-    }
-`;
-
 const Image = styled.img`
-  max-width: 350px; 
+  max-width: 140px; 
   margin: 0 auto;
   display: block;
   border-bottom: 1px solid black;
   padding-bottom: 25px;
-`
+`;
 
 const Document = styled.div`
     max-width: 400px;

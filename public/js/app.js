@@ -19961,7 +19961,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject, _templateObject2, _templateObject3;
+var _templateObject, _templateObject2;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -20080,9 +20080,8 @@ var DocumentLinks = function DocumentLinks(_ref) {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DocumentLinks);
-var Container = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    min-width: 100vw;\n    min-height: 400px;\n    background-color: #daebf5;\n    padding: 40px;\n    margin-top: 40px;\n\n    & > p {\n        color: #006cb3;\n    }\n"])));
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  max-width: 350px; \n  margin: 0 auto;\n  display: block;\n  border-bottom: 1px solid black;\n  padding-bottom: 25px;\n"])));
-var Document = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    max-width: 400px;\n    padding-top: 20px;\n\n    h5 {\n        text-align: center;\n    }\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 140px; \n  margin: 0 auto;\n  display: block;\n  border-bottom: 1px solid black;\n  padding-bottom: 25px;\n"])));
+var Document = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    max-width: 400px;\n    padding-top: 20px;\n\n    h5 {\n        text-align: center;\n    }\n"])));
 
 /***/ }),
 
@@ -20810,7 +20809,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
 /* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/Home */ "./resources/js/components/components/pages/Home.jsx");
 /* harmony import */ var _pages_OurWork__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/OurWork */ "./resources/js/components/components/pages/OurWork.jsx");
 /* harmony import */ var _pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/ResourceLibraryPage */ "./resources/js/components/components/pages/ResourceLibraryPage.jsx");
@@ -20841,7 +20840,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_our_work_ModelingListosPage__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../pages/our-work/ModelingListosPage */ "./resources/js/components/components/pages/our-work/ModelingListosPage.jsx");
 /* harmony import */ var _pages_our_work_StatePolicyDocumentsPage__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../pages/our-work/StatePolicyDocumentsPage */ "./resources/js/components/components/pages/our-work/StatePolicyDocumentsPage.jsx");
 /* harmony import */ var _pages_NotFound__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../pages/NotFound */ "./resources/js/components/components/pages/NotFound.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _pages_PageBuilder__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../pages/PageBuilder */ "./resources/js/components/components/pages/PageBuilder.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -20878,125 +20879,129 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Router = function Router() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Routes, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsxs)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Routes, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
+      path: "/page/:url",
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_PageBuilder__WEBPACK_IMPORTED_MODULE_31__["default"], {}),
+      exact: true
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/resource-library/:displayOn",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/resource-library",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_ResourceLibraryPage__WEBPACK_IMPORTED_MODULE_3__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us",
       exact: true,
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_AboutUs__WEBPACK_IMPORTED_MODULE_4__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_AboutUs__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us/committees",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_about_us_CommitteesPage__WEBPACK_IMPORTED_MODULE_5__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_about_us_CommitteesPage__WEBPACK_IMPORTED_MODULE_5__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us/staff",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_about_us_StaffPage__WEBPACK_IMPORTED_MODULE_24__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_about_us_StaffPage__WEBPACK_IMPORTED_MODULE_24__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/about-us/otc",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_about_us_OTCPage__WEBPACK_IMPORTED_MODULE_25__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_about_us_OTCPage__WEBPACK_IMPORTED_MODULE_25__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_OurWork__WEBPACK_IMPORTED_MODULE_2__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_OurWork__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_CleanTransportationPage__WEBPACK_IMPORTED_MODULE_7__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_CleanTransportationPage__WEBPACK_IMPORTED_MODULE_7__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation/adoption-of-electric-cars",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_DrivingAdoptionElectricCarsPage__WEBPACK_IMPORTED_MODULE_9__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_DrivingAdoptionElectricCarsPage__WEBPACK_IMPORTED_MODULE_9__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_StatePolicyDocumentsPage__WEBPACK_IMPORTED_MODULE_29__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_StatePolicyDocumentsPage__WEBPACK_IMPORTED_MODULE_29__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation/supporting-regulatory-programs",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_SupportingRegulatoryProgramsPage__WEBPACK_IMPORTED_MODULE_10__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_SupportingRegulatoryProgramsPage__WEBPACK_IMPORTED_MODULE_10__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/criteria-pollutants-and-air-toxics",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_HazardousAirPollutionPage__WEBPACK_IMPORTED_MODULE_11__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_HazardousAirPollutionPage__WEBPACK_IMPORTED_MODULE_11__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/criteria-pollutants-and-air-toxics/criteria-air-pollutants",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_criteria_pollutants_air_toxics_CriteriaPollutantsPage__WEBPACK_IMPORTED_MODULE_21__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_criteria_pollutants_air_toxics_CriteriaPollutantsPage__WEBPACK_IMPORTED_MODULE_21__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/criteria-pollutants-and-air-toxics/air-toxics",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_criteria_pollutants_air_toxics_AirToxicsPage__WEBPACK_IMPORTED_MODULE_22__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_criteria_pollutants_air_toxics_AirToxicsPage__WEBPACK_IMPORTED_MODULE_22__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/monitoring",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_MonitoringPage__WEBPACK_IMPORTED_MODULE_12__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_MonitoringPage__WEBPACK_IMPORTED_MODULE_12__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/regional-modeling/listos",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_ModelingListosPage__WEBPACK_IMPORTED_MODULE_28__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_ModelingListosPage__WEBPACK_IMPORTED_MODULE_28__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/regional-modeling",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_RegionalModelingPage__WEBPACK_IMPORTED_MODULE_13__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_RegionalModelingPage__WEBPACK_IMPORTED_MODULE_13__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/clean-transportation/growing-market-for-electric-vehicles",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_ElectricVehicleMarketPage__WEBPACK_IMPORTED_MODULE_6__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_ElectricVehicleMarketPage__WEBPACK_IMPORTED_MODULE_6__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/stationary-sources/regulatory-compliance",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_RegulatoryCompliancePage__WEBPACK_IMPORTED_MODULE_16__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_RegulatoryCompliancePage__WEBPACK_IMPORTED_MODULE_16__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/stationary-sources/wood-heat",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_WoodHeatPage__WEBPACK_IMPORTED_MODULE_19__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_WoodHeatPage__WEBPACK_IMPORTED_MODULE_19__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/stationary-sources/building-electrification",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_BuildingElectrificationPage__WEBPACK_IMPORTED_MODULE_20__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_BuildingElectrificationPage__WEBPACK_IMPORTED_MODULE_20__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/our-work/stationary-sources",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_our_work_StationarySectorsPage__WEBPACK_IMPORTED_MODULE_17__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_our_work_StationarySectorsPage__WEBPACK_IMPORTED_MODULE_17__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/mhd-zev-initiative",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_MHDZEVPage__WEBPACK_IMPORTED_MODULE_26__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_MHDZEVPage__WEBPACK_IMPORTED_MODULE_26__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/test-method-development",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_TestMethodDevelopmentPage__WEBPACK_IMPORTED_MODULE_27__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_TestMethodDevelopmentPage__WEBPACK_IMPORTED_MODULE_27__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/camnet",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_CamnetPage__WEBPACK_IMPORTED_MODULE_23__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_CamnetPage__WEBPACK_IMPORTED_MODULE_23__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/listos",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_ListosPage__WEBPACK_IMPORTED_MODULE_14__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_ListosPage__WEBPACK_IMPORTED_MODULE_14__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives/clean-air-academy",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_initiatives_CleanAirAcademyPage__WEBPACK_IMPORTED_MODULE_15__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_initiatives_CleanAirAcademyPage__WEBPACK_IMPORTED_MODULE_15__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/initiatives",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_InitiativesPage__WEBPACK_IMPORTED_MODULE_8__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_InitiativesPage__WEBPACK_IMPORTED_MODULE_8__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       exact: true,
       path: "/press",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_press_PressPage__WEBPACK_IMPORTED_MODULE_18__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_press_PressPage__WEBPACK_IMPORTED_MODULE_18__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "/",
       exact: true,
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_1__["default"], {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_32__.Route, {
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_Home__WEBPACK_IMPORTED_MODULE_1__["default"], {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_33__.Route, {
       path: "*",
-      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_31__.jsx)(_pages_NotFound__WEBPACK_IMPORTED_MODULE_30__["default"], {}),
+      element: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_32__.jsx)(_pages_NotFound__WEBPACK_IMPORTED_MODULE_30__["default"], {}),
       status: 404
     })]
   });
@@ -21717,6 +21722,242 @@ var OurWork = function OurWork() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OurWork);
+
+/***/ }),
+
+/***/ "./resources/js/components/components/pages/PageBuilder.jsx":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/components/pages/PageBuilder.jsx ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/index.js");
+/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../constants/constants */ "./resources/js/constants/constants.js");
+/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
+/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
+/* harmony import */ var _NotFound__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./NotFound */ "./resources/js/components/components/pages/NotFound.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject, _templateObject2, _templateObject3;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+//first create a data model
+// heading with banner
+//text or image/text or image rows
+//import from statamic. do that by making a call to the pages collection on mount. pass the url as a prop to the template when it comes in
+
+
+
+
+
+
+
+
+
+
+
+
+
+var PageBuilder = function PageBuilder() {
+  var _pageData$banner, _pageData$intro_image, _pageData$sections;
+
+  var _useParams = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_9__.useParams)(),
+      url = _useParams.url;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(),
+      _useState2 = _slicedToArray(_useState, 2),
+      pageData = _useState2[0],
+      setPageData = _useState2[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+    var urlF, response, results, sortedResults;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            if (pageData) {
+              _context.next = 10;
+              break;
+            }
+
+            urlF = "".concat(_constants_constants__WEBPACK_IMPORTED_MODULE_2__.API_URL, "/collections/pages/entries");
+            _context.next = 4;
+            return fetch(urlF);
+
+          case 4:
+            response = _context.sent;
+            _context.next = 7;
+            return response.json();
+
+          case 7:
+            results = _context.sent;
+            sortedResults = results.data.find(function (entry) {
+              return entry.page_url === url;
+            });
+            if (!sortedResults) setPageData('not found');else setPageData(sortedResults);
+
+          case 10:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  })), []);
+
+  var renderLayout = function renderLayout(_ref2) {
+    var key = _ref2.section_type.key,
+        text = _ref2.text,
+        image = _ref2.image,
+        document = _ref2.document;
+
+    var Header = function Header() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        text: text,
+        size: "24px",
+        mt: "30px",
+        mb: "30px"
+      });
+    };
+
+    var ImageAndText = function ImageAndText() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        style: {
+          marginTop: "30px",
+          marginBottom: "30px"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(P, {
+            children: text
+          }), document === null || document === void 0 ? void 0 : document.map(function (_ref3) {
+            var document_link = _ref3.document_link,
+                document_title = _ref3.document_title;
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+                href: document_link === null || document_link === void 0 ? void 0 : document_link.url,
+                target: "_blank",
+                children: document_title
+              })
+            });
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
+            src: image[0].url
+          })
+        })]
+      });
+    };
+
+    var ImageAndTextInverse = function ImageAndTextInverse() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        style: {
+          marginTop: "30px",
+          marginBottom: "30px"
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
+            src: image[0].url
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(P, {
+            children: text
+          })
+        })]
+      });
+    };
+
+    var Text = function Text() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        style: {
+          margin: "30px"
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(P, {
+            children: text
+          })
+        })
+      });
+    };
+
+    var Image = function Image() {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        style: {
+          margin: "30px"
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
+            src: image[0].url
+          })
+        })
+      });
+    };
+
+    var sectionLayouts = {
+      heading: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Header, {}),
+      imageAndText: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageAndText, {}),
+      imageAndTextInverse: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageAndTextInverse, {}),
+      image: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Image, {}),
+      text: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Text, {})
+    };
+    return sectionLayouts[key];
+  };
+
+  if (pageData === 'not found') return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_NotFound__WEBPACK_IMPORTED_MODULE_7__["default"], {});
+  return !(pageData !== null && pageData !== void 0 && pageData.notFound) ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      heroImage: pageData === null || pageData === void 0 ? void 0 : (_pageData$banner = pageData.banner) === null || _pageData$banner === void 0 ? void 0 : _pageData$banner.reduce(function (url) {
+        return url;
+      }).url,
+      headline: pageData === null || pageData === void 0 ? void 0 : pageData.title,
+      sideImage: pageData === null || pageData === void 0 ? void 0 : (_pageData$intro_image = pageData.intro_image) === null || _pageData$intro_image === void 0 ? void 0 : _pageData$intro_image.reduce(function (url) {
+        return url;
+      }).url,
+      mainText: pageData === null || pageData === void 0 ? void 0 : pageData.intro,
+      subText: pageData === null || pageData === void 0 ? void 0 : pageData.introsubtext
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      width: "al-fu",
+      center: true,
+      children: pageData === null || pageData === void 0 ? void 0 : (_pageData$sections = pageData.sections) === null || _pageData$sections === void 0 ? void 0 : _pageData$sections.map(function (section) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+          children: renderLayout(section)
+        });
+      })
+    })]
+  }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_NotFound__WEBPACK_IMPORTED_MODULE_7__["default"], {});
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PageBuilder);
+var ImageStyled = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  margin-right: 40px;\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
+var Li = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].li(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  color: #669935;\n"])));
 
 /***/ }),
 
@@ -23529,19 +23770,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
-/* harmony import */ var _content_content_visuals_FullWidthHeroImage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../content/content-visuals/FullWidthHeroImage */ "./resources/js/components/components/content/content-visuals/FullWidthHeroImage.jsx");
-/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var _breadcrumb_BreadcrumbNavigation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../breadcrumb/BreadcrumbNavigation */ "./resources/js/components/components/breadcrumb/BreadcrumbNavigation.jsx");
-/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
-/* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
-/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
-/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
+/* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject, _templateObject2, _templateObject3;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
@@ -23561,62 +23800,62 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-
-
 var ElectricVehicleMarketPage = function ElectricVehicleMarketPage() {
   var bulletPoints = ["Ways to ensure an equitable transition", "Incentives for vehicles and charging infrastructure", "Adoption of regulatory standards", "Measures to encourage fleet purchases", "Utility actions to support infrastructure buildout", "Innovative financing strategies"];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_7__["default"], {
       heroImage: "/assets/images/stock/electric-buses-unsplash.jpg",
       headline: "Growing the Market for Electric Trucks and Buses",
       sideImage: "/assets/images/stock/electric-trucks-side-image.png",
       mainText: "In the United States, greenhouse gas emissions from vehicles that are used to move goods are growning faster than emissions from any other segment of the transportation sector. As more consumers turn to online shopping, truck volumes are to be expected to increase by 36% over the next decade.",
       subText: "While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers."
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
         text: "A Governors\u2019 Agreement and Action Plan",
         size: "24px",
         mt: "20px",
         mb: "40px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(P, {
-            children: ["A diverse coalition of 18 jurisdictions in the United States and Canada has committed, through the ", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
+            children: ["A diverse coalition of 18 jurisdictions in the United States and Canada has committed, through the ", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
               href: "/assets/documents/mhdv-zev-mou_12-14-2021.pdf",
               children: "Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding (MOU)"
             }), " ", ", to work to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses."]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(P, {
-            children: ["The MOU sets zero-emission sales targets for new medium- and heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further commits the signatory states to working with NESCAUM through the", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Link, {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
+            children: ["The MOU sets zero-emission sales targets for new medium- and heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further commits the signatory states to working with NESCAUM through the", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
               to: "/our-work/clean-transportation/adoption-of-electric-cars",
               children: " ZEV Task Force "
-            }), "to develop a ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Link, {
+            }), "to develop a ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
               to: "/initiatives/mhd-zev-initiative",
               children: "Multi-State Action Plan"
             }), " for advancing progress toward a self-sustaining market for zero-emission trucks and buses. The Action Plan will include recommendations for action in several areas, such as:"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_4__["default"], {
             list: bulletPoints
           })]
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(Image, {
-          src: "/assets/images/stock/electric-us-map.png",
-          style: {
-            marginLeft: 40
-          }
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
+            src: "/assets/images/stock/electric-us-map.jpg",
+            style: {
+              marginLeft: 40
+            }
+          })
         })]
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__["default"], {
       docFilter: "electric_trucks"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__["default"], {
       docFilter: "electric_trucks"
     })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ElectricVehicleMarketPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  width: 100%;\n  margin-right: 40px;\n"])));
-var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
-var P = styled_components__WEBPACK_IMPORTED_MODULE_13__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  width: 100%;\n  margin-right: 40px;\n"])));
+var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
 
 /***/ }),
 
@@ -23959,20 +24198,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
-/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
-/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
-/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
+/* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
+/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -23984,22 +24216,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var StatePolicyDocumentsPage = function StatePolicyDocumentsPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      heroImage: "assets/images/stock/statepolicybanner.jpg",
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      heroImage: "/assets/images/stock/statepolicybanner.jpg",
       headline: "State Policy Documents"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: ["This page provides links to a selection of recent NESCAUM documents that present policy and program recommendations for supporting state transportation electrification efforts. Additional documents can be found ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: ["This page provides links to a selection of recent NESCAUM documents that present policy and program recommendations for supporting state transportation electrification efforts. Additional documents can be found ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
           to: "/resource-library",
           children: "here"
         }), "."]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_4__["default"], {
       docFilter: "state_policy_documents"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_0__["default"], {
       docFilter: "state_policy_documents"
     })]
   });
@@ -25038,7 +25270,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://159.223.119.211/api';
+var API_URL = 'http://127.0.0.1:8000/api';
 var PageParams = {
   'PER_PAGE': 10
 };

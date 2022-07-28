@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Heading from "../../utility/Heading";
-import FullWidthHeroImage from "../../content/content-visuals/FullWidthHeroImage";
 import Column from "../../utility/Column";
-import BreadcrumbNavigation from "../../breadcrumb/BreadcrumbNavigation";
 import Row from "../../utility/Row";
 import { Link } from "react-router-dom";
 import ListItems from "../../content/ListItems";
@@ -70,7 +68,9 @@ const ElectricVehicleMarketPage = () => {
             </P>
             <ListItems list={bulletPoints} />
           </Column>
-          <Image src="/assets/images/stock/electric-us-map.png" style={{ marginLeft: 40 }} />
+          <Column>
+          <Image src="/assets/images/stock/electric-us-map.jpg" style={{ marginLeft: 40 }} />
+          </Column>
         </Row>
       </Column>
       <DocumentLinks docFilter="electric_trucks"/>
