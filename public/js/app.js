@@ -21978,8 +21978,8 @@ var PageBuilder = function PageBuilder() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PageBuilder);
-var ImageStyled = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\n"])));
-var ImageStyledSolo = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin: 0 auto;\n"])));
+var ImageStyled = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    max-width: 100%;\n"])));
+var ImageStyledSolo = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  margin: 0 auto;\n  max-width: 100%;\n"])));
 var P = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
 var Li = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].li(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  color: #669935;\n  margin-top: 8px;\n  a {\n\n  }\n"])));
 

@@ -156,11 +156,12 @@ const PageBuilder = () => {
 export default PageBuilder;
 
 const ImageStyled = styled.img`
-
+    max-width: 100%;
 `;
 
 const ImageStyledSolo = styled.img`
   margin: 0 auto;
+  max-width: 100%;
 `;
 
 const P = styled.div`
