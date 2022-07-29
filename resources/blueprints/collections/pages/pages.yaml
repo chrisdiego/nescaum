@@ -152,6 +152,39 @@ sections:
                     icon: replicator
                     listable: hidden
                     instructions_position: above
+                -
+                  handle: links
+                  field:
+                    collapse: false
+                    sets:
+                      new_set:
+                        display: 'New Set'
+                        fields:
+                          -
+                            handle: link_title
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: link_title
+                              type: text
+                              icon: text
+                              listable: hidden
+                              instructions_position: above
+                          -
+                            handle: link
+                            field:
+                              input_type: text
+                              antlers: false
+                              display: link
+                              type: text
+                              icon: text
+                              listable: hidden
+                              instructions_position: above
+                    display: links
+                    type: replicator
+                    icon: replicator
+                    listable: hidden
+                    instructions_position: above
           display: sections
           type: replicator
           icon: replicator
