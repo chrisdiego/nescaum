@@ -34,8 +34,8 @@ const PageBuilder = () => {
         }
     }, []);
 
-    const renderLayout = ({ section_type: { key }, text, image, document }) => {
-
+    const renderLayout = ({ section_type: { key }, text, image, document, links }) => {
+        console.log(links)
         const Header = () => (
             <Heading
                 text={text}
@@ -55,6 +55,13 @@ const PageBuilder = () => {
                                 document?.map(({ document_link, document_title }) => (
                                     <Li>
                                         <a href={document_link?.url} target="_blank">{document_title}</a>
+                                    </Li>
+                                ))
+                            }
+                            {
+                                links?.map(({ link, link_title }) => (
+                                    <Li>
+                                        <a href={link} target="_blank">{link_title}</a>
                                     </Li>
                                 ))
                             }
@@ -83,6 +90,13 @@ const PageBuilder = () => {
                                     </Li>
                                 ))
                             }
+                            {
+                                links?.map(({ link, link_title }) => (
+                                    <Li>
+                                        <a href={link} target="_blank">{link_title}</a>
+                                    </Li>
+                                ))
+                            }
                         </P>
                     </Row>
                 </>
@@ -98,6 +112,13 @@ const PageBuilder = () => {
                             document?.map(({ document_link, document_title }) => (
                                 <Li>
                                     <a href={document_link?.url} target="_blank">{document_title}</a>
+                                </Li>
+                            ))
+                        }
+                        {
+                            links?.map(({ link, link_title }) => (
+                                <Li>
+                                    <a href={link} target="_blank">{link_title}</a>
                                 </Li>
                             ))
                         }

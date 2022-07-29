@@ -70,7 +70,7 @@ const DrivingAdoptionElectricCarsPage = () => {
         </Row>
       </Column>
       <ButtonContainer>
-        <Link to="/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents">State Policy Documents</Link><br />
+        <Link to="/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents">State Policy Documents</Link>
         <a href="https://driveelectricus.com/" target="_blank">Drive Change. Drive Electric.</a>
       </ButtonContainer>
       <DocumentLinks docFilter="electric_cars"/>
@@ -105,4 +105,18 @@ const ZedImage = styled(Image)`
 `
 const ButtonContainer = styled.div`
     text-align: center;
+    padding-top: 20px;
+    a {
+        background-color: #669935;
+        padding: 8px 12px;
+        color: white;
+        margin: 10px;
+        border-radius: 3px;
+
+        :hover {
+            opacity: 0.8;
+        }
+    }
+
+    
 `;

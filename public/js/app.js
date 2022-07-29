@@ -21837,7 +21837,9 @@ var PageBuilder = function PageBuilder() {
     var key = _ref2.section_type.key,
         text = _ref2.text,
         image = _ref2.image,
-        document = _ref2.document;
+        document = _ref2.document,
+        links = _ref2.links;
+    console.log(links);
 
     var Header = function Header() {
       return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -21870,6 +21872,16 @@ var PageBuilder = function PageBuilder() {
                   children: document_title
                 })
               });
+            }), links === null || links === void 0 ? void 0 : links.map(function (_ref4) {
+              var link = _ref4.link,
+                  link_title = _ref4.link_title;
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+                  href: link,
+                  target: "_blank",
+                  children: link_title
+                })
+              });
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
             children: image && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(ImageStyled, {
@@ -21896,14 +21908,24 @@ var PageBuilder = function PageBuilder() {
             style: {
               marginLeft: "15px"
             },
-            children: [text, document === null || document === void 0 ? void 0 : document.map(function (_ref4) {
-              var document_link = _ref4.document_link,
-                  document_title = _ref4.document_title;
+            children: [text, document === null || document === void 0 ? void 0 : document.map(function (_ref5) {
+              var document_link = _ref5.document_link,
+                  document_title = _ref5.document_title;
               return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
                   href: document_link === null || document_link === void 0 ? void 0 : document_link.url,
                   target: "_blank",
                   children: document_title
+                })
+              });
+            }), links === null || links === void 0 ? void 0 : links.map(function (_ref6) {
+              var link = _ref6.link,
+                  link_title = _ref6.link_title;
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+                  href: link,
+                  target: "_blank",
+                  children: link_title
                 })
               });
             })]
@@ -21919,14 +21941,24 @@ var PageBuilder = function PageBuilder() {
           textAlign: "center"
         },
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(P, {
-          children: [text, document === null || document === void 0 ? void 0 : document.map(function (_ref5) {
-            var document_link = _ref5.document_link,
-                document_title = _ref5.document_title;
+          children: [text, document === null || document === void 0 ? void 0 : document.map(function (_ref7) {
+            var document_link = _ref7.document_link,
+                document_title = _ref7.document_title;
             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
                 href: document_link === null || document_link === void 0 ? void 0 : document_link.url,
                 target: "_blank",
                 children: document_title
+              })
+            });
+          }), links === null || links === void 0 ? void 0 : links.map(function (_ref8) {
+            var link = _ref8.link,
+                link_title = _ref8.link_title;
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(Li, {
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+                href: link,
+                target: "_blank",
+                children: link_title
               })
             });
           })]
@@ -23538,7 +23570,7 @@ var BuildingElectrificationPage = function BuildingElectrificationPage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_0__["default"], {
       headline: "Building Electrification",
-      heroImage: "/assets/images/stock/building-electrification.jpg",
+      heroImage: "/assets/images/stock/buildings-banners.jpg",
       sideImage: "/assets/images/stock/building-electrification2.jpg",
       mainText: "Emissions from fossil fuel combustion in commercial and residential buildings account for approximately one third of greenhouse gas (GHG) and nitrogen oxide (NOx) emissions in the Northeast. In addition, on-site combustion of fossil fuels results in particulate matter (PM2.5) and air toxics emissions.",
       subText: "A transition from fossil fuel powered space and water heating, cooking, and other building-related fossil fuel combustion is essential to lowering GHG and criteria air emissions. To assist states in evaluating approaches to effect this transition, NESCAUM launched its Building Electrification Initiative (BEI). As part of this effort, NESCAUM has convened a multi-state Building Electrification Task Force of state air program and climate staff.",
@@ -23761,7 +23793,7 @@ var DrivingAdoptionElectricCarsPage = function DrivingAdoptionElectricCarsPage()
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_9__.Link, {
         to: "/our-work/clean-transportation/adoption-of-electric-cars/state-policy-documents",
         children: "State Policy Documents"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("a", {
         href: "https://driveelectricus.com/",
         target: "_blank",
         children: "Drive Change. Drive Electric."
@@ -23778,7 +23810,7 @@ var DrivingAdoptionElectricCarsPage = function DrivingAdoptionElectricCarsPage()
 var Image = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    max-width: 600px; \n    margin-right: 40px; \n  width: 100%; \n  margin-left: 60px;\n\n  @media (max-width: 768px) {\n      margin: 0;\n  }\n"])));
 var ImageContainer = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  max-width: 300px; \n  width: 300px; \n"])));
 var ZedImage = (0,styled_components__WEBPACK_IMPORTED_MODULE_10__["default"])(Image)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  width: 100%; \n  max-width: 100%; \n  min-width: unset; \n  margin-left: 0;\n"])));
-var ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    text-align: center;\n"])));
+var ButtonContainer = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    text-align: center;\n    padding-top: 20px;\n    a {\n        background-color: #669935;\n        padding: 8px 12px;\n        color: white;\n        margin: 10px;\n        border-radius: 3px;\n\n        :hover {\n            opacity: 0.8;\n        }\n    }\n\n    \n"])));
 
 /***/ }),
 
@@ -24030,7 +24062,7 @@ __webpack_require__.r(__webpack_exports__);
 var MonitoringPage = function MonitoringPage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      heroImage: "/assets/images/stock/monitoring-nescaum.jpg",
+      heroImage: "/assets/images/monitoring-banner.jpg",
       headline: "Monitoring"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
@@ -25294,7 +25326,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://159.223.119.211/api';
+var API_URL = 'http://127.0.0.1:8000/api';
 var PageParams = {
   'PER_PAGE': 10
 };

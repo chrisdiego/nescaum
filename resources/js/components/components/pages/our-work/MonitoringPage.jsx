@@ -8,7 +8,7 @@ const MonitoringPage = () => {
   return (
     <>
       <PageScaffold 
-        heroImage="/assets/images/stock/monitoring-nescaum.jpg"
+        heroImage="/assets/images/monitoring-banner.jpg"
         headline="Monitoring"
       />
       <Column width="al-fu" center mt={40} mb={40}>
