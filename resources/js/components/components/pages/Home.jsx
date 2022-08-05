@@ -1,5 +1,6 @@
 import PhotoWithTransparentBox from "../content/PhotoWithTransparentBox";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { API_URL } from "../../../constants/constants";
 import styled from "styled-components";
 import Heading from "../utility/Heading";
 import Column from "../utility/Column";
@@ -11,24 +12,26 @@ import Paragraph from "../utility/Paragraph";
 import Button from "../utility/Button";
 
 const Home = () => {
-    const pngList = [
-        "/assets/images/logos/massdep.png",
-        "/assets/images/logos/cte.png",
-        "/assets/images/logos/nhdes.png",
-        "/assets/images/logos/nys.png",
-        "/assets/images/logos/njs.png",
-        "/assets/images/logos/dem.png",
-        "/assets/images/logos/maine.png",
-    ];
+    const [logos, setLogos] = useState();
+
+    useEffect(async () => {
+        if (!logos) {
+            let urlF = `${API_URL}/collections/member_states_logos/entries`;
+            const response = await fetch(urlF);
+            const results = await response.json();
+            setLogos(results.data);
+            console.log(results)
+        }
+    }, []);
 
     const homeData = [
         {
-            title: 'CAMNET', 
-            content: 'CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without manmade air pollution.', 
+            title: 'CAMNET',
+            content: 'CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without manmade air pollution.',
             imageSrc: '/assets/images/stock/electricbus.jpg',
-            href: 'https://hazecam.net/', 
+            href: 'https://hazecam.net/',
             external: true
-        }, 
+        },
         {
             title: "Zero-Emission Medium and Heavy-Duty Vehicle Initiative",
             content:
@@ -63,7 +66,7 @@ const Home = () => {
                     />
                     <Heading text="(NESCAUM)" />
                     <Paragraph primary>
-                    NESCAUM as a coalition of state air agencies promotes regional cooperation and action by its member states in support of effective programs to reduce the adverse public health and environmental impacts of air pollution and climate change.
+                        NESCAUM as a coalition of state air agencies promotes regional cooperation and action by its member states in support of effective programs to reduce the adverse public health and environmental impacts of air pollution and climate change.
                     </Paragraph>
                     <StyledLink href="/about-us" to="/about-us">
                         <Button text="LEARN MORE ABOUT US" />
@@ -91,11 +94,12 @@ const Home = () => {
             <Column pt={40} pb={40} center>
                 <ColorUnderlinedText center text={"NESCAUM MEMBER STATES"} />
                 <PngContainer>
-                    {pngList.map((src) => (
+                    {logos?.sort((a, b) => {
+                        return a.title.localeCompare(b.title)
+                    })?.map((obj) => (
                         <Png
-                            key={src}
-                            src={src}
-                            alt="environmental backer logo"
+                            src={obj?.logo?.url}
+                            alt={obj?.title}
                         />
                     ))}
                 </PngContainer>

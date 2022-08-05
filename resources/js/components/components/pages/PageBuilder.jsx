@@ -1,8 +1,3 @@
-//first create a data model
-// heading with banner
-//text or image/text or image rows
-//import from statamic. do that by making a call to the pages collection on mount. pass the url as a prop to the template when it comes in
-
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { API_URL } from "../../../constants/constants";

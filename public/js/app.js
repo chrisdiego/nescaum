@@ -21391,21 +21391,43 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _content_PhotoWithTransparentBox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../content/PhotoWithTransparentBox */ "./resources/js/components/components/content/PhotoWithTransparentBox.jsx");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
-/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var _content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../content/ColorUnderlinedText */ "./resources/js/components/components/content/ColorUnderlinedText.jsx");
-/* harmony import */ var _content_DescriptionWithPhotoSideBySide__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../content/DescriptionWithPhotoSideBySide */ "./resources/js/components/components/content/DescriptionWithPhotoSideBySide.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var _utility_Button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utility/Button */ "./resources/js/components/components/utility/Button.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _content_PhotoWithTransparentBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../content/PhotoWithTransparentBox */ "./resources/js/components/components/content/PhotoWithTransparentBox.jsx");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants/constants */ "./resources/js/constants/constants.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
+/* harmony import */ var _content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../content/ColorUnderlinedText */ "./resources/js/components/components/content/ColorUnderlinedText.jsx");
+/* harmony import */ var _content_DescriptionWithPhotoSideBySide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../content/DescriptionWithPhotoSideBySide */ "./resources/js/components/components/content/DescriptionWithPhotoSideBySide.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
+/* harmony import */ var _utility_Button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utility/Button */ "./resources/js/components/components/utility/Button.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -21423,7 +21445,45 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 var Home = function Home() {
-  var pngList = ["/assets/images/logos/massdep.png", "/assets/images/logos/cte.png", "/assets/images/logos/nhdes.png", "/assets/images/logos/nys.png", "/assets/images/logos/njs.png", "/assets/images/logos/dem.png", "/assets/images/logos/maine.png"];
+  var _logos$sort;
+
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState2 = _slicedToArray(_useState, 2),
+      logos = _useState2[0],
+      setLogos = _useState2[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+    var urlF, response, results;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            if (logos) {
+              _context.next = 10;
+              break;
+            }
+
+            urlF = "".concat(_constants_constants__WEBPACK_IMPORTED_MODULE_3__.API_URL, "/collections/member_states_logos/entries");
+            _context.next = 4;
+            return fetch(urlF);
+
+          case 4:
+            response = _context.sent;
+            _context.next = 7;
+            return response.json();
+
+          case 7:
+            results = _context.sent;
+            setLogos(results.data);
+            console.log(results);
+
+          case 10:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  })), []);
   var homeData = [{
     title: 'CAMNET',
     content: 'CAMNET is a network of web cameras intended to raise public awareness about the effects of air pollution on visibility. Typical visual range in the eastern U.S. is 15 to 30 miles, one-third of what it would be without manmade air pollution.',
@@ -21446,60 +21506,64 @@ var Home = function Home() {
     imageSrc: "/assets/images/stock/listos.jpg",
     href: "/initiatives/listos"
   }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_PhotoWithTransparentBox__WEBPACK_IMPORTED_MODULE_0__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_content_PhotoWithTransparentBox__WEBPACK_IMPORTED_MODULE_1__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
       width: "al-fu",
       p: "80px 0 40px 0",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
         width: "half",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
           text: "The Northeast States for Coordinated Air Use Management",
           bold: true
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
           text: "(NESCAUM)"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_9__["default"], {
           primary: true,
           children: "NESCAUM as a coalition of state air agencies promotes regional cooperation and action by its member states in support of effective programs to reduce the adverse public health and environmental impacts of air pollution and climate change."
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(StyledLink, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(StyledLink, {
           href: "/about-us",
           to: "/about-us",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_utility_Button__WEBPACK_IMPORTED_MODULE_10__["default"], {
             text: "LEARN MORE ABOUT US"
           })
         })]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
         width: "half",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Img, {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(Img, {
           src: "/assets/images/maps/color-map.png",
           alt: "map"
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_7__["default"], {
       center: true,
       text: "FEATURED INITIATIVES",
       bgColor: "#ececec",
       padding: "80px 0"
     }), homeData.map(function (data, index) {
-      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_DescriptionWithPhotoSideBySide__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_content_DescriptionWithPhotoSideBySide__WEBPACK_IMPORTED_MODULE_8__["default"], {
         data: data,
         index: index,
         inverse: index % 2 !== 0,
         nullBorderBottom: index === homeData.length - 1
       }, index);
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_5__["default"], {
       pt: 40,
       pb: 40,
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(_content_ColorUnderlinedText__WEBPACK_IMPORTED_MODULE_7__["default"], {
         center: true,
         text: "NESCAUM MEMBER STATES"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(PngContainer, {
-        children: pngList.map(function (src) {
-          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Png, {
-            src: src,
-            alt: "environmental backer logo"
-          }, src);
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(PngContainer, {
+        children: logos === null || logos === void 0 ? void 0 : (_logos$sort = logos.sort(function (a, b) {
+          return a.title.localeCompare(b.title);
+        })) === null || _logos$sort === void 0 ? void 0 : _logos$sort.map(function (obj) {
+          var _obj$logo;
+
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_11__.jsx)(Png, {
+            src: obj === null || obj === void 0 ? void 0 : (_obj$logo = obj.logo) === null || _obj$logo === void 0 ? void 0 : _obj$logo.url,
+            alt: obj === null || obj === void 0 ? void 0 : obj.title
+          });
         })
       })]
     })]
@@ -21507,11 +21571,11 @@ var Home = function Home() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
-var OrangeSpan = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].span(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    color: #d95c14;\n    margin-left: 100px;\n    font-size: 36px;\n    margin-bottom: 10px;\n\n    @media screen and (max-width: 768px) {\n        font-size: 24px;\n        margin: 20px auto 20px auto;\n        max-width: 100vw;\n    }\n"])));
-var Img = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    width: 100%;\n    max-width: 100vw;\n\n    @media screen and (max-width: 768px) {\n        width: 90%;\n        margin: 0 auto;\n    }\n"])));
-var StyledLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_10__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Link)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    @media screen and (max-width: 768px) {\n        margin: 0 auto;\n    }\n"])));
-var Png = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    width: 100%;\n    height: 100%;\n    margin: 10px 20px;\n    max-height: 150px;\n    max-width: 100px;\n\n    @media screen and (max-width: 768px) {\n        max-width: 75px;\n    }\n"])));
-var PngContainer = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    align-items: center;\n    margin: 0 auto;\n    width: 90%;\n    max-width: 1200px;\n"])));
+var OrangeSpan = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].span(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    color: #d95c14;\n    margin-left: 100px;\n    font-size: 36px;\n    margin-bottom: 10px;\n\n    @media screen and (max-width: 768px) {\n        font-size: 24px;\n        margin: 20px auto 20px auto;\n        max-width: 100vw;\n    }\n"])));
+var Img = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    width: 100%;\n    max-width: 100vw;\n\n    @media screen and (max-width: 768px) {\n        width: 90%;\n        margin: 0 auto;\n    }\n"])));
+var StyledLink = (0,styled_components__WEBPACK_IMPORTED_MODULE_12__["default"])(react_router_dom__WEBPACK_IMPORTED_MODULE_13__.Link)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n    @media screen and (max-width: 768px) {\n        margin: 0 auto;\n    }\n"])));
+var Png = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].img(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    width: 100%;\n    height: 100%;\n    margin: 10px 20px;\n    max-height: 150px;\n    max-width: 100px;\n\n    @media screen and (max-width: 768px) {\n        max-width: 75px;\n    }\n"])));
+var PngContainer = styled_components__WEBPACK_IMPORTED_MODULE_12__["default"].div(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    align-items: center;\n    margin: 0 auto;\n    width: 90%;\n    max-width: 1200px;\n"])));
 
 /***/ }),
 
@@ -21770,10 +21834,6 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-//first create a data model
-// heading with banner
-//text or image/text or image rows
-//import from statamic. do that by making a call to the pages collection on mount. pass the url as a prop to the template when it comes in
 
 
 
@@ -25326,7 +25386,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://159.223.119.211/api';
+var API_URL = 'http://127.0.0.1:8000/api';
 var PageParams = {
   'PER_PAGE': 10
 };
