@@ -35,7 +35,7 @@ const Home = () => {
         {
             title: "Zero-Emission Medium and Heavy-Duty Vehicle Initiative",
             content:
-                "Truck and bus electrification is a top priority for many states. A coalition of 18 jurisdictions in the United States and Canada has committed to work together to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.",
+                "Truck and bus electrification is a top priority for many states. A coalition of 19 jurisdictions in the United States and Canada has committed to work together to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.",
             imageSrc: '/assets/images/stock/electric-truck1.jpg',
             href: "/initiatives/mhd-zev-initiative",
         },

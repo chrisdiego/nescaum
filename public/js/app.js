@@ -21492,7 +21492,7 @@ var Home = function Home() {
     external: true
   }, {
     title: "Zero-Emission Medium and Heavy-Duty Vehicle Initiative",
-    content: "Truck and bus electrification is a top priority for many states. A coalition of 18 jurisdictions in the United States and Canada has committed to work together to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.",
+    content: "Truck and bus electrification is a top priority for many states. A coalition of 19 jurisdictions in the United States and Canada has committed to work together to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.",
     imageSrc: '/assets/images/stock/electric-truck1.jpg',
     href: "/initiatives/mhd-zev-initiative"
   }, {
@@ -23886,11 +23886,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
 /* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
@@ -23922,34 +23921,56 @@ var ElectricVehicleMarketPage = function ElectricVehicleMarketPage() {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_7__["default"], {
       heroImage: "/assets/images/stock/electric-buses-unsplash.jpg",
       headline: "Growing the Market for Electric Trucks and Buses",
-      sideImage: "/assets/images/stock/electric-trucks-side-image.png",
-      mainText: "In the United States, greenhouse gas emissions from vehicles that are used to move goods are growning faster than emissions from any other segment of the transportation sector. As more consumers turn to online shopping, truck volumes are to be expected to increase by 36% over the next decade.",
-      subText: "While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers."
+      mainText: "Seventeen U.S. states, the District of Columbia, and the Canadian province of Quebec worked together through the Multi-State Zero Emission Vehicle (ZEV) Task Force, a coalition facilitated by NESCAUM, to produce a bold Action Plan for accelerating a transition to zero-emission trucks and buses.",
+      subText: "Transportation of freight and people is the largest source of greenhouse gas emissions (GHGs) in the United States. Medium- and heavy-duty (MHD) vehicles \u2013 including large pick-up trucks and vans, delivery and box trucks, school and transit buses, and long- haul delivery trucks \u2013 contribute significantly to these emissions, which are putting the Earth\u2019s climate in peril. They also produce harmful emissions of particulates and smog- forming nitrogen oxides that disproportionately impact public health in communities located near freight hubs, bus depots, and trucking corridors."
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      width: "al-fu",
+      center: true,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
+        href: "",
+        target: "_blank",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
+          src: "/assets/images/action_plan.jpeg",
+          alt: "Action Plan"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
+        href: "",
+        target: "_blank",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
+          src: "/assets/images/action_plan_dbl.jpeg",
+          alt: "Action Plan"
+        })
+      })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        text: "A Governors\u2019 Agreement and Action Plan",
+        text: "Development of the Action Plan",
         size: "24px",
         mt: "20px",
         mb: "40px"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
-            children: ["A diverse coalition of 18 jurisdictions in the United States and Canada has committed, through the ", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              href: "/assets/documents/mhdv-zev-mou_12-14-2021.pdf",
-              children: "Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding (MOU)"
-            }), " ", ", to work to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses."]
+            children: ["A ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "/assets/documents/mhdv-zev-mou-20220329.pdf",
+              children: "Memorandum of Understanding (MOU)"
+            }), " announced in July 2020 directed the Multi-State ZEV Task Force, a unique forum that has galvanized state leadership on ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "https://www.nescaum.org/topics/zero-emission-vehicles",
+              children: "light duty vehicle electrification"
+            }), " since 2014, to develop an Action Plan to recommend strategies to accelerate the deployment of electric trucks and buses with a focus on communities overburdened by higher levels of air pollution."]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(P, {
+            children: "The MOU also established goals to make at least 30 percent of new MHD vehicle sales ZEVs by 2030, and 100 percent of sales ZEVs by no later than 2050."
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
-            children: ["The MOU sets zero-emission sales targets for new medium- and heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further commits the signatory states to working with NESCAUM through the", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
-              to: "/our-work/clean-transportation/adoption-of-electric-cars",
-              children: " ZEV Task Force "
-            }), "to develop a ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
-              to: "/initiatives/mhd-zev-initiative",
-              children: "Multi-State Action Plan"
-            }), " for advancing progress toward a self-sustaining market for zero-emission trucks and buses. The Action Plan will include recommendations for action in several areas, such as:"]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            list: bulletPoints
+            children: ["To inform the development of the Action Plan, the ZEV Task Force directly engaged many public and private sector experts, partners, and stakeholders\u2014including equity and environmental justice organizations, truck and bus manufacturers, industry and technology experts, charging and fueling providers, utility companies, public and private fleet representatives, commercial financing experts, and environmental advocates. The ZEV Task Force also received ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "https://www.nescaum.org/files/mhd-zev-comments.php",
+              children: "public comments on the draft"
+            }), " Action Plan."]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
+            children: ["More information about the Action Plan development process is available ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "https://nescaum.sharepoint.com/:w:/s/CleanTransportationTeam/Ear-yecMGf1Nudd5QswZWPUB5SHCQRkBGLbC862siGWyWQ?email=pkwon%40nescaum.org&e=ah47Y0",
+              children: "here"
+            }), "."]
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
@@ -23969,9 +23990,9 @@ var ElectricVehicleMarketPage = function ElectricVehicleMarketPage() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ElectricVehicleMarketPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  width: 100%;\n  margin-right: 40px;\n"])));
-var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
-var P = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  width: 100%;\n  margin-right: 40px;\n"])));
+var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
 
 /***/ }),
 

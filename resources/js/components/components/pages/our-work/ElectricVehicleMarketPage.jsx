@@ -25,24 +25,30 @@ const ElectricVehicleMarketPage = () => {
       <PageScaffold 
         heroImage="/assets/images/stock/electric-buses-unsplash.jpg"
         headline="Growing the Market for Electric Trucks and Buses"
-        sideImage="/assets/images/stock/electric-trucks-side-image.png"
-        mainText="In the United States, greenhouse gas emissions from vehicles that
-        are used to move goods are growning faster than emissions from any
-        other segment of the transportation sector. As more consumers turn
-        to online shopping, truck volumes are to be expected to increase
-        by 36% over the next decade."
-        subText="While trucks and buses represent a small fraction of on-road
-        vehicles today, they account for more than a quarter of
-        transportation sector greenhouse gas emissions. Diesel emissions
-        from trucks and buses are also major contributors of harmful
-        smog-forming pollutants, particulate matter, and air toxics.
-        Moreover, these emissions disproportionately impact communities
-        located near major truck routes, ports, and distribution centers."
+        mainText="Seventeen U.S. states, the District of Columbia, and the Canadian province of Quebec
+        worked together through the Multi-State Zero Emission Vehicle (ZEV) Task Force, a
+        coalition facilitated by NESCAUM, to produce a bold Action Plan for accelerating a
+        transition to zero-emission trucks and buses."
+        subText="Transportation of freight and people is the largest source of greenhouse gas emissions
+        (GHGs) in the United States. Medium- and heavy-duty (MHD) vehicles – including large
+        pick-up trucks and vans, delivery and box trucks, school and transit buses, and long-
+        haul delivery trucks – contribute significantly to these emissions, which are putting the
+        Earth’s climate in peril. They also produce harmful emissions of particulates and smog-
+        forming nitrogen oxides that disproportionately impact public health in communities
+        located near freight hubs, bus depots, and trucking corridors."
       />
+      <Column width={"al-fu"} center>
+        <button href="" target="_blank">
+            <Image src="/assets/images/action_plan.jpeg" alt="Action Plan" />
+        </button>
+        <button href="" target="_blank">
+            <Image src="/assets/images/action_plan_dbl.jpeg" alt="Action Plan" />
+        </button>
+      </Column>
       <Column width={"al-fu"} center>
         
         <Heading
-          text="A Governors’ Agreement and Action Plan"
+          text="Development of the Action Plan"
           size="24px"
           mt="20px"
           mb="40px"
@@ -50,23 +56,17 @@ const ElectricVehicleMarketPage = () => {
         <Row>
           <Column>
             <P>
-            A diverse coalition of 18 jurisdictions in the United States and Canada has committed, through the {" "}
-              <ExternalLink href="/assets/documents/mhdv-zev-mou_12-14-2021.pdf">
-              Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding (MOU)
-              </ExternalLink>{" "}
-              , to work to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses.
+                A <ExternalLink href="/assets/documents/mhdv-zev-mou-20220329.pdf">Memorandum of Understanding (MOU)</ExternalLink> announced in July 2020 directed the Multi-State ZEV Task Force, a unique forum that has galvanized state leadership on <ExternalLink href="https://www.nescaum.org/topics/zero-emission-vehicles">light duty vehicle electrification</ExternalLink> since 2014, to develop an Action Plan to recommend strategies to accelerate the deployment of electric trucks and buses with a focus on communities overburdened by higher levels of air pollution.
             </P>
             <P>
-              The MOU sets zero-emission sales targets for new medium- and
-              heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further
-              commits the signatory states to working with NESCAUM through the
-              <Link to="/our-work/clean-transportation/adoption-of-electric-cars"> ZEV Task Force </Link>to develop a <Link to="/initiatives/mhd-zev-initiative">Multi-State Action
-              Plan</Link> for advancing progress toward
-              a self-sustaining market for zero-emission trucks and buses. The
-              Action Plan will include recommendations for action in several
-              areas, such as:
+                The MOU also established goals to make at least 30 percent of new MHD vehicle sales ZEVs by 2030, and 100 percent of sales ZEVs by no later than 2050. 
             </P>
-            <ListItems list={bulletPoints} />
+            <P>
+                To inform the development of the Action Plan, the ZEV Task Force directly engaged many public and private sector experts, partners, and stakeholders—including equity and environmental justice organizations, truck and bus manufacturers, industry and technology experts, charging and fueling providers, utility companies, public and private fleet representatives, commercial financing experts, and environmental advocates. The ZEV Task Force also received <ExternalLink href="https://www.nescaum.org/files/mhd-zev-comments.php">public comments on the draft</ExternalLink> Action Plan.
+            </P>
+            <P>
+                More information about the Action Plan development process is available <ExternalLink href="https://nescaum.sharepoint.com/:w:/s/CleanTransportationTeam/Ear-yecMGf1Nudd5QswZWPUB5SHCQRkBGLbC862siGWyWQ?email=pkwon%40nescaum.org&e=ah47Y0">here</ExternalLink>.
+            </P>
           </Column>
           <Column>
           <Image src="/assets/images/stock/electric-us-map.jpg" style={{ marginLeft: 40 }} />
