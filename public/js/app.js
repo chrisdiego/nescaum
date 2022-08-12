@@ -20417,7 +20417,7 @@ var data = {
       title: "Driving Adoption of Electric Cars",
       href: "adoption-of-electric-cars"
     }, {
-      title: "Growing the Market for Electric Trucks",
+      title: "Growing the Market for Electric Vehicles",
       href: "growing-market-for-electric-vehicles"
     }, {
       title: "Supporting Regulatory Programs",
@@ -20492,7 +20492,7 @@ var mobileData = {
       title: "Driving Adoption of Electric Cars",
       href: "adoption-of-electric-cars"
     }, {
-      title: "Growing the Market for Electric Trucks",
+      title: "Growing the Market for Electric Vehicles",
       href: "growing-market-for-electric-vehicles"
     }, {
       title: "Supporting Regulatory Programs",
@@ -23301,17 +23301,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
-/* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
-/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
-/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
-/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
-/* harmony import */ var _utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utility/Paragraph */ "./resources/js/components/components/utility/Paragraph.jsx");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
+/* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
+/* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
+/* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
+/* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
 /* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
-/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _templateObject;
+/* harmony import */ var _scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../scaffold/PageScaffold */ "./resources/js/components/components/scaffold/PageScaffold.jsx");
+/* harmony import */ var _documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../documents-links/DocumentLinks */ "./resources/js/components/components/documents-links/DocumentLinks.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6;
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -23327,185 +23328,204 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var jurisdictions = [{
-  jurisdiction: "California"
-}, {
-  jurisdiction: "Colorado",
-  link: "https://sites.google.com/state.co.us/cotriporgfreight/clean-truck-strategy"
-}, {
-  jurisdiction: "Connecticut",
-  link: "https://portal.ct.gov/DEEP/Air/Mobile-Sources/EVConnecticut/EVConnecticut---CTs-EV-Commitment"
-}, {
-  jurisdiction: "District of Columbia",
-  link: "https://doee.dc.gov/service/mhd-ze-vehicles"
-}, {
-  jurisdiction: "Hawaii"
-}, {
-  jurisdiction: "Maine"
-}, {
-  jurisdiction: "Maryland",
-  link: "https://mde.maryland.gov/programs/air/mobilesources/pages/zev.aspx"
-}, {
-  jurisdiction: "Massachusetts"
-}, {
-  jurisdiction: "New Jersey",
-  link: "https://www.nj.gov/dep/stopthesoot/"
-}, {
-  jurisdiction: "New York",
-  link: "https://www.dec.ny.gov/chemical/121209.html"
-}, {
-  jurisdiction: "North Carolina"
-}, {
-  jurisdiction: "Oregon",
-  link: "https://www.oregon.gov/deq/aq/programs/Pages/mdhdZev.aspx"
-}, {
-  jurisdiction: "Pennsylvania"
-}, {
-  jurisdiction: "Province of Québec"
-}, {
-  jurisdiction: "Rhode Island"
-}, {
-  jurisdiction: "Vermont"
-}, {
-  jurisdiction: "Virginia"
-}, {
-  jurisdiction: "Washington"
-}];
-var announcements = [{
-  announcement: "NESCAUM Extends Period for Public Comment on Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
-  link: "https://www.nescaum.org/documents/mhd-zev-ap-draft-comment-extension.pdf/"
-}, {
-  announcement: "NESCAUM Welcomes Nevada's Participation in the Multi-State Zero-Emission Electric Trucks Initiative",
-  link: "https://www.nescaum.org/documents/nescaum-welcomes-nevada-s-participation-in-the-multi-state-zero-emission-electric-trucks-initiative/"
-}, {
-  announcement: "Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
-  link: "/assets/documents/announcement-mhd-zev-ap-public-draft.pdf"
-}, {
-  announcement: "NESCAUM Welcomes the Province of Quebec to the Multi-State MHD Zero-Emission Vehicle Initiative",
-  link: "/assets/documents/quebec-statement_9-22-2021.pdf"
-}, {
-  announcement: "15 States and the District of Columbia Join Forces to Accelerate Bus and Truck Electrification",
-  link: "/assets/documents/multistate-truck-zev-mou-media-release-20200714.pdf"
-}];
-var key_documents = [{
-  document: "Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding",
-  link: "/assets/documents/mhdv-zev-mou-20220329.pdf"
-}, {
-  document: "Draft Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Action Plan",
-  link: "/assets/documents/mhd-zev-action-plan-public-draft-03-10-2022.pdf"
-}];
-var resources = [{
-  resource: "Understanding the Truck Market, Multi-State ZEV Task Force Webinar, October 29, 2020",
-  link: "https://www.nescaum.org/documents/understanding-the-truck-market-webinar-20201029.mp4"
-}, {
-  resource: "Early Experiences in Truck Electrification: A Panel Discussion with Commercial and Public Sector Fleets, November 24, 2020",
-  link: "https://www.nescaum.org/documents/mhd-zev-commercial-and-public-fleets-webinar-2-20201124-2002-1.mp4"
-}, {
-  resource: "Transit and School Bus Electrification, December 17, 2020",
-  link: "https://www.nescaum.org/documents/transit-and-school-bus-electrification-webinar-20201217-2013-1.mp4"
-}, {
-  resource: "The Role of Utilities in Accelerating Electrification of Medium- and Heavy-Duty Vehicles, January 7, 2021",
-  link: "https://www.nescaum.org/documents/the-role-of-utilities-in-accelerating-electrification-of-medium-and-heavy-duty-vehicles-webinar-1-20210107-2003-1.mp4"
-}, {
-  resource: "The Utility Role in MHDV Electrification: Building the Infrastructure and Managing Costs, January 21, 2021",
-  link: "https://www.nescaum.org/documents/the-utility-role-in-mhdv-electrification-webinar-20210121-2002-1.mp4"
-}, {
-  resource: "Innovative Finance to Accelerate Truck and Bus Electrification, April 1, 2021",
-  link: "https://www.nescaum.org/documents/innovative-finance-to-accelerate-truck-and-bus-electrification-webinar-20210401-1902-1.mp4"
-}, {
-  resource: "Prioritizing Transportation Policy for Health and Equity, December 9, 2021",
-  link: "https://www.nescaum.org/documents/prioritizing-transportation-policy-for-health-and-equity-webinar-20211209-2006-1.mp4"
-}];
+
+
 
 var MHDZEVPage = function MHDZEVPage() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  var keyAnnouncements = [{
+    title: "NESCAUM Extends Period for Public Comment on Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
+    link: "/assets/documents/mhd-zev-ap-draft-comment-extension.pdf",
+    date: "APRIL 19, 2022 ANNOUNCEMENT"
+  }, {
+    title: "NESCAUM Welcomes Nevada's Participation in the Multi-State Zero-Emission Electric Trucks Initiative",
+    link: "https://www.nescaum.org/documents/nescaum-welcomes-nevada-s-participation-in-the-multi-state-zero-emission-electric-trucks-initiative/",
+    date: "MARCH 31, 2022 STATEMENT"
+  }, {
+    title: "Draft Multi-State Medium- and Heavy-Duty Zero-Emission Vehicle Action Plan",
+    link: "/assets/documents/announcement-mhd-zev-ap-public-draft.pdf",
+    date: "MARCH 10, 2022 NESCAUM REQUEST FOR COMMENTS"
+  }, {
+    title: "NESCAUM Welcomes the Province of Quebec to the Multi-State MHD Zero-Emission Vehicle Initiative",
+    link: "/assets/documents/quebec-statement_9-22-2021.pdf",
+    date: "SEPTEMBER 22, 2021 STATEMENT"
+  }, {
+    title: "15 States and the District of Columbia Join Forces to Accelerate Bus and Truck Electrification",
+    link: "/assets/documents/multistate-truck-zev-mou-media-release-20200714.pdf",
+    date: "JULY 14, 2020 PRESS RELEASE ANNOUNCING GOVERNORS’ MOU"
+  }];
+  var webinars = [{
+    link: "https://www.nescaum.org/documents/understanding-the-truck-market-webinar-20201029.mp4",
+    title: "Understanding the Truck Market, Multi-State ZEV Task Force Webinar, October 29, 2020"
+  }, {
+    link: "https://www.nescaum.org/documents/mhd-zev-commercial-and-public-fleets-webinar-2-20201124-2002-1.mp4",
+    title: "Early Experiences in Truck Electrification: A Panel Discussion with Commercial and Public Sector Fleets, November 24, 2020"
+  }, {
+    link: "https://www.nescaum.org/documents/transit-and-school-bus-electrification-webinar-20201217-2013-1.mp4",
+    title: "Transit and School Bus Electrification, December 17, 2020",
+    note: " Note: the recording begins five minutes after the start of the webinar."
+  }, {
+    link: "https://www.nescaum.org/documents/the-role-of-utilities-in-accelerating-electrification-of-medium-and-heavy-duty-vehicles-webinar-1-20210107-2003-1.mp4",
+    title: "The Role of Utilities in Accelerating Electrification of Medium- and Heavy-Duty Vehicles, January 7, 2021"
+  }, {
+    link: "https://www.nescaum.org/documents/the-utility-role-in-mhdv-electrification-webinar-20210121-2002-1.mp4",
+    title: "The Utility Role in MHDV Electrification: Building the Infrastructure and Managing Costs, January 21, 2021"
+  }, {
+    link: "https://www.nescaum.org/documents/innovative-finance-to-accelerate-truck-and-bus-electrification-webinar-20210401-1902-1.mp4",
+    title: "Innovative Finance to Accelerate Truck and Bus Electrification, April 1, 2021"
+  }, {
+    link: "https://www.nescaum.org/documents/prioritizing-transportation-policy-for-health-and-equity-webinar-20211209-2006-1.mp4",
+    title: "Prioritizing Transportation Policy for Health and Equity, December 9, 2021"
+  }];
+  var learnMore = [{
+    title: "EV Hub’s Resource Library",
+    link: "https://www.atlasevhub.com/materials/resource-library/?fwp_resource_tag=medium-and-heavy-duty",
+    note: " provides a compilation of recent reports on MHD vehicle electrification and a brief description of each report."
+  }, {
+    title: "CALSTART’s Zero Emission Technology Inventory",
+    link: "https://globaldrivetozero.org/tools/zero-emission-technology-inventory/",
+    note: " tool provides interactive information on commercially available zero-emission MHD vehicles by region."
+  }];
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_7__["default"], {
       headline: "Medium- and Heavy-Duty Zero-Emission Vehicles: Action Plan Development Process",
-      heroImage: "/assets/images/stock/electric-bus1.png"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      heroImage: "/assets/images/stock/electric-bus1.png",
+      mainText: "Seventeen U.S. states, the District of Columbia, and the Canadian province of Quebec worked together through the Multi-State Zero Emission Vehicle (ZEV) Task Force, a coalition facilitated by NESCAUM, to produce a bold Action Plan for accelerating a transition to zero-emission trucks and buses.",
+      subText: "Transportation of freight and people is the largest source of greenhouse gas emissions (GHGs) in the United States. Medium- and heavy-duty (MHD) vehicles \u2013 including large pick-up trucks and vans, delivery and box trucks, school and transit buses, and long- haul delivery trucks \u2013 contribute significantly to these emissions, which are putting the Earth\u2019s climate in peril. They also produce harmful emissions of particulates and smog- forming nitrogen oxides that disproportionately impact public health in communities located near freight hubs, bus depots, and trucking corridors."
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: "Through a memorandum of understanding, 16 states, the District of Columbia, and the Canadian province of Quebec are working collaboratively to advance and accelerate the market for electric medium- and heavy-duty (MHD) vehicles, including large pickup trucks and vans, delivery trucks, box trucks, school and transit buses, and long-haul delivery trucks. The goal is to ensure that 100 percent of all new truck and bus sales are zero-emission vehicles (ZEVs) by 2050, with an interim target of at least 30 percent by 2030."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: "To provide a framework for meeting these goals, the signatory jurisdictions are working through the Multi-State ZEV Task Force facilitated by NESCAUM to develop a MHD ZEV Action Plan. This page provides information about the process for developing the Action Plan and includes the following:"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        text: "Announcements",
-        mb: "10px"
-      }), announcements.map(function (_ref) {
-        var announcement = _ref.announcement,
-            link = _ref.link;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
-          singular: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            href: link,
-            target: "_blank",
-            children: announcement
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(P, {
+        children: "This Action Plan is the culmination of two years of work by the ZEV Task Force identifying barriers and opportunities for rapid and equitable truck and bus electrification and actionable policy and program recommendations for state policymakers, utilities, and utility regulators. The plan also includes recommendations for local and federal government policymakers."
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(P, {
+        children: "Jurisdictions that worked together and with NESCAUM to produce the Action Plan include California, Colorado, Connecticut, Hawaii, Maine, Maryland, Massachusetts, Nevada, New Jersey, New York, North Carolina, Oregon, Pennsylvania, Rhode Island, Vermont, Virginia, Washington, District of Columbia, and Quebec."
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      width: "al-fu",
+      center: true,
+      justify: "center",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        href: "/assets/documents/multi-state-medium-and-heavy-duty-zev-action-plan.pdf",
+        target: "_blank",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
+          src: "/assets/images/action_plan.jpeg",
+          alt: "Action Plan"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        href: "/assets/documents/multi-state-medium-and-heavy-duty-zev-action-plan-dual-page.pdf",
+        target: "_blank",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
+          src: "/assets/images/action_plan_dbl.jpeg",
+          alt: "Action Plan"
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      width: "al-fu",
+      center: true,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        text: "Development of the Action Plan",
+        size: "24px",
+        mt: "20px",
+        mb: "40px"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
+            children: ["A ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "/assets/documents/mhdv-zev-mou-20220329.pdf",
+              children: "Memorandum of Understanding (MOU)"
+            }), " announced in July 2020 directed the Multi-State ZEV Task Force, a unique forum that has galvanized state leadership on ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "https://www.nescaum.org/topics/zero-emission-vehicles",
+              children: "light duty vehicle electrification"
+            }), " since 2014, to develop an Action Plan to recommend strategies to accelerate the deployment of electric trucks and buses with a focus on communities overburdened by higher levels of air pollution."]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(P, {
+            children: "The MOU also established goals to make at least 30 percent of new MHD vehicle sales ZEVs by 2030, and 100 percent of sales ZEVs by no later than 2050."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
+            children: ["To inform the development of the Action Plan, the ZEV Task Force directly engaged many public and private sector experts, partners, and stakeholders\u2014including equity and environmental justice organizations, truck and bus manufacturers, industry and technology experts, charging and fueling providers, utility companies, public and private fleet representatives, commercial financing experts, and environmental advocates. The ZEV Task Force also received ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "https://www.nescaum.org/files/mhd-zev-comments.php",
+              children: "public comments on the draft"
+            }), " Action Plan."]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
+            children: ["More information about the Action Plan development process is available ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "https://nescaum.sharepoint.com/:w:/s/CleanTransportationTeam/Ear-yecMGf1Nudd5QswZWPUB5SHCQRkBGLbC862siGWyWQ?email=pkwon%40nescaum.org&e=ah47Y0",
+              children: "here"
+            }), "."]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
+            src: "/assets/images/stock/electric-us-map.jpg"
           })
-        });
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        text: "Key Documents",
-        mb: "10px",
-        mt: "10px"
-      }), key_documents.map(function (_ref2) {
-        var document = _ref2.document,
-            link = _ref2.link;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
-          singular: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            href: link,
-            target: "_blank",
-            children: document
+        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      width: "al-fu",
+      center: true,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        text: "Key Announcements During Plan Development",
+        size: "24px",
+        mt: "20px",
+        mb: "20px"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: keyAnnouncements.map(function (point) {
+            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(ListItem, {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(ListTitle, {
+                children: point.date
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                href: point.link,
+                target: "_blank",
+                children: point.title
+              })]
+            });
           })
-        });
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        text: "Signatory Jurisdictions",
-        mb: "10px",
-        mt: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: "The signatory jurisdictions are listed below. To access an individual jurisdiction's MHD ZEV website, please click on the jurisdiction name. You will then be redirected to the corresponding website."
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), jurisdictions.map(function (_ref3) {
-        var jurisdiction = _ref3.jurisdiction,
-            link = _ref3.link;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
-          singular: true,
-          children: link ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            href: link,
-            children: jurisdiction
-          }) : jurisdiction
-        });
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      width: "al-fu",
+      center: true,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
         text: "Online Learning Resources",
-        mb: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: "NESCAUM is holding a series of webinars for the multi-state ZEV Task Force to inform the development of the Action Plan. Recordings of the webinars will be posted here as they become available:"
-      }), resources.map(function (_ref4) {
-        var resource = _ref4.resource,
-            link = _ref4.link;
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_0__["default"], {
-          singular: true,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            href: link,
+        size: "24px",
+        mt: "20px",
+        mb: "20px"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SubHeading, {
+        children: "Informational Webinars:"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SubP, {
+        children: "NESCAUM held a series of webinars for the multi-state ZEV Task Force to inform the development of the Action Plan. Recordings of the webinars are available below:"
+      }), webinars.map(function (webinar) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(ListItem, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            href: webinar.link,
             target: "_blank",
-            children: resource
-          })
+            children: webinar.title
+          }), webinar === null || webinar === void 0 ? void 0 : webinar.note]
         });
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        text: "Portal for Public Input",
-        mb: "10px"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(_utility_Paragraph__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        children: ["You can submit comments, ideas, or suggestions for the MHD ZEV Action Plan on the portal for public input.", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {}), "You can also view the collected stakeholder submissions."]
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)("br", {})]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SubHeading, {
+        children: "Want to learn more?"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(SubP, {
+        children: "Check out these online resources:"
+      }), learnMore.map(function (learn) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(ListItem, {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+            href: learn.link,
+            target: "_blank",
+            children: learn.title
+          }), learn === null || learn === void 0 ? void 0 : learn.note]
+        });
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_documents_links_DocumentLinks__WEBPACK_IMPORTED_MODULE_8__["default"], {
       docFilter: "mhd_zev_initiative"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__["default"], {
       docFilter: "mhd_zev_initiative"
     })]
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MHDZEVPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  margin-bottom: 40px;\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  width: 100%;\n  padding: 0 35px;\n"])));
+var ListTitle = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 16px;\n  font-weight: bold;\n  line-height: 30px;\n  margin: 0;\n"])));
+var ListItem = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  margin-bottom: 10px;\n  margin-left: 30px;\n\n  a {\n    text-decoration: underline;\n  }\n\n  @media screen and (min-width: 768px) {\n        max-width: 60%;\n    }\n"])));
+var SubHeading = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].h6(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n    color: #003354;\n    font-weight: bold;\n    margin-left: 30px;\n    margin-top: 20px;\n"])));
+var SubP = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n    margin-left: 30px;\n    font-size: 14px;\n\n    @media screen and (min-width: 768px) {\n        max-width: 60%;\n    }\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
 
 /***/ }),
 
@@ -23726,7 +23746,7 @@ var data = {
     imageSrc: "/assets/images/stock/electric_adoption.jpg",
     "href": "/our-work/clean-transportation/adoption-of-electric-cars"
   }, {
-    title: "Growing the Market for Electric Trucks and Buses",
+    title: "Growing the Market for Electric Vehicles",
     content: "NESCAUM facilitates a multi-state collaboration aimed at electrifying trucks and buses to improve air quality in over-burdened communities and to combat climate change.",
     imageSrc: "/assets/images/stock/mhd.jpg",
     "href": "/our-work/clean-transportation/growing-market-for-electric-vehicles"
@@ -23886,10 +23906,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _utility_Heading__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utility/Heading */ "./resources/js/components/components/utility/Heading.jsx");
 /* harmony import */ var _utility_Column__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utility/Column */ "./resources/js/components/components/utility/Column.jsx");
 /* harmony import */ var _utility_Row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utility/Row */ "./resources/js/components/components/utility/Row.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 /* harmony import */ var _content_ListItems__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../content/ListItems */ "./resources/js/components/components/content/ListItems.jsx");
 /* harmony import */ var _links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../links/ExternalLink */ "./resources/js/components/components/links/ExternalLink.jsx");
 /* harmony import */ var _documents_links_ResourceLibraryLink__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../documents-links/ResourceLibraryLink */ "./resources/js/components/components/documents-links/ResourceLibraryLink.jsx");
@@ -23920,57 +23941,35 @@ var ElectricVehicleMarketPage = function ElectricVehicleMarketPage() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_scaffold_PageScaffold__WEBPACK_IMPORTED_MODULE_7__["default"], {
       heroImage: "/assets/images/stock/electric-buses-unsplash.jpg",
-      headline: "Growing the Market for Electric Trucks and Buses",
-      mainText: "Seventeen U.S. states, the District of Columbia, and the Canadian province of Quebec worked together through the Multi-State Zero Emission Vehicle (ZEV) Task Force, a coalition facilitated by NESCAUM, to produce a bold Action Plan for accelerating a transition to zero-emission trucks and buses.",
-      subText: "Transportation of freight and people is the largest source of greenhouse gas emissions (GHGs) in the United States. Medium- and heavy-duty (MHD) vehicles \u2013 including large pick-up trucks and vans, delivery and box trucks, school and transit buses, and long- haul delivery trucks \u2013 contribute significantly to these emissions, which are putting the Earth\u2019s climate in peril. They also produce harmful emissions of particulates and smog- forming nitrogen oxides that disproportionately impact public health in communities located near freight hubs, bus depots, and trucking corridors."
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      width: "al-fu",
-      center: true,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
-        href: "",
-        target: "_blank",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
-          src: "/assets/images/action_plan.jpeg",
-          alt: "Action Plan"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)("button", {
-        href: "",
-        target: "_blank",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
-          src: "/assets/images/action_plan_dbl.jpeg",
-          alt: "Action Plan"
-        })
-      })]
+      headline: "Growing the Market for Electric Vehicles",
+      sideImage: "/assets/images/stock/electric-trucks-side-image.png",
+      mainText: "In the United States, greenhouse gas emissions from vehicles that are used to move goods are growing faster than emissions from any other segment of the transportation sector. As more consumers turn to online shopping, truck volumes are to be expected to increase by 36% over the next decade.",
+      subText: "While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers."
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
       width: "al-fu",
       center: true,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Heading__WEBPACK_IMPORTED_MODULE_1__["default"], {
-        text: "Development of the Action Plan",
+        text: "A Governors\u2019 Agreement and Action Plan",
         size: "24px",
         mt: "20px",
         mb: "40px"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
-            children: ["A ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              href: "/assets/documents/mhdv-zev-mou-20220329.pdf",
-              children: "Memorandum of Understanding (MOU)"
-            }), " announced in July 2020 directed the Multi-State ZEV Task Force, a unique forum that has galvanized state leadership on ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              href: "https://www.nescaum.org/topics/zero-emission-vehicles",
-              children: "light duty vehicle electrification"
-            }), " since 2014, to develop an Action Plan to recommend strategies to accelerate the deployment of electric trucks and buses with a focus on communities overburdened by higher levels of air pollution."]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(P, {
-            children: "The MOU also established goals to make at least 30 percent of new MHD vehicle sales ZEVs by 2030, and 100 percent of sales ZEVs by no later than 2050."
+            children: ["A diverse coalition of 19 jurisdictions in the United States and Canada has committed, through the ", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
+              href: "/assets/documents/mhdv-zev-mou_12-14-2021.pdf",
+              children: "Multi-State Medium- and Heavy-Duty Zero Emission Vehicle Memorandum of Understanding (MOU)"
+            }), " ", ", to work to slash GHG emissions and harmful air pollution by accelerating the market for zero-emission trucks and buses."]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
-            children: ["To inform the development of the Action Plan, the ZEV Task Force directly engaged many public and private sector experts, partners, and stakeholders\u2014including equity and environmental justice organizations, truck and bus manufacturers, industry and technology experts, charging and fueling providers, utility companies, public and private fleet representatives, commercial financing experts, and environmental advocates. The ZEV Task Force also received ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              href: "https://www.nescaum.org/files/mhd-zev-comments.php",
-              children: "public comments on the draft"
-            }), " Action Plan."]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsxs)(P, {
-            children: ["More information about the Action Plan development process is available ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_links_ExternalLink__WEBPACK_IMPORTED_MODULE_5__["default"], {
-              href: "https://nescaum.sharepoint.com/:w:/s/CleanTransportationTeam/Ear-yecMGf1Nudd5QswZWPUB5SHCQRkBGLbC862siGWyWQ?email=pkwon%40nescaum.org&e=ah47Y0",
-              children: "here"
-            }), "."]
+            children: ["The MOU sets zero-emission sales targets for new medium- and heavy-duty vehicles: 30% by 2030 and 100% by 2050. The MOU further commits the signatory states to working with NESCAUM through the", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
+              to: "/our-work/clean-transportation/adoption-of-electric-cars",
+              children: " ZEV Task Force "
+            }), "to develop a ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_10__.Link, {
+              to: "/initiatives/mhd-zev-initiative",
+              children: "Multi-State Action Plan"
+            }), " for advancing progress toward a self-sustaining market for zero-emission trucks and buses. The Action Plan will include recommendations for action in several areas, such as:"]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_content_ListItems__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            list: bulletPoints
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_utility_Column__WEBPACK_IMPORTED_MODULE_2__["default"], {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(Image, {
@@ -23990,9 +23989,9 @@ var ElectricVehicleMarketPage = function ElectricVehicleMarketPage() {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ElectricVehicleMarketPage);
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  width: 100%;\n  margin-right: 40px;\n"])));
-var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
-var P = styled_components__WEBPACK_IMPORTED_MODULE_10__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].img(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  max-width: 100%;\n  width: 100%;\n  margin-right: 40px;\n"])));
+var BoldP = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  color: #003354;\n  font-size: 24px;\n  font-weight: bold;\n  line-height: 30px;\n  font-family: Roboto, sans-serif;\n"])));
+var P = styled_components__WEBPACK_IMPORTED_MODULE_11__["default"].p(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  font-family: Roboto, sans-serif;\n  font-weight: 400;\n  font-size: 16px;\n\n  a {\n    color: blue;\n    text-decoration: underline;\n    font-family: inherit;\n    font-size: 16px;\n  }\n"])));
 
 /***/ }),
 
@@ -86526,7 +86525,7 @@ function _setPrototypeOf(o, p) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"our-work":{"clean-transportation":{"heroImage":"https://assets/images.unsplash.com/photo-1567409378873-888d6fa7debc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80","sideImage":"https://assets/images.unsplash.com/photo-1473042904451-00171c69419d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80","headline":"Clean Transportation","mainText":"Transportation is our nation’s largest source of greenhouse gas emissions and accounts for more than 40 percent of greenhouse gas emissions in the Northeast. On-road and off-road vehicles also emit smog-forming pollutants, particulate matter, and airborne toxic chemicals that are harmful to human health, especially for people who live near busy roads.","subText":"NESCAUM guides and supports efforts by state governments to accelerate the nation’s transition to clean transportation. We help states by advising them on effective policies and programs, and we facilitate multi-state collaboration that enables states to achieve more by working together.","subHeader":"NESCAUM\'S MULTI-STATE INITIATIVES TO DRIVE CLEAN VEHICLE ADOPTION","subArticles":[{"title":"Supporting Regulatory Programs","content":"NESCAUM helps northeast states coordinate their regulation of mobile sources of air pollution and assists states across the country in adopting and implementing California’s motor vehicle emission standards.","imageSrc":"https://assets/images.unsplash.com/photo-1605257638792-9d0e2197fb0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80","href":"supporting-regulatory-programs"},{"title":"Driving the Adoption of Electric Cars","content":"NESCAUM leads the Multi-State Zero-Emission Vehicle (ZEV) Task Force, a forum for states that have adopted California’s ZEV regulation to collaborate on complementary policies and programs to accelerate widespread consumer adoption of electric cars.","imageSrc":"https://assets/images.unsplash.com/photo-1623596240012-63ab3432fa1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGVsZWN0cmljJTIwY2FyfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60","href":"driving-the-adoption-of-electric-cars"},{"title":"Growing the Market for Electric Trucks and Buses","content":"NESCAUM facilitates a multi-state collaboration aimed at electrifying trucks and buses to improve air quality in over-burdened communities and to combat climate change.","imageSrc":"https://assets/images.unsplash.com/photo-1485575301924-6891ef935dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80","href":"growing-market-for-electric-vehicles"}]}},"criteria-pollutants-and-air-toxics":{"heroImage":"https://assets/images.unsplash.com/photo-1597165826924-f0e9fb81762e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80","sideImage":"https://assets/images.unsplash.com/photo-1607432750402-48f85c94f63a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80","headline":"Criteria and Hazardous Air Pollutants","mainText":"The Clean Air Act requires EPA to regulate two categories of air pollutants. EPA sets National Ambient Air Quality Standards (NAAQS) for six air pollutants, which are known as criteria pollutants. Those pollutants are ozone, particulate matter, sulfur dioxide, nitrogen dioxide, carbon monoxide, and lead.","subText":"EPA also has identified 187 hazardous air pollutants (HAPs) which are known or suspected to cause cancer or other serious health effects. EPA regulates HAPs with technology-based rules which are called National Emissions Standards for Hazardous Air Pollutants (NESHAPs). Although EPA has not set air quality standards for HAPs, many states have developed health-based standards and guidelines for evaluating air quality impacts of the federal HAPs and other toxic air pollutants.","bodyText":[{"title":"Criteria Air Pollutants","underline":true,"largeText":true},{"title":"National Ambient Air Quality Standards (NAAQS).","text":" The Clean Air Act requires EPA to conduct periodic reviews of the NAAQS for the six criteria air pollutants. The NAAQS are the foundation of a wide range of air quality programs, so it is essential that those standards are protective of the public health and welfare of all communities.  NESCAUM reviews and comments on EPA proposals concerning NAAQS standard setting, including:","bullet":true},{"text":"Procedures that affect the derivation of the NAAQS,","bullet":true,"extraMargin":true},{"text":"Planning, science, and policy assessments developed by EPA and its advisory committees during the mandated periodic reviews, and","bullet":true,"extraMargin":true},{"text":"NAAQS proposed subsequent to the reviews. ","bullet":true,"extraMargin":true},{"text":"Recent NECAUM comments have addressed EPA proposals concerning <a href=\'https://www.nescaum.org/documents/nescaum-transparency-snprm-comments-2020518-final.pdf/\' target=\'_blank\' rel=\'noopener noreferrer\'>cost-benefit analyses, the use of scientific study data</a>, and the NAAQS for fine particulate matter <a href=\'https://www.nescaum.org/documents/nescaum-pm2-5-naaqs-comments-final-20200629.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>(PM₂.₅)</a> and <a href=\'https://www.nescaum.org/documents/nescaum-ozone-naaqs-comments-final-20201001.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>ozone</a>","bullet":true},{"title":"Supporting state air quality planning efforts.","text":"NESCAUM facilitates state discussions and information sharing to support the development of State Implementation Plans, which are designed to enable air quality to attain and maintain the NAAQS. Interstate coordination is particularly essential for ozone, particulate matter, and regional haze, which are highly impacted by regional and long-range pollutant transport. ","bullet":true},{"title":"HAPs/Toxic Air Pollutants","underline":true,"largeText":true},{"title":"EPA HAP proposals.","text":"Working with member states, NESCAUM assesses the impact of proposed EPA actions regarding HAPs and, where appropriate, prepares comments on those proposals. EPA actions reviewed include proposed NESHAPs, the risk and technology assessments that underly the NESHAPs, and risk-related science and policy documents. In 2020, <a href=\'https://www.nescaum.org/documents/nescaum-mon-rtr-comments-final-20200218.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>NESCAUM commented</a> on the proposed Residual Risk and Technology Review for the Miscellaneous Organic Chemical Manufacturing NESHAP.","bullet":true},{"title":"Supporting state air toxics programs.","text":"NESCAUM coordinates the exchange of about air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS;, and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. In April 2021, NESCAUM, working with state partners, submitted a <a href=\'https://www.nescaum.org/documents/nescaum-letter-to-epa-on-2017-nata-data-release-20210429.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>letter to EPA</a> urging the agency to publicly release an updated National Air Toxics Assessment (NATA). The letter details the ways that state programs use those data, including in the identification of communities that are disproportionately impacted by stationary and mobile air toxics sources.","bullet":true}]},"monitoring":{"heroImage":"/assets/images/monitoring-unsplash.jpg","sideImage":"/assets/images/monitoring-nescaum.jpg","headline":"MONITORING","mainText":"","bodyText":[{"text":"<b>Supporting the collection and distribution of criteria pollutant monitoring data</b>. NESCAUM facilitates communication among states and with EPA ensure uniform approaches to regional air monitoring and data assessment and to communicate those data to state air quality planners. NESCAUM also provides a forum for discussion and exchange of ideas regarding existing or emerging techniques and technologies, which, in turn can be used to inform policies, regulations, and strategies related to, or impacted by, air monitoring. "},{"text":"<b>Conducts research</b>.  NESCAUM coordinates specific monitoring or data assessment projects with member states and EPA regional offices, such as the Monitoring Collaborative, an effort to coordinate State monitoring network designs at the regional level.  NESCAUM has also adapted continuous PM measurement technologies, traditionally used for ambient monitoring, for stack testing to provide highly time resolved particulate matter data. NESCAUM works closely with instrumentation manufacturers to identify and resolve issues with these technologies to facilitate their use in this application."},{"text":"<b>Enhance public awareness. NESCAUM’s CAMNET</b> work raises public awareness about the effects of air pollution on visibility. This is accomplished, in part, through a network of realtime visibility cameras located at scenic urban and rural locations. In addition, near-realtime air pollution and meteorological data are provided to help distinguish natural from man-made causes of poor visibility, and to provide health-relevant data to the public on current air pollution levels. "}]},"supporting-regulatory-programs":{"heroImage":"https://assets/images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80","title":""},"adoption-of-electric-cars":{"heroImage":"https://assets/images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80","title":"Light Duty Electrification","subHeader":"","mainText":"A rapid transition from gasoline powered cars to zero emissions vehicles (ZEVs) is critically important for curbing greenhouse gas emissions and combating the climate crisis. Electric cars will also result in cleaner air for communities across the nation.","text-array":[{"title":"DRIVING THE ADOPTION OF ELECTRIC CARS","paragraph":"Accelerating the transition from gasoline-powered cars to zero-emission electric cars is critically important for curbing greenhouse gas emissions and addressing the climate crisis. It is also urgently needed to reduce air pollution burdens on communities across the United States. NESCAUM supports and guides work by state governments to accelerate this transformation in \\"light-duty\\" transportation."},{"title":"Forming the Multi-State Task Force","paragraph":["For more than thirty years, NESCAUM has worked directly with states to help them adopt and implement California\'s clean car standards {{regulatory-compliance}} in lieu of less stringent federal standards","In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support the goals of these re"]}]},"growing-market-for-electric-vehicles":{"heroImage":"/assets/images/electric-busues-unsplash.jpg","sideImage":"/assets/images/electric-truck-sideImages.png","mainText":"While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers.","body-text-headline":"A Governors’ Agreement and Action Plan","bodyText":[]},"aboutUs":{"committees":{"title":"Committees","desc":"NESCAUM provides an ongoing forum for state staff to discuss program-specific issues on a regional basis. This helps foster federal-state relationships, as EPA regional staff are members of all NESCAUM Committees:","committees":[{"title":"Air Toxics and Public Health","desc":"NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."},{"title":"Enforcement and Compliance","list":[{"title":"Facilitating discussions on compliance and enforcement issues","desc":"NESCAUM facilitates discussions between EPA and states on several key aspects of these programs including EPA oversight of programs via the State Review Framework (SRF), data reporting tools such as EPA’s Enforcement and Compliance History Online (ECHO) website and Integrated Compliance Information System (ICIS), policy development such as the High Priority Violations policy and requirements for state Compliance Monitoring Strategy (CMS) commitments. NESCAUM also reviews and comments on federal proposals."},{"title":"Identifying regional areas of interest","desc":"Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches to enhance compliance with Clean Air Act requirements."}]},{"title":"Mobile Sources","desc":"NESCAUM staff works with its member states on a range of technical and policy issues related to onroad light-, medium-, and heavy-duty vehicles and nonroad equipment and machines (including marine, locomotive, construction, and other sources). This work includes development of emissions inventories, undertaking technical studies to evaluate emission control technologies, analysis of policies to reduce emissions from mobile sources, and developing regional approaches to reduce mobile source emissions."},{"title":"Attainment Planning","desc":"NESCAUM staff works with its member states on a broad range of SIP development activities, including: modeling, emissions inventories, establishing partnerships with EPA to ensure states have a clear understanding of federal requirements, and developing regional approaches to address nonattainment challenges."},{"title":"Training","desc":"NESCAUM’s Clean Air Academy program provides air pollution training for our member states. This program is funded through federal grants to provide professional education to individuals from state and local air pollution agencies. State staff may register for any of these courses on APTI Learn. Courses are provided through EPA’s Air Pollution Training Institute (APTI) and the National Air Compliance Training program (NACT). For more information, please contact NESCAUM’s Training Coordinator, Kara Murphy, at kmurphy@nescaum.org."},{"title":"Stationary Sources and Permitting","list":[{"title":"Facilitating discussions on stationary sources and permitting issues","desc":"NESCAUM facilitates communication among states and with the EPA on critical permitting and stationary source issues. Quarterly committee meetings include states updates on recent permitting activities, EPA reports on pertinent regulatory actions and guidance, and presentations about emerging issues that affect permitting and stationary source programs. When applicable, NESCAUM coordinates the preparation of comments on EPA proposals with state committee members."},{"title":"Providing additional resources on areas of regional interest","desc":"NESCAUM facilitates the in-depth exploration of areas that are of interest to states. When those issues overlap with over state programs, NESCAUM coordinates joint sessions with other committees that are open to all interested state and EPA participants. Recent examples include webinars on Environmental Justice in Permitting and Petroleum Terminal Emissions, Regulation and Impacts."}]}]}}}');
+module.exports = JSON.parse('{"our-work":{"clean-transportation":{"heroImage":"https://assets/images.unsplash.com/photo-1567409378873-888d6fa7debc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80","sideImage":"https://assets/images.unsplash.com/photo-1473042904451-00171c69419d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80","headline":"Clean Transportation","mainText":"Transportation is our nation’s largest source of greenhouse gas emissions and accounts for more than 40 percent of greenhouse gas emissions in the Northeast. On-road and off-road vehicles also emit smog-forming pollutants, particulate matter, and airborne toxic chemicals that are harmful to human health, especially for people who live near busy roads.","subText":"NESCAUM guides and supports efforts by state governments to accelerate the nation’s transition to clean transportation. We help states by advising them on effective policies and programs, and we facilitate multi-state collaboration that enables states to achieve more by working together.","subHeader":"NESCAUM\'S MULTI-STATE INITIATIVES TO DRIVE CLEAN VEHICLE ADOPTION","subArticles":[{"title":"Supporting Regulatory Programs","content":"NESCAUM helps northeast states coordinate their regulation of mobile sources of air pollution and assists states across the country in adopting and implementing California’s motor vehicle emission standards.","imageSrc":"https://assets/images.unsplash.com/photo-1605257638792-9d0e2197fb0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80","href":"supporting-regulatory-programs"},{"title":"Driving the Adoption of Electric Cars","content":"NESCAUM leads the Multi-State Zero-Emission Vehicle (ZEV) Task Force, a forum for states that have adopted California’s ZEV regulation to collaborate on complementary policies and programs to accelerate widespread consumer adoption of electric cars.","imageSrc":"https://assets/images.unsplash.com/photo-1623596240012-63ab3432fa1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGVsZWN0cmljJTIwY2FyfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60","href":"driving-the-adoption-of-electric-cars"},{"title":"Growing the Market for Electric Vehicles","content":"NESCAUM facilitates a multi-state collaboration aimed at electrifying trucks and buses to improve air quality in over-burdened communities and to combat climate change.","imageSrc":"https://assets/images.unsplash.com/photo-1485575301924-6891ef935dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80","href":"growing-market-for-electric-vehicles"}]}},"criteria-pollutants-and-air-toxics":{"heroImage":"https://assets/images.unsplash.com/photo-1597165826924-f0e9fb81762e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80","sideImage":"https://assets/images.unsplash.com/photo-1607432750402-48f85c94f63a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80","headline":"Criteria and Hazardous Air Pollutants","mainText":"The Clean Air Act requires EPA to regulate two categories of air pollutants. EPA sets National Ambient Air Quality Standards (NAAQS) for six air pollutants, which are known as criteria pollutants. Those pollutants are ozone, particulate matter, sulfur dioxide, nitrogen dioxide, carbon monoxide, and lead.","subText":"EPA also has identified 187 hazardous air pollutants (HAPs) which are known or suspected to cause cancer or other serious health effects. EPA regulates HAPs with technology-based rules which are called National Emissions Standards for Hazardous Air Pollutants (NESHAPs). Although EPA has not set air quality standards for HAPs, many states have developed health-based standards and guidelines for evaluating air quality impacts of the federal HAPs and other toxic air pollutants.","bodyText":[{"title":"Criteria Air Pollutants","underline":true,"largeText":true},{"title":"National Ambient Air Quality Standards (NAAQS).","text":" The Clean Air Act requires EPA to conduct periodic reviews of the NAAQS for the six criteria air pollutants. The NAAQS are the foundation of a wide range of air quality programs, so it is essential that those standards are protective of the public health and welfare of all communities.  NESCAUM reviews and comments on EPA proposals concerning NAAQS standard setting, including:","bullet":true},{"text":"Procedures that affect the derivation of the NAAQS,","bullet":true,"extraMargin":true},{"text":"Planning, science, and policy assessments developed by EPA and its advisory committees during the mandated periodic reviews, and","bullet":true,"extraMargin":true},{"text":"NAAQS proposed subsequent to the reviews. ","bullet":true,"extraMargin":true},{"text":"Recent NECAUM comments have addressed EPA proposals concerning <a href=\'https://www.nescaum.org/documents/nescaum-transparency-snprm-comments-2020518-final.pdf/\' target=\'_blank\' rel=\'noopener noreferrer\'>cost-benefit analyses, the use of scientific study data</a>, and the NAAQS for fine particulate matter <a href=\'https://www.nescaum.org/documents/nescaum-pm2-5-naaqs-comments-final-20200629.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>(PM₂.₅)</a> and <a href=\'https://www.nescaum.org/documents/nescaum-ozone-naaqs-comments-final-20201001.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>ozone</a>","bullet":true},{"title":"Supporting state air quality planning efforts.","text":"NESCAUM facilitates state discussions and information sharing to support the development of State Implementation Plans, which are designed to enable air quality to attain and maintain the NAAQS. Interstate coordination is particularly essential for ozone, particulate matter, and regional haze, which are highly impacted by regional and long-range pollutant transport. ","bullet":true},{"title":"HAPs/Toxic Air Pollutants","underline":true,"largeText":true},{"title":"EPA HAP proposals.","text":"Working with member states, NESCAUM assesses the impact of proposed EPA actions regarding HAPs and, where appropriate, prepares comments on those proposals. EPA actions reviewed include proposed NESHAPs, the risk and technology assessments that underly the NESHAPs, and risk-related science and policy documents. In 2020, <a href=\'https://www.nescaum.org/documents/nescaum-mon-rtr-comments-final-20200218.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>NESCAUM commented</a> on the proposed Residual Risk and Technology Review for the Miscellaneous Organic Chemical Manufacturing NESHAP.","bullet":true},{"title":"Supporting state air toxics programs.","text":"NESCAUM coordinates the exchange of about air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS;, and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. In April 2021, NESCAUM, working with state partners, submitted a <a href=\'https://www.nescaum.org/documents/nescaum-letter-to-epa-on-2017-nata-data-release-20210429.pdf/\' target=\'_blank\' rel=\'noreferrer noopener\'>letter to EPA</a> urging the agency to publicly release an updated National Air Toxics Assessment (NATA). The letter details the ways that state programs use those data, including in the identification of communities that are disproportionately impacted by stationary and mobile air toxics sources.","bullet":true}]},"monitoring":{"heroImage":"/assets/images/monitoring-unsplash.jpg","sideImage":"/assets/images/monitoring-nescaum.jpg","headline":"MONITORING","mainText":"","bodyText":[{"text":"<b>Supporting the collection and distribution of criteria pollutant monitoring data</b>. NESCAUM facilitates communication among states and with EPA ensure uniform approaches to regional air monitoring and data assessment and to communicate those data to state air quality planners. NESCAUM also provides a forum for discussion and exchange of ideas regarding existing or emerging techniques and technologies, which, in turn can be used to inform policies, regulations, and strategies related to, or impacted by, air monitoring. "},{"text":"<b>Conducts research</b>.  NESCAUM coordinates specific monitoring or data assessment projects with member states and EPA regional offices, such as the Monitoring Collaborative, an effort to coordinate State monitoring network designs at the regional level.  NESCAUM has also adapted continuous PM measurement technologies, traditionally used for ambient monitoring, for stack testing to provide highly time resolved particulate matter data. NESCAUM works closely with instrumentation manufacturers to identify and resolve issues with these technologies to facilitate their use in this application."},{"text":"<b>Enhance public awareness. NESCAUM’s CAMNET</b> work raises public awareness about the effects of air pollution on visibility. This is accomplished, in part, through a network of realtime visibility cameras located at scenic urban and rural locations. In addition, near-realtime air pollution and meteorological data are provided to help distinguish natural from man-made causes of poor visibility, and to provide health-relevant data to the public on current air pollution levels. "}]},"supporting-regulatory-programs":{"heroImage":"https://assets/images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80","title":""},"adoption-of-electric-cars":{"heroImage":"https://assets/images.unsplash.com/photo-1513646981453-ffb069114476?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80","title":"Light Duty Electrification","subHeader":"","mainText":"A rapid transition from gasoline powered cars to zero emissions vehicles (ZEVs) is critically important for curbing greenhouse gas emissions and combating the climate crisis. Electric cars will also result in cleaner air for communities across the nation.","text-array":[{"title":"DRIVING THE ADOPTION OF ELECTRIC CARS","paragraph":"Accelerating the transition from gasoline-powered cars to zero-emission electric cars is critically important for curbing greenhouse gas emissions and addressing the climate crisis. It is also urgently needed to reduce air pollution burdens on communities across the United States. NESCAUM supports and guides work by state governments to accelerate this transformation in \\"light-duty\\" transportation."},{"title":"Forming the Multi-State Task Force","paragraph":["For more than thirty years, NESCAUM has worked directly with states to help them adopt and implement California\'s clean car standards {{regulatory-compliance}} in lieu of less stringent federal standards","In 2013, NESCAUM spearheaded the launch of a coalition of states committed to coordinating state policies and programs to propel growth in the market for electric cars and support the goals of these re"]}]},"growing-market-for-electric-vehicles":{"heroImage":"/assets/images/electric-busues-unsplash.jpg","sideImage":"/assets/images/electric-truck-sideImages.png","mainText":"While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers.","body-text-headline":"A Governors’ Agreement and Action Plan","bodyText":[]},"aboutUs":{"committees":{"title":"Committees","desc":"NESCAUM provides an ongoing forum for state staff to discuss program-specific issues on a regional basis. This helps foster federal-state relationships, as EPA regional staff are members of all NESCAUM Committees:","committees":[{"title":"Air Toxics and Public Health","desc":"NESCAUM staff works with its member states on a broad range of air toxics and public health issues, including state air toxics programs, federal NESHAP standards, characterizing and minimizing air toxics emissions, toxicity evaluations, ambient air toxics measurements, risk communication, and emerging contaminants. The ATPH committee members share the latest information on experiences and developments in air toxics issues relevant to the region."},{"title":"Enforcement and Compliance","list":[{"title":"Facilitating discussions on compliance and enforcement issues","desc":"NESCAUM facilitates discussions between EPA and states on several key aspects of these programs including EPA oversight of programs via the State Review Framework (SRF), data reporting tools such as EPA’s Enforcement and Compliance History Online (ECHO) website and Integrated Compliance Information System (ICIS), policy development such as the High Priority Violations policy and requirements for state Compliance Monitoring Strategy (CMS) commitments. NESCAUM also reviews and comments on federal proposals."},{"title":"Identifying regional areas of interest","desc":"Through NESCAUM’s regional network of contacts, identification of regional areas of interest are identified. These can include sectors of concern, assessment of new testing and assessment tools, and new approaches to enhance compliance with Clean Air Act requirements."}]},{"title":"Mobile Sources","desc":"NESCAUM staff works with its member states on a range of technical and policy issues related to onroad light-, medium-, and heavy-duty vehicles and nonroad equipment and machines (including marine, locomotive, construction, and other sources). This work includes development of emissions inventories, undertaking technical studies to evaluate emission control technologies, analysis of policies to reduce emissions from mobile sources, and developing regional approaches to reduce mobile source emissions."},{"title":"Attainment Planning","desc":"NESCAUM staff works with its member states on a broad range of SIP development activities, including: modeling, emissions inventories, establishing partnerships with EPA to ensure states have a clear understanding of federal requirements, and developing regional approaches to address nonattainment challenges."},{"title":"Training","desc":"NESCAUM’s Clean Air Academy program provides air pollution training for our member states. This program is funded through federal grants to provide professional education to individuals from state and local air pollution agencies. State staff may register for any of these courses on APTI Learn. Courses are provided through EPA’s Air Pollution Training Institute (APTI) and the National Air Compliance Training program (NACT). For more information, please contact NESCAUM’s Training Coordinator, Kara Murphy, at kmurphy@nescaum.org."},{"title":"Stationary Sources and Permitting","list":[{"title":"Facilitating discussions on stationary sources and permitting issues","desc":"NESCAUM facilitates communication among states and with the EPA on critical permitting and stationary source issues. Quarterly committee meetings include states updates on recent permitting activities, EPA reports on pertinent regulatory actions and guidance, and presentations about emerging issues that affect permitting and stationary source programs. When applicable, NESCAUM coordinates the preparation of comments on EPA proposals with state committee members."},{"title":"Providing additional resources on areas of regional interest","desc":"NESCAUM facilitates the in-depth exploration of areas that are of interest to states. When those issues overlap with over state programs, NESCAUM coordinates joint sessions with other committees that are open to all interested state and EPA participants. Recent examples include webinars on Environmental Justice in Permitting and Petroleum Terminal Emissions, Regulation and Impacts."}]}]}}}');
 
 /***/ })
 

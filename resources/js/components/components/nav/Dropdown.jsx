@@ -12,7 +12,7 @@ export const data = {
                     href: "adoption-of-electric-cars",
                 },
                 {
-                    title: "Growing the Market for Electric Trucks",
+                    title: "Growing the Market for Electric Vehicles",
                     href: "growing-market-for-electric-vehicles",
                 },
                 {
@@ -117,7 +117,7 @@ export const mobileData = {
                     href: "adoption-of-electric-cars",
                 },
                 {
-                    title: "Growing the Market for Electric Trucks",
+                    title: "Growing the Market for Electric Vehicles",
                     href: "growing-market-for-electric-vehicles",
                 },
                 {

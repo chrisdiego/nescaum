@@ -51,7 +51,7 @@ const data = {
         "href": "/our-work/clean-transportation/adoption-of-electric-cars"
     },
     {
-        title: "Growing the Market for Electric Trucks and Buses",
+        title: "Growing the Market for Electric Vehicles",
         content: "NESCAUM facilitates a multi-state collaboration aimed at electrifying trucks and buses to improve air quality in over-burdened communities and to combat climate change.",
         imageSrc: "/assets/images/stock/mhd.jpg",
         "href": "/our-work/clean-transportation/growing-market-for-electric-vehicles"
