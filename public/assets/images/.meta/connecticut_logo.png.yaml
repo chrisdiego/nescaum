@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt_text: 'image of the Connecticut Department of Energy and Environmental Protection logo'
 size: 55287
-last_modified: 1659673757
+last_modified: 1659675471
 width: 268
 height: 270
 mime_type: image/png

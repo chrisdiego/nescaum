@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt_text: 'image of the Vermont Department of Environmental Conservation logo'
 size: 41370
-last_modified: 1659673444
+last_modified: 1659675471
 width: 781
 height: 781
 mime_type: image/jpeg
