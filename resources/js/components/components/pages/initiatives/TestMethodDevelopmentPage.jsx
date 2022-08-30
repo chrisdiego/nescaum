@@ -23,8 +23,6 @@ const TestMethodDevelopmentPage = () => {
                 </Paragraph>
                 <hr />
                 <br />
-                <small><i><sup>1</sup>US EPA Office Air Quality Planning and Standards, “Process for Developing Improved Cordwood Test Methods for Wood Heaters.” Page 28, March 2016.</i></small>
-                <br />
                 <Paragraph>For more information on the IDC method and NESCAUM work in this area, see:</Paragraph>
                 <br />
             <ListItems singular>

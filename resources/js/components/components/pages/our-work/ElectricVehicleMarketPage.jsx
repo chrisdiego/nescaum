@@ -24,7 +24,7 @@ const ElectricVehicleMarketPage = () => {
     <>
       <PageScaffold 
         heroImage="/assets/images/stock/electric-buses-unsplash.jpg"
-        headline="Growing the Market for Electric Vehicles"
+        headline="Enabling the Market for Electric Trucks andBuses"
         sideImage="/assets/images/stock/electric-trucks-side-image.png"
         mainText="In the United States, greenhouse gas emissions from vehicles that
         are used to move goods are growing faster than emissions from any
