@@ -98,7 +98,7 @@ const Router = () => {
 			/>
 			<Route 
 				exact 
-				path="/our-work/clean-transportation/growing-market-for-electric-vehicles" 
+				path="/our-work/clean-transportation/enabling-the-market-for-electric-trucks-and-buses" 
 				element={<ElectricVehicleMarketPage/>} 
 			/>
 			<Route 
