@@ -24,7 +24,7 @@
           "title": "Growing the Market for Electric Vehicles",
           "content": "NESCAUM facilitates a multi-state collaboration aimed at electrifying trucks and buses to improve air quality in over-burdened communities and to combat climate change.",
           "imageSrc": "https://assets/images.unsplash.com/photo-1485575301924-6891ef935dcd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
-          "href": "growing-market-for-electric-vehicles"
+          "href": "enabling-the-market-for-electric-trucks-and-buses"
         }
       ]
     }
@@ -83,7 +83,7 @@
       },
       {
         "title": "Supporting state air toxics programs.",
-        "text": "NESCAUM coordinates the exchange of about air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS;, and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. In April 2021, NESCAUM, working with state partners, submitted a <a href='https://www.nescaum.org/documents/nescaum-letter-to-epa-on-2017-nata-data-release-20210429.pdf/' target='_blank' rel='noreferrer noopener'>letter to EPA</a> urging the agency to publicly release an updated National Air Toxics Assessment (NATA). The letter details the ways that state programs use those data, including in the identification of communities that are disproportionately impacted by stationary and mobile air toxics sources.",
+        "text": "NESCAUM coordinates the exchange of air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS;, and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. In April 2021, NESCAUM, working with state partners, submitted a <a href='https://www.nescaum.org/documents/nescaum-letter-to-epa-on-2017-nata-data-release-20210429.pdf/' target='_blank' rel='noreferrer noopener'>letter to EPA</a> urging the agency to publicly release an updated National Air Toxics Assessment (NATA). The letter details the ways that state programs use those data, including in the identification of communities that are disproportionately impacted by stationary and mobile air toxics sources.",
         "bullet": true
       }
     ]
@@ -130,7 +130,7 @@
       }
     ]
   },
-  "growing-market-for-electric-vehicles": {
+  "enabling-the-market-for-electric-trucks-and-buses": {
     "heroImage": "/assets/images/electric-busues-unsplash.jpg",
     "sideImage": "/assets/images/electric-truck-sideImages.png", 
     "mainText": "While trucks and buses represent a small fraction of on-road vehicles today, they account for more than a quarter of transportation sector greenhouse gas emissions. Diesel emissions from trucks and buses are also major contributors of harmful smog-forming pollutants, particulate matter, and air toxics. Moreover, these emissions disproportionately impact communities located near major truck routes, ports, and distribution centers.",

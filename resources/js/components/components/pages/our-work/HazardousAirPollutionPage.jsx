@@ -19,9 +19,6 @@ const HazardousAirPollutionPage = () => {
         <Paragraph>
           EPA also has identified 187 <b>hazardous air pollutants (HAPs)</b> which are known or suspected to cause cancer or other serious health effects. EPA regulates HAPs with technology-based rules which are called National Emissions Standards for Hazardous Air Pollutants (NESHAPs). Although EPA has not set air quality standards for HAPs, many states have developed health-based standards and guidelines for evaluating air quality impacts of the federal HAPs and other toxic air pollutants.  
         </Paragraph>
-        <Paragraph>
-          NESCAUM supports state criteria and toxic air pollutant <Link style={{color: '#003354'}} href="/our-work/monitoring" to="/our-work/monitoring">monitoring programs</Link>.
-        </Paragraph>
         
       </Column>
       <DocumentLinks docFilter="air_toxics"/>

@@ -29,6 +29,10 @@ const Container = styled.div`
     & > p {
         color: #006cb3;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin-left: -15px;
+    }
 `;
 
 const StyledResourceLibraryLink = styled.h3`

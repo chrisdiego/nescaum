@@ -186,11 +186,11 @@ const ResourceLibraryPage = () => {
 
         //filter test cases
         if (filters.document_type?.length)
-            filterable = filters.document_type.every(filter => formattedDocTypes.includes(filter))
+            filterable = filters.document_type.some(filter => formattedDocTypes.includes(filter))
         if (filterable && filters.topic?.length)
-            filterable = filters.topic.every(filter => formattedTopics.includes(filter))
+            filterable = filters.topic.some(filter => formattedTopics.includes(filter))
         if (filterable && filters.display_on?.length)
-            filterable = filters.display_on.every(filter => formattedDisplayOn.includes(filter))
+            filterable = filters.display_on.some(filter => formattedDisplayOn.includes(filter))
         if (filterable && filters.input?.length) {
             filterable = doc?.key_words?.toLowerCase().includes(filters.input.toLowerCase()) || doc?.formatted_title?.toLowerCase().includes(filters.input.toLowerCase())
         }

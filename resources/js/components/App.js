@@ -1,4 +1,5 @@
 import './App.css';
+import styled from 'styled-components';
 import Header from './components/layout/Header';
 import Router from './components/nav/Router';
 import Footer from './components/layout/Footer';
@@ -14,7 +15,9 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Header />
-        <Router />
+        <MobileMargin>
+            <Router />
+        </MobileMargin>
         <Footer />
       </BrowserRouter>
     </div>
@@ -22,3 +25,10 @@ function App() {
 }
 
 export default App;
+
+const MobileMargin = styled.div`
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+`

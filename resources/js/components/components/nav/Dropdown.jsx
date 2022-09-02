@@ -12,8 +12,8 @@ export const data = {
                     href: "adoption-of-electric-cars",
                 },
                 {
-                    title: "Growing the Market for Electric Vehicles",
-                    href: "growing-market-for-electric-vehicles",
+                    title: "Enabling the Market for Electric Trucks and Buses",
+                    href: "enabling-the-market-for-electric-trucks-and-buses",
                 },
                 {
                     title: "Supporting Regulatory Programs",
@@ -117,8 +117,8 @@ export const mobileData = {
                     href: "adoption-of-electric-cars",
                 },
                 {
-                    title: "Growing the Market for Electric Vehicles",
-                    href: "growing-market-for-electric-vehicles",
+                    title: "Enabling the Market for Electric Trucks and Buses",
+                    href: "enabling-the-market-for-electric-trucks-and-buses",
                 },
                 {
                     title: "Supporting Regulatory Programs",
