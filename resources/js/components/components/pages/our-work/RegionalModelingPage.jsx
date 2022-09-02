@@ -51,6 +51,6 @@ const descriptionData = [
   {
     title: "Electricity Sources", 
     content: "With the Ozone Transport Commission (OTC) Modeling Committee, NESCAUM is contributing modeling to understand the pollution impacts specifically from electricity generating units used during peak electricity demand conditions. A series of simulations targeting peak and non-peak plants have been designed through coordination with the Stationary and Area Sources Committee of the OTC.", 
-    imageSrc: "/assets/images/stock/smokestack-pexels.jpg"
+    imageSrc: "/assets/images/smoke-stack-regulatory-compliance.jpg"
   }
 ]

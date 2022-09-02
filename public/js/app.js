@@ -24233,7 +24233,7 @@ var descriptionData = [{
 }, {
   title: "Electricity Sources",
   content: "With the Ozone Transport Commission (OTC) Modeling Committee, NESCAUM is contributing modeling to understand the pollution impacts specifically from electricity generating units used during peak electricity demand conditions. A series of simulations targeting peak and non-peak plants have been designed through coordination with the Stationary and Area Sources Committee of the OTC.",
-  imageSrc: "/assets/images/stock/smokestack-pexels.jpg"
+  imageSrc: "/assets/images/smoke-stack-regulatory-compliance.jpg"
 }];
 
 /***/ }),
@@ -24822,7 +24822,7 @@ var PageScaffold = function PageScaffold(_ref) {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PageScaffold);
 var SubHeader = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].h3(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n\tmargin-top: 80px; \n\tmax-width: 800px; \n\tmargin-bottom: 40px;\n"])));
-var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tmax-width: 100%;\n    width: ", ";\n\tmargin-right: 60px; \n\n    @media (max-width: 768px) {\n        margin: 0;\n    }\n"])), function (props) {
+var Image = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].img(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n\tmax-width: 600px;\n    width: ", ";\n\tmargin-right: 60px; \n\n    @media (max-width: 768px) {\n        margin: 0;\n    }\n"])), function (props) {
   return props.heroWidth ? props.heroWidth + 'px' : '100%';
 });
 
