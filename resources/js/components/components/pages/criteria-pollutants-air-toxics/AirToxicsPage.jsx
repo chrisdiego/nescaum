@@ -19,7 +19,7 @@ const AirToxicsPage = () => {
             <b>EPA HAP proposals.</b> Working with member states, NESCAUM assesses the impact of proposed EPA actions regarding HAPs and, where appropriate, prepares comments on those proposals. EPA actions reviewed include proposed NESHAPs, the risk and technology assessments that underly the NESHAPs, and risk-related science and policy documents. In 2020, <ExternalLink href="https://www.nescaum.org/documents/nescaum-mon-rtr-comments-final-20200218.pdf/" rel="noopener noreferrer">NESCAUM commented</ExternalLink> on the proposed Residual Risk and Technology Review for the Miscellaneous Organic Chemical Manufacturing NESHAP.
             </ListItems>
             <ListItems singular>
-            <b>Supporting state air toxics programs.</b> NESCAUM coordinates the exchange of air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS;, and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. 
+            <b>Supporting state air toxics programs.</b> NESCAUM coordinates the exchange of air toxics information among member states and with federal partners.  Focus issues include state air toxics program development; the derivation of health-based ambient air benchmarks; air-related impacts of per- and polyfluoroalkyl substances (PFAS), and the toxics impacts of emissions from sources like ports, petroleum terminals, ethylene oxide sterilizers, and drycleaners. 
             </ListItems>
             </Column>
             <DocumentLinks docFilter="air_toxics"/>
