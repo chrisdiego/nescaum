@@ -22656,7 +22656,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var Staff = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    width: 280px;\n    height: 280px;\n    background: url(", ") no-repeat;\n    background-size: cover;\n    border-radius: 350px;\n    color: transparent;\n    }\n    & img {\n        max-height: 150px;\n        border-radius: 65px;\n    }\n"])), function (props) {
+var Staff = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n    width: 280px;\n    height: 280px;\n    max-width: 100%;\n    background: url(", ") no-repeat;\n    background-size: cover;\n    border-radius: 350px;\n    color: transparent;\n    }\n    & img {\n        max-height: 150px;\n        border-radius: 65px;\n    }\n"])), function (props) {
   return props.src;
 });
 var StaffCard = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-bottom: 40px;\n    width: 33%;\n\n    @media (max-width: 768px) {\n        width: 100%;\n    }\n"])));
