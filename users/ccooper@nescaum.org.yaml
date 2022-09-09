@@ -9,7 +9,7 @@ preferences:
       url: dashboard
   assets:
     images:
-      per_page: 100
+      per_page: 500
       mode: grid
     documents:
       per_page: 100
