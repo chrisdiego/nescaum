@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Staff = styled.div`
     width: 280px;
     height: 280px;
+    max-width: 100%;
     background: url(${(props) => props.src}) no-repeat;
     background-size: cover;
     border-radius: 350px;
