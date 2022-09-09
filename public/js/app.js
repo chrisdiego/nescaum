@@ -25394,7 +25394,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "API_URL": () => (/* binding */ API_URL),
 /* harmony export */   "PageParams": () => (/* binding */ PageParams)
 /* harmony export */ });
-var API_URL = 'http://159.223.119.211/api';
+var API_URL = '/api';
 var PageParams = {
   'PER_PAGE': 10
 };
